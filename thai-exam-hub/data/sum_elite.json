@@ -35,7 +35,7 @@
     "id": 6005,
     "subject": "Mathematics",
     "title": "จำนวนเชิงซ้อนขั้นสูง: รูปเชิงขั้วและทฤษฎีบทเดอมัวร์",
-    "content": "การใช้พิกัดเชิงขั้ว (r(cos \theta + i \\sin \theta)) และการหาค่ารากที่ n ของจำนวนเชิงซ้อน... [Formula: (r e^{i\theta})^n = r^n e^{in\theta}]",
+    "content": "การใช้พิกัดเชิงขั้ว (r(cos \\theta + i \\sin \\theta)) และการหาค่ารากที่ n ของจำนวนเชิงซ้อน... [Formula: (r e^{i\\theta})^n = r^n e^{in\\theta}]",
     "youtubeId": "dQw4w9WgXcQ",
     "tags": ["Mathematics", "Complex Numbers", "A-Level"]
   },
@@ -51,7 +51,7 @@
     "id": 6007,
     "subject": "Mathematics",
     "title": "ความน่าจะเป็น: ทฤษฎีบทของเบย์ (Bayes' Theorem)",
-    "content": "การคำนวณความน่าจะเป็นแบบมีเงื่อนไขและการประยุกต์ใช้ในโจทย์สถานการณ์จริงที่ต้องอาศัยการ update ความเชื่อ... [Formula: P(A|B) = \frac{P(B|A)P(A)}{P(B)}]",
+    "content": "การคำนวณความน่าจะเป็นแบบมีเงื่อนไขและการประยุกต์ใช้ในโจทย์สถานการณ์จริงที่ต้องอาศัยการ update ความเชื่อ... [Formula: P(A|B) = \\frac{P(B|A)P(A)}{P(B)}]",
     "youtubeId": "dQw4w9WgXcQ",
     "tags": ["Mathematics", "Probability", "Statistics"]
   },
@@ -275,7 +275,7 @@
     "id": 6035,
     "subject": "Logic",
     "title": "ตรรกศาสตร์แสดงลักษณะ (Predicate Logic)",
-    "content": "การใช้ Quantifiers (\forall, \exists) เพื่อระบุขอบเขตของสมาชิกในประพจน์... [Keywords: Formal Logic, Quantifiers, Mathematical Proof]",
+    "content": "การใช้ Quantifiers (\\forall, \\exists) เพื่อระบุขอบเขตของสมาชิกในประพจน์... [Keywords: Formal Logic, Quantifiers, Mathematical Proof]",
     "youtubeId": "dQw4w9WgXcQ",
     "tags": ["Logic", "Mathematics", "CS"]
   },

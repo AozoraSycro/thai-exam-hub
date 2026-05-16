@@ -26,9 +26,9 @@
   { "id": "alevel_korean_2567", "title": "A-Level ภาษาเกาหลี", "subject": "language", "year": 2567, "difficulty": "hard", "duration_minutes": 90 },
   { "id": "alevel_pali_2567", "title": "A-Level ภาษาบาลี", "subject": "language", "year": 2567, "difficulty": "hard", "duration_minutes": 90 },
   
-  { "id": "math_elite_mock", "title": "MATH ELITE MOCK (ชุดจำลองโหดพิเศษ)", "subject": "elite", "year": 2568, "difficulty": "hard", "duration_minutes": 180 },
-  { "id": "science_elite_mock", "title": "SCIENCE ELITE MOCK (ชุดจำลองโหดพิเศษ)", "subject": "elite", "year": 2568, "difficulty": "hard", "duration_minutes": 180 },
-  { "id": "english_elite_mock", "title": "ENGLISH ELITE MOCK (ชุดจำลองโหดพิเศษ)", "subject": "elite", "year": 2568, "difficulty": "hard", "duration_minutes": 90 },
+  { "id": "mock_math_elite", "title": "MATH ELITE MOCK (ชุดจำลองโหดพิเศษ)", "subject": "elite", "year": 2568, "difficulty": "hard", "duration_minutes": 180 },
+  { "id": "mock_science_elite", "title": "SCIENCE ELITE MOCK (ชุดจำลองโหดพิเศษ)", "subject": "elite", "year": 2568, "difficulty": "hard", "duration_minutes": 180 },
+  { "id": "mock_english_elite", "title": "ENGLISH ELITE MOCK (ชุดจำลองโหดพิเศษ)", "subject": "elite", "year": 2568, "difficulty": "hard", "duration_minutes": 90 },
   
   { "id": "onet_math_2567", "title": "ONET คณิตศาสตร์ (ม.6)", "subject": "math", "year": 2567, "difficulty": "easy", "duration_minutes": 120 },
   { "id": "onet_science_2567", "title": "ONET วิทยาศาสตร์ (ม.6)", "subject": "science", "year": 2567, "difficulty": "easy", "duration_minutes": 120 },

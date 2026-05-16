@@ -1,6 +1,6 @@
 /**
  * app.js - The Brain of Thai Exam Hub
- * REWRITTEN: Bulletproof Data Fetching & Rendering
+ * FIXED: Partitioned Data Loading, Robust Paths, and Correct Meta-Mapping.
  */
 
 import { Storage } from './storage.js';
@@ -16,14 +16,14 @@ const Config = {
         return `${this.basePath}data/`;
     },
     get version() {
-        return '1.0.' + new Date().getTime(); // Simple cache buster
+        return '1.1.' + new Date().getTime(); // Forced cache refresh
     }
 };
 
 async function fetchJSON(url) {
     try {
         const response = await fetch(`${url}?v=${Config.version}`);
-        if (!response.ok) throw new Error(`Failed to load: ${url} (Status: ${response.status})`);
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
         return await response.json();
     } catch (error) {
         console.error('Fetch Error:', error);
@@ -39,9 +39,8 @@ class ThemeManager {
         this.updateIcon(currentTheme);
         
         document.addEventListener('click', (e) => {
-            if (e.target.closest('#theme-toggle')) {
-                this.toggle();
-            }
+            const btn = e.target.closest('#theme-toggle');
+            if (btn) this.toggle();
         });
     }
 
@@ -58,7 +57,6 @@ class ThemeManager {
         document.documentElement.setAttribute('data-theme', next);
         Storage.saveSettings({ theme: next });
         this.updateIcon(next);
-        window.dispatchEvent(new CustomEvent('themeChanged', { detail: next }));
     }
 }
 
@@ -72,7 +70,7 @@ class App {
             'medical': { title: 'กสพท / แพทย์', icon: '🩺', file: 'sum_medical.json' },
             'thai': { title: 'ภาษาไทย', icon: '📚', file: 'sum_thai.json' },
             'social': { title: 'สังคม / ครู', icon: '⚖️', file: 'sum_social.json' },
-            'arts': { title: 'สถาปัตยกรรม', icon: '🎨', file: 'sum_arts.json' },
+            'arts': { title: 'สถาปัตย์/ศิลป์', icon: '🎨', file: 'sum_arts.json' },
             'language': { title: 'ภาษาต่างประเทศ', icon: '⛩️', file: 'sum_language.json' },
             'elite': { title: 'Elite Mocks', icon: '💎', file: 'sum_elite.json' },
             'future': { title: 'ทักษะอนาคต', icon: '🚀', file: 'sum_future.json' }
@@ -80,7 +78,6 @@ class App {
     }
 
     async init() {
-        console.log('App initializing... BasePath:', Config.basePath);
         this.theme.init();
         this.renderStats();
         this.renderRecommendations();
@@ -93,19 +90,6 @@ class App {
         if (document.getElementById('history-list')) this.renderFullHistory();
         
         this.initCharts();
-    }
-
-    showError(containerId, message) {
-        const container = document.getElementById(containerId);
-        if (container) {
-            container.innerHTML = `
-                <div class="error-box" style="padding: 20px; text-align: center; color: #e11d48; background: rgba(225, 29, 72, 0.05); border: 1px solid #e11d48; border-radius: 12px; margin: 20px 0;">
-                    <i class="fas fa-exclamation-circle" style="font-size: 2rem; margin-bottom: 10px;"></i>
-                    <p style="font-weight: 600;">${message}</p>
-                    <button onclick="location.reload()" style="margin-top: 10px; padding: 8px 16px; background: #e11d48; color: white; border: none; border-radius: 6px; cursor: pointer;">ลองใหม่อีกครั้ง</button>
-                </div>
-            `;
-        }
     }
 
     renderStats() {
@@ -143,15 +127,12 @@ class App {
                     featuredEl.appendChild(div);
                 });
             }
-        } catch (e) { 
-            this.showError('featured-exams', 'โหลดข้อมูลข้อสอบไม่สำเร็จ กรุณาตรวจสอบการเชื่อมต่อ');
-        }
+        } catch (e) { console.error('Dashboard error:', e); }
     }
 
     async renderSubjectPage(subjectId) {
         const meta = this.subjectMeta[subjectId];
-        const titleEl = document.getElementById('subject-title');
-        if (titleEl) titleEl.textContent = meta ? meta.title : 'คลังความรู้';
+        if (document.getElementById('subject-title')) document.getElementById('subject-title').textContent = meta ? meta.title : 'คลังความรู้';
 
         const listEl = document.getElementById('exam-list');
         const gridEl = document.getElementById('knowledge-grid');
@@ -160,7 +141,6 @@ class App {
             // 1. Load Exams
             const exams = await fetchJSON(`${Config.dataPath}subjects.json`);
             const filtered = exams.filter(e => e.subject === subjectId);
-            
             if (listEl) {
                 listEl.innerHTML = '';
                 if (filtered.length) {
@@ -176,51 +156,41 @@ class App {
                 } else { listEl.innerHTML = '<p class="empty-state">ยังไม่มีข้อสอบในหมวดนี้</p>'; }
             }
 
-            // 2. Load Summaries
+            // 2. Load Summaries (Partitioned)
             if (meta && meta.file) {
-                try {
-                    const summaries = await fetchJSON(`${Config.dataPath}${meta.file}`);
-                    this.renderSummaryGrid(summaries, subjectId);
+                const summaries = await fetchJSON(`${Config.dataPath}${meta.file}`);
+                this.renderSummaryGrid(summaries, subjectId);
 
-                    const searchInput = document.getElementById('summary-search');
-                    if (searchInput) {
-                        searchInput.oninput = (e) => {
-                            const q = e.target.value.toLowerCase();
-                            const filtered = summaries.filter(s => 
-                                (s.title || '').toLowerCase().includes(q) || 
-                                (s.content || '').toLowerCase().includes(q)
-                            );
-                            this.renderSummaryGrid(filtered, subjectId);
-                        };
-                    }
-                } catch (sumErr) {
-                    console.warn(`Summary file ${meta.file} missing or invalid:`, sumErr);
-                    if (gridEl) gridEl.innerHTML = '<p class="empty-state">ไม่พบข้อมูลสรุปความรู้ในหมวดนี้</p>';
+                const searchInput = document.getElementById('summary-search');
+                if (searchInput) {
+                    searchInput.oninput = (e) => {
+                        const q = e.target.value.toLowerCase();
+                        const filtered = summaries.filter(s => (s.title || '').toLowerCase().includes(q) || (s.content || '').toLowerCase().includes(q));
+                        this.renderSummaryGrid(filtered, subjectId);
+                    };
                 }
             } else if (gridEl) {
-                gridEl.innerHTML = '<p class="empty-state" style="grid-column: 1/-1;">ไม่พบข้อมูลสรุปความรู้</p>';
+                gridEl.innerHTML = '<p class="empty-state" style="grid-column: 1/-1;">ไม่มีข้อมูลสรุปสำหรับวิชานี้</p>';
             }
         } catch (e) { 
-            this.showError('exam-list', 'โหลดข้อมูลไม่สำเร็จ กรุณาลองใหม่อีกครั้ง');
+            console.error('Subject error:', e);
+            if (listEl) listEl.innerHTML = '<p class="error">โหลดข้อมูลไม่สำเร็จ</p>';
         }
     }
 
     renderSummaryGrid(summaries, subjectId) {
         const gridEl = document.getElementById('knowledge-grid');
         if (!gridEl) return;
-        gridEl.innerHTML = '';
-        if (summaries && summaries.length) {
-            summaries.forEach(s => {
-                const div = document.createElement('div');
-                div.className = 'summary-card';
-                div.innerHTML = `<div class="summary-info"><span class="tag-meta"></span><h4></h4><p></p></div><a class="read-btn">อ่านสรุปบทเรียน</a>`;
-                div.querySelector('.tag-meta').textContent = (s.subject || subjectId || 'GENERAL').toUpperCase();
-                div.querySelector('h4').textContent = s.title;
-                div.querySelector('p').textContent = (s.content || '').substring(0, 100).replace(/[#*`$]/g, '') + '...';
-                div.querySelector('a').href = `${Config.basePath}study.html?subject=${subjectId}&id=${s.id}`;
-                gridEl.appendChild(div);
-            });
-        } else { gridEl.innerHTML = '<p class="empty-state" style="grid-column: 1/-1;">ไม่พบเนื้อหาที่ต้องการ</p>'; }
+        gridEl.innerHTML = summaries.length ? summaries.map(s => `
+            <div class="summary-card">
+                <div class="summary-info">
+                    <span class="tag-meta">${(s.subject || subjectId || 'GENERAL').toUpperCase()}</span>
+                    <h4>${s.title}</h4>
+                    <p>${(s.content || '').substring(0, 100).replace(/[#*`$]/g, '')}...</p>
+                </div>
+                <a href="${Config.basePath}study.html?subject=${subjectId}&id=${s.id}" class="read-btn">อ่านสรุปความรู้</a>
+            </div>
+        `).join('') : '<p class="empty-state" style="grid-column: 1/-1;">ไม่พบเนื้อหา</p>';
     }
 
     renderRecommendations() {
@@ -228,44 +198,19 @@ class App {
         if (!container) return;
         const stats = Storage.getStats();
         const topWeak = Object.entries(stats.byTopic || {}).sort((a, b) => b[1].wrong - a[1].wrong).filter(t => t[1].wrong > 0).slice(0, 3);
-        
         if (topWeak.length === 0) {
             container.innerHTML = '<div class="info-card" style="padding:20px; text-align:center; background:var(--card-bg); border-radius:12px; border:1px solid var(--border-color);"><p>ทำข้อสอบเพิ่มเติมเพื่อให้ระบบวิเคราะห์จุดที่ควรเน้น!</p></div>';
             return;
         }
-
-        container.innerHTML = '';
-        const grid = document.createElement('div');
-        grid.className = 'recommendation-grid';
-        topWeak.forEach(t => {
-            const div = document.createElement('div');
-            div.className = 'recommend-card';
-            div.innerHTML = `<span class="tag-alert"><i class="fas fa-lightbulb"></i> ควรเน้นเป็นพิเศษ</span><h4></h4><p></p><a class="read-btn">หาเนื้อหาติว →</a>`;
-            div.querySelector('h4').textContent = `หัวข้อ: ${t[0]}`;
-            div.querySelector('p').textContent = `คุณพลาดเรื่องนี้ไปแล้ว ${t[1].wrong} ครั้ง`;
-            div.querySelector('a').href = `${Config.basePath}subject.html?s=search&q=${encodeURIComponent(t[0])}`;
-            grid.appendChild(div);
-        });
-        container.appendChild(grid);
+        container.innerHTML = `<div class="recommendation-grid">${topWeak.map(t => `<div class="recommend-card"><span class="tag-alert">ทบทวนด่วน</span><h4>เรื่อง: ${t[0]}</h4><p>พลาดไปแล้ว ${t[1].wrong} ครั้ง</p><a href="${Config.basePath}subject.html?s=search&q=${t[0]}" class="read-btn">หาเนื้อหาติว →</a></div>`).join('')}</div>`;
     }
 
     renderFullHistory() {
         const list = document.getElementById('history-list');
         if (!list) return;
         const history = Storage.getAllProgress();
-        list.innerHTML = '';
         if (history.length === 0) { list.innerHTML = '<p class="empty-state">ยังไม่มีประวัติการสอบ</p>'; return; }
-        history.forEach(item => {
-            const div = document.createElement('div');
-            div.className = 'history-item';
-            div.innerHTML = `<div class="history-info"><strong></strong><span></span></div><div class="history-score"></div>`;
-            div.querySelector('strong').textContent = (item.examId || 'EXAM').toUpperCase().replace(/_/g, ' ');
-            div.querySelector('span').textContent = item.completedAt ? new Date(item.completedAt).toLocaleDateString('th-TH') : '-';
-            const score = div.querySelector('.history-score');
-            score.textContent = `${item.score} / ${item.totalQuestions}`;
-            score.classList.add((item.score/item.totalQuestions) >= 0.5 ? 'pass' : 'fail');
-            list.appendChild(div);
-        });
+        list.innerHTML = history.map(item => `<div class="history-item"><div class="history-info"><strong>${(item.examId || 'EXAM').toUpperCase().replace(/_/g, ' ')}</strong><span>${item.completedAt ? new Date(item.completedAt).toLocaleDateString('th-TH') : '-'}</span></div><div class="history-score ${(item.score/item.totalQuestions) >= 0.5 ? 'pass' : 'fail'}">${item.score} / ${item.totalQuestions}</div></div>`).join('');
     }
 
     initCharts() {
@@ -276,8 +221,8 @@ class App {
             const subjects = Object.keys(stats.bySubject);
             if (subjects.length >= 3) {
                 const data = subjects.map(s => (stats.bySubject[s].correct / stats.bySubject[s].answered) * 100);
-                new Chart(radarCtx, { type: 'radar', data: { labels: subjects.map(s => s.toUpperCase()), datasets: [{ label: 'ความแม่นยำ (%)', data: data, backgroundColor: 'rgba(14, 165, 233, 0.2)', borderColor: '#0ea5e9', pointBackgroundColor: '#0ea5e9' }] }, options: { scales: { r: { beginAtZero: true, max: 100, ticks: { display: false } } }, plugins: { legend: { display: false } } } });
-            } else { radarCtx.parentElement.innerHTML = '<p class="empty-state">ทำข้อสอบให้ครบ 3 หมวดเพื่อแสดงกราฟสมรรถนะ</p>'; }
+                new Chart(radarCtx, { type: 'radar', data: { labels: subjects.map(s => s.toUpperCase()), datasets: [{ label: 'ความแม่นยำ (%)', data: data, backgroundColor: 'rgba(14, 165, 233, 0.2)', borderColor: '#0ea5e9', pointBackgroundColor: '#0ea5e9' }] }, options: { scales: { r: { beginAtZero: true, max: 100 } }, plugins: { legend: { display: false } } } });
+            } else { radarCtx.parentElement.innerHTML = '<p class="empty-state">ทำข้อสอบให้ครบ 3 หมวดเพื่อแสดงกราฟ</p>'; }
         }
     }
 }
