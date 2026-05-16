@@ -1,422 +1,422 @@
 [
   {
     "id": 1,
-    "text": "English Question 1: Choose the correct form. \"She ____ to the market yesterday.\" (Item ID: 1)",
+    "text": "Grammar: I ________ my keys. Have you seen them?",
     "options": [
-      "go",
-      "goes",
-      "gone",
-      "went"
+      "lose",
+      "lost",
+      "have lost",
+      "had lost"
     ],
-    "answer": 3,
-    "explanation": "Use Past Simple tense (went) for finished actions in the past."
+    "answer": 2,
+    "explanation": "Use Present Perfect for an action that happened at an unspecified time in the past and has relevance to the present."
   },
   {
     "id": 2,
-    "text": "English Question 2: Choose the correct form. \"She ____ to the market yesterday.\" (Item ID: 2)",
+    "text": "Conversation: Greeting a friend.\nJane: \"How have you been lately?\"\nBob: \"________________.\"",
     "options": [
-      "go",
-      "goes",
-      "gone",
-      "went"
+      "I am 20 years old.",
+      "Not bad, thanks. How about you?",
+      "I am going to the bank.",
+      "Yes, I have."
     ],
-    "answer": 3,
-    "explanation": "Use Past Simple tense (went) for finished actions in the past."
+    "answer": 1,
+    "explanation": "\"Not bad, thanks\" is a standard response to \"How have you been?\""
   },
   {
     "id": 3,
-    "text": "English Question 3: Choose the correct form. \"She ____ to the market yesterday.\" (Item ID: 3)",
+    "text": "Vocabulary: Which word means 'to start something'?",
     "options": [
-      "go",
-      "goes",
-      "gone",
-      "went"
+      "Finish",
+      "Begin",
+      "Stop",
+      "Wait"
     ],
-    "answer": 3,
-    "explanation": "Use Past Simple tense (went) for finished actions in the past."
+    "answer": 1,
+    "explanation": "'Begin' and 'start' are synonyms."
   },
   {
     "id": 4,
-    "text": "English Question 4: Choose the correct form. \"She ____ to the market yesterday.\" (Item ID: 4)",
+    "text": "Reading: \"The library is open from 8 AM to 6 PM every day except Sunday.\"\nOn which day is the library closed?",
     "options": [
-      "go",
-      "goes",
-      "gone",
-      "went"
+      "Monday",
+      "Friday",
+      "Sunday",
+      "Saturday"
     ],
-    "answer": 3,
-    "explanation": "Use Past Simple tense (went) for finished actions in the past."
+    "answer": 2,
+    "explanation": "The text states it is open every day 'except Sunday'."
   },
   {
     "id": 5,
-    "text": "English Question 5: Choose the correct form. \"She ____ to the market yesterday.\" (Item ID: 5)",
+    "text": "Grammar: She is ________ than her brother.",
     "options": [
-      "go",
-      "goes",
-      "gone",
-      "went"
+      "tall",
+      "taller",
+      "tallest",
+      "the tallest"
     ],
-    "answer": 3,
-    "explanation": "Use Past Simple tense (went) for finished actions in the past."
+    "answer": 1,
+    "explanation": "Use the comparative form 'taller' when comparing two people."
   },
   {
     "id": 6,
-    "text": "English Question 6: Choose the correct form. \"She ____ to the market yesterday.\" (Item ID: 6)",
+    "text": "Conversation: Offering help.\nShopkeeper: \"Can I help you find anything?\"\nCustomer: \"________________.\"",
     "options": [
-      "go",
-      "goes",
-      "gone",
-      "went"
+      "No, thank you. I'm just looking.",
+      "I don't like this shop.",
+      "What time is it?",
+      "You are helpful."
     ],
-    "answer": 3,
-    "explanation": "Use Past Simple tense (went) for finished actions in the past."
+    "answer": 0,
+    "explanation": "\"I'm just looking\" is a common and polite way to decline help in a shop."
   },
   {
     "id": 7,
-    "text": "English Question 7: Choose the correct form. \"She ____ to the market yesterday.\" (Item ID: 7)",
+    "text": "Vocabulary: What is the opposite of 'Difficult'?",
     "options": [
-      "go",
-      "goes",
-      "gone",
-      "went"
+      "Hard",
+      "Easy",
+      "Strong",
+      "Heavy"
     ],
-    "answer": 3,
-    "explanation": "Use Past Simple tense (went) for finished actions in the past."
+    "answer": 1,
+    "explanation": "'Easy' is the antonym of 'Difficult'."
   },
   {
     "id": 8,
-    "text": "English Question 8: Choose the correct form. \"She ____ to the market yesterday.\" (Item ID: 8)",
+    "text": "Reading: \"Please keep off the grass.\"\nWhat does this sign mean?",
     "options": [
-      "go",
-      "goes",
-      "gone",
-      "went"
+      "You should walk on the grass.",
+      "Do not walk on the grass.",
+      "The grass is green.",
+      "You can sit on the grass."
     ],
-    "answer": 3,
-    "explanation": "Use Past Simple tense (went) for finished actions in the past."
+    "answer": 1,
+    "explanation": "\"Keep off\" means do not go onto it."
   },
   {
     "id": 9,
-    "text": "English Question 9: Choose the correct form. \"She ____ to the market yesterday.\" (Item ID: 9)",
+    "text": "Grammar: There ________ some milk in the fridge.",
     "options": [
-      "go",
-      "goes",
-      "gone",
-      "went"
+      "is",
+      "are",
+      "be",
+      "were"
     ],
-    "answer": 3,
-    "explanation": "Use Past Simple tense (went) for finished actions in the past."
+    "answer": 0,
+    "explanation": "Milk is an uncountable noun and takes a singular verb 'is'."
   },
   {
     "id": 10,
-    "text": "English Question 10: Choose the correct form. \"She ____ to the market yesterday.\" (Item ID: 10)",
+    "text": "Conversation: Asking for the time.\nStranger: \"Excuse me, do you have the time?\"\nYou: \"________________.\"",
     "options": [
-      "go",
-      "goes",
-      "gone",
-      "went"
+      "Yes, it's half past ten.",
+      "No, I don't have a watch.",
+      "It is a watch.",
+      "I am busy."
     ],
-    "answer": 3,
-    "explanation": "Use Past Simple tense (went) for finished actions in the past."
+    "answer": 0,
+    "explanation": "Providing the time is the direct response to the question."
   },
   {
     "id": 11,
-    "text": "English Question 11: Choose the correct form. \"She ____ to the market yesterday.\" (Item ID: 11)",
+    "text": "Vocabulary: A 'tasty' meal is ________________.",
     "options": [
-      "go",
-      "goes",
-      "gone",
-      "went"
+      "expensive",
+      "delicious",
+      "salty",
+      "cold"
     ],
-    "answer": 3,
-    "explanation": "Use Past Simple tense (went) for finished actions in the past."
+    "answer": 1,
+    "explanation": "'Tasty' and 'delicious' both mean having a pleasant flavor."
   },
   {
     "id": 12,
-    "text": "English Question 12: Choose the correct form. \"She ____ to the market yesterday.\" (Item ID: 12)",
+    "text": "Reading: \"Tom usually takes the bus to school, but today his father is driving him.\"\nHow is Tom getting to school today?",
     "options": [
-      "go",
-      "goes",
-      "gone",
-      "went"
+      "By bus",
+      "On foot",
+      "By car",
+      "By bike"
     ],
-    "answer": 3,
-    "explanation": "Use Past Simple tense (went) for finished actions in the past."
+    "answer": 2,
+    "explanation": "His father 'driving him' implies going by car."
   },
   {
     "id": 13,
-    "text": "English Question 13: Choose the correct form. \"She ____ to the market yesterday.\" (Item ID: 13)",
+    "text": "Grammar: Have you ________ seen a tiger?",
     "options": [
-      "go",
-      "goes",
-      "gone",
-      "went"
+      "never",
+      "ever",
+      "yet",
+      "already"
     ],
-    "answer": 3,
-    "explanation": "Use Past Simple tense (went) for finished actions in the past."
+    "answer": 1,
+    "explanation": "Use 'ever' in questions about life experiences."
   },
   {
     "id": 14,
-    "text": "English Question 14: Choose the correct form. \"She ____ to the market yesterday.\" (Item ID: 14)",
+    "text": "Conversation: Inviting someone.\nAlice: \"Would you like to come to my party on Saturday?\"\nBob: \"________________.\"",
     "options": [
-      "go",
-      "goes",
-      "gone",
-      "went"
+      "I'd love to! Thank you.",
+      "Who are you?",
+      "Saturday is a day.",
+      "No, I don't like parties."
     ],
-    "answer": 3,
-    "explanation": "Use Past Simple tense (went) for finished actions in the past."
+    "answer": 0,
+    "explanation": "\"I'd love to!\" is a polite way to accept an invitation."
   },
   {
     "id": 15,
-    "text": "English Question 15: Choose the correct form. \"She ____ to the market yesterday.\" (Item ID: 15)",
+    "text": "Vocabulary: Which word refers to a person who treats sick people?",
     "options": [
-      "go",
-      "goes",
-      "gone",
-      "went"
+      "Teacher",
+      "Doctor",
+      "Pilot",
+      "Baker"
     ],
-    "answer": 3,
-    "explanation": "Use Past Simple tense (went) for finished actions in the past."
+    "answer": 1,
+    "explanation": "A doctor is a person qualified to treat people who are ill."
   },
   {
     "id": 16,
-    "text": "English Question 16: Choose the correct form. \"She ____ to the market yesterday.\" (Item ID: 16)",
+    "text": "Reading: \"The movie starts at 7:30 and lasts for two hours.\"\nWhat time will the movie end?",
     "options": [
-      "go",
-      "goes",
-      "gone",
-      "went"
+      "8:30",
+      "9:00",
+      "9:30",
+      "10:00"
     ],
-    "answer": 3,
-    "explanation": "Use Past Simple tense (went) for finished actions in the past."
+    "answer": 2,
+    "explanation": "7:30 + 2 hours = 9:30."
   },
   {
     "id": 17,
-    "text": "English Question 17: Choose the correct form. \"She ____ to the market yesterday.\" (Item ID: 17)",
+    "text": "Grammar: I have been living here ________ three years.",
     "options": [
-      "go",
-      "goes",
-      "gone",
-      "went"
+      "since",
+      "for",
+      "during",
+      "at"
     ],
-    "answer": 3,
-    "explanation": "Use Past Simple tense (went) for finished actions in the past."
+    "answer": 1,
+    "explanation": "Use 'for' with a duration of time."
   },
   {
     "id": 18,
-    "text": "English Question 18: Choose the correct form. \"She ____ to the market yesterday.\" (Item ID: 18)",
+    "text": "Conversation: Ordering a drink.\nWaiter: \"Would you like anything to drink?\"\nCustomer: \"________________.\"",
     "options": [
-      "go",
-      "goes",
-      "gone",
-      "went"
+      "Yes, a glass of water, please.",
+      "No, I am hungry.",
+      "Where is the toilet?",
+      "The water is wet."
     ],
-    "answer": 3,
-    "explanation": "Use Past Simple tense (went) for finished actions in the past."
+    "answer": 0,
+    "explanation": "Requesting a drink is the appropriate response."
   },
   {
     "id": 19,
-    "text": "English Question 19: Choose the correct form. \"She ____ to the market yesterday.\" (Item ID: 19)",
+    "text": "Vocabulary: If you are 'exhausted', you are very ________________.",
     "options": [
-      "go",
-      "goes",
-      "gone",
-      "went"
+      "happy",
+      "tired",
+      "angry",
+      "scared"
     ],
-    "answer": 3,
-    "explanation": "Use Past Simple tense (went) for finished actions in the past."
+    "answer": 1,
+    "explanation": "'Exhausted' means very tired."
   },
   {
     "id": 20,
-    "text": "English Question 20: Choose the correct form. \"She ____ to the market yesterday.\" (Item ID: 20)",
+    "text": "Reading: \"Dogs are loyal animals and are often called man's best friend.\"\nAccording to the sentence, dogs are known for being ________________.",
     "options": [
-      "go",
-      "goes",
-      "gone",
-      "went"
+      "loyal",
+      "scary",
+      "lazy",
+      "fast"
     ],
-    "answer": 3,
-    "explanation": "Use Past Simple tense (went) for finished actions in the past."
+    "answer": 0,
+    "explanation": "The text explicitly says 'Dogs are loyal animals'."
   },
   {
     "id": 21,
-    "text": "English Question 21: Choose the correct form. \"She ____ to the market yesterday.\" (Item ID: 21)",
+    "text": "Grammar: We ________ to the cinema last night.",
     "options": [
       "go",
       "goes",
-      "gone",
-      "went"
+      "went",
+      "have gone"
     ],
-    "answer": 3,
-    "explanation": "Use Past Simple tense (went) for finished actions in the past."
+    "answer": 2,
+    "explanation": "Use 'went' (past simple) for an action completed in the past ('last night')."
   },
   {
     "id": 22,
-    "text": "English Question 22: Choose the correct form. \"She ____ to the market yesterday.\" (Item ID: 22)",
+    "text": "Conversation: Apologizing.\nStudent: \"I'm sorry I'm late.\"\nTeacher: \"________________. Don't let it happen again.\"",
     "options": [
-      "go",
-      "goes",
-      "gone",
-      "went"
+      "That's okay.",
+      "You are bad.",
+      "Go home.",
+      "I am late too."
     ],
-    "answer": 3,
-    "explanation": "Use Past Simple tense (went) for finished actions in the past."
+    "answer": 0,
+    "explanation": "\"That's okay\" is a standard way to accept an apology."
   },
   {
     "id": 23,
-    "text": "English Question 23: Choose the correct form. \"She ____ to the market yesterday.\" (Item ID: 23)",
+    "text": "Vocabulary: Choose the word that means 'a place where you live'.",
     "options": [
-      "go",
-      "goes",
-      "gone",
-      "went"
+      "Office",
+      "Home",
+      "Market",
+      "Park"
     ],
-    "answer": 3,
-    "explanation": "Use Past Simple tense (went) for finished actions in the past."
+    "answer": 1,
+    "explanation": "Home is where one lives."
   },
   {
     "id": 24,
-    "text": "English Question 24: Choose the correct form. \"She ____ to the market yesterday.\" (Item ID: 24)",
+    "text": "Reading: \"The weather forecast says it will be sunny and warm tomorrow.\"\nWhat will the weather be like tomorrow?",
     "options": [
-      "go",
-      "goes",
-      "gone",
-      "went"
+      "Rainy",
+      "Sunny and warm",
+      "Cold and snowy",
+      "Cloudy"
     ],
-    "answer": 3,
-    "explanation": "Use Past Simple tense (went) for finished actions in the past."
+    "answer": 1,
+    "explanation": "The text says 'sunny and warm'."
   },
   {
     "id": 25,
-    "text": "English Question 25: Choose the correct form. \"She ____ to the market yesterday.\" (Item ID: 25)",
+    "text": "Grammar: How ________ sugar do you want in your tea?",
     "options": [
-      "go",
-      "goes",
-      "gone",
-      "went"
+      "many",
+      "much",
+      "any",
+      "few"
     ],
-    "answer": 3,
-    "explanation": "Use Past Simple tense (went) for finished actions in the past."
+    "answer": 1,
+    "explanation": "Use 'much' with uncountable nouns like sugar."
   },
   {
     "id": 26,
-    "text": "English Question 26: Choose the correct form. \"She ____ to the market yesterday.\" (Item ID: 26)",
+    "text": "Conversation: Buying a shirt.\nCustomer: \"How much is this shirt?\"\nAssistant: \"________________.\"",
     "options": [
-      "go",
-      "goes",
-      "gone",
-      "went"
+      "It's blue.",
+      "It's $20.",
+      "It's large.",
+      "I like it."
     ],
-    "answer": 3,
-    "explanation": "Use Past Simple tense (went) for finished actions in the past."
+    "answer": 1,
+    "explanation": "The assistant should state the price."
   },
   {
     "id": 27,
-    "text": "English Question 27: Choose the correct form. \"She ____ to the market yesterday.\" (Item ID: 27)",
+    "text": "Vocabulary: Which word is a fruit?",
     "options": [
-      "go",
-      "goes",
-      "gone",
-      "went"
+      "Carrot",
+      "Apple",
+      "Potato",
+      "Onion"
     ],
-    "answer": 3,
-    "explanation": "Use Past Simple tense (went) for finished actions in the past."
+    "answer": 1,
+    "explanation": "An apple is a fruit; others are vegetables."
   },
   {
     "id": 28,
-    "text": "English Question 28: Choose the correct form. \"She ____ to the market yesterday.\" (Item ID: 28)",
+    "text": "Reading: \"Mary is taller than Sue, but Jane is the tallest of all.\"\nWho is the shortest?",
     "options": [
-      "go",
-      "goes",
-      "gone",
-      "went"
+      "Mary",
+      "Sue",
+      "Jane",
+      "Cannot tell"
     ],
-    "answer": 3,
-    "explanation": "Use Past Simple tense (went) for finished actions in the past."
+    "answer": 1,
+    "explanation": "If Mary > Sue and Jane is tallest, then Sue is shorter than Mary and Jane."
   },
   {
     "id": 29,
-    "text": "English Question 29: Choose the correct form. \"She ____ to the market yesterday.\" (Item ID: 29)",
+    "text": "Grammar: Look! It ________.",
     "options": [
-      "go",
-      "goes",
-      "gone",
-      "went"
+      "rains",
+      "is raining",
+      "rained",
+      "has rained"
     ],
-    "answer": 3,
-    "explanation": "Use Past Simple tense (went) for finished actions in the past."
+    "answer": 1,
+    "explanation": "Use Present Continuous for something happening at the moment of speaking."
   },
   {
     "id": 30,
-    "text": "English Question 30: Choose the correct form. \"She ____ to the market yesterday.\" (Item ID: 30)",
+    "text": "Conversation: Checking out of a hotel.\nGuest: \"I'd like to check out, please.\"\nReceptionist: \"Certainly. ________________.\"",
     "options": [
-      "go",
-      "goes",
-      "gone",
-      "went"
+      "May I have your room number?",
+      "Who are you?",
+      "Goodbye.",
+      "The hotel is full."
     ],
-    "answer": 3,
-    "explanation": "Use Past Simple tense (went) for finished actions in the past."
+    "answer": 0,
+    "explanation": "Asking for the room number is the standard procedure for checking out."
   },
   {
     "id": 31,
-    "text": "English Question 31: Choose the correct form. \"She ____ to the market yesterday.\" (Item ID: 31)",
+    "text": "Vocabulary: What is the past tense of 'Eat'?",
     "options": [
-      "go",
-      "goes",
-      "gone",
-      "went"
+      "Eaten",
+      "Eats",
+      "Ate",
+      "Eating"
     ],
-    "answer": 3,
-    "explanation": "Use Past Simple tense (went) for finished actions in the past."
+    "answer": 2,
+    "explanation": "'Ate' is the past simple form of 'eat'."
   },
   {
     "id": 32,
-    "text": "English Question 32: Choose the correct form. \"She ____ to the market yesterday.\" (Item ID: 32)",
+    "text": "Reading: \"The capital city of Thailand is Bangkok.\"\nWhat is the capital of Thailand?",
     "options": [
-      "go",
-      "goes",
-      "gone",
-      "went"
+      "Phuket",
+      "Chiang Mai",
+      "Bangkok",
+      "Pattaya"
     ],
-    "answer": 3,
-    "explanation": "Use Past Simple tense (went) for finished actions in the past."
+    "answer": 2,
+    "explanation": "The text states Bangkok is the capital."
   },
   {
     "id": 33,
-    "text": "English Question 33: Choose the correct form. \"She ____ to the market yesterday.\" (Item ID: 33)",
+    "text": "Grammar: This is the ________ book I have ever read.",
     "options": [
-      "go",
-      "goes",
-      "gone",
-      "went"
+      "good",
+      "better",
+      "best",
+      "well"
     ],
-    "answer": 3,
-    "explanation": "Use Past Simple tense (went) for finished actions in the past."
+    "answer": 2,
+    "explanation": "Use the superlative form 'best' for comparisons of more than two or in 'ever' contexts."
   },
   {
     "id": 34,
-    "text": "English Question 34: Choose the correct form. \"She ____ to the market yesterday.\" (Item ID: 34)",
+    "text": "Conversation: Asking for permission.\nSon: \"Can I go out to play?\"\nMother: \"________________.\"",
     "options": [
-      "go",
-      "goes",
-      "gone",
-      "went"
+      "Yes, after you finish your homework.",
+      "No, I am playing.",
+      "You are a son.",
+      "The park is big."
     ],
-    "answer": 3,
-    "explanation": "Use Past Simple tense (went) for finished actions in the past."
+    "answer": 0,
+    "explanation": "Giving a conditioned permission is a natural response."
   },
   {
     "id": 35,
-    "text": "English Question 35: Choose the correct form. \"She ____ to the market yesterday.\" (Item ID: 35)",
+    "text": "Vocabulary: A person who flies a plane is a ________________.",
     "options": [
-      "go",
-      "goes",
-      "gone",
-      "went"
+      "Driver",
+      "Pilot",
+      "Sailor",
+      "Chef"
     ],
-    "answer": 3,
-    "explanation": "Use Past Simple tense (went) for finished actions in the past."
+    "answer": 1,
+    "explanation": "A pilot flies an aircraft."
   }
 ]

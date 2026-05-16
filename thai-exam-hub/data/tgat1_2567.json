@@ -1,422 +1,422 @@
 [
   {
     "id": 1,
-    "text": "TGAT1 English Question 1: Which one is the synonym of \"Enormous\"? (Item ID: 1)",
+    "text": "Conversation: At a job interview.\nInterviewer: \"Why do you think you're a good fit for this position?\"\nCandidate: \"________________.\"",
     "options": [
-      "Tiny",
-      "Huge",
-      "Fast",
-      "Smart"
+      "I have the necessary skills and a passion for this industry.",
+      "I don't know, I just need a job.",
+      "My parents told me to apply here.",
+      "I am better than everyone else."
     ],
-    "answer": 1,
-    "explanation": "Enormous แปลว่าใหญ่โต ตรงกับ Huge"
+    "answer": 0,
+    "explanation": "In a job interview, highlighting skills and passion is the professional way to answer."
   },
   {
     "id": 2,
-    "text": "TGAT1 English Question 2: Which one is the synonym of \"Enormous\"? (Item ID: 2)",
+    "text": "Conversation: Meeting a new colleague.\nSarah: \"Hi, I'm Sarah. I'll be working in the marketing department.\"\nMike: \"Nice to meet you, Sarah. ________________.\"",
     "options": [
-      "Tiny",
-      "Huge",
-      "Fast",
-      "Smart"
+      "I am Mike from accounting.",
+      "What do you want?",
+      "Go away.",
+      "I don't care."
     ],
-    "answer": 1,
-    "explanation": "Enormous แปลว่าใหญ่โต ตรงกับ Huge"
+    "answer": 0,
+    "explanation": "Introducing oneself is the standard polite response when meeting a new colleague."
   },
   {
     "id": 3,
-    "text": "TGAT1 English Question 3: Which one is the synonym of \"Enormous\"? (Item ID: 3)",
+    "text": "Vocabulary: Choose the synonym for 'Abundant'.",
     "options": [
-      "Tiny",
-      "Huge",
-      "Fast",
-      "Smart"
+      "Scarce",
+      "Plentiful",
+      "Rare",
+      "Limited"
     ],
     "answer": 1,
-    "explanation": "Enormous แปลว่าใหญ่โต ตรงกับ Huge"
+    "explanation": "'Abundant' and 'Plentiful' both mean existing or available in large quantities."
   },
   {
     "id": 4,
-    "text": "TGAT1 English Question 4: Which one is the synonym of \"Enormous\"? (Item ID: 4)",
+    "text": "Vocabulary: Which word best describes someone who is 'very careful and precise'?",
     "options": [
-      "Tiny",
-      "Huge",
-      "Fast",
-      "Smart"
+      "Careless",
+      "Meticulous",
+      "Hasty",
+      "Reckless"
     ],
     "answer": 1,
-    "explanation": "Enormous แปลว่าใหญ่โต ตรงกับ Huge"
+    "explanation": "'Meticulous' means showing great attention to detail; very careful and precise."
   },
   {
     "id": 5,
-    "text": "TGAT1 English Question 5: Which one is the synonym of \"Enormous\"? (Item ID: 5)",
+    "text": "Grammar: If it ________ tomorrow, we will cancel the picnic.",
     "options": [
-      "Tiny",
-      "Huge",
-      "Fast",
-      "Smart"
+      "rain",
+      "rains",
+      "rained",
+      "will rain"
     ],
     "answer": 1,
-    "explanation": "Enormous แปลว่าใหญ่โต ตรงกับ Huge"
+    "explanation": "This is a First Conditional sentence. Use 'if + present simple' for the condition."
   },
   {
     "id": 6,
-    "text": "TGAT1 English Question 6: Which one is the synonym of \"Enormous\"? (Item ID: 6)",
+    "text": "Grammar: She ________ English since she was a child.",
     "options": [
-      "Tiny",
-      "Huge",
-      "Fast",
-      "Smart"
+      "is studying",
+      "studied",
+      "has been studying",
+      "was studying"
     ],
-    "answer": 1,
-    "explanation": "Enormous แปลว่าใหญ่โต ตรงกับ Huge"
+    "answer": 2,
+    "explanation": "Use Present Perfect Continuous for actions that started in the past and continue to the present."
   },
   {
     "id": 7,
-    "text": "TGAT1 English Question 7: Which one is the synonym of \"Enormous\"? (Item ID: 7)",
+    "text": "Reading: \"The new policy aims to reduce carbon emissions by 30% over the next decade. This will be achieved through a combination of renewable energy investments and stricter regulations on industrial waste.\"\nWhat is the main goal of the new policy?",
     "options": [
-      "Tiny",
-      "Huge",
-      "Fast",
-      "Smart"
+      "To increase industrial waste",
+      "To invest in coal energy",
+      "To reduce carbon emissions",
+      "To remove all regulations"
     ],
-    "answer": 1,
-    "explanation": "Enormous แปลว่าใหญ่โต ตรงกับ Huge"
+    "answer": 2,
+    "explanation": "The text explicitly states the goal is to reduce carbon emissions."
   },
   {
     "id": 8,
-    "text": "TGAT1 English Question 8: Which one is the synonym of \"Enormous\"? (Item ID: 8)",
+    "text": "Reading: \"Despite the rain, the outdoor concert continued as planned. The audience used umbrellas and raincoats to stay dry while enjoying the music.\"\nHow did the audience handle the rain?",
     "options": [
-      "Tiny",
-      "Huge",
-      "Fast",
-      "Smart"
+      "They went home.",
+      "They complained to the organizers.",
+      "They used umbrellas and raincoats.",
+      "They stopped the concert."
     ],
-    "answer": 1,
-    "explanation": "Enormous แปลว่าใหญ่โต ตรงกับ Huge"
+    "answer": 2,
+    "explanation": "The passage mentions the audience used umbrellas and raincoats."
   },
   {
     "id": 9,
-    "text": "TGAT1 English Question 9: Which one is the synonym of \"Enormous\"? (Item ID: 9)",
+    "text": "Conversation: Asking for directions.\nTourist: \"Excuse me, could you tell me how to get to the museum?\"\nLocal: \"Sure, ________________.\"",
     "options": [
-      "Tiny",
-      "Huge",
-      "Fast",
-      "Smart"
+      "I don't like museums.",
+      "Go straight and turn left at the second corner.",
+      "The museum is closed today.",
+      "Why are you asking me?"
     ],
     "answer": 1,
-    "explanation": "Enormous แปลว่าใหญ่โต ตรงกับ Huge"
+    "explanation": "Giving clear directions is the helpful and expected response."
   },
   {
     "id": 10,
-    "text": "TGAT1 English Question 10: Which one is the synonym of \"Enormous\"? (Item ID: 10)",
+    "text": "Vocabulary: Choose the antonym for 'Humble'.",
     "options": [
-      "Tiny",
-      "Huge",
-      "Fast",
-      "Smart"
+      "Modest",
+      "Arrogant",
+      "Polite",
+      "Shy"
     ],
     "answer": 1,
-    "explanation": "Enormous แปลว่าใหญ่โต ตรงกับ Huge"
+    "explanation": "'Arrogant' is the opposite of 'Humble'."
   },
   {
     "id": 11,
-    "text": "TGAT1 English Question 11: Which one is the synonym of \"Enormous\"? (Item ID: 11)",
+    "text": "Vocabulary: What does the idiom 'piece of cake' mean?",
     "options": [
-      "Tiny",
-      "Huge",
-      "Fast",
-      "Smart"
+      "Something very delicious",
+      "Something very easy",
+      "A part of a whole",
+      "A difficult task"
     ],
     "answer": 1,
-    "explanation": "Enormous แปลว่าใหญ่โต ตรงกับ Huge"
+    "explanation": "'Piece of cake' is a common idiom meaning something is very easy to do."
   },
   {
     "id": 12,
-    "text": "TGAT1 English Question 12: Which one is the synonym of \"Enormous\"? (Item ID: 12)",
+    "text": "Grammar: Neither of the candidates ________ qualified for the job.",
     "options": [
-      "Tiny",
-      "Huge",
-      "Fast",
-      "Smart"
+      "is",
+      "are",
+      "being",
+      "were"
     ],
-    "answer": 1,
-    "explanation": "Enormous แปลว่าใหญ่โต ตรงกับ Huge"
+    "answer": 0,
+    "explanation": "'Neither' is a singular pronoun and takes a singular verb."
   },
   {
     "id": 13,
-    "text": "TGAT1 English Question 13: Which one is the synonym of \"Enormous\"? (Item ID: 13)",
+    "text": "Grammar: By the time we arrived, the movie ________.",
     "options": [
-      "Tiny",
-      "Huge",
-      "Fast",
-      "Smart"
+      "starts",
+      "has started",
+      "had started",
+      "will start"
     ],
-    "answer": 1,
-    "explanation": "Enormous แปลว่าใหญ่โต ตรงกับ Huge"
+    "answer": 2,
+    "explanation": "Use Past Perfect for an action that happened before another action in the past."
   },
   {
     "id": 14,
-    "text": "TGAT1 English Question 14: Which one is the synonym of \"Enormous\"? (Item ID: 14)",
+    "text": "Reading: \"Artificial Intelligence is transforming the healthcare industry by enabling faster diagnosis and personalized treatment plans.\"\nAccording to the sentence, how is AI helping healthcare?",
     "options": [
-      "Tiny",
-      "Huge",
-      "Fast",
-      "Smart"
+      "By replacing all doctors",
+      "By making diagnosis slower",
+      "By enabling faster diagnosis",
+      "By increasing treatment costs"
     ],
-    "answer": 1,
-    "explanation": "Enormous แปลว่าใหญ่โต ตรงกับ Huge"
+    "answer": 2,
+    "explanation": "The text states AI enables faster diagnosis."
   },
   {
     "id": 15,
-    "text": "TGAT1 English Question 15: Which one is the synonym of \"Enormous\"? (Item ID: 15)",
+    "text": "Reading: \"The company reported a significant increase in profits last quarter, primarily due to the successful launch of their new product line.\"\nWhat caused the increase in profits?",
     "options": [
-      "Tiny",
-      "Huge",
-      "Fast",
-      "Smart"
+      "Firing employees",
+      "The launch of a new product line",
+      "Reducing marketing budget",
+      "A decrease in sales"
     ],
     "answer": 1,
-    "explanation": "Enormous แปลว่าใหญ่โต ตรงกับ Huge"
+    "explanation": "The passage credits the successful launch of a new product line."
   },
   {
     "id": 16,
-    "text": "TGAT1 English Question 16: Which one is the synonym of \"Enormous\"? (Item ID: 16)",
+    "text": "Conversation: Ordering food.\nWaiter: \"Are you ready to order?\"\nCustomer: \"Yes, ________________.\"",
     "options": [
-      "Tiny",
-      "Huge",
-      "Fast",
-      "Smart"
+      "I'll have the grilled salmon, please.",
+      "I don't want anything.",
+      "The food here is bad.",
+      "What is your name?"
     ],
-    "answer": 1,
-    "explanation": "Enormous แปลว่าใหญ่โต ตรงกับ Huge"
+    "answer": 0,
+    "explanation": "Ordering a specific dish is the natural response to the waiter's question."
   },
   {
     "id": 17,
-    "text": "TGAT1 English Question 17: Which one is the synonym of \"Enormous\"? (Item ID: 17)",
+    "text": "Vocabulary: Select the word that means 'to delay or postpone'.",
     "options": [
-      "Tiny",
-      "Huge",
-      "Fast",
-      "Smart"
+      "Accelerate",
+      "Procrastinate",
+      "Facilitate",
+      "Execute"
     ],
     "answer": 1,
-    "explanation": "Enormous แปลว่าใหญ่โต ตรงกับ Huge"
+    "explanation": "'Procrastinate' means to delay or postpone action."
   },
   {
     "id": 18,
-    "text": "TGAT1 English Question 18: Which one is the synonym of \"Enormous\"? (Item ID: 18)",
+    "text": "Vocabulary: A person who is 'optimistic' usually looks at the ________________.",
     "options": [
-      "Tiny",
-      "Huge",
-      "Fast",
-      "Smart"
+      "dark side",
+      "bright side",
+      "wrong way",
+      "past only"
     ],
     "answer": 1,
-    "explanation": "Enormous แปลว่าใหญ่โต ตรงกับ Huge"
+    "explanation": "Looking at the 'bright side' means being optimistic."
   },
   {
     "id": 19,
-    "text": "TGAT1 English Question 19: Which one is the synonym of \"Enormous\"? (Item ID: 19)",
+    "text": "Grammar: The book ________ I bought yesterday is very interesting.",
     "options": [
-      "Tiny",
-      "Huge",
-      "Fast",
-      "Smart"
+      "who",
+      "whom",
+      "whose",
+      "which"
     ],
-    "answer": 1,
-    "explanation": "Enormous แปลว่าใหญ่โต ตรงกับ Huge"
+    "answer": 3,
+    "explanation": "'Which' or 'that' is used for relative clauses referring to things/objects."
   },
   {
     "id": 20,
-    "text": "TGAT1 English Question 20: Which one is the synonym of \"Enormous\"? (Item ID: 20)",
+    "text": "Grammar: He doesn't like coffee, ________ he?",
     "options": [
-      "Tiny",
-      "Huge",
-      "Fast",
-      "Smart"
+      "does",
+      "doesn't",
+      "is",
+      "isn't"
     ],
-    "answer": 1,
-    "explanation": "Enormous แปลว่าใหญ่โต ตรงกับ Huge"
+    "answer": 0,
+    "explanation": "This is a question tag. Since the main sentence is negative, the tag must be positive."
   },
   {
     "id": 21,
-    "text": "TGAT1 English Question 21: Which one is the synonym of \"Enormous\"? (Item ID: 21)",
+    "text": "Reading: \"In recent years, remote work has become increasingly popular. Many employees value the flexibility it offers, while employers benefit from reduced overhead costs.\"\nWhat is one benefit for employers mentioned in the text?",
     "options": [
-      "Tiny",
-      "Huge",
-      "Fast",
-      "Smart"
+      "Higher office rent",
+      "Reduced overhead costs",
+      "More meetings",
+      "Employee commute"
     ],
     "answer": 1,
-    "explanation": "Enormous แปลว่าใหญ่โต ตรงกับ Huge"
+    "explanation": "The text mentions reduced overhead costs for employers."
   },
   {
     "id": 22,
-    "text": "TGAT1 English Question 22: Which one is the synonym of \"Enormous\"? (Item ID: 22)",
+    "text": "Reading: \"The Great Barrier Reef is the world's largest coral reef system. It is composed of over 2,900 individual reefs and 900 islands.\"\nHow many individual reefs make up the Great Barrier Reef?",
     "options": [
-      "Tiny",
-      "Huge",
-      "Fast",
-      "Smart"
+      "900",
+      "Over 2,900",
+      "Exactly 2,000",
+      "Less than 900"
     ],
     "answer": 1,
-    "explanation": "Enormous แปลว่าใหญ่โต ตรงกับ Huge"
+    "explanation": "The text states 'over 2,900 individual reefs'."
   },
   {
     "id": 23,
-    "text": "TGAT1 English Question 23: Which one is the synonym of \"Enormous\"? (Item ID: 23)",
+    "text": "Conversation: Expressing an opinion.\nTom: \"I think the new movie is a bit too long.\"\nJerry: \"________________, it could have been shorter by 30 minutes.\"",
     "options": [
-      "Tiny",
-      "Huge",
-      "Fast",
-      "Smart"
+      "I disagree",
+      "I couldn't agree more",
+      "That's not true",
+      "You are wrong"
     ],
     "answer": 1,
-    "explanation": "Enormous แปลว่าใหญ่โต ตรงกับ Huge"
+    "explanation": "'I couldn't agree more' means complete agreement with Tom's opinion."
   },
   {
     "id": 24,
-    "text": "TGAT1 English Question 24: Which one is the synonym of \"Enormous\"? (Item ID: 24)",
+    "text": "Vocabulary: Choose the word that means 'extremely small'.",
     "options": [
-      "Tiny",
-      "Huge",
-      "Fast",
-      "Smart"
+      "Immense",
+      "Minuscule",
+      "Gargantuan",
+      "Colossal"
     ],
     "answer": 1,
-    "explanation": "Enormous แปลว่าใหญ่โต ตรงกับ Huge"
+    "explanation": "'Minuscule' means extremely small."
   },
   {
     "id": 25,
-    "text": "TGAT1 English Question 25: Which one is the synonym of \"Enormous\"? (Item ID: 25)",
+    "text": "Vocabulary: What does it mean to 'break the ice'?",
     "options": [
-      "Tiny",
-      "Huge",
-      "Fast",
-      "Smart"
+      "To melt ice",
+      "To start a conversation in a social setting",
+      "To destroy something",
+      "To get angry"
     ],
     "answer": 1,
-    "explanation": "Enormous แปลว่าใหญ่โต ตรงกับ Huge"
+    "explanation": "'Break the ice' means to do or say something to relieve tension or get conversation going."
   },
   {
     "id": 26,
-    "text": "TGAT1 English Question 26: Which one is the synonym of \"Enormous\"? (Item ID: 26)",
+    "text": "Grammar: Each of the students ________ to submit the assignment by Friday.",
     "options": [
-      "Tiny",
-      "Huge",
-      "Fast",
-      "Smart"
+      "has",
+      "have",
+      "having",
+      "to have"
     ],
-    "answer": 1,
-    "explanation": "Enormous แปลว่าใหญ่โต ตรงกับ Huge"
+    "answer": 0,
+    "explanation": "'Each' is singular and requires a singular verb 'has'."
   },
   {
     "id": 27,
-    "text": "TGAT1 English Question 27: Which one is the synonym of \"Enormous\"? (Item ID: 27)",
+    "text": "Grammar: I would have gone to the party if I ________ invited.",
     "options": [
-      "Tiny",
-      "Huge",
-      "Fast",
-      "Smart"
+      "am",
+      "was",
+      "had been",
+      "would be"
     ],
-    "answer": 1,
-    "explanation": "Enormous แปลว่าใหญ่โต ตรงกับ Huge"
+    "answer": 2,
+    "explanation": "Third Conditional: 'would have + past participle' in the main clause requires 'if + past perfect'."
   },
   {
     "id": 28,
-    "text": "TGAT1 English Question 28: Which one is the synonym of \"Enormous\"? (Item ID: 28)",
+    "text": "Reading: \"Water is essential for all known forms of life. It covers about 71% of the Earth's surface, mostly in oceans and other large bodies of water.\"\nWhat percentage of the Earth's surface is covered by water?",
     "options": [
-      "Tiny",
-      "Huge",
-      "Fast",
-      "Smart"
+      "50%",
+      "71%",
+      "29%",
+      "100%"
     ],
     "answer": 1,
-    "explanation": "Enormous แปลว่าใหญ่โต ตรงกับ Huge"
+    "explanation": "The text specifies 71%."
   },
   {
     "id": 29,
-    "text": "TGAT1 English Question 29: Which one is the synonym of \"Enormous\"? (Item ID: 29)",
+    "text": "Reading: \"The Amazon Rainforest is often referred to as the 'lungs of the planet' because it produces a significant amount of the world's oxygen.\"\nWhy is the Amazon Rainforest called the 'lungs of the planet'?",
     "options": [
-      "Tiny",
-      "Huge",
-      "Fast",
-      "Smart"
+      "Because it is very large",
+      "Because it produces oxygen",
+      "Because it is green",
+      "Because many animals live there"
     ],
     "answer": 1,
-    "explanation": "Enormous แปลว่าใหญ่โต ตรงกับ Huge"
+    "explanation": "The text says it's because it produces a significant amount of oxygen."
   },
   {
     "id": 30,
-    "text": "TGAT1 English Question 30: Which one is the synonym of \"Enormous\"? (Item ID: 30)",
+    "text": "Conversation: Making a suggestion.\nAmy: \"It's a beautiful day. ________________ go for a walk in the park?\"\nBen: \"That sounds like a great idea!\"",
     "options": [
-      "Tiny",
-      "Huge",
-      "Fast",
-      "Smart"
+      "Why don't we",
+      "Do we",
+      "Should we to",
+      "Let's to"
     ],
-    "answer": 1,
-    "explanation": "Enormous แปลว่าใหญ่โต ตรงกับ Huge"
+    "answer": 0,
+    "explanation": "'Why don't we' is a common way to make a suggestion."
   },
   {
     "id": 31,
-    "text": "TGAT1 English Question 31: Which one is the synonym of \"Enormous\"? (Item ID: 31)",
+    "text": "Vocabulary: Which word refers to 'the study of plants'?",
     "options": [
-      "Tiny",
-      "Huge",
-      "Fast",
-      "Smart"
+      "Zoology",
+      "Botany",
+      "Geology",
+      "Astronomy"
     ],
     "answer": 1,
-    "explanation": "Enormous แปลว่าใหญ่โต ตรงกับ Huge"
+    "explanation": "Botany is the scientific study of plants."
   },
   {
     "id": 32,
-    "text": "TGAT1 English Question 32: Which one is the synonym of \"Enormous\"? (Item ID: 32)",
+    "text": "Grammar: She is the person ________ I told you about.",
     "options": [
-      "Tiny",
-      "Huge",
-      "Fast",
-      "Smart"
+      "who",
+      "whom",
+      "whose",
+      "which"
     ],
     "answer": 1,
-    "explanation": "Enormous แปลว่าใหญ่โต ตรงกับ Huge"
+    "explanation": "'Whom' is the objective case of 'who' and is used as the object of the preposition 'about'."
   },
   {
     "id": 33,
-    "text": "TGAT1 English Question 33: Which one is the synonym of \"Enormous\"? (Item ID: 33)",
+    "text": "Reading: \"Solar energy is a clean and renewable source of power. It harnesses the sun's radiation to generate electricity without emitting harmful pollutants.\"\nWhat is one advantage of solar energy mentioned?",
     "options": [
-      "Tiny",
-      "Huge",
-      "Fast",
-      "Smart"
+      "It is expensive",
+      "It emits pollutants",
+      "It is renewable",
+      "It only works at night"
     ],
-    "answer": 1,
-    "explanation": "Enormous แปลว่าใหญ่โต ตรงกับ Huge"
+    "answer": 2,
+    "explanation": "The text describes it as clean and renewable."
   },
   {
     "id": 34,
-    "text": "TGAT1 English Question 34: Which one is the synonym of \"Enormous\"? (Item ID: 34)",
+    "text": "Vocabulary: Choose the word that best fits: \"The ________ mountain peaks were covered in snow.\"",
     "options": [
-      "Tiny",
-      "Huge",
-      "Fast",
-      "Smart"
+      "lofty",
+      "shallow",
+      "hollow",
+      "narrow"
     ],
-    "answer": 1,
-    "explanation": "Enormous แปลว่าใหญ่โต ตรงกับ Huge"
+    "answer": 0,
+    "explanation": "'Lofty' means very high, which is suitable for mountain peaks."
   },
   {
     "id": 35,
-    "text": "TGAT1 English Question 35: Which one is the synonym of \"Enormous\"? (Item ID: 35)",
+    "text": "Grammar: I ________ my homework when the phone rang.",
     "options": [
-      "Tiny",
-      "Huge",
-      "Fast",
-      "Smart"
+      "do",
+      "did",
+      "was doing",
+      "have done"
     ],
-    "answer": 1,
-    "explanation": "Enormous แปลว่าใหญ่โต ตรงกับ Huge"
+    "answer": 2,
+    "explanation": "Use Past Continuous for an action that was in progress when another action happened."
   }
 ]

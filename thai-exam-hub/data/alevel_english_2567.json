@@ -1,422 +1,422 @@
 [
   {
     "id": 1,
-    "text": "English Question 1: Choose the correct form. \"She ____ to the market yesterday.\" (Item ID: 1)",
+    "text": "Vocabulary: The term 'ostentatious' is most similar in meaning to:",
     "options": [
-      "go",
-      "goes",
-      "gone",
-      "went"
+      "Showy",
+      "Humble",
+      "Hidden",
+      "Plain"
     ],
-    "answer": 3,
-    "explanation": "Use Past Simple tense (went) for finished actions in the past."
+    "answer": 0,
+    "explanation": "'Ostentatious' means characterized by vulgar or pretentious display; designed to impress or attract notice."
   },
   {
     "id": 2,
-    "text": "English Question 2: Choose the correct form. \"She ____ to the market yesterday.\" (Item ID: 2)",
+    "text": "Grammar: Select the grammatically correct sentence.",
     "options": [
-      "go",
-      "goes",
-      "gone",
-      "went"
+      "He should of known better.",
+      "She has already went to the store.",
+      "Neither of the boys has finished his homework.",
+      "They was going to the party."
     ],
-    "answer": 3,
-    "explanation": "Use Past Simple tense (went) for finished actions in the past."
+    "answer": 2,
+    "explanation": "'Neither' takes a singular verb and singular possessive pronoun."
   },
   {
     "id": 3,
-    "text": "English Question 3: Choose the correct form. \"She ____ to the market yesterday.\" (Item ID: 3)",
+    "text": "Reading: Passage on Quantum Computing.\n\"Quantum computers utilize qubits, which can exist in multiple states simultaneously, unlike classical bits which are either 0 or 1.\"\nWhat is a key difference between qubits and classical bits?",
     "options": [
-      "go",
-      "goes",
-      "gone",
-      "went"
+      "Qubits are slower.",
+      "Classical bits can be multiple states.",
+      "Qubits can exist in multiple states at once.",
+      "There is no difference."
     ],
-    "answer": 3,
-    "explanation": "Use Past Simple tense (went) for finished actions in the past."
+    "answer": 2,
+    "explanation": "The passage states qubits can exist in multiple states simultaneously."
   },
   {
     "id": 4,
-    "text": "English Question 4: Choose the correct form. \"She ____ to the market yesterday.\" (Item ID: 4)",
+    "text": "Conversation: Discussing a project.\nProject Manager: \"We need to expedite the delivery of the report.\"\nTeam Lead: \"________________.\"",
     "options": [
-      "go",
-      "goes",
-      "gone",
-      "went"
+      "I will slow down the process.",
+      "I'll allocate more resources to finish it sooner.",
+      "The report is already too fast.",
+      "I don't think we need the report."
     ],
-    "answer": 3,
-    "explanation": "Use Past Simple tense (went) for finished actions in the past."
+    "answer": 1,
+    "explanation": "'Expedite' means to make a process happen sooner or be accomplished more quickly."
   },
   {
     "id": 5,
-    "text": "English Question 5: Choose the correct form. \"She ____ to the market yesterday.\" (Item ID: 5)",
+    "text": "Vocabulary: The scientist made a 'breakthrough' in cancer research. 'Breakthrough' means:",
     "options": [
-      "go",
-      "goes",
-      "gone",
-      "went"
+      "A failure",
+      "A significant discovery",
+      "A wall",
+      "A minor change"
     ],
-    "answer": 3,
-    "explanation": "Use Past Simple tense (went) for finished actions in the past."
+    "answer": 1,
+    "explanation": "A 'breakthrough' is a sudden, dramatic, and important discovery or development."
   },
   {
     "id": 6,
-    "text": "English Question 6: Choose the correct form. \"She ____ to the market yesterday.\" (Item ID: 6)",
+    "text": "Grammar: Hardly ________ the office when the alarm went off.",
     "options": [
-      "go",
-      "goes",
-      "gone",
-      "went"
+      "he had left",
+      "had he left",
+      "he left",
+      "has he left"
     ],
-    "answer": 3,
-    "explanation": "Use Past Simple tense (went) for finished actions in the past."
+    "answer": 1,
+    "explanation": "When 'Hardly' starts a sentence, inversion is required ('had + subject + past participle')."
   },
   {
     "id": 7,
-    "text": "English Question 7: Choose the correct form. \"She ____ to the market yesterday.\" (Item ID: 7)",
+    "text": "Reading: \"The Industrial Revolution, which began in the 18th century, marked a major turning point in history as it shifted societies from agrarian to industrial and urban.\"\nWhat shift did the Industrial Revolution cause?",
     "options": [
-      "go",
-      "goes",
-      "gone",
-      "went"
+      "From urban to rural",
+      "From industrial to agrarian",
+      "From agrarian to industrial and urban",
+      "No shift occurred"
     ],
-    "answer": 3,
-    "explanation": "Use Past Simple tense (went) for finished actions in the past."
+    "answer": 2,
+    "explanation": "The passage clearly states the shift from agrarian to industrial/urban."
   },
   {
     "id": 8,
-    "text": "English Question 8: Choose the correct form. \"She ____ to the market yesterday.\" (Item ID: 8)",
+    "text": "Vocabulary: What is the antonym of 'Benevolent'?",
     "options": [
-      "go",
-      "goes",
-      "gone",
-      "went"
+      "Kind",
+      "Malevolent",
+      "Generous",
+      "Friendly"
     ],
-    "answer": 3,
-    "explanation": "Use Past Simple tense (went) for finished actions in the past."
+    "answer": 1,
+    "explanation": "'Malevolent' (wishing to do evil) is the antonym of 'Benevolent' (well-meaning and kindly)."
   },
   {
     "id": 9,
-    "text": "English Question 9: Choose the correct form. \"She ____ to the market yesterday.\" (Item ID: 9)",
+    "text": "Grammar: It's high time you ________ looking for a job.",
     "options": [
-      "go",
-      "goes",
-      "gone",
-      "went"
+      "start",
+      "starting",
+      "started",
+      "will start"
     ],
-    "answer": 3,
-    "explanation": "Use Past Simple tense (went) for finished actions in the past."
+    "answer": 2,
+    "explanation": "After 'It's high time', the past simple is used to express a desired action."
   },
   {
     "id": 10,
-    "text": "English Question 10: Choose the correct form. \"She ____ to the market yesterday.\" (Item ID: 10)",
+    "text": "Conversation: Professional networking.\nSpeaker A: \"I've been following your research on sustainable energy.\"\nSpeaker B: \"________________.\"",
     "options": [
-      "go",
-      "goes",
-      "gone",
-      "went"
+      "Thank you, I'm glad you find it interesting.",
+      "Why are you following me?",
+      "It's none of your business.",
+      "I don't do research."
     ],
-    "answer": 3,
-    "explanation": "Use Past Simple tense (went) for finished actions in the past."
+    "answer": 0,
+    "explanation": "Accepting the compliment politely is the appropriate professional response."
   },
   {
     "id": 11,
-    "text": "English Question 11: Choose the correct form. \"She ____ to the market yesterday.\" (Item ID: 11)",
+    "text": "Reading: \"The phenomenon of coral bleaching is primarily caused by rising sea temperatures due to climate change, leading to the loss of symbiotic algae.\"\nWhat causes the loss of symbiotic algae in corals?",
     "options": [
-      "go",
-      "goes",
-      "gone",
-      "went"
+      "Overfishing",
+      "Rising sea temperatures",
+      "Lack of sunlight",
+      "Too much oxygen"
     ],
-    "answer": 3,
-    "explanation": "Use Past Simple tense (went) for finished actions in the past."
+    "answer": 1,
+    "explanation": "The text identifies rising sea temperatures as the primary cause."
   },
   {
     "id": 12,
-    "text": "English Question 12: Choose the correct form. \"She ____ to the market yesterday.\" (Item ID: 12)",
+    "text": "Vocabulary: A 'precedent' is:",
     "options": [
-      "go",
-      "goes",
-      "gone",
-      "went"
+      "An earlier event used as an example or guide",
+      "The leader of a country",
+      "A fast runner",
+      "A gift given in the past"
     ],
-    "answer": 3,
-    "explanation": "Use Past Simple tense (went) for finished actions in the past."
+    "answer": 0,
+    "explanation": "A precedent is an earlier event or action that is regarded as an example or guide."
   },
   {
     "id": 13,
-    "text": "English Question 13: Choose the correct form. \"She ____ to the market yesterday.\" (Item ID: 13)",
+    "text": "Grammar: She acted as if she ________ the owner of the building.",
     "options": [
-      "go",
-      "goes",
-      "gone",
-      "went"
+      "is",
+      "was",
+      "were",
+      "has been"
     ],
-    "answer": 3,
-    "explanation": "Use Past Simple tense (went) for finished actions in the past."
+    "answer": 2,
+    "explanation": "In hypothetical 'as if' clauses, 'were' is used for all subjects."
   },
   {
     "id": 14,
-    "text": "English Question 14: Choose the correct form. \"She ____ to the market yesterday.\" (Item ID: 14)",
+    "text": "Reading: \"E-commerce has seen exponential growth, fundamentally changing how consumers interact with brands and making global markets more accessible.\"\nWhat has e-commerce made more accessible?",
     "options": [
-      "go",
-      "goes",
-      "gone",
-      "went"
+      "Local stores",
+      "Global markets",
+      "Physical banks",
+      "Traditional libraries"
     ],
-    "answer": 3,
-    "explanation": "Use Past Simple tense (went) for finished actions in the past."
+    "answer": 1,
+    "explanation": "The passage says e-commerce makes global markets more accessible."
   },
   {
     "id": 15,
-    "text": "English Question 15: Choose the correct form. \"She ____ to the market yesterday.\" (Item ID: 15)",
+    "text": "Vocabulary: Choose the word that means 'to make something less severe'.",
     "options": [
-      "go",
-      "goes",
-      "gone",
-      "went"
+      "Aggravate",
+      "Mitigate",
+      "Exacerbate",
+      "Intensify"
     ],
-    "answer": 3,
-    "explanation": "Use Past Simple tense (went) for finished actions in the past."
+    "answer": 1,
+    "explanation": "'Mitigate' means to make less severe, serious, or painful."
   },
   {
     "id": 16,
-    "text": "English Question 16: Choose the correct form. \"She ____ to the market yesterday.\" (Item ID: 16)",
+    "text": "Grammar: No sooner ________ the house than it started to pour.",
     "options": [
-      "go",
-      "goes",
-      "gone",
-      "went"
+      "he left",
+      "had he left",
+      "did he leave",
+      "was he leaving"
     ],
-    "answer": 3,
-    "explanation": "Use Past Simple tense (went) for finished actions in the past."
+    "answer": 1,
+    "explanation": "'No sooner... than' requires inversion of the auxiliary verb."
   },
   {
     "id": 17,
-    "text": "English Question 17: Choose the correct form. \"She ____ to the market yesterday.\" (Item ID: 17)",
+    "text": "Conversation: Debating a point.\nPerson A: \"I believe renewable energy is the only way forward.\"\nPerson B: \"While I agree, ________________.\"",
     "options": [
-      "go",
-      "goes",
-      "gone",
-      "went"
+      "we must also consider the initial transition costs.",
+      "you are completely wrong.",
+      "I don't believe in energy.",
+      "renewable energy is bad."
     ],
-    "answer": 3,
-    "explanation": "Use Past Simple tense (went) for finished actions in the past."
+    "answer": 0,
+    "explanation": "Adding a valid counter-point or consideration is a mature way to debate."
   },
   {
     "id": 18,
-    "text": "English Question 18: Choose the correct form. \"She ____ to the market yesterday.\" (Item ID: 18)",
+    "text": "Reading: \"Cybersecurity is no longer just an IT issue; it's a strategic business imperative that requires the attention of the entire board.\"\nWho needs to pay attention to cybersecurity according to the text?",
     "options": [
-      "go",
-      "goes",
-      "gone",
-      "went"
+      "Only IT staff",
+      "The entire board",
+      "Only the CEO",
+      "Customers only"
     ],
-    "answer": 3,
-    "explanation": "Use Past Simple tense (went) for finished actions in the past."
+    "answer": 1,
+    "explanation": "The text states it requires the attention of the entire board."
   },
   {
     "id": 19,
-    "text": "English Question 19: Choose the correct form. \"She ____ to the market yesterday.\" (Item ID: 19)",
+    "text": "Vocabulary: 'Ephemeral' things are:",
     "options": [
-      "go",
-      "goes",
-      "gone",
-      "went"
+      "Everlasting",
+      "Short-lived",
+      "Heavy",
+      "Beautiful"
     ],
-    "answer": 3,
-    "explanation": "Use Past Simple tense (went) for finished actions in the past."
+    "answer": 1,
+    "explanation": "'Ephemeral' means lasting for a very short time."
   },
   {
     "id": 20,
-    "text": "English Question 20: Choose the correct form. \"She ____ to the market yesterday.\" (Item ID: 20)",
+    "text": "Grammar: Had I known you were coming, I ________ a cake.",
     "options": [
-      "go",
-      "goes",
-      "gone",
-      "went"
+      "will bake",
+      "would bake",
+      "would have baked",
+      "baked"
     ],
-    "answer": 3,
-    "explanation": "Use Past Simple tense (went) for finished actions in the past."
+    "answer": 2,
+    "explanation": "Inverted Third Conditional. 'Had I known' is equivalent to 'If I had known'."
   },
   {
     "id": 21,
-    "text": "English Question 21: Choose the correct form. \"She ____ to the market yesterday.\" (Item ID: 21)",
+    "text": "Reading: \"The concept of 'nudge theory' suggests that small changes in the environment can influence people's decisions without restricting their freedom of choice.\"\nWhat does nudge theory aim to do?",
     "options": [
-      "go",
-      "goes",
-      "gone",
-      "went"
+      "Force people to change",
+      "Influence decisions through small environmental changes",
+      "Restrict freedom",
+      "Abolish choice"
     ],
-    "answer": 3,
-    "explanation": "Use Past Simple tense (went) for finished actions in the past."
+    "answer": 1,
+    "explanation": "The passage explains nudge theory as influencing decisions via small changes."
   },
   {
     "id": 22,
-    "text": "English Question 22: Choose the correct form. \"She ____ to the market yesterday.\" (Item ID: 22)",
+    "text": "Vocabulary: 'Resilient' individuals are able to:",
     "options": [
-      "go",
-      "goes",
-      "gone",
-      "went"
+      "Avoid all problems",
+      "Recover quickly from difficulties",
+      "Stay angry for a long time",
+      "Forget everything"
     ],
-    "answer": 3,
-    "explanation": "Use Past Simple tense (went) for finished actions in the past."
+    "answer": 1,
+    "explanation": "'Resilient' means able to withstand or recover quickly from difficult conditions."
   },
   {
     "id": 23,
-    "text": "English Question 23: Choose the correct form. \"She ____ to the market yesterday.\" (Item ID: 23)",
+    "text": "Grammar: The committee ________ still debating the final proposal.",
     "options": [
-      "go",
-      "goes",
-      "gone",
-      "went"
+      "is",
+      "are",
+      "be",
+      "have"
     ],
-    "answer": 3,
-    "explanation": "Use Past Simple tense (went) for finished actions in the past."
+    "answer": 0,
+    "explanation": "'Committee' as a collective unit takes a singular verb."
   },
   {
     "id": 24,
-    "text": "English Question 24: Choose the correct form. \"She ____ to the market yesterday.\" (Item ID: 24)",
+    "text": "Conversation: Giving feedback.\nManager: \"Your performance has improved, but we need more consistency.\"\nEmployee: \"________________.\"",
     "options": [
-      "go",
-      "goes",
-      "gone",
-      "went"
+      "I'll work on maintaining a steady output.",
+      "I don't care about consistency.",
+      "I am already consistent.",
+      "Why are you so mean?"
     ],
-    "answer": 3,
-    "explanation": "Use Past Simple tense (went) for finished actions in the past."
+    "answer": 0,
+    "explanation": "Acknowledging the feedback and proposing a solution is professional."
   },
   {
     "id": 25,
-    "text": "English Question 25: Choose the correct form. \"She ____ to the market yesterday.\" (Item ID: 25)",
+    "text": "Reading: \"Urbanization leads to higher population density, which can put a strain on public infrastructure and services.\"\nWhat is a consequence of urbanization mentioned?",
     "options": [
-      "go",
-      "goes",
-      "gone",
-      "went"
+      "Lower population",
+      "Strain on public infrastructure",
+      "More open space",
+      "Better rural life"
     ],
-    "answer": 3,
-    "explanation": "Use Past Simple tense (went) for finished actions in the past."
+    "answer": 1,
+    "explanation": "The passage mentions the strain on infrastructure."
   },
   {
     "id": 26,
-    "text": "English Question 26: Choose the correct form. \"She ____ to the market yesterday.\" (Item ID: 26)",
+    "text": "Vocabulary: 'Pragmatic' means:",
     "options": [
-      "go",
-      "goes",
-      "gone",
-      "went"
+      "Idealistic",
+      "Impractical",
+      "Realistic and practical",
+      "Dreamy"
     ],
-    "answer": 3,
-    "explanation": "Use Past Simple tense (went) for finished actions in the past."
+    "answer": 2,
+    "explanation": "'Pragmatic' refers to dealing with things sensibly and realistically."
   },
   {
     "id": 27,
-    "text": "English Question 27: Choose the correct form. \"She ____ to the market yesterday.\" (Item ID: 27)",
+    "text": "Grammar: It is essential that he ________ present at the meeting.",
     "options": [
-      "go",
-      "goes",
-      "gone",
-      "went"
+      "is",
+      "be",
+      "was",
+      "being"
     ],
-    "answer": 3,
-    "explanation": "Use Past Simple tense (went) for finished actions in the past."
+    "answer": 1,
+    "explanation": "Subjunctive mood after 'essential that' requires the base form 'be'."
   },
   {
     "id": 28,
-    "text": "English Question 28: Choose the correct form. \"She ____ to the market yesterday.\" (Item ID: 28)",
+    "text": "Reading: \"The Renaissance was a period of intense artistic and intellectual activity, characterized by a 'rebirth' of classical learning.\"\nWhat does the term 'Renaissance' literally mean in this context?",
     "options": [
-      "go",
-      "goes",
-      "gone",
-      "went"
+      "Death",
+      "Rebirth",
+      "End",
+      "War"
     ],
-    "answer": 3,
-    "explanation": "Use Past Simple tense (went) for finished actions in the past."
+    "answer": 1,
+    "explanation": "The text characterizes it as a 'rebirth'."
   },
   {
     "id": 29,
-    "text": "English Question 29: Choose the correct form. \"She ____ to the market yesterday.\" (Item ID: 29)",
+    "text": "Vocabulary: 'Ambiguous' language is:",
     "options": [
-      "go",
-      "goes",
-      "gone",
-      "went"
+      "Clear and direct",
+      "Open to more than one interpretation",
+      "Very loud",
+      "Written in two languages"
     ],
-    "answer": 3,
-    "explanation": "Use Past Simple tense (went) for finished actions in the past."
+    "answer": 1,
+    "explanation": "'Ambiguous' means open to more than one interpretation; having a double meaning."
   },
   {
     "id": 30,
-    "text": "English Question 30: Choose the correct form. \"She ____ to the market yesterday.\" (Item ID: 30)",
+    "text": "Grammar: Not only ________ she talented, but she is also hard-working.",
     "options": [
-      "go",
-      "goes",
-      "gone",
-      "went"
+      "is",
+      "she is",
+      "has",
+      "she has"
     ],
-    "answer": 3,
-    "explanation": "Use Past Simple tense (went) for finished actions in the past."
+    "answer": 0,
+    "explanation": "'Not only' at the beginning of a sentence requires inversion."
   },
   {
     "id": 31,
-    "text": "English Question 31: Choose the correct form. \"She ____ to the market yesterday.\" (Item ID: 31)",
+    "text": "Conversation: Dealing with a customer complaint.\nRep: \"I'm sorry you experienced this issue. ________________.\"\nCustomer: \"I'd appreciate that. Thank you.\"",
     "options": [
-      "go",
-      "goes",
-      "gone",
-      "went"
+      "We will look into it immediately and provide a refund.",
+      "It's not our fault.",
+      "You should have been more careful.",
+      "Please stop complaining."
     ],
-    "answer": 3,
-    "explanation": "Use Past Simple tense (went) for finished actions in the past."
+    "answer": 0,
+    "explanation": "Providing a solution and apology is the best way to handle a complaint."
   },
   {
     "id": 32,
-    "text": "English Question 32: Choose the correct form. \"She ____ to the market yesterday.\" (Item ID: 32)",
+    "text": "Reading: \"Globalization has facilitated the exchange of ideas but has also been criticized for contributing to cultural homogenization.\"\nWhat is a criticism of globalization mentioned?",
     "options": [
-      "go",
-      "goes",
-      "gone",
-      "went"
+      "Exchange of ideas",
+      "Cultural homogenization",
+      "Faster travel",
+      "Better food"
     ],
-    "answer": 3,
-    "explanation": "Use Past Simple tense (went) for finished actions in the past."
+    "answer": 1,
+    "explanation": "The passage states it's criticized for cultural homogenization."
   },
   {
     "id": 33,
-    "text": "English Question 33: Choose the correct form. \"She ____ to the market yesterday.\" (Item ID: 33)",
+    "text": "Vocabulary: 'Venerable' describes someone who is:",
     "options": [
-      "go",
-      "goes",
-      "gone",
-      "went"
+      "Young and foolish",
+      "Accorded a great deal of respect, especially because of age",
+      "Easily hurt",
+      "Very angry"
     ],
-    "answer": 3,
-    "explanation": "Use Past Simple tense (went) for finished actions in the past."
+    "answer": 1,
+    "explanation": "'Venerable' means accorded a great deal of respect, especially because of age, wisdom, or character."
   },
   {
     "id": 34,
-    "text": "English Question 34: Choose the correct form. \"She ____ to the market yesterday.\" (Item ID: 34)",
+    "text": "Grammar: Provided that the weather ________ good, we will set off at dawn.",
     "options": [
-      "go",
-      "goes",
-      "gone",
-      "went"
+      "is",
+      "be",
+      "will be",
+      "was"
     ],
-    "answer": 3,
-    "explanation": "Use Past Simple tense (went) for finished actions in the past."
+    "answer": 0,
+    "explanation": "'Provided that' introduces a condition using the present simple."
   },
   {
     "id": 35,
-    "text": "English Question 35: Choose the correct form. \"She ____ to the market yesterday.\" (Item ID: 35)",
+    "text": "Reading: \"The placebo effect occurs when a patient's condition improves because of their belief in the treatment, rather than the treatment itself.\"\nWhat causes improvement in the placebo effect?",
     "options": [
-      "go",
-      "goes",
-      "gone",
-      "went"
+      "Strong medication",
+      "The patient's belief",
+      "A surgery",
+      "Natural luck"
     ],
-    "answer": 3,
-    "explanation": "Use Past Simple tense (went) for finished actions in the past."
+    "answer": 1,
+    "explanation": "The text says it's because of the patient's belief."
   }
 ]
