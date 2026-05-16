@@ -1,7 +1,6 @@
 /**
  * quiz.js - The Quiz Engine
- * FIXED: Support for both Object-wrapped and Direct Array JSON structures.
- * Universal Path Depth & Environment Detection for GitHub Pages.
+ * FIXED: Resolved 'this.basePath' bug and support for both Object/Array JSON.
  */
 
 import { Storage } from './storage.js';
@@ -17,7 +16,7 @@ const Config = {
         return `${this.basePath}data/`;
     },
     get version() {
-        return '1.4.' + new Date().getTime(); // Forced fresh load
+        return '1.5.' + new Date().getTime();
     }
 };
 
@@ -27,7 +26,7 @@ async function fetchJSON(url) {
         if (!response.ok) throw new Error(`HTTP ${response.status}`);
         return await response.json();
     } catch (error) {
-        console.error('Fetch Error:', error);
+        console.error('[Odin] Fetch Failed:', error);
         throw error;
     }
 }
@@ -65,12 +64,10 @@ class QuizEngine {
     async init() {
         const urlParams = new URLSearchParams(window.location.search);
         this.examId = urlParams.get('id');
-
         if (!this.examId) {
-            this.handleError('ไม่พบรหัสข้อสอบ กรุณากลับไปหน้าหลัก');
+            this.handleError('ไม่พบรหัสข้อสอบ');
             return;
         }
-
         try {
             await this.loadExamData();
             this.startTimer();
@@ -82,26 +79,19 @@ class QuizEngine {
     }
 
     async loadExamData() {
-        const dataUrl = `${Config.dataPath}${this.examId}.json`;
-        const data = await fetchJSON(dataUrl);
-        
-        // FLEXIBLE LOADING: Handle both { questions: [] } and [...] structures
+        const data = await fetchJSON(`${Config.dataPath}${this.examId}.json`);
         if (Array.isArray(data)) {
             this.questions = data;
             this.examTitle = this.examId.toUpperCase().replace(/_/g, ' ');
             this.subject = 'GENERAL';
-            this.secondsRemaining = 60 * 60; // Default 60 mins
+            this.secondsRemaining = 60 * 60;
         } else {
             this.questions = data.questions || [];
             this.examTitle = data.title || this.examId;
             this.subject = data.subject || 'GENERAL';
             this.secondsRemaining = (data.duration_minutes || 60) * 60;
         }
-
-        if (this.questions.length === 0) {
-            throw new Error('ไม่พบข้อมูลคำถามในไฟล์นี้');
-        }
-        
+        if (this.questions.length === 0) throw new Error('ไม่พบข้อมูลคำถาม');
         if (this.elements.totalNum) this.elements.totalNum.textContent = this.questions.length;
         document.title = `${this.examTitle} - Thai Exam Hub`;
     }
@@ -126,13 +116,10 @@ class QuizEngine {
     renderQuestion() {
         const q = this.questions[this.currentIndex];
         if (!q) return;
-
         this.elements.questionText.textContent = q.text;
         this.elements.currentNum.textContent = this.currentIndex + 1;
-        
         const progress = ((this.currentIndex + 1) / this.questions.length) * 100;
         if (this.elements.progressBar) this.elements.progressBar.style.width = `${progress}%`;
-
         this.elements.optionsGrid.innerHTML = '';
         const options = q.options || [];
         options.forEach((opt, i) => {
@@ -143,7 +130,6 @@ class QuizEngine {
             btn.onclick = () => this.selectOption(i);
             this.elements.optionsGrid.appendChild(btn);
         });
-
         this.elements.prevBtn.disabled = this.currentIndex === 0;
         if (this.currentIndex === this.questions.length - 1) {
             this.elements.nextBtn.style.display = 'none';
@@ -152,7 +138,6 @@ class QuizEngine {
             this.elements.nextBtn.style.display = 'block';
             this.elements.submitBtn.style.display = 'none';
         }
-
         this.updateBookmarkUI();
     }
 
@@ -199,14 +184,12 @@ class QuizEngine {
             if (isCorrect) score++;
             Storage.recordAnswer(this.subject, isCorrect, q.tags || []);
         });
-
         const progressData = {
             completedAt: new Date().toISOString(),
             answers: this.userAnswers,
             score: score,
             totalQuestions: this.questions.length
         };
-
         Storage.saveProgress(this.examId, progressData);
         this.showResults(score, this.questions.length);
     }

@@ -1,6 +1,7 @@
 /**
  * app.js - The Brain of Thai Exam Hub
- * FIXED: Robust Subfolder-Aware Pathing for GitHub Pages.
+ * FIXED: Resolved 'this.basePath' bug and implemented partitioned data loading.
+ * Optimized for GitHub Pages subfolder environment.
  */
 
 import { Storage } from './storage.js';
@@ -9,28 +10,24 @@ const Config = {
     get basePath() {
         const path = window.location.pathname;
         const repoName = 'thai-exam-hub';
-        // Handle both /repo-name/ and /repo-name (no trailing slash)
-        if (path.includes(`/${repoName}`)) {
-            return `/${repoName}/`;
-        }
+        if (path.includes(`/${repoName}`)) return `/${repoName}/`;
         return '/';
     },
     get dataPath() {
         return `${this.basePath}data/`;
     },
     get version() {
-        return '1.3.' + new Date().getTime(); // Instant cache buster
+        return '1.5.' + new Date().getTime(); // Instant cache refresh
     }
 };
 
 async function fetchJSON(url) {
-    console.log(`[Odin] Fetching: ${url}`);
     try {
         const response = await fetch(`${url}?v=${Config.version}`);
-        if (!response.ok) throw new Error(`HTTP ${response.status} at ${url}`);
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
         return await response.json();
     } catch (error) {
-        console.error(`[Odin] Failed: ${url}`, error);
+        console.error(`[Odin] Fetch Failed: ${url}`, error);
         throw error;
     }
 }
@@ -41,6 +38,7 @@ class ThemeManager {
         const currentTheme = settings.theme || 'light';
         document.documentElement.setAttribute('data-theme', currentTheme);
         this.updateIcon(currentTheme);
+        
         document.addEventListener('click', (e) => {
             if (e.target.closest('#theme-toggle')) this.toggle();
         });
@@ -79,11 +77,14 @@ class App {
         this.theme.init();
         this.renderStats();
         this.renderRecommendations();
+        
         const urlParams = new URLSearchParams(window.location.search);
         const subjectId = urlParams.get('s');
+
         if (document.getElementById('subject-grid')) await this.renderDashboard();
         if (subjectId && document.getElementById('subject-view')) await this.renderSubjectPage(subjectId);
         if (document.getElementById('history-list')) this.renderFullHistory();
+        
         this.initCharts();
     }
 
@@ -97,14 +98,16 @@ class App {
     async renderDashboard() {
         const grid = document.getElementById('subject-grid');
         if (!grid) return;
+        
         grid.innerHTML = '';
         Object.entries(this.subjectMeta).forEach(([id, meta]) => {
             const card = document.createElement('a');
             card.href = `${Config.basePath}subject.html?s=${id}`;
             card.className = 'subject-card';
-            card.innerHTML = `<span class="subject-icon">${meta.icon}</span><h3>${meta.title}</h3>`;
+            card.innerHTML = `<span class="subject-icon">${meta.icon}</span><h3>${meta.title}</h3><p>${meta.description || ''}</p>`;
             grid.appendChild(card);
         });
+
         try {
             const exams = await fetchJSON(`${Config.dataPath}subjects.json`);
             const featuredEl = document.getElementById('featured-exams');
@@ -120,35 +123,40 @@ class App {
                     featuredEl.appendChild(div);
                 });
             }
-        } catch (e) { console.error(e); }
+        } catch (e) {
+            console.error('Dashboard Error:', e);
+        }
     }
 
     async renderSubjectPage(subjectId) {
         const meta = this.subjectMeta[subjectId];
         const titleEl = document.getElementById('subject-title');
         if (titleEl) titleEl.textContent = meta ? meta.title : 'คลังความรู้';
+
         const listEl = document.getElementById('exam-list');
         const gridEl = document.getElementById('knowledge-grid');
+
         try {
+            // 1. Load Exams
             const exams = await fetchJSON(`${Config.dataPath}subjects.json`);
             const filtered = exams.filter(e => e.subject === subjectId);
             if (listEl) {
-                listEl.innerHTML = '';
-                if (filtered.length) {
-                    filtered.forEach(exam => {
-                        const div = document.createElement('div');
-                        div.className = 'exam-card';
-                        div.innerHTML = `<div class="exam-info"><h4></h4><p></p></div><button class="start-btn">เริ่มทำข้อสอบ</button>`;
-                        div.querySelector('h4').textContent = exam.title;
-                        div.querySelector('p').textContent = `ปี ${exam.year} • ${exam.duration_minutes} นาที`;
-                        div.querySelector('button').onclick = () => location.href = `${Config.basePath}quiz.html?id=${exam.id}`;
-                        listEl.appendChild(div);
-                    });
-                } else { listEl.innerHTML = '<p class="empty-state">ยังไม่มีข้อสอบในหมวดนี้</p>'; }
+                listEl.innerHTML = filtered.length ? filtered.map(exam => `
+                    <div class="exam-card">
+                        <div class="exam-info">
+                            <h4>${exam.title}</h4>
+                            <p>ปี ${exam.year} • ${exam.duration_minutes} นาที</p>
+                        </div>
+                        <button class="start-btn" onclick="location.href='${Config.basePath}quiz.html?id=${exam.id}'">เริ่มทำข้อสอบ</button>
+                    </div>
+                `).join('') : '<p class="empty-state">ยังไม่มีข้อสอบในหมวดนี้</p>';
             }
+
+            // 2. Load Summaries (Partitioned)
             if (meta && meta.file) {
                 const summaries = await fetchJSON(`${Config.dataPath}${meta.file}`);
                 this.renderSummaryGrid(summaries, subjectId);
+
                 const searchInput = document.getElementById('summary-search');
                 if (searchInput) {
                     searchInput.oninput = (e) => {
@@ -157,14 +165,28 @@ class App {
                         this.renderSummaryGrid(filtered, subjectId);
                     };
                 }
+            } else if (gridEl) {
+                gridEl.innerHTML = '<p class="empty-state">ไม่มีสรุปเนื้อหาสำหรับวิชานี้</p>';
             }
-        } catch (e) { console.error(e); }
+        } catch (e) {
+            console.error('Subject Page Error:', e);
+            if (listEl) listEl.innerHTML = '<p class="error">เกิดข้อผิดพลาดในการโหลดข้อมูล</p>';
+        }
     }
 
     renderSummaryGrid(summaries, subjectId) {
         const gridEl = document.getElementById('knowledge-grid');
         if (!gridEl) return;
-        gridEl.innerHTML = summaries.length ? summaries.map(s => `<div class="summary-card"><div class="summary-info"><span class="tag-meta">${(s.subject || subjectId).toUpperCase()}</span><h4>${s.title}</h4><p>${(s.content || '').substring(0, 100).replace(/[#*`$]/g, '')}...</p></div><a href="${Config.basePath}study.html?subject=${subjectId}&id=${s.id}" class="read-btn">อ่านสรุปความรู้</a></div>`).join('') : '<p class="empty-state" style="grid-column: 1/-1;">ไม่พบเนื้อหา</p>';
+        gridEl.innerHTML = summaries.length ? summaries.map(s => `
+            <div class="summary-card">
+                <div class="summary-info">
+                    <span class="tag-meta">${(s.subject || subjectId).toUpperCase()}</span>
+                    <h4>${s.title}</h4>
+                    <p>${(s.content || '').substring(0, 100).replace(/[#*`$]/g, '')}...</p>
+                </div>
+                <a href="${Config.basePath}study.html?subject=${subjectId}&id=${s.id}" class="read-btn">อ่านสรุปความรู้</a>
+            </div>
+        `).join('') : '<p class="empty-state">ไม่พบเนื้อหา</p>';
     }
 
     renderRecommendations() {
@@ -172,7 +194,10 @@ class App {
         if (!container) return;
         const stats = Storage.getStats();
         const topWeak = Object.entries(stats.byTopic || {}).sort((a, b) => b[1].wrong - a[1].wrong).filter(t => t[1].wrong > 0).slice(0, 3);
-        if (topWeak.length === 0) { container.innerHTML = '<div class="info-card" style="padding:20px; text-align:center; background:var(--card-bg); border-radius:12px; border:1px solid var(--border-color);"><p>ทำข้อสอบเพิ่มเติมเพื่อให้ระบบวิเคราะห์จุดที่ควรเน้น!</p></div>'; return; }
+        if (topWeak.length === 0) {
+            container.innerHTML = '<div class="info-card" style="padding:20px; text-align:center; background:var(--card-bg); border-radius:12px; border:1px solid var(--border-color);"><p>เริ่มทำข้อสอบเพื่อวิเคราะห์เนื้อหาที่คุณควรติวเพิ่ม!</p></div>';
+            return;
+        }
         container.innerHTML = `<div class="recommendation-grid">${topWeak.map(t => `<div class="recommend-card"><span class="tag-alert">ทบทวนด่วน</span><h4>เรื่อง: ${t[0]}</h4><p>พลาดไปแล้ว ${t[1].wrong} ครั้ง</p><a href="${Config.basePath}subject.html?s=search&q=${t[0]}" class="read-btn">หาเนื้อหาติว →</a></div>`).join('')}</div>`;
     }
 
