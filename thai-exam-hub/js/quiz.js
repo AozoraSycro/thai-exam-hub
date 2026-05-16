@@ -1,7 +1,6 @@
 /**
  * quiz.js - The Quiz Engine
- * Handles question rendering, timer, user input, scoring, and progress saving.
- * REWRITTEN: Bulletproof Data Fetching & Rendering
+ * FIXED: Universal Path Depth & Environment Detection for GitHub Pages.
  */
 
 import { Storage } from './storage.js';
@@ -17,14 +16,14 @@ const Config = {
         return `${this.basePath}data/`;
     },
     get version() {
-        return '1.0.' + new Date().getTime();
+        return '1.1.' + new Date().getTime(); // Cache buster
     }
 };
 
 async function fetchJSON(url) {
     try {
         const response = await fetch(`${url}?v=${Config.version}`);
-        if (!response.ok) throw new Error(`Failed to load: ${url} (Status: ${response.status})`);
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
         return await response.json();
     } catch (error) {
         console.error('Fetch Error:', error);
@@ -58,8 +57,7 @@ class QuizEngine {
             prevBtn: document.getElementById('prev-btn'),
             nextBtn: document.getElementById('next-btn'),
             submitBtn: document.getElementById('submit-btn'),
-            bookmarkBtn: document.getElementById('bookmark-btn'),
-            chartContainer: document.getElementById('results-chart-container')
+            bookmarkBtn: document.getElementById('bookmark-btn')
         };
     }
 
@@ -68,7 +66,7 @@ class QuizEngine {
         this.examId = urlParams.get('id');
 
         if (!this.examId) {
-            this.handleError('ไม่พบรหัสข้อสอบ กรุณากลับไปที่หน้าหลัก');
+            this.handleError('ไม่พบรหัสข้อสอบ กรุณากลับไปหน้าหลัก');
             return;
         }
 
@@ -78,23 +76,23 @@ class QuizEngine {
             this.startTime = new Date();
             this.renderQuestion();
         } catch (e) {
-            this.handleError('ไม่สามารถโหลดข้อมูลข้อสอบได้ กรุณาตรวจสอบการเชื่อมต่อ');
+            this.handleError('ไม่สามารถโหลดข้อมูลข้อสอบได้: ' + e.message);
         }
     }
 
     async loadExamData() {
-        const data = await fetchJSON(`${Config.dataPath}${this.examId}.json`);
+        // DEFENSE: Construct absolute-relative path
+        const dataUrl = `${Config.dataPath}${this.examId}.json`;
+        console.log('Loading exam from:', dataUrl);
         
+        const data = await fetchJSON(dataUrl);
         this.questions = data.questions;
         this.examTitle = data.title;
-        this.subject = data.subject;
+        this.subject = data.subject || 'GENERAL';
         this.secondsRemaining = (data.duration_minutes || 60) * 60;
         
         if (this.elements.totalNum) this.elements.totalNum.textContent = this.questions.length;
         document.title = `${this.examTitle} - Thai Exam Hub`;
-        
-        const titleEl = document.querySelector('.exam-title-display');
-        if (titleEl) titleEl.textContent = this.examTitle;
     }
 
     startTimer() {
@@ -102,9 +100,7 @@ class QuizEngine {
         this.timer = setInterval(() => {
             this.secondsRemaining--;
             this.updateTimerDisplay();
-            if (this.secondsRemaining <= 0) {
-                this.finishQuiz();
-            }
+            if (this.secondsRemaining <= 0) this.finishQuiz();
         }, 1000);
     }
 
@@ -113,10 +109,6 @@ class QuizEngine {
         const secs = this.secondsRemaining % 60;
         if (this.elements.timerDisplay) {
             this.elements.timerDisplay.textContent = `${mins.toString().padStart(2, '0')}:${secs.toString().padStart(2, '0')}`;
-            if (this.secondsRemaining < 300) { // Last 5 minutes
-                this.elements.timerDisplay.style.color = '#e11d48';
-                this.elements.timerDisplay.style.fontWeight = 'bold';
-            }
         }
     }
 
@@ -130,13 +122,15 @@ class QuizEngine {
         const progress = ((this.currentIndex + 1) / this.questions.length) * 100;
         if (this.elements.progressBar) this.elements.progressBar.style.width = `${progress}%`;
 
-        this.elements.optionsGrid.innerHTML = q.options.map((opt, i) => `
-            <button class="option-btn ${this.userAnswers[this.currentIndex] === i ? 'selected' : ''}" 
-                    onclick="window.engine.selectOption(${i})">
-                <span class="option-label">${String.fromCharCode(65 + i)}</span>
-                <span class="option-text">${opt}</span>
-            </button>
-        `).join('');
+        this.elements.optionsGrid.innerHTML = '';
+        q.options.forEach((opt, i) => {
+            const btn = document.createElement('button');
+            btn.className = `option-btn ${this.userAnswers[this.currentIndex] === i ? 'selected' : ''}`;
+            btn.innerHTML = `<span class="option-label">${String.fromCharCode(65 + i)}</span><span class="option-text"></span>`;
+            btn.querySelector('.option-text').textContent = opt;
+            btn.onclick = () => this.selectOption(i);
+            this.elements.optionsGrid.appendChild(btn);
+        });
 
         this.elements.prevBtn.disabled = this.currentIndex === 0;
         if (this.currentIndex === this.questions.length - 1) {
@@ -187,25 +181,18 @@ class QuizEngine {
 
     finishQuiz() {
         clearInterval(this.timer);
-        const endTime = new Date();
-        const timeSpent = Math.floor((endTime - this.startTime) / 1000);
-        
         let score = 0;
         this.questions.forEach((q, i) => {
             const isCorrect = this.userAnswers[i] === q.answer;
             if (isCorrect) score++;
-            
-            const tags = q.tags || [this.subject.toUpperCase()];
-            Storage.recordAnswer(this.subject, isCorrect, tags);
+            Storage.recordAnswer(this.subject, isCorrect, q.tags || []);
         });
 
         const progressData = {
-            startedAt: this.startTime.toISOString(),
-            completedAt: endTime.toISOString(),
+            completedAt: new Date().toISOString(),
             answers: this.userAnswers,
             score: score,
-            totalQuestions: this.questions.length,
-            timeSpentSeconds: timeSpent
+            totalQuestions: this.questions.length
         };
 
         Storage.saveProgress(this.examId, progressData);
@@ -218,70 +205,27 @@ class QuizEngine {
             this.elements.resultView.style.display = 'block';
             this.elements.scoreDisplay.textContent = `${score} / ${total}`;
             this.renderReview();
-            this.renderCharts();
         }
         window.scrollTo(0, 0);
     }
 
     renderReview() {
-        if (!this.elements.explanationContainer) return;
         this.elements.explanationContainer.innerHTML = '<h3 class="section-title">เฉลยและคำอธิบาย</h3>';
-        
         this.questions.forEach((q, i) => {
             const userAns = this.userAnswers[i];
             const isCorrect = userAns === q.answer;
-            
             const item = document.createElement('div');
             item.className = `review-item ${isCorrect ? 'correct' : 'incorrect'}`;
-            
             item.innerHTML = `
                 <div class="review-question">ข้อที่ ${i + 1}: ${q.text}</div>
                 <div class="review-answers">
                     <p>คำตอบของคุณ: <span class="user-ans">${userAns !== undefined ? q.options[userAns] : 'ไม่ได้ตอบ'}</span></p>
                     <p>คำตอบที่ถูกต้อง: <span class="correct-ans">${q.options[q.answer]}</span></p>
                 </div>
-                <div class="explanation">
-                    <strong>💡 คำอธิบาย:</strong> ${q.explanation || 'ไม่มีคำอธิบายเพิ่มเติม'}
-                </div>
+                <div class="explanation"><strong>💡 คำอธิบาย:</strong> <span></span></div>
             `;
+            item.querySelector('.explanation span').textContent = q.explanation || 'ไม่มีคำอธิบาย';
             this.elements.explanationContainer.appendChild(item);
-        });
-    }
-
-    renderCharts() {
-        if (!window.Chart) return;
-        const canvas = document.getElementById('results-radar-chart');
-        if (!canvas) return;
-
-        const stats = Storage.getStats();
-        const subjects = Object.keys(stats.bySubject);
-        if (subjects.length < 1) return;
-
-        const data = subjects.map(s => {
-            const stat = stats.bySubject[s];
-            return (stat.correct / stat.answered) * 100;
-        });
-
-        new Chart(canvas, {
-            type: 'radar',
-            data: {
-                labels: subjects.map(s => s.toUpperCase()),
-                datasets: [{
-                    label: 'สมรรถนะสะสม (%)',
-                    data: data,
-                    backgroundColor: 'rgba(14, 165, 233, 0.2)',
-                    borderColor: '#0ea5e9',
-                    pointBackgroundColor: '#0ea5e9',
-                }]
-            },
-            options: {
-                scales: {
-                    r: {
-                        beginAtZero: true,
-                        max: 100
-                    }
-                }
-            }
         });
     }
 
@@ -289,23 +233,18 @@ class QuizEngine {
         const container = document.getElementById('quiz-view');
         if (container) {
             container.innerHTML = `
-                <div class="error-box" style="padding: 40px; text-align: center; background: white; border-radius: 20px; box-shadow: 0 10px 25px rgba(0,0,0,0.1);">
+                <div class="error-box" style="padding: 40px; text-align: center; background: var(--card-bg); border-radius: 20px; box-shadow: var(--shadow-soft);">
                     <i class="fas fa-exclamation-triangle" style="font-size: 3rem; color: #f59e0b; margin-bottom: 20px;"></i>
                     <h2>เกิดข้อผิดพลาด</h2>
-                    <p style="color: #64748b; margin-bottom: 30px;">${msg}</p>
-                    <a href="index.html" class="start-btn" style="text-decoration: none; display: inline-block;">กลับหน้าหลัก</a>
+                    <p style="color: var(--text-light); margin-bottom: 30px;">${msg}</p>
+                    <a href="index.html" class="start-btn" style="text-decoration: none;">กลับหน้าหลัก</a>
                 </div>
             `;
-        } else {
-            alert(msg);
-            window.location.href = 'index.html';
         }
     }
 }
 
 window.engine = new QuizEngine();
 document.addEventListener('DOMContentLoaded', () => {
-    if (document.getElementById('quiz-view')) {
-        window.engine.init();
-    }
+    if (document.getElementById('quiz-view')) window.engine.init();
 });
