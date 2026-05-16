@@ -1,22 +1,23 @@
 /**
  * quiz.js - The Quiz Engine
- * FIXED: Universal Path Depth & Environment Detection for GitHub Pages.
+ * FIXED: Support for both Object-wrapped and Direct Array JSON structures.
+ * Universal Path Depth & Environment Detection for GitHub Pages.
  */
 
 import { Storage } from './storage.js';
 
 const Config = {
-    get isLocal() {
-        return window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
-    },
     get basePath() {
-        return this.isLocal ? '/' : '/thai-exam-hub/';
+        const path = window.location.pathname;
+        const repoName = 'thai-exam-hub';
+        if (path.includes(`/${repoName}`)) return `/${repoName}/`;
+        return '/';
     },
     get dataPath() {
         return `${this.basePath}data/`;
     },
     get version() {
-        return '1.1.' + new Date().getTime(); // Cache buster
+        return '1.4.' + new Date().getTime(); // Forced fresh load
     }
 };
 
@@ -81,15 +82,25 @@ class QuizEngine {
     }
 
     async loadExamData() {
-        // DEFENSE: Construct absolute-relative path
         const dataUrl = `${Config.dataPath}${this.examId}.json`;
-        console.log('Loading exam from:', dataUrl);
-        
         const data = await fetchJSON(dataUrl);
-        this.questions = data.questions;
-        this.examTitle = data.title;
-        this.subject = data.subject || 'GENERAL';
-        this.secondsRemaining = (data.duration_minutes || 60) * 60;
+        
+        // FLEXIBLE LOADING: Handle both { questions: [] } and [...] structures
+        if (Array.isArray(data)) {
+            this.questions = data;
+            this.examTitle = this.examId.toUpperCase().replace(/_/g, ' ');
+            this.subject = 'GENERAL';
+            this.secondsRemaining = 60 * 60; // Default 60 mins
+        } else {
+            this.questions = data.questions || [];
+            this.examTitle = data.title || this.examId;
+            this.subject = data.subject || 'GENERAL';
+            this.secondsRemaining = (data.duration_minutes || 60) * 60;
+        }
+
+        if (this.questions.length === 0) {
+            throw new Error('ไม่พบข้อมูลคำถามในไฟล์นี้');
+        }
         
         if (this.elements.totalNum) this.elements.totalNum.textContent = this.questions.length;
         document.title = `${this.examTitle} - Thai Exam Hub`;
@@ -123,7 +134,8 @@ class QuizEngine {
         if (this.elements.progressBar) this.elements.progressBar.style.width = `${progress}%`;
 
         this.elements.optionsGrid.innerHTML = '';
-        q.options.forEach((opt, i) => {
+        const options = q.options || [];
+        options.forEach((opt, i) => {
             const btn = document.createElement('button');
             btn.className = `option-btn ${this.userAnswers[this.currentIndex] === i ? 'selected' : ''}`;
             btn.innerHTML = `<span class="option-label">${String.fromCharCode(65 + i)}</span><span class="option-text"></span>`;
