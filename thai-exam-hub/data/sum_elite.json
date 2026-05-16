@@ -35,7 +35,7 @@
     "id": 6005,
     "subject": "Mathematics",
     "title": "จำนวนเชิงซ้อนขั้นสูง: รูปเชิงขั้วและทฤษฎีบทเดอมัวร์",
-    "content": "การใช้พิกัดเชิงขั้ว (r(cos \theta + i \sin \theta)) และการหาค่ารากที่ n ของจำนวนเชิงซ้อน... [Formula: (r e^{i\theta})^n = r^n e^{in\theta}]",
+    "content": "การใช้พิกัดเชิงขั้ว (r(cos \theta + i \\sin \theta)) และการหาค่ารากที่ n ของจำนวนเชิงซ้อน... [Formula: (r e^{i\theta})^n = r^n e^{in\theta}]",
     "youtubeId": "dQw4w9WgXcQ",
     "tags": ["Mathematics", "Complex Numbers", "A-Level"]
   },
@@ -43,7 +43,7 @@
     "id": 6006,
     "subject": "Mathematics",
     "title": "แคลคูลัส: เทคนิคการอินทิเกรตขั้นสูง",
-    "content": "การหาปริพันธ์โดยการแยกส่วน (Integration by Parts) และการแทนค่าด้วยตัวแปรชุดใหม่ที่ซับซ้อน... [Formula: \int u dv = uv - \int v du]",
+    "content": "การหาปริพันธ์โดยการแยกส่วน (Integration by Parts) และการแทนค่าด้วยตัวแปรชุดใหม่ที่ซับซ้อน... [Formula: \\int u dv = uv - \\int v du]",
     "youtubeId": "dQw4w9WgXcQ",
     "tags": ["Mathematics", "Calculus", "Elite Math"]
   },
