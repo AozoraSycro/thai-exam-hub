@@ -1,0 +1,90 @@
+[
+  {
+    "id": 5001,
+    "subject": "Generative AI",
+    "title": "พื้นฐาน Generative AI: LLMs และ Transformers",
+    "content": "ทำความเข้าใจกลไกของ Large Language Models (LLMs) และโครงสร้างสถาปัตยกรรม Transformer ที่เป็นหัวใจหลักของ ChatGPT และ Claude... [Keywords: Attention Mechanism, Tokenization, Pre-training]",
+    "youtubeId": "dQw4w9WgXcQ",
+    "tags": ["AI", "Technology", "Computer Science"]
+  },
+  {
+    "id": 5002,
+    "subject": "Generative AI",
+    "title": "Diffusion Models และการสร้างรูปภาพ",
+    "content": "เจาะลึกกระบวนการของ Diffusion Models ที่ใช้ใน Midjourney และ DALL-E จากการเพิ่ม Noise สู่การสร้างภาพที่สมจริง... [Keywords: Latent Diffusion, Stable Diffusion, Denoising]",
+    "youtubeId": "dQw4w9WgXcQ",
+    "tags": ["AI", "Image Generation", "Graphics"]
+  },
+  {
+    "id": 5003,
+    "subject": "Prompt Engineering",
+    "title": "เทคนิค Zero-shot และ Few-shot Prompting",
+    "content": "เรียนรู้วิธีการเขียน Prompt ให้ AI ทำงานได้แม่นยำขึ้นโดยไม่ต้องใช้ตัวอย่าง (Zero-shot) และการใช้ตัวอย่างนำทาง (Few-shot)... [Keywords: Context Window, In-context Learning]",
+    "youtubeId": "dQw4w9WgXcQ",
+    "tags": ["AI", "Prompt Engineering", "Digital Skills"]
+  },
+  {
+    "id": 5004,
+    "subject": "Prompt Engineering",
+    "title": "Chain of Thought (CoT) Prompting",
+    "content": "เทคนิคการกระตุ้นให้ AI แสดง 'ลำดับความคิด' ก่อนสรุปคำตอบ เพื่อเพิ่มความแม่นยำในโจทย์ที่ต้องใช้ตรรกะซับซ้อน... [Keywords: Reasoning, Step-by-step, Logical Flow]",
+    "youtubeId": "dQw4w9WgXcQ",
+    "tags": ["AI", "Logic", "Prompt Engineering"]
+  },
+  {
+    "id": 5005,
+    "subject": "Prompt Engineering",
+    "title": "Advanced Frameworks: ReAct และ Tree of Thoughts",
+    "content": "การใช้โครงสร้างขั้นสูงเพื่อให้ AI สามารถตัดสินใจและวางแผนงานที่ซับซ้อนได้เหมือนมนุษย์... [Keywords: Planning, Self-reflection, Systematic Search]",
+    "youtubeId": "dQw4w9WgXcQ",
+    "tags": ["AI", "Advanced AI", "Prompt Engineering"]
+  },
+  {
+    "id": 5006,
+    "subject": "Financial Math",
+    "title": "คณิตศาสตร์การเงิน: ดอกเบี้ยทบต้นและมูลค่าเงินตามเวลา",
+    "content": "สูตรและแนวคิดเรื่อง Compound Interest (A = P(1+r/n)^{nt}) และ Time Value of Money (TVM) เพื่อการวางแผนการเงินระยะยาว... [Formula: LaTeX notation for TVM]",
+    "youtubeId": "dQw4w9WgXcQ",
+    "tags": ["Mathematics", "Finance", "Personal Finance"]
+  },
+  {
+    "id": 5007,
+    "subject": "Financial Math",
+    "title": "พื้นฐานภาษีเงินได้บุคคลธรรมดา (ไทย)",
+    "content": "วิธีการคำนวณภาษีตามขั้นบันได การหักค่าใช้จ่าย และการใช้สิทธิลดหย่อนต่างๆ ในบริบทประเทศไทย... [Keywords: Tax Bracket, Net Taxable Income]",
+    "youtubeId": "dQw4w9WgXcQ",
+    "tags": ["Finance", "Tax", "Life Skills"]
+  },
+  {
+    "id": 5008,
+    "subject": "Financial Math",
+    "title": "กลยุทธ์การลงทุนและพอร์ตโฟลิโอ",
+    "content": "ความเข้าใจเรื่องสินทรัพย์ประเภทต่างๆ (Stocks, Bonds, ETFs) และการกระจายความเสี่ยง (Diversification)... [Keywords: Risk vs Return, Asset Allocation]",
+    "youtubeId": "dQw4w9WgXcQ",
+    "tags": ["Finance", "Investment", "Math"]
+  },
+  {
+    "id": 5009,
+    "subject": "Digital Literacy",
+    "title": "Cybersecurity: Phishing และ Social Engineering",
+    "content": "ภัยคุกคามทางไซเบอร์ที่พบบ่อยที่สุด วิธีการสังเกตกลโกง และการป้องกันตัวจากการถูกหลอกลวงออนไลน์... [Keywords: Scams, URL Spoofing, Verification]",
+    "youtubeId": "dQw4w9WgXcQ",
+    "tags": ["Cybersecurity", "Digital Literacy", "Safety"]
+  },
+  {
+    "id": 5010,
+    "subject": "Digital Literacy",
+    "title": "ความปลอดภัยของรหัสผ่านและ MFA",
+    "content": "หลักการสร้างรหัสผ่านที่ปลอดภัยและการใช้ Multi-Factor Authentication (MFA) เพื่อยกระดับความปลอดภัย... [Keywords: Authenticator Apps, Biometrics, Security Keys]",
+    "youtubeId": "dQw4w9WgXcQ",
+    "tags": ["Cybersecurity", "Privacy", "Digital Literacy"]
+  },
+  {
+    "id": 5011,
+    "subject": "Digital Literacy",
+    "title": "ความเป็นส่วนตัวของข้อมูลและกฎหมาย PDPA",
+    "content": "สรุปสาระสำคัญของ พ.ร.บ. คุ้มครองข้อมูลส่วนบุคคล (PDPA) สิทธิของเจ้าของข้อมูล และหน้าที่ของผู้ควบคุมข้อมูล... [Keywords: Data Privacy, Consent, Personal Data]",
+    "youtubeId": "dQw4w9WgXcQ",
+    "tags": ["Law", "Digital Literacy", "Privacy"]
+  }
+]

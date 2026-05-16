@@ -1,827 +1,247 @@
 [
   {
-    "id": 1,
-    "subject": "Mathematics",
-    "title": "สรุปละเอียด: Set ตอนที่ 1",
-    "content": "เจาะลึกเนื้อหา Set ครอบคลุมประเด็นสำคัญที่ออกสอบบ่อยใน A-Level และ TGAT/TPAT... [Formula: LaTeX notation used for math clarity]",
-    "youtubeId": "dQw4w9WgXcQ",
-    "tags": [
-      "Mathematics",
-      "Set"
-    ]
-  },
-  {
-    "id": 2,
-    "subject": "Mathematics",
-    "title": "สรุปละเอียด: Set ตอนที่ 2",
-    "content": "เจาะลึกเนื้อหา Set ครอบคลุมประเด็นสำคัญที่ออกสอบบ่อยใน A-Level และ TGAT/TPAT... [Formula: LaTeX notation used for math clarity]",
-    "youtubeId": "dQw4w9WgXcQ",
-    "tags": [
-      "Mathematics",
-      "Set"
-    ]
-  },
-  {
-    "id": 3,
-    "subject": "Mathematics",
-    "title": "สรุปละเอียด: Set ตอนที่ 3",
-    "content": "เจาะลึกเนื้อหา Set ครอบคลุมประเด็นสำคัญที่ออกสอบบ่อยใน A-Level และ TGAT/TPAT... [Formula: LaTeX notation used for math clarity]",
-    "youtubeId": "dQw4w9WgXcQ",
-    "tags": [
-      "Mathematics",
-      "Set"
-    ]
-  },
-  {
-    "id": 4,
-    "subject": "Mathematics",
-    "title": "สรุปละเอียด: Set ตอนที่ 4",
-    "content": "เจาะลึกเนื้อหา Set ครอบคลุมประเด็นสำคัญที่ออกสอบบ่อยใน A-Level และ TGAT/TPAT... [Formula: LaTeX notation used for math clarity]",
-    "youtubeId": "dQw4w9WgXcQ",
-    "tags": [
-      "Mathematics",
-      "Set"
-    ]
-  },
-  {
-    "id": 5,
-    "subject": "Mathematics",
-    "title": "สรุปละเอียด: Set ตอนที่ 5",
-    "content": "เจาะลึกเนื้อหา Set ครอบคลุมประเด็นสำคัญที่ออกสอบบ่อยใน A-Level และ TGAT/TPAT... [Formula: LaTeX notation used for math clarity]",
-    "youtubeId": "dQw4w9WgXcQ",
-    "tags": [
-      "Mathematics",
-      "Set"
-    ]
-  },
-  {
-    "id": 6,
-    "subject": "Mathematics",
-    "title": "สรุปละเอียด: Logic ตอนที่ 1",
-    "content": "เจาะลึกเนื้อหา Logic ครอบคลุมประเด็นสำคัญที่ออกสอบบ่อยใน A-Level และ TGAT/TPAT... [Formula: LaTeX notation used for math clarity]",
-    "youtubeId": "dQw4w9WgXcQ",
-    "tags": [
-      "Mathematics",
-      "Logic"
-    ]
-  },
-  {
-    "id": 7,
-    "subject": "Mathematics",
-    "title": "สรุปละเอียด: Logic ตอนที่ 2",
-    "content": "เจาะลึกเนื้อหา Logic ครอบคลุมประเด็นสำคัญที่ออกสอบบ่อยใน A-Level และ TGAT/TPAT... [Formula: LaTeX notation used for math clarity]",
-    "youtubeId": "dQw4w9WgXcQ",
-    "tags": [
-      "Mathematics",
-      "Logic"
-    ]
-  },
-  {
-    "id": 8,
-    "subject": "Mathematics",
-    "title": "สรุปละเอียด: Logic ตอนที่ 3",
-    "content": "เจาะลึกเนื้อหา Logic ครอบคลุมประเด็นสำคัญที่ออกสอบบ่อยใน A-Level และ TGAT/TPAT... [Formula: LaTeX notation used for math clarity]",
-    "youtubeId": "dQw4w9WgXcQ",
-    "tags": [
-      "Mathematics",
-      "Logic"
-    ]
-  },
-  {
-    "id": 9,
-    "subject": "Mathematics",
-    "title": "สรุปละเอียด: Logic ตอนที่ 4",
-    "content": "เจาะลึกเนื้อหา Logic ครอบคลุมประเด็นสำคัญที่ออกสอบบ่อยใน A-Level และ TGAT/TPAT... [Formula: LaTeX notation used for math clarity]",
-    "youtubeId": "dQw4w9WgXcQ",
-    "tags": [
-      "Mathematics",
-      "Logic"
-    ]
-  },
-  {
-    "id": 10,
-    "subject": "Mathematics",
-    "title": "สรุปละเอียด: Logic ตอนที่ 5",
-    "content": "เจาะลึกเนื้อหา Logic ครอบคลุมประเด็นสำคัญที่ออกสอบบ่อยใน A-Level และ TGAT/TPAT... [Formula: LaTeX notation used for math clarity]",
-    "youtubeId": "dQw4w9WgXcQ",
-    "tags": [
-      "Mathematics",
-      "Logic"
-    ]
-  },
-  {
-    "id": 11,
-    "subject": "Mathematics",
-    "title": "สรุปละเอียด: Real Number System ตอนที่ 1",
-    "content": "เจาะลึกเนื้อหา Real Number System ครอบคลุมประเด็นสำคัญที่ออกสอบบ่อยใน A-Level และ TGAT/TPAT... [Formula: LaTeX notation used for math clarity]",
-    "youtubeId": "dQw4w9WgXcQ",
-    "tags": [
-      "Mathematics",
-      "Real Number System"
-    ]
-  },
-  {
-    "id": 12,
-    "subject": "Mathematics",
-    "title": "สรุปละเอียด: Real Number System ตอนที่ 2",
-    "content": "เจาะลึกเนื้อหา Real Number System ครอบคลุมประเด็นสำคัญที่ออกสอบบ่อยใน A-Level และ TGAT/TPAT... [Formula: LaTeX notation used for math clarity]",
-    "youtubeId": "dQw4w9WgXcQ",
-    "tags": [
-      "Mathematics",
-      "Real Number System"
-    ]
-  },
-  {
-    "id": 13,
-    "subject": "Mathematics",
-    "title": "สรุปละเอียด: Real Number System ตอนที่ 3",
-    "content": "เจาะลึกเนื้อหา Real Number System ครอบคลุมประเด็นสำคัญที่ออกสอบบ่อยใน A-Level และ TGAT/TPAT... [Formula: LaTeX notation used for math clarity]",
-    "youtubeId": "dQw4w9WgXcQ",
-    "tags": [
-      "Mathematics",
-      "Real Number System"
-    ]
-  },
-  {
-    "id": 14,
-    "subject": "Mathematics",
-    "title": "สรุปละเอียด: Real Number System ตอนที่ 4",
-    "content": "เจาะลึกเนื้อหา Real Number System ครอบคลุมประเด็นสำคัญที่ออกสอบบ่อยใน A-Level และ TGAT/TPAT... [Formula: LaTeX notation used for math clarity]",
-    "youtubeId": "dQw4w9WgXcQ",
-    "tags": [
-      "Mathematics",
-      "Real Number System"
-    ]
-  },
-  {
-    "id": 15,
-    "subject": "Mathematics",
-    "title": "สรุปละเอียด: Real Number System ตอนที่ 5",
-    "content": "เจาะลึกเนื้อหา Real Number System ครอบคลุมประเด็นสำคัญที่ออกสอบบ่อยใน A-Level และ TGAT/TPAT... [Formula: LaTeX notation used for math clarity]",
-    "youtubeId": "dQw4w9WgXcQ",
-    "tags": [
-      "Mathematics",
-      "Real Number System"
-    ]
-  },
-  {
-    "id": 16,
-    "subject": "Mathematics",
-    "title": "สรุปละเอียด: Functions ตอนที่ 1",
-    "content": "เจาะลึกเนื้อหา Functions ครอบคลุมประเด็นสำคัญที่ออกสอบบ่อยใน A-Level และ TGAT/TPAT... [Formula: LaTeX notation used for math clarity]",
-    "youtubeId": "dQw4w9WgXcQ",
-    "tags": [
-      "Mathematics",
-      "Functions"
-    ]
-  },
-  {
-    "id": 17,
-    "subject": "Mathematics",
-    "title": "สรุปละเอียด: Functions ตอนที่ 2",
-    "content": "เจาะลึกเนื้อหา Functions ครอบคลุมประเด็นสำคัญที่ออกสอบบ่อยใน A-Level และ TGAT/TPAT... [Formula: LaTeX notation used for math clarity]",
-    "youtubeId": "dQw4w9WgXcQ",
-    "tags": [
-      "Mathematics",
-      "Functions"
-    ]
-  },
-  {
-    "id": 18,
-    "subject": "Mathematics",
-    "title": "สรุปละเอียด: Functions ตอนที่ 3",
-    "content": "เจาะลึกเนื้อหา Functions ครอบคลุมประเด็นสำคัญที่ออกสอบบ่อยใน A-Level และ TGAT/TPAT... [Formula: LaTeX notation used for math clarity]",
-    "youtubeId": "dQw4w9WgXcQ",
-    "tags": [
-      "Mathematics",
-      "Functions"
-    ]
-  },
-  {
-    "id": 19,
-    "subject": "Mathematics",
-    "title": "สรุปละเอียด: Functions ตอนที่ 4",
-    "content": "เจาะลึกเนื้อหา Functions ครอบคลุมประเด็นสำคัญที่ออกสอบบ่อยใน A-Level และ TGAT/TPAT... [Formula: LaTeX notation used for math clarity]",
-    "youtubeId": "dQw4w9WgXcQ",
-    "tags": [
-      "Mathematics",
-      "Functions"
-    ]
-  },
-  {
-    "id": 20,
-    "subject": "Mathematics",
-    "title": "สรุปละเอียด: Functions ตอนที่ 5",
-    "content": "เจาะลึกเนื้อหา Functions ครอบคลุมประเด็นสำคัญที่ออกสอบบ่อยใน A-Level และ TGAT/TPAT... [Formula: LaTeX notation used for math clarity]",
-    "youtubeId": "dQw4w9WgXcQ",
-    "tags": [
-      "Mathematics",
-      "Functions"
-    ]
-  },
-  {
-    "id": 21,
-    "subject": "Mathematics",
-    "title": "สรุปละเอียด: Exponential & Logarithm ตอนที่ 1",
-    "content": "เจาะลึกเนื้อหา Exponential & Logarithm ครอบคลุมประเด็นสำคัญที่ออกสอบบ่อยใน A-Level และ TGAT/TPAT... [Formula: LaTeX notation used for math clarity]",
-    "youtubeId": "dQw4w9WgXcQ",
-    "tags": [
-      "Mathematics",
-      "Exponential & Logarithm"
-    ]
-  },
-  {
-    "id": 22,
-    "subject": "Mathematics",
-    "title": "สรุปละเอียด: Exponential & Logarithm ตอนที่ 2",
-    "content": "เจาะลึกเนื้อหา Exponential & Logarithm ครอบคลุมประเด็นสำคัญที่ออกสอบบ่อยใน A-Level และ TGAT/TPAT... [Formula: LaTeX notation used for math clarity]",
-    "youtubeId": "dQw4w9WgXcQ",
-    "tags": [
-      "Mathematics",
-      "Exponential & Logarithm"
-    ]
-  },
-  {
-    "id": 23,
-    "subject": "Mathematics",
-    "title": "สรุปละเอียด: Exponential & Logarithm ตอนที่ 3",
-    "content": "เจาะลึกเนื้อหา Exponential & Logarithm ครอบคลุมประเด็นสำคัญที่ออกสอบบ่อยใน A-Level และ TGAT/TPAT... [Formula: LaTeX notation used for math clarity]",
-    "youtubeId": "dQw4w9WgXcQ",
-    "tags": [
-      "Mathematics",
-      "Exponential & Logarithm"
-    ]
-  },
-  {
-    "id": 24,
-    "subject": "Mathematics",
-    "title": "สรุปละเอียด: Exponential & Logarithm ตอนที่ 4",
-    "content": "เจาะลึกเนื้อหา Exponential & Logarithm ครอบคลุมประเด็นสำคัญที่ออกสอบบ่อยใน A-Level และ TGAT/TPAT... [Formula: LaTeX notation used for math clarity]",
-    "youtubeId": "dQw4w9WgXcQ",
-    "tags": [
-      "Mathematics",
-      "Exponential & Logarithm"
-    ]
-  },
-  {
-    "id": 25,
-    "subject": "Mathematics",
-    "title": "สรุปละเอียด: Exponential & Logarithm ตอนที่ 5",
-    "content": "เจาะลึกเนื้อหา Exponential & Logarithm ครอบคลุมประเด็นสำคัญที่ออกสอบบ่อยใน A-Level และ TGAT/TPAT... [Formula: LaTeX notation used for math clarity]",
-    "youtubeId": "dQw4w9WgXcQ",
-    "tags": [
-      "Mathematics",
-      "Exponential & Logarithm"
-    ]
-  },
-  {
-    "id": 26,
-    "subject": "Mathematics",
-    "title": "สรุปละเอียด: Trigonometry ตอนที่ 1",
-    "content": "เจาะลึกเนื้อหา Trigonometry ครอบคลุมประเด็นสำคัญที่ออกสอบบ่อยใน A-Level และ TGAT/TPAT... [Formula: LaTeX notation used for math clarity]",
-    "youtubeId": "dQw4w9WgXcQ",
-    "tags": [
-      "Mathematics",
-      "Trigonometry"
-    ]
-  },
-  {
-    "id": 27,
-    "subject": "Mathematics",
-    "title": "สรุปละเอียด: Trigonometry ตอนที่ 2",
-    "content": "เจาะลึกเนื้อหา Trigonometry ครอบคลุมประเด็นสำคัญที่ออกสอบบ่อยใน A-Level และ TGAT/TPAT... [Formula: LaTeX notation used for math clarity]",
-    "youtubeId": "dQw4w9WgXcQ",
-    "tags": [
-      "Mathematics",
-      "Trigonometry"
-    ]
-  },
-  {
-    "id": 28,
-    "subject": "Mathematics",
-    "title": "สรุปละเอียด: Trigonometry ตอนที่ 3",
-    "content": "เจาะลึกเนื้อหา Trigonometry ครอบคลุมประเด็นสำคัญที่ออกสอบบ่อยใน A-Level และ TGAT/TPAT... [Formula: LaTeX notation used for math clarity]",
-    "youtubeId": "dQw4w9WgXcQ",
-    "tags": [
-      "Mathematics",
-      "Trigonometry"
-    ]
-  },
-  {
-    "id": 29,
-    "subject": "Mathematics",
-    "title": "สรุปละเอียด: Trigonometry ตอนที่ 4",
-    "content": "เจาะลึกเนื้อหา Trigonometry ครอบคลุมประเด็นสำคัญที่ออกสอบบ่อยใน A-Level และ TGAT/TPAT... [Formula: LaTeX notation used for math clarity]",
-    "youtubeId": "dQw4w9WgXcQ",
-    "tags": [
-      "Mathematics",
-      "Trigonometry"
-    ]
-  },
-  {
-    "id": 30,
-    "subject": "Mathematics",
-    "title": "สรุปละเอียด: Trigonometry ตอนที่ 5",
-    "content": "เจาะลึกเนื้อหา Trigonometry ครอบคลุมประเด็นสำคัญที่ออกสอบบ่อยใน A-Level และ TGAT/TPAT... [Formula: LaTeX notation used for math clarity]",
-    "youtubeId": "dQw4w9WgXcQ",
-    "tags": [
-      "Mathematics",
-      "Trigonometry"
-    ]
-  },
-  {
-    "id": 31,
-    "subject": "Mathematics",
-    "title": "สรุปละเอียด: Geometry ตอนที่ 1",
-    "content": "เจาะลึกเนื้อหา Geometry ครอบคลุมประเด็นสำคัญที่ออกสอบบ่อยใน A-Level และ TGAT/TPAT... [Formula: LaTeX notation used for math clarity]",
-    "youtubeId": "dQw4w9WgXcQ",
-    "tags": [
-      "Mathematics",
-      "Geometry"
-    ]
-  },
-  {
-    "id": 32,
-    "subject": "Mathematics",
-    "title": "สรุปละเอียด: Geometry ตอนที่ 2",
-    "content": "เจาะลึกเนื้อหา Geometry ครอบคลุมประเด็นสำคัญที่ออกสอบบ่อยใน A-Level และ TGAT/TPAT... [Formula: LaTeX notation used for math clarity]",
-    "youtubeId": "dQw4w9WgXcQ",
-    "tags": [
-      "Mathematics",
-      "Geometry"
-    ]
-  },
-  {
-    "id": 33,
-    "subject": "Mathematics",
-    "title": "สรุปละเอียด: Geometry ตอนที่ 3",
-    "content": "เจาะลึกเนื้อหา Geometry ครอบคลุมประเด็นสำคัญที่ออกสอบบ่อยใน A-Level และ TGAT/TPAT... [Formula: LaTeX notation used for math clarity]",
-    "youtubeId": "dQw4w9WgXcQ",
-    "tags": [
-      "Mathematics",
-      "Geometry"
-    ]
-  },
-  {
-    "id": 34,
-    "subject": "Mathematics",
-    "title": "สรุปละเอียด: Geometry ตอนที่ 4",
-    "content": "เจาะลึกเนื้อหา Geometry ครอบคลุมประเด็นสำคัญที่ออกสอบบ่อยใน A-Level และ TGAT/TPAT... [Formula: LaTeX notation used for math clarity]",
-    "youtubeId": "dQw4w9WgXcQ",
-    "tags": [
-      "Mathematics",
-      "Geometry"
-    ]
-  },
-  {
-    "id": 35,
-    "subject": "Mathematics",
-    "title": "สรุปละเอียด: Geometry ตอนที่ 5",
-    "content": "เจาะลึกเนื้อหา Geometry ครอบคลุมประเด็นสำคัญที่ออกสอบบ่อยใน A-Level และ TGAT/TPAT... [Formula: LaTeX notation used for math clarity]",
-    "youtubeId": "dQw4w9WgXcQ",
-    "tags": [
-      "Mathematics",
-      "Geometry"
-    ]
-  },
-  {
-    "id": 36,
-    "subject": "Mathematics",
-    "title": "สรุปละเอียด: Conic Sections ตอนที่ 1",
-    "content": "เจาะลึกเนื้อหา Conic Sections ครอบคลุมประเด็นสำคัญที่ออกสอบบ่อยใน A-Level และ TGAT/TPAT... [Formula: LaTeX notation used for math clarity]",
-    "youtubeId": "dQw4w9WgXcQ",
-    "tags": [
-      "Mathematics",
-      "Conic Sections"
-    ]
-  },
-  {
-    "id": 37,
-    "subject": "Mathematics",
-    "title": "สรุปละเอียด: Conic Sections ตอนที่ 2",
-    "content": "เจาะลึกเนื้อหา Conic Sections ครอบคลุมประเด็นสำคัญที่ออกสอบบ่อยใน A-Level และ TGAT/TPAT... [Formula: LaTeX notation used for math clarity]",
-    "youtubeId": "dQw4w9WgXcQ",
-    "tags": [
-      "Mathematics",
-      "Conic Sections"
-    ]
-  },
-  {
-    "id": 38,
-    "subject": "Mathematics",
-    "title": "สรุปละเอียด: Conic Sections ตอนที่ 3",
-    "content": "เจาะลึกเนื้อหา Conic Sections ครอบคลุมประเด็นสำคัญที่ออกสอบบ่อยใน A-Level และ TGAT/TPAT... [Formula: LaTeX notation used for math clarity]",
-    "youtubeId": "dQw4w9WgXcQ",
-    "tags": [
-      "Mathematics",
-      "Conic Sections"
-    ]
-  },
-  {
-    "id": 39,
-    "subject": "Mathematics",
-    "title": "สรุปละเอียด: Conic Sections ตอนที่ 4",
-    "content": "เจาะลึกเนื้อหา Conic Sections ครอบคลุมประเด็นสำคัญที่ออกสอบบ่อยใน A-Level และ TGAT/TPAT... [Formula: LaTeX notation used for math clarity]",
-    "youtubeId": "dQw4w9WgXcQ",
-    "tags": [
-      "Mathematics",
-      "Conic Sections"
-    ]
-  },
-  {
-    "id": 40,
-    "subject": "Mathematics",
-    "title": "สรุปละเอียด: Conic Sections ตอนที่ 5",
-    "content": "เจาะลึกเนื้อหา Conic Sections ครอบคลุมประเด็นสำคัญที่ออกสอบบ่อยใน A-Level และ TGAT/TPAT... [Formula: LaTeX notation used for math clarity]",
-    "youtubeId": "dQw4w9WgXcQ",
-    "tags": [
-      "Mathematics",
-      "Conic Sections"
-    ]
-  },
-  {
-    "id": 41,
-    "subject": "Mathematics",
-    "title": "สรุปละเอียด: Matrices ตอนที่ 1",
-    "content": "เจาะลึกเนื้อหา Matrices ครอบคลุมประเด็นสำคัญที่ออกสอบบ่อยใน A-Level และ TGAT/TPAT... [Formula: LaTeX notation used for math clarity]",
-    "youtubeId": "dQw4w9WgXcQ",
-    "tags": [
-      "Mathematics",
-      "Matrices"
-    ]
-  },
-  {
-    "id": 42,
-    "subject": "Mathematics",
-    "title": "สรุปละเอียด: Matrices ตอนที่ 2",
-    "content": "เจาะลึกเนื้อหา Matrices ครอบคลุมประเด็นสำคัญที่ออกสอบบ่อยใน A-Level และ TGAT/TPAT... [Formula: LaTeX notation used for math clarity]",
-    "youtubeId": "dQw4w9WgXcQ",
-    "tags": [
-      "Mathematics",
-      "Matrices"
-    ]
-  },
-  {
-    "id": 43,
-    "subject": "Mathematics",
-    "title": "สรุปละเอียด: Matrices ตอนที่ 3",
-    "content": "เจาะลึกเนื้อหา Matrices ครอบคลุมประเด็นสำคัญที่ออกสอบบ่อยใน A-Level และ TGAT/TPAT... [Formula: LaTeX notation used for math clarity]",
-    "youtubeId": "dQw4w9WgXcQ",
-    "tags": [
-      "Mathematics",
-      "Matrices"
-    ]
-  },
-  {
-    "id": 44,
-    "subject": "Mathematics",
-    "title": "สรุปละเอียด: Matrices ตอนที่ 4",
-    "content": "เจาะลึกเนื้อหา Matrices ครอบคลุมประเด็นสำคัญที่ออกสอบบ่อยใน A-Level และ TGAT/TPAT... [Formula: LaTeX notation used for math clarity]",
-    "youtubeId": "dQw4w9WgXcQ",
-    "tags": [
-      "Mathematics",
-      "Matrices"
-    ]
-  },
-  {
-    "id": 45,
-    "subject": "Mathematics",
-    "title": "สรุปละเอียด: Matrices ตอนที่ 5",
-    "content": "เจาะลึกเนื้อหา Matrices ครอบคลุมประเด็นสำคัญที่ออกสอบบ่อยใน A-Level และ TGAT/TPAT... [Formula: LaTeX notation used for math clarity]",
-    "youtubeId": "dQw4w9WgXcQ",
-    "tags": [
-      "Mathematics",
-      "Matrices"
-    ]
-  },
-  {
-    "id": 46,
-    "subject": "Mathematics",
-    "title": "สรุปละเอียด: Vectors ตอนที่ 1",
-    "content": "เจาะลึกเนื้อหา Vectors ครอบคลุมประเด็นสำคัญที่ออกสอบบ่อยใน A-Level และ TGAT/TPAT... [Formula: LaTeX notation used for math clarity]",
-    "youtubeId": "dQw4w9WgXcQ",
-    "tags": [
-      "Mathematics",
-      "Vectors"
-    ]
-  },
-  {
-    "id": 47,
-    "subject": "Mathematics",
-    "title": "สรุปละเอียด: Vectors ตอนที่ 2",
-    "content": "เจาะลึกเนื้อหา Vectors ครอบคลุมประเด็นสำคัญที่ออกสอบบ่อยใน A-Level และ TGAT/TPAT... [Formula: LaTeX notation used for math clarity]",
-    "youtubeId": "dQw4w9WgXcQ",
-    "tags": [
-      "Mathematics",
-      "Vectors"
-    ]
-  },
-  {
-    "id": 48,
-    "subject": "Mathematics",
-    "title": "สรุปละเอียด: Vectors ตอนที่ 3",
-    "content": "เจาะลึกเนื้อหา Vectors ครอบคลุมประเด็นสำคัญที่ออกสอบบ่อยใน A-Level และ TGAT/TPAT... [Formula: LaTeX notation used for math clarity]",
-    "youtubeId": "dQw4w9WgXcQ",
-    "tags": [
-      "Mathematics",
-      "Vectors"
-    ]
-  },
-  {
-    "id": 49,
-    "subject": "Mathematics",
-    "title": "สรุปละเอียด: Vectors ตอนที่ 4",
-    "content": "เจาะลึกเนื้อหา Vectors ครอบคลุมประเด็นสำคัญที่ออกสอบบ่อยใน A-Level และ TGAT/TPAT... [Formula: LaTeX notation used for math clarity]",
-    "youtubeId": "dQw4w9WgXcQ",
-    "tags": [
-      "Mathematics",
-      "Vectors"
-    ]
-  },
-  {
-    "id": 50,
-    "subject": "Mathematics",
-    "title": "สรุปละเอียด: Vectors ตอนที่ 5",
-    "content": "เจาะลึกเนื้อหา Vectors ครอบคลุมประเด็นสำคัญที่ออกสอบบ่อยใน A-Level และ TGAT/TPAT... [Formula: LaTeX notation used for math clarity]",
-    "youtubeId": "dQw4w9WgXcQ",
-    "tags": [
-      "Mathematics",
-      "Vectors"
-    ]
-  },
-  {
-    "id": 51,
-    "subject": "Mathematics",
-    "title": "สรุปละเอียด: Complex Numbers ตอนที่ 1",
-    "content": "เจาะลึกเนื้อหา Complex Numbers ครอบคลุมประเด็นสำคัญที่ออกสอบบ่อยใน A-Level และ TGAT/TPAT... [Formula: LaTeX notation used for math clarity]",
-    "youtubeId": "dQw4w9WgXcQ",
-    "tags": [
-      "Mathematics",
-      "Complex Numbers"
-    ]
-  },
-  {
-    "id": 52,
-    "subject": "Mathematics",
-    "title": "สรุปละเอียด: Complex Numbers ตอนที่ 2",
-    "content": "เจาะลึกเนื้อหา Complex Numbers ครอบคลุมประเด็นสำคัญที่ออกสอบบ่อยใน A-Level และ TGAT/TPAT... [Formula: LaTeX notation used for math clarity]",
-    "youtubeId": "dQw4w9WgXcQ",
-    "tags": [
-      "Mathematics",
-      "Complex Numbers"
-    ]
-  },
-  {
-    "id": 53,
-    "subject": "Mathematics",
-    "title": "สรุปละเอียด: Complex Numbers ตอนที่ 3",
-    "content": "เจาะลึกเนื้อหา Complex Numbers ครอบคลุมประเด็นสำคัญที่ออกสอบบ่อยใน A-Level และ TGAT/TPAT... [Formula: LaTeX notation used for math clarity]",
-    "youtubeId": "dQw4w9WgXcQ",
-    "tags": [
-      "Mathematics",
-      "Complex Numbers"
-    ]
-  },
-  {
-    "id": 54,
-    "subject": "Mathematics",
-    "title": "สรุปละเอียด: Complex Numbers ตอนที่ 4",
-    "content": "เจาะลึกเนื้อหา Complex Numbers ครอบคลุมประเด็นสำคัญที่ออกสอบบ่อยใน A-Level และ TGAT/TPAT... [Formula: LaTeX notation used for math clarity]",
-    "youtubeId": "dQw4w9WgXcQ",
-    "tags": [
-      "Mathematics",
-      "Complex Numbers"
-    ]
-  },
-  {
-    "id": 55,
-    "subject": "Mathematics",
-    "title": "สรุปละเอียด: Complex Numbers ตอนที่ 5",
-    "content": "เจาะลึกเนื้อหา Complex Numbers ครอบคลุมประเด็นสำคัญที่ออกสอบบ่อยใน A-Level และ TGAT/TPAT... [Formula: LaTeX notation used for math clarity]",
-    "youtubeId": "dQw4w9WgXcQ",
-    "tags": [
-      "Mathematics",
-      "Complex Numbers"
-    ]
-  },
-  {
-    "id": 56,
-    "subject": "Mathematics",
-    "title": "สรุปละเอียด: Probability ตอนที่ 1",
-    "content": "เจาะลึกเนื้อหา Probability ครอบคลุมประเด็นสำคัญที่ออกสอบบ่อยใน A-Level และ TGAT/TPAT... [Formula: LaTeX notation used for math clarity]",
-    "youtubeId": "dQw4w9WgXcQ",
-    "tags": [
-      "Mathematics",
-      "Probability"
-    ]
-  },
-  {
-    "id": 57,
-    "subject": "Mathematics",
-    "title": "สรุปละเอียด: Probability ตอนที่ 2",
-    "content": "เจาะลึกเนื้อหา Probability ครอบคลุมประเด็นสำคัญที่ออกสอบบ่อยใน A-Level และ TGAT/TPAT... [Formula: LaTeX notation used for math clarity]",
-    "youtubeId": "dQw4w9WgXcQ",
-    "tags": [
-      "Mathematics",
-      "Probability"
-    ]
-  },
-  {
-    "id": 58,
-    "subject": "Mathematics",
-    "title": "สรุปละเอียด: Probability ตอนที่ 3",
-    "content": "เจาะลึกเนื้อหา Probability ครอบคลุมประเด็นสำคัญที่ออกสอบบ่อยใน A-Level และ TGAT/TPAT... [Formula: LaTeX notation used for math clarity]",
-    "youtubeId": "dQw4w9WgXcQ",
-    "tags": [
-      "Mathematics",
-      "Probability"
-    ]
-  },
-  {
-    "id": 59,
-    "subject": "Mathematics",
-    "title": "สรุปละเอียด: Probability ตอนที่ 4",
-    "content": "เจาะลึกเนื้อหา Probability ครอบคลุมประเด็นสำคัญที่ออกสอบบ่อยใน A-Level และ TGAT/TPAT... [Formula: LaTeX notation used for math clarity]",
-    "youtubeId": "dQw4w9WgXcQ",
-    "tags": [
-      "Mathematics",
-      "Probability"
-    ]
-  },
-  {
-    "id": 60,
-    "subject": "Mathematics",
-    "title": "สรุปละเอียด: Probability ตอนที่ 5",
-    "content": "เจาะลึกเนื้อหา Probability ครอบคลุมประเด็นสำคัญที่ออกสอบบ่อยใน A-Level และ TGAT/TPAT... [Formula: LaTeX notation used for math clarity]",
-    "youtubeId": "dQw4w9WgXcQ",
-    "tags": [
-      "Mathematics",
-      "Probability"
-    ]
-  },
-  {
-    "id": 61,
-    "subject": "Mathematics",
-    "title": "สรุปละเอียด: Statistics ตอนที่ 1",
-    "content": "เจาะลึกเนื้อหา Statistics ครอบคลุมประเด็นสำคัญที่ออกสอบบ่อยใน A-Level และ TGAT/TPAT... [Formula: LaTeX notation used for math clarity]",
-    "youtubeId": "dQw4w9WgXcQ",
-    "tags": [
-      "Mathematics",
-      "Statistics"
-    ]
-  },
-  {
-    "id": 62,
-    "subject": "Mathematics",
-    "title": "สรุปละเอียด: Statistics ตอนที่ 2",
-    "content": "เจาะลึกเนื้อหา Statistics ครอบคลุมประเด็นสำคัญที่ออกสอบบ่อยใน A-Level และ TGAT/TPAT... [Formula: LaTeX notation used for math clarity]",
-    "youtubeId": "dQw4w9WgXcQ",
-    "tags": [
-      "Mathematics",
-      "Statistics"
-    ]
-  },
-  {
-    "id": 63,
-    "subject": "Mathematics",
-    "title": "สรุปละเอียด: Statistics ตอนที่ 3",
-    "content": "เจาะลึกเนื้อหา Statistics ครอบคลุมประเด็นสำคัญที่ออกสอบบ่อยใน A-Level และ TGAT/TPAT... [Formula: LaTeX notation used for math clarity]",
-    "youtubeId": "dQw4w9WgXcQ",
-    "tags": [
-      "Mathematics",
-      "Statistics"
-    ]
-  },
-  {
-    "id": 64,
-    "subject": "Mathematics",
-    "title": "สรุปละเอียด: Statistics ตอนที่ 4",
-    "content": "เจาะลึกเนื้อหา Statistics ครอบคลุมประเด็นสำคัญที่ออกสอบบ่อยใน A-Level และ TGAT/TPAT... [Formula: LaTeX notation used for math clarity]",
-    "youtubeId": "dQw4w9WgXcQ",
-    "tags": [
-      "Mathematics",
-      "Statistics"
-    ]
-  },
-  {
-    "id": 65,
-    "subject": "Mathematics",
-    "title": "สรุปละเอียด: Statistics ตอนที่ 5",
-    "content": "เจาะลึกเนื้อหา Statistics ครอบคลุมประเด็นสำคัญที่ออกสอบบ่อยใน A-Level และ TGAT/TPAT... [Formula: LaTeX notation used for math clarity]",
-    "youtubeId": "dQw4w9WgXcQ",
-    "tags": [
-      "Mathematics",
-      "Statistics"
-    ]
-  },
-  {
-    "id": 66,
-    "subject": "Mathematics",
-    "title": "สรุปละเอียด: Calculus ตอนที่ 1",
-    "content": "เจาะลึกเนื้อหา Calculus ครอบคลุมประเด็นสำคัญที่ออกสอบบ่อยใน A-Level และ TGAT/TPAT... [Formula: LaTeX notation used for math clarity]",
-    "youtubeId": "dQw4w9WgXcQ",
-    "tags": [
-      "Mathematics",
-      "Calculus"
-    ]
-  },
-  {
-    "id": 67,
-    "subject": "Mathematics",
-    "title": "สรุปละเอียด: Calculus ตอนที่ 2",
-    "content": "เจาะลึกเนื้อหา Calculus ครอบคลุมประเด็นสำคัญที่ออกสอบบ่อยใน A-Level และ TGAT/TPAT... [Formula: LaTeX notation used for math clarity]",
-    "youtubeId": "dQw4w9WgXcQ",
-    "tags": [
-      "Mathematics",
-      "Calculus"
-    ]
-  },
-  {
-    "id": 68,
-    "subject": "Mathematics",
-    "title": "สรุปละเอียด: Calculus ตอนที่ 3",
-    "content": "เจาะลึกเนื้อหา Calculus ครอบคลุมประเด็นสำคัญที่ออกสอบบ่อยใน A-Level และ TGAT/TPAT... [Formula: LaTeX notation used for math clarity]",
-    "youtubeId": "dQw4w9WgXcQ",
-    "tags": [
-      "Mathematics",
-      "Calculus"
-    ]
-  },
-  {
-    "id": 69,
-    "subject": "Mathematics",
-    "title": "สรุปละเอียด: Calculus ตอนที่ 4",
-    "content": "เจาะลึกเนื้อหา Calculus ครอบคลุมประเด็นสำคัญที่ออกสอบบ่อยใน A-Level และ TGAT/TPAT... [Formula: LaTeX notation used for math clarity]",
-    "youtubeId": "dQw4w9WgXcQ",
-    "tags": [
-      "Mathematics",
-      "Calculus"
-    ]
-  },
-  {
-    "id": 70,
-    "subject": "Mathematics",
-    "title": "สรุปละเอียด: Calculus ตอนที่ 5",
-    "content": "เจาะลึกเนื้อหา Calculus ครอบคลุมประเด็นสำคัญที่ออกสอบบ่อยใน A-Level และ TGAT/TPAT... [Formula: LaTeX notation used for math clarity]",
-    "youtubeId": "dQw4w9WgXcQ",
-    "tags": [
-      "Mathematics",
-      "Calculus"
-    ]
-  },
-  {
-    "id": 71,
-    "subject": "Mathematics",
-    "title": "สรุปละเอียด: Sequences & Series ตอนที่ 1",
-    "content": "เจาะลึกเนื้อหา Sequences & Series ครอบคลุมประเด็นสำคัญที่ออกสอบบ่อยใน A-Level และ TGAT/TPAT... [Formula: LaTeX notation used for math clarity]",
-    "youtubeId": "dQw4w9WgXcQ",
-    "tags": [
-      "Mathematics",
-      "Sequences & Series"
-    ]
-  },
-  {
-    "id": 72,
-    "subject": "Mathematics",
-    "title": "สรุปละเอียด: Sequences & Series ตอนที่ 2",
-    "content": "เจาะลึกเนื้อหา Sequences & Series ครอบคลุมประเด็นสำคัญที่ออกสอบบ่อยใน A-Level และ TGAT/TPAT... [Formula: LaTeX notation used for math clarity]",
-    "youtubeId": "dQw4w9WgXcQ",
-    "tags": [
-      "Mathematics",
-      "Sequences & Series"
-    ]
-  },
-  {
-    "id": 73,
-    "subject": "Mathematics",
-    "title": "สรุปละเอียด: Sequences & Series ตอนที่ 3",
-    "content": "เจาะลึกเนื้อหา Sequences & Series ครอบคลุมประเด็นสำคัญที่ออกสอบบ่อยใน A-Level และ TGAT/TPAT... [Formula: LaTeX notation used for math clarity]",
-    "youtubeId": "dQw4w9WgXcQ",
-    "tags": [
-      "Mathematics",
-      "Sequences & Series"
-    ]
-  },
-  {
-    "id": 74,
-    "subject": "Mathematics",
-    "title": "สรุปละเอียด: Sequences & Series ตอนที่ 4",
-    "content": "เจาะลึกเนื้อหา Sequences & Series ครอบคลุมประเด็นสำคัญที่ออกสอบบ่อยใน A-Level และ TGAT/TPAT... [Formula: LaTeX notation used for math clarity]",
-    "youtubeId": "dQw4w9WgXcQ",
-    "tags": [
-      "Mathematics",
-      "Sequences & Series"
-    ]
-  },
-  {
-    "id": 75,
-    "subject": "Mathematics",
-    "title": "สรุปละเอียด: Sequences & Series ตอนที่ 5",
-    "content": "เจาะลึกเนื้อหา Sequences & Series ครอบคลุมประเด็นสำคัญที่ออกสอบบ่อยใน A-Level และ TGAT/TPAT... [Formula: LaTeX notation used for math clarity]",
-    "youtubeId": "dQw4w9WgXcQ",
-    "tags": [
-      "Mathematics",
-      "Sequences & Series"
-    ]
+    "id": "math_001",
+    "title": "เซตและสับเซต (Sets and Subsets)",
+    "content": "เซตเป็นมโนทัศน์พื้นฐานในคณิตศาสตร์ที่ใช้รวบรวมวัตถุต่างๆ เข้าด้วยกัน\n\n**1. การเขียนเซต:**\n- แบบแจกแจงสมาชิก: $A = \\{1, 2, 3\\}$\n- แบบบอกเงื่อนไข: $B = \\{x \\in \\mathbb{R} \\mid x^2 = 4\\}$\n\n**2. สับเซต (Subsets):**\n$A \\subseteq B$ หมายความว่า สมาชิกทุกตัวของ $A$ เป็นสมาชิกของ $B$\n- พิสูจน์: $\\forall x [x \\in A \\implies x \\in B]$\n- จำนวนสับเซตทั้งหมดของเซตที่มีสมาชิก $n$ ตัวคือ $2^n$\n- พาวเวอร์เซต (Power Set): $P(A)$ คือเซตของสับเซตทั้งหมดของ $A$\n\n**เคล็ดลับของ Thoth:**\n- เซตว่าง ($\\emptyset$) เป็นสับเซตของทุกเซตเสมอ\n- เซต $A$ เป็นสับเซตของตัวมันเองเสมอ ($A \\subseteq A$)",
+    "youtubeId": "Q-pIuO_FmXo",
+    "tags": ["math", "sets", "foundations"]
+  },
+  {
+    "id": "math_002",
+    "title": "การดำเนินการระหว่างเซต (Set Operations)",
+    "content": "การสร้างเซตใหม่จากเซตเดิมที่กำหนดให้\n\n**1. ยูเนียน (Union):** $A \\cup B = \\{x \\mid x \\in A \\text{ หรือ } x \\in B\\}$\n**2. อินเตอร์เซกชัน (Intersection):** $A \\cap B = \\{x \\mid x \\in A \\text{ และ } x \\in B\\}$\n**3. ผลต่าง (Difference):** $A - B = \\{x \\mid x \\in A \\text{ และ } x \\notin B\\}$\n**4. คอมพลีเมนต์ (Complement):** $A' = \\{x \\mid x \\in U \\text{ และ } x \\notin A\\}$\n\n**กฎที่สำคัญ (De Morgan's Laws):**\n1. $(A \\cup B)' = A' \\cap B'$\n2. $(A \\cap B)' = A' \\cup B'$\n\n**บทพิสูจน์สั้นๆ:**\n$x \\in (A \\cup B)' \\iff x \\notin (A \\cup B) \\iff \\neg(x \\in A \\lor x \\in B) \\iff (x \\notin A \\land x \\notin B) \\iff x \\in A' \\cap B'$",
+    "youtubeId": "zX7p-X_T-D8",
+    "tags": ["math", "sets"]
+  },
+  {
+    "id": "math_003",
+    "title": "จำนวนสมาชิกของเซตจำกัด (Cardinality)",
+    "content": "การหาจำนวนสมาชิกในเหตุการณ์ต่างๆ โดยใช้แผนภาพเวนน์-ออยเลอร์\n\n**สูตรที่สำคัญ:**\n- สองเซต: $n(A \\cup B) = n(A) + n(B) - n(A \\cap B)$\n- สามเซต: $n(A \\cup B \\cup C) = n(A) + n(B) + n(C) - n(A \\cap B) - n(A \\cap C) - n(B \\cap C) + n(A \\cap B \\cap C)$\n\n**Thoth's Laws of Counting:**\nเมื่อโจทย์ถามคำว่า 'อย่างน้อยหนึ่ง' ให้พิจารณาคอมพลีเมนต์ (ทั้งหมด - ไม่เลือกเลย)\nเมื่อโจทย์ถามสมาชิกที่อยู่ใน $A$ แต่ไม่อยู่ใน $B$ ให้ใช้ $n(A) - n(A \\cap B)$",
+    "youtubeId": "I8R9i_qA2M8",
+    "tags": ["math", "sets", "counting"]
+  },
+  {
+    "id": "math_004",
+    "title": "ตรรกศาสตร์พื้นฐาน (Mathematical Logic)",
+    "content": "ตรรกศาสตร์คือรากฐานของการพิสูจน์ทางคณิตศาสตร์\n\n**ตัวเชื่อมประพาส (Connectives):**\n- และ ($\\land$): จริงเมื่อจริงทั้งคู่\n- หรือ ($\\lor$): เท็จเมื่อเท็จทั้งคู่\n- ถ้า...แล้ว... ($\\implies$): เท็จกรณีเดียวคือ หน้าจริงหลังเท็จ ($T \\implies F$)\n- ก็ต่อเมื่อ ($\\iff$): จริงเมื่อเหมือนกัน\n\n**ลำดับการทำงาน (Precedence):**\n$\\sim$ (นิเสธ) > $\\land, \\lor$ > $\\implies$ > $\\iff$\n\n**สัจนิรันดร์ (Tautology):** ประพจน์ที่มีค่าความจริงเป็นจริงทุกกรณี",
+    "youtubeId": "L0fEAnE39Y8",
+    "tags": ["math", "logic"]
+  },
+  {
+    "id": "math_005",
+    "title": "การสมมูลและนิเสธ (Equivalence and Negation)",
+    "content": "ประพจน์ที่สมมูลกันจะมีค่าความจริงเหมือนกันทุกกรณี\n\n**คู่สมมูลที่ออกสอบบ่อย:**\n1. $P \\implies Q \\equiv \\sim P \\lor Q$ (เปลี่ยนถ้าแล้วเป็นหรือ)\n2. $P \\implies Q \\equiv \\sim Q \\implies \\sim P$ (แย้งสลับที่ - Contrapositive)\n3. $\\sim(P \\land Q) \\equiv \\sim P \\lor \\sim Q$\n4. $\\sim(P \\implies Q) \\equiv P \\land \\sim Q$ (นิเสธของถ้าแล้ว คือ หน้าและไม่หลัง)\n\n**เทคนิคของ Thoth:**\nในการเช็คสัจนิรันดร์ของ $P \\implies Q$ ให้สมมติว่าเป็นเท็จ ($P=T, Q=F$) แล้วหาข้อขัดแย้ง ถ้าเจอข้อขัดแย้ง แสดงว่าเป็นสัจนิรันดร์",
+    "youtubeId": "JpG4_iE1S4o",
+    "tags": ["math", "logic"]
+  },
+  {
+    "id": "math_006",
+    "title": "ตัวบ่งปริมาณ (Quantifiers)",
+    "content": "การศึกษาข้อความที่มี $\\forall$ (สำหรับสมาชิกทุกตัว) และ $\\exists$ (สำหรับสมาชิกบางตัว)\n\n**1. ค่าความจริง:**\n- $\\forall x [P(x)]$ จริงเมื่อ $P(x)$ จริงสำหรับทุก $x$ ในเอกภพสัมพัทธ์ ($U$)\n- $\\exists x [P(x)]$ จริงเมื่อพบอย่างน้อยหนึ่ง $x$ ที่ทำให้ $P(x)$ จริง\n\n**2. นิเสธของตัวบ่งปริมาณ:**\n- $\\sim \\forall x [P(x)] \\equiv \\exists x [\\sim P(x)]$\n- $\\sim \\exists x [P(x)] \\equiv \\forall x [\\sim P(x)]$\n\n**ตัวอย่างการพิสูจน์:**\nการพิสูจน์ว่า $\\forall x [P(x)]$ เป็นเท็จ ทำได้โดยการยก 'ตัวอย่างค้าน' (Counterexample) เพียงตัวเดียว",
+    "youtubeId": "gI96_I-oP78",
+    "tags": ["math", "logic"]
+  },
+  {
+    "id": "math_007",
+    "title": "ระบบจำนวนจริง (Real Number System)",
+    "content": "โครงสร้างของจำนวนที่เป็นพื้นฐานของแคลคูลัส\n\n**แผนผัง:**\nจำนวนจริง ($\\mathbb{R}$) แบ่งเป็น:\n- จำนวนตรรกยะ ($\\mathbb{Q}$): เขียนในรูปเศษส่วนได้\n- จำนวนอตกรรกยะ ($\\mathbb{Q}'$): เช่น $\\pi, \\sqrt{2}$, ทศนิยมไม่ซ้ำไม่รู้จบ\n\n**สมบัติปิด (Closure Property):**\nถ้า $a, b \\in \\mathbb{R}$ แล้ว $a+b \\in \\mathbb{R}$ และ $ab \\in \\mathbb{R}$\n\n**สมบัติการแจกแจง:** $a(b+c) = ab + ac$\n\n**Thoth's Reminder:** ศูนย์ ($0$) ไม่มีอินเวอร์สการคูณ เพราะ $\\frac{1}{0}$ ไม่นิยาม",
+    "youtubeId": "qW60o6jE38U",
+    "tags": ["math", "numbers"]
+  },
+  {
+    "id": "math_008",
+    "title": "การแยกตัวประกอบพหุนาม (Polynomial Factorization)",
+    "content": "พื้นฐานการแก้สมการกำลัง $n$\n\n**สูตรสำคัญ:**\n- ผลต่างกำลังสอง: $a^2 - b^2 = (a-b)(a+b)$\n- กำลังสองสมบูรณ์: $(a \\pm b)^2 = a^2 \\pm 2ab + b^2$\n- ผลบวก/ต่างกำลังสาม:\n  $a^3 + b^3 = (a+b)(a^2 - ab + b^2)$\n  $a^3 - b^3 = (a-b)(a^2 + ab + b^2)$\n\n**ทฤษฎีบทเศษเหลือ (Remainder Theorem):**\nถ้าหาร $P(x)$ ด้วย $x-c$ เศษที่ได้คือ $P(c)$\n\n**ทฤษฎีบทตัวประกอบ (Factor Theorem):**\n$x-c$ เป็นตัวประกอบของ $P(x)$ ก็ต่อเมื่อ $P(c) = 0$",
+    "youtubeId": "K2D-vS0Y56Q",
+    "tags": ["math", "algebra"]
+  },
+  {
+    "id": "math_009",
+    "title": "สมการและอสมการพหุนาม (Equations and Inequalities)",
+    "content": "การหาเซตคำตอบของพหุนามบนเส้นจำนวน\n\n**ขั้นตอนการแก้อสมการ:**\n1. จัดฝั่งหนึ่งให้เป็น 0\n2. แยกตัวประกอบให้สัมประสิทธิ์หน้า $x$ เป็นบวก\n3. หาค่าวิกฤต (Critical points)\n4. พลอตบนเส้นจำนวน ใส่เครื่องหมาย $+ , - , +$ เริ่มจากขวาไปซ้าย\n\n**ข้อควรระวัง:**\n- ห้ามนำตัวแปรที่ยังไม่ทราบค่า (ที่อาจเป็นลบ) ไปคูณไขว้ในอสมการ เพราะเครื่องหมายอาจต้องเปลี่ยน\n- ถ้าคูณด้วยเลขลบ เครื่องหมายอสมการต้องกลับด้าน",
+    "youtubeId": "fR5M_7_U_fA",
+    "tags": ["math", "algebra"]
+  },
+  {
+    "id": "math_010",
+    "title": "ค่าสัมบูรณ์ (Absolute Value)",
+    "content": "นิยาม: $|x| = x$ ถ้า $x \\ge 0$ และ $|x| = -x$ ถ้า $x < 0$\n\n**สมบัติที่สำคัญ:**\n1. $|x| = \\sqrt{x^2}$\n2. $|xy| = |x||y|$\n3. $|x+y| \\le |x| + |y|$ (อสมการอิงรูปสามเหลี่ยม)\n\n**การแก้สมการ/อสมการค่าสัมบูรณ์:**\n- $|x| = a \\iff x = a$ หรือ $x = -a$\n- $|x| < a \\iff -a < x < a$\n- $|x| > a \\iff x > a$ หรือ $x < -a$\n\n**Thoth's Technique:** เมื่อเจอ $|f(x)| = |g(x)|$ ให้ยกกำลังสองทั้งสองข้างเพื่อกำจัดค่าสัมบูรณ์",
+    "youtubeId": "5uO-6A38LpM",
+    "tags": ["math", "algebra"]
+  },
+  {
+    "id": "math_011",
+    "title": "ฟังก์ชันและนิยาม (Functions and Definitions)",
+    "content": "ความสัมพันธ์ที่สมาชิกแต่ละตัวในโดเมนจับคู่กับสมาชิกในเรนจ์เพียงตัวเดียว\n\n**1. โดเมน ($D_f$) และเรนจ์ ($R_f$):**\n- โดเมน: เซตของค่า $x$ ที่หาค่า $f(x)$ ได้\n- เรนจ์: เซตของค่า $y$ ที่เป็นไปได้ทั้งหมด\n\n**2. การเช็คฟังก์ชัน:**\n- ใช้ Vertical Line Test: ลากเส้นแนวตั้งตัดกราฟ ถ้าตัดไม่เกิน 1 จุด คือฟังก์ชัน\n\n**3. ฟังก์ชัน 1-1:**\n- เช็คโดย Horizontal Line Test: ลากเส้นแนวนอนตัดกราฟ ถ้าตัดไม่เกิน 1 จุด คือฟังก์ชัน 1-1",
+    "youtubeId": "hR6u_Dq6KxE",
+    "tags": ["math", "functions"]
+  },
+  {
+    "id": "math_012",
+    "title": "ฟังก์ชันประกอบและฟังก์ชันผกผัน (Composite and Inverse)",
+    "content": "การดำเนินการขั้นสูงของฟังก์ชัน\n\n**1. ฟังก์ชันประกอบ (Composite Function):**\n$(g \\circ f)(x) = g(f(x))$\n- เงื่อนไขการเกิด: $R_f \\cap D_g \\neq \\emptyset$\n\n**2. ฟังก์ชันผกผัน (Inverse Function):**\n$f^{-1}$ จะมีได้ก็ต่อเมื่อ $f$ เป็นฟังก์ชัน 1-1\n- วิธีหา: สลับที่ $x, y$ แล้วจัดรูป $y$ ในเทอม $x$\n- สมบัติ: $(f \\circ f^{-1})(x) = x$ และ $(f^{-1} \\circ f)(x) = x$\n- กราฟของ $f$ และ $f^{-1}$ จะสมมาตรกันรอบเส้นตรง $y = x$",
+    "youtubeId": "A2V8I_3S6E0",
+    "tags": ["math", "functions"]
+  },
+  {
+    "id": "math_013",
+    "title": "ฟังก์ชันเอกซ์โพเนนเชียล (Exponential Functions)",
+    "content": "ฟังก์ชันในรูป $f(x) = a^x$ โดยที่ $a > 0$ และ $a \\neq 1$\n\n**1. กราฟ:**\n- ถ้า $a > 1$: ฟังก์ชันเพิ่ม (Increasing)\n- ถ้า $0 < a < 1$: ฟังก์ชันลด (Decreasing)\n- กราฟผ่านจุด $(0, 1)$ เสมอ\n\n**2. กฎของเลขยกกำลัง:**\n- $a^m \\cdot a^n = a^{m+n}$\n- $(a^m)^n = a^{mn}$\n- $a^{-n} = \\frac{1}{a^n}$\n\n**Thoth's Tip:** ในการแก้สมการเอกซ์โพเนนเชียล พยายามจัดฐานให้เท่ากัน แล้วจับเลขชี้กำลังมาเท่ากัน",
+    "youtubeId": "6mPq6M8R8iU",
+    "tags": ["math", "algebra", "exponential"]
+  },
+  {
+    "id": "math_014",
+    "title": "ลอการิทึม (Logarithms)",
+    "content": "ส่วนกลับของเอกซ์โพเนนเชียล: $y = \\log_a x \\iff a^y = x$\n\n**กฎของลอการิทึม (Log Laws):**\n1. $\\log_a (MN) = \\log_a M + \\log_a N$\n2. $\\log_a (M/N) = \\log_a M - \\log_a N$\n3. $\\log_a M^p = p \\log_a M$\n4. $\\log_a a = 1$ และ $\\log_a 1 = 0$\n5. เปลี่ยนฐาน: $\\log_a b = \\frac{\\log_c b}{\\log_c a}$\n\n**นิยาม:** ลอการิทึมธรรมชาติ (Natural Log) คือ $\\ln x = \\log_e x$ โดย $e \\approx 2.718$",
+    "youtubeId": "q8xT8Yf-h4w",
+    "tags": ["math", "algebra", "logarithm"]
+  },
+  {
+    "id": "math_015",
+    "title": "ฟังก์ชันตรีโกณมิติและวงกลมหนึ่งหน่วย (Trigonometry and Unit Circle)",
+    "content": "การนิยามฟังก์ชันบนวงกลมรัศมี 1 หน่วย ($x^2 + y^2 = 1$)\n\n**นิยาม:**\n- $x = \\cos \\theta$\n- $y = \\sin \\theta$\n- $\\tan \\theta = y/x = \\sin \\theta / \\cos \\theta$\n\n**เอกลักษณ์พื้นฐาน:**\n- $\\sin^2 \\theta + \\cos^2 \\theta = 1$\n- $1 + \\tan^2 \\theta = \\sec^2 \\theta$\n- $1 + \\cot^2 \\theta = \\csc^2 \\theta$\n\n**ควอดรันต์ (Quadrant):**\n- Q1: All (+)\n- Q2: Sin (+)\n- Q3: Tan (+)\n- Q4: Cos (+)\nท่องว่า 'All-Sin-Tan-Cos'",
+    "youtubeId": "pM-E_w4H1N0",
+    "tags": ["math", "trigonometry"]
+  },
+  {
+    "id": "math_016",
+    "title": "สูตรตรีโกณมิติที่สำคัญ (Trig Formulas)",
+    "content": "รวมสูตรสำหรับมุมประกอบและมุมหลายเท่า\n\n**1. มุมบวก/ลบ:**\n- $\\sin(A \\pm B) = \\sin A \\cos B \\pm \\cos A \\sin B$\n- $\\cos(A \\pm B) = \\cos A \\cos B \\mp \\sin A \\sin B$\n- $\\tan(A \\pm B) = \\frac{\\tan A \\pm \\tan B}{1 \\mp \\tan A \\tan B}$\n\n**2. มุมสองเท่า (Double Angle):**\n- $\\sin 2A = 2\\sin A \\cos A$\n- $\\cos 2A = \\cos^2 A - \\sin^2 A = 2\\cos^2 A - 1 = 1 - 2\\sin^2 A$\n- $\\tan 2A = \\frac{2\\tan A}{1 - \\tan^2 A}$\n\n**เคล็ดลับ Thoth:** $\\cos 2A$ มี 3 รูปแบบ เลือกใช้ตามสิ่งที่โจทย์กำหนดให้",
+    "youtubeId": "L-S7B-X-F-E",
+    "tags": ["math", "trigonometry"]
+  },
+  {
+    "id": "math_017",
+    "title": "กฎของไซน์และโคไซน์ (Laws of Sines and Cosines)",
+    "content": "การแก้รูปสามเหลี่ยมใดๆ ที่ไม่ใช่สามเหลี่ยมมุมฉาก\n\n**1. กฎของไซน์ (Law of Sines):**\n$\\frac{a}{\\sin A} = \\frac{b}{\\sin B} = \\frac{c}{\\sin C} = 2R$ (เมื่อ $R$ คือรัศมีวงกลมล้อมรอบ)\n\n**2. กฎของโคไซน์ (Law of Cosines):**\n$a^2 = b^2 + c^2 - 2bc \\cos A$\n(ใช้เมื่อรู้ 2 ด้าน 1 มุมระหว่าง หรือรู้ 3 ด้าน)\n\n**3. พื้นที่สามเหลี่ยม:**\n$Area = \\frac{1}{2} ab \\sin C$\nหรือสูตร Heron: $\\sqrt{s(s-a)(s-b)(s-c)}$ เมื่อ $s = (a+b+c)/2$",
+    "youtubeId": "8J0_B1gS17g",
+    "tags": ["math", "trigonometry", "geometry"]
+  },
+  {
+    "id": "math_018",
+    "title": "เรขาคณิตวิเคราะห์ (Coordinate Geometry)",
+    "content": "การศึกษาความสัมพันธ์ของจุดและเส้นตรงบนระนาบคาร์ทีเซียน\n\n**1. ระยะทางระหว่างจุด:** $d = \\sqrt{(x_2-x_1)^2 + (y_2-y_1)^2}$\n**2. จุดกึ่งกลาง:** $(\\frac{x_1+x_2}{2}, \\frac{y_1+y_2}{2})$\n**3. ความชัน (Slope):** $m = \\frac{y_2-y_1}{x_2-x_1} = \\tan \\theta$\n\n**ความสัมพันธ์ของเส้นตรง:**\n- ขนานกัน: $m_1 = m_2$\n- ตั้งฉากกัน: $m_1 \\cdot m_2 = -1$\n\n**ระยะห่างระหว่างจุดกับเส้นตรง:**\n$d = \\frac{|Ax_1 + By_1 + C|}{\\sqrt{A^2 + B^2}}$ สำหรับเส้น $Ax + By + C = 0$",
+    "youtubeId": "T9A7C7K4N8M",
+    "tags": ["math", "geometry"]
+  },
+  {
+    "id": "math_019",
+    "title": "วงกลมและพาราโบลา (Circles and Parabolas)",
+    "content": "ภาคตัดกรวยเบื้องต้น\n\n**1. วงกลม (Circle):**\n- รูปมาตรฐาน: $(x-h)^2 + (y-k)^2 = r^2$\n- จุดศูนย์กลาง $(h, k)$, รัศมี $r$\n\n**2. พาราโบลา (Parabola):**\n- รูปมาตรฐาน: $(y-k)^2 = 4p(x-h)$ (เปิดซ้าย/ขวา) หรือ $(x-h)^2 = 4p(y-k)$ (หงาย/คว่ำ)\n- จุดยอด $V(h, k)$\n- จุดโฟกัส $F$ ห่างจากจุดยอดเป็นระยะ $|p|$\n- เส้นไดเรกตริกซ์ (Directrix) อยู่ฝั่งตรงข้ามจุดโฟกัสห่างระยะ $|p|$ จากจุดยอด\n- Latus Rectum ยาว $|4p|$",
+    "youtubeId": "3Y-B-K0D-8I",
+    "tags": ["math", "geometry", "conics"]
+  },
+  {
+    "id": "math_020",
+    "title": "วงรีและไฮเพอร์โบลา (Ellipses and Hyperbolas)",
+    "content": "ภาคตัดกรวยที่มีสองโฟกัส\n\n**1. วงรี (Ellipse):**\n- นิยาม: ผลบวกระยะทางจากจุดบนวงรีไปยังโฟกัสทั้งสองคงที่ $= 2a$\n- รูปแบบ: $\\frac{(x-h)^2}{a^2} + \\frac{(y-k)^2}{b^2} = 1$ (เมื่อ $a > b$)\n- ความสัมพันธ์: $a^2 = b^2 + c^2$ (เมื่อ $c$ คือระยะจากศูนย์กลางไปโฟกัส)\n\n**2. ไฮเพอร์โบลา (Hyperbola):**\n- นิยาม: ผลต่างระยะทางคงที่ $= 2a$\n- รูปแบบ: $\\frac{(x-h)^2}{a^2} - \\frac{(y-k)^2}{b^2} = 1$ (เปิดตามแกน $x$)\n- ความสัมพันธ์: $c^2 = a^2 + b^2$\n- เส้นกำกับ (Asymptote): $y-k = \\pm \\frac{b}{a}(x-h)$ (สำหรับเปิดตามแกน $x$)",
+    "youtubeId": "X7Y1V-S8G-k",
+    "tags": ["math", "geometry", "conics"]
+  },
+  {
+    "id": "math_021",
+    "title": "เมทริกซ์และพีชคณิตเชิงเส้น (Matrices)",
+    "content": "กลุ่มของจำนวนที่เรียงเป็นแถวและหลัก\n\n**1. การคูณเมทริกซ์:** แถวของตัวหน้าคูณหลักของตัวหลัง $(m \\times n) \\cdot (n \\times p) = (m \\times p)$\n\n**2. ดีเทอร์มิแนนต์ (Determinant):**\n- $2 \\times 2$: $\\det(A) = ad - bc$\n- สมบัติ: $\\det(AB) = \\det(A)\\det(B)$ และ $\\det(A^n) = (\\det A)^n$\n- $\\det(kA) = k^n \\det(A)$ (เมื่อ $n$ คือมิติของเมทริกซ์)\n\n**3. อินเวอร์ส (Inverse Matrix):** $A^{-1} = \\frac{1}{\\det A} \\text{adj}(A)$\n- จะหา $A^{-1}$ ได้ก็ต่อเมื่อ $\\det A \\neq 0$ (เรียกว่า Non-singular Matrix)",
+    "youtubeId": "I8R9i_qA2M8",
+    "tags": ["math", "matrix"]
+  },
+  {
+    "id": "math_022",
+    "title": "เวกเตอร์ในสองและสามมิติ (Vectors)",
+    "content": "ปริมาณที่มีทั้งขนาดและทิศทาง\n\n**1. ผลคูณเชิงสเกลาร์ (Dot Product):**\n$\\vec{u} \\cdot \\vec{v} = |\\vec{u}||\\vec{v}| \\cos \\theta = u_1 v_1 + u_2 v_2 + u_3 v_3$\n- ถ้า $\\vec{u} \\cdot \\vec{v} = 0$ แสดงว่าเวกเตอร์ตั้งฉากกัน\n\n**2. ผลคูณเชิงเวกเตอร์ (Cross Product):**\n$\\vec{u} \\times \\vec{v} = \\det \\begin{vmatrix} \\mathbf{i} & \\mathbf{j} & \\mathbf{k} \\\\ u_1 & u_2 & u_3 \\\\ v_1 & v_2 & v_3 \\end{vmatrix}$\n- ผลลัพธ์เป็นเวกเตอร์ที่ตั้งฉากกับทั้ง $\\vec{u}$ และ $\\vec{v}$\n- $|\\vec{u} \\times \\vec{v}| = |\\vec{u}||\\vec{v}| \\sin \\theta$ (เท่ากับพื้นที่สี่เหลี่ยมด้านขนาน)",
+    "youtubeId": "S-S9B-K1J-k",
+    "tags": ["math", "vector"]
+  },
+  {
+    "id": "math_023",
+    "title": "จำนวนเชิงซ้อน (Complex Numbers)",
+    "content": "จำนวนในรูป $z = a + bi$ โดย $i = \\sqrt{-1}$\n\n**1. สังยุค (Conjugate):** $\\bar{z} = a - bi$\n**2. ค่าสัมบูรณ์:** $|z| = \\sqrt{a^2 + b^2}$\n**3. รูปเชิงขั้ว (Polar Form):** $z = r(\\cos \\theta + i\\sin \\theta)$ หรือ $z = r \\text{cis } \\theta$\n- โดย $r = |z|$ และ $\\tan \\theta = b/a$\n\n**ทฤษฎีบทของเดอมัวฟ์ (De Moivre's Theorem):**\n$z^n = r^n (\\cos n\\theta + i \\sin n\\theta)$\n\n**Thoth's Law:** รากที่ $n$ ของจำนวนเชิงซ้อนจะมีทั้งหมด $n$ ค่า และจุดบนระนาบเชิงซ้อนจะเรียงกันเป็นรูป $n$-เหลี่ยมด้านเท่า",
+    "youtubeId": "9E6_T-X-V-E",
+    "tags": ["math", "complex"]
+  },
+  {
+    "id": "math_024",
+    "title": "ลำดับและอนุกรม (Sequences and Series)",
+    "content": "การเรียงตัวของจำนวนอย่างมีแบบแผน\n\n**1. ลำดับเลขคณิต (Arithmetic):** $a_n = a_1 + (n-1)d$\n- ผลบวก $n$ พจน์แรก: $S_n = \\frac{n}{2}(a_1 + a_n)$\n\n**2. ลำดับเรขาคณิต (Geometric):** $a_n = a_1 r^{n-1}$\n- ผลบวก $n$ พจน์แรก: $S_n = \\frac{a_1(1-r^n)}{1-r}$\n\n**3. อนุกรมอนันต์ (Infinite Series):**\n- สำหรับอนุกรมเรขาคณิต: $S_\\infty = \\frac{a_1}{1-r}$ จะหาค่าได้เมื่อ $|r| < 1$\n- ถ้า $|r| \\ge 1$ อนุกรมจะลู่ออก (Divergent)",
+    "youtubeId": "L-S7B-X-F-E",
+    "tags": ["math", "sequence"]
+  },
+  {
+    "id": "math_025",
+    "title": "ลิมิตและความต่อเนื่อง (Limits and Continuity)",
+    "content": "หัวใจสำคัญของแคลคูลัส\n\n**1. ลิมิต (Limit):**\n$\\lim_{x \\to a} f(x) = L$ หมายความว่าเมื่อ $x$ เข้าใกล้ $a$ แล้ว $f(x)$ เข้าใกล้ $L$\n- ลิมิตจะมีค่าได้ก็ต่อเมื่อ ลิมิตซ้าย = ลิมิตขวา ($\\lim_{x \\to a^-} f(x) = \\lim_{x \\to a^+} f(x)$)\n\n**2. ความต่อเนื่อง (Continuity):**\n$f(x)$ ต่อเนื่องที่จุด $x=a$ เมื่อ:\n1. $f(a)$ หาค่าได้\n2. $\\lim_{x \\to a} f(x)$ หาค่าได้\n3. $\\lim_{x \\to a} f(x) = f(a)$\n\n**Thoth's Strategy:** เมื่อเจอ $\\frac{0}{0}$ ให้ลองแยกตัวประกอบเพื่อตัดกัน หรือใช้กฎของโลปิตาล (L'Hôpital's rule)",
+    "youtubeId": "q8xT8Yf-h4w",
+    "tags": ["math", "calculus"]
+  },
+  {
+    "id": "math_026",
+    "title": "อนุพันธ์ของฟังก์ชัน (Differentiation)",
+    "content": "คืออัตราการเปลี่ยนแปลงขณะใดขณะหนึ่ง หรือความชันของเส้นสัมผัสโค้ง\n\n**สูตรพื้นฐาน:**\n- $\\frac{d}{dx} x^n = nx^{n-1}$\n- กฎผลคูณ: $(uv)' = uv' + vu'$\n- กฎผลหาร: $(\\frac{u}{v})' = \\frac{vu' - uv'}{v^2}$\n- กฎลูกโซ่ (Chain Rule): $\\frac{dy}{dx} = \\frac{dy}{du} \\cdot \\frac{du}{dx}$\n\n**การประยุกต์:**\n- จุดวิกฤต (Critical Points): $f'(x) = 0$\n- $f''(x) > 0$ แสดงว่าเป็นจุดต่ำสุดสัมพัทธ์ (Relative Minimum)\n- $f''(x) < 0$ แสดงว่าเป็นจุดสูงสุดสัมพัทธ์ (Relative Maximum)",
+    "youtubeId": "P-O-S-X-Y-E",
+    "tags": ["math", "calculus"]
+  },
+  {
+    "id": "math_027",
+    "title": "ปริพันธ์ (Integration)",
+    "content": "กระบวนการย้อนกลับของอนุพันธ์ ใช้หาพื้นที่ใต้กราฟ\n\n**1. ปริพันธ์ไม่จำกัดเขต:** $\\int x^n dx = \\frac{x^{n+1}}{n+1} + C$\n**2. ปริพันธ์จำกัดเขต:** $\\int_a^b f(x) dx = F(b) - F(a)$\n\n**ทฤษฎีบทหลักมูลของแคลคูลัส (Fundamental Theorem of Calculus):**\nความเชื่อมโยงระหว่างอนุพันธ์และอินทิกรัล: $\\frac{d}{dx} \\int_a^x f(t) dt = f(x)$\n\n**การประยุกต์:** พื้นที่ระหว่างเส้นโค้ง $f(x)$ และแกน $x$ คือ $\\int_a^b |f(x)| dx$",
+    "youtubeId": "L-S7B-X-F-E",
+    "tags": ["math", "calculus"]
+  },
+  {
+    "id": "math_028",
+    "title": "หลักการนับเบื้องต้น (Basic Counting)",
+    "content": "วิธีการนับจำนวนเหตุการณ์โดยไม่ใช้การแจกแจง\n\n**1. กฎการคูณ:** ถ้างานแบ่งเป็น $k$ ขั้นตอน ให้เอาจำนวนวิธีในแต่ละขั้นตอนมาคูณกัน\n**2. แฟกทอเรียล (Factorial):** $n! = n \\times (n-1) \\times ... \\times 1$\n**3. การจัดหมู่ (Combination):** เลือกสิ่งของโดยไม่สนลำดับ\n$C_{n,r} = \\binom{n}{r} = \\frac{n!}{(n-r)!r!}$\n**4. การเรียงสับเปลี่ยน (Permutation):** เลือกสิ่งของโดยสนลำดับ\n$P_{n,r} = \\frac{n!}{(n-r)!}$\n\n**Thoth's Rule:** ของติดกันให้มัดรวมกันเป็น 1 สิ่ง ของแยกกันให้แทรกทีหลัง",
+    "youtubeId": "S-S9B-K1J-k",
+    "tags": ["math", "probability"]
+  },
+  {
+    "id": "math_029",
+    "title": "ความน่าจะเป็น (Probability)",
+    "content": "การวัดโอกาสในการเกิดเหตุการณ์ที่สนใจ\n\n**นิยาม:** $P(E) = \\frac{n(E)}{n(S)}$ เมื่อ $S$ คือ Sample Space\n\n**สมบัติ:**\n1. $0 \\le P(E) \\le 1$\n2. $P(A \\cup B) = P(A) + P(B) - P(A \\cap B)$\n3. $P(A') = 1 - P(A)$\n\n**ความน่าจะเป็นแบบมีเงื่อนไข (Conditional Probability):**\n$P(A|B) = \\frac{P(A \\cap B)}{P(B)}$ (โอกาสเกิด $A$ เมื่อรู้ว่า $B$ เกิดขึ้นแล้ว)",
+    "youtubeId": "v-J-K-L-M-N",
+    "tags": ["math", "probability"]
+  },
+  {
+    "id": "math_030",
+    "title": "สถิติพรรณนา (Descriptive Statistics)",
+    "content": "การหาค่าตัวแทนของข้อมูล\n\n**1. ค่ากลาง:**\n- ค่าเฉลี่ยเลขคณิต (Mean): $\\mu = \\frac{\\sum x_i}{N}$\n- มัธยฐาน (Median): ค่าที่อยู่กึ่งกลางเมื่อเรียงข้อมูล\n- ฐานนิยม (Mode): ข้อมูลที่มีความถี่สูงสุด\n\n**2. การวัดตำแหน่ง:** ควอไทล์ ($Q_r$), เดไซล์ ($D_r$), เปอร์เซ็นไทล์ ($P_r$)\n- ขั้นตอน: เรียงข้อมูล -> หาตำแหน่ง -> คำนวณค่า\n\n**3. ความสัมพันธ์:** ในข้อมูลเบ้ขวา (Positive Skew): ฐานนิยม < มัธยฐาน < ค่าเฉลี่ย",
+    "youtubeId": "P-O-S-X-Y-E",
+    "tags": ["math", "statistics"]
+  },
+  {
+    "id": "math_031",
+    "title": "การวัดการกระจายของข้อมูล (Measures of Dispersion)",
+    "content": "การศึกษาว่าข้อมูลเกาะกลุ่มหรือกระจายตัวเพียงใด\n\n**1. การกระจายสัมบูรณ์:**\n- ส่วนเบี่ยงเบนมาตรฐาน (Standard Deviation: $s$ or $\\sigma$):\n  $\\sigma = \\sqrt{\\frac{\\sum (x_i - \\mu)^2}{N}}$\n- ความแปรปรวน (Variance): $\\sigma^2$\n\n**2. การกระจายสัมพัทธ์:**\n- สัมประสิทธิ์การแปรผัน (C.V.): $\\frac{\\sigma}{|\\mu|}$\n\n**Thoth's Insights:** ถ้าบวกค่าคงที่ $k$ ให้ข้อมูลทุกตัว ค่าเฉลี่ยจะเปลี่ยนแต่ส่วนเบี่ยงเบนมาตรฐานจะ 'เท่าเดิม' แต่ถ้าคูณด้วย $k$ ส่วนเบี่ยงเบนมาตรฐานจะเปลี่ยนไป $|k|$ เท่า",
+    "youtubeId": "v-J-K-L-M-N",
+    "tags": ["math", "statistics"]
+  },
+  {
+    "id": "math_032",
+    "title": "การแจกแจงปกติและคะแนนมาตรฐาน (Normal Distribution and Z-Score)",
+    "content": "การวิเคราะห์ข้อมูลที่มีรูปทรงระฆังคว่ำ\n\n**1. คะแนนมาตรฐาน (Z-score):**\n$z = \\frac{x - \\mu}{\\sigma}$\n- ช่วยในการเปรียบเทียบข้อมูลที่มาจากคนละชุดกัน\n\n**2. พื้นที่ใต้เส้นโค้งปกติ:**\n- $P(-1 < z < 1) \\approx 68.3\\%$\n- $P(-2 < z < 2) \\approx 95.4\\%$\n- $P(-3 < z < 3) \\approx 99.7\\%$\n\n**Thoth's Warning:** พื้นที่ใต้กราฟรวมทั้งหมดต้องเท่ากับ $1$ และกราฟสมมาตรรอบค่าเฉลี่ย ($z=0$)",
+    "youtubeId": "q8xT8Yf-h4w",
+    "tags": ["math", "statistics"]
+  },
+  {
+    "id": "math_033",
+    "title": "คณิตศาสตร์การเงิน (Financial Mathematics)",
+    "content": "การคำนวณมูลค่าของเงินตามเวลา (Time Value of Money)\n\n**1. ดอกเบี้ยทบต้น (Compound Interest):**\n$A = P(1 + r)^n$\n- $P$ = เงินต้น, $r$ = อัตราดอกเบี้ยต่อคราว, $n$ = จำนวนคราว\n\n**2. มูลค่าปัจจุบันและอนาคต:**\n- $FV = PV(1+i)^n$\n- $PV = FV(1+i)^{-n}$\n\n**3. ค่างวด (Annuity):**\nการรับหรือจ่ายเงินเท่ากันทุกงวด\n$S = R[\\frac{(1+i)^n - 1}{i}]$ (สำหรับค่างวดตอนสิ้นงวด)\n\n**เคล็ดลับ:** อย่าลืมเช็คว่าดอกเบี้ยคิดเป็นรายปี รายเดือน หรือรายไตรมาส เพราะจะมีผลต่อค่า $i$ และ $n$",
+    "youtubeId": "v-J-K-L-M-N",
+    "tags": ["math", "finance"]
+  },
+  {
+    "id": "math_034",
+    "title": "ทฤษฎีบททวินาม (Binomial Theorem)",
+    "content": "การขยายพจน์ของ $(x+y)^n$\n\n**สูตร:**\n$(x+y)^n = \\sum_{k=0}^n \\binom{n}{k} x^{n-k} y^k$\n\n**การหาพจน์ที่ $r+1$:**\n$T_{r+1} = \\binom{n}{r} x^{n-r} y^r$\n\n**สมบัติ:**\n- ผลบวกสัมประสิทธิ์ทั้งหมดหาได้โดยแทน $x=1, y=1$ ในนิพจน์ ซึ่งจะได้ $2^n$\n- สามเหลี่ยมปาสกาล (Pascal's Triangle) คือแผนผังของสัมประสิทธิ์ทวินาม",
+    "youtubeId": "S-S9B-K1J-k",
+    "tags": ["math", "algebra"]
+  },
+  {
+    "id": "math_035",
+    "title": "ระบบอสมการและกำหนดการเชิงเส้น (Linear Programming)",
+    "content": "การหาค่าสูงสุดหรือต่ำสุดของฟังก์ชันเป้าหมายภายใต้ข้อจำกัด\n\n**ขั้นตอน:**\n1. กำหนดตัวแปร $x, y$\n2. สร้างฟังก์ชันเป้าหมาย $P = ax + by$\n3. สร้างอสมการข้อจำกัด\n4. วาดกราฟพื้นที่ที่คำตอบเป็นไปได้ (Feasible Region)\n5. หาจุดมุม (Vertex) ของพื้นที่\n6. นำจุดมุมไปแทนในฟังก์ชันเป้าหมายเพื่อหาค่าที่ต้องการ\n\n**Thoth's Observation:** ค่าสูงสุดหรือต่ำสุดมักจะเกิดขึ้นที่ 'จุดมุม' ของอาณาเขตเสมอ",
+    "youtubeId": "I8R9i_qA2M8",
+    "tags": ["math", "programming", "algebra"]
   }
 ]

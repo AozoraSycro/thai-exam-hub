@@ -1,0 +1,476 @@
+[
+  {
+    "id": "sci_phy_01",
+    "title": "ฟิสิกส์: การเคลื่อนที่แนวตรง",
+    "content": "## การเคลื่อนที่แนวตรง\\nสรุปสูตรคำนวณ:  = u + at$,  = ut + \\\\frac{1}{2}at^2$, ^2 = u^2 + 2as$...",
+    "youtubeId": "zX6Eis6n0l0",
+    "tags": [
+      "science",
+      "physics"
+    ]
+  },
+  {
+    "id": "sci_phy_02",
+    "title": "ฟิสิกส์: กฎของนิวตัน",
+    "content": "## กฎของนิวตัน\\n1. กฎแห่งความเฉื่อย ($\\\\sum F = 0$)\\n2. กฎแห่งความเร่ง ($\\\\sum F = ma$)\\n3. กฎของแรงกิริยาและแรงปฏิกิริยา...",
+    "youtubeId": "kKKM8Y-u7ds",
+    "tags": [
+      "science",
+      "physics"
+    ]
+  },
+  {
+    "id": "sci_phy_03",
+    "title": "ฟิสิกส์: งานและพลังงาน",
+    "content": "## งานและพลังงาน\\nงาน ( = Fs \\\\cos \\\\theta$), พลังงานจลน์ ( = \\\\frac{1}{2}mv^2$), พลังงานศักย์โน้มถ่วง ( = mgh$)...",
+    "youtubeId": "2S7R1T9Z8_U",
+    "tags": [
+      "science",
+      "physics"
+    ]
+  },
+  {
+    "id": "sci_phy_04",
+    "title": "ฟิสิกส์: โมเมนตัมและการชน",
+    "content": "## โมเมนตัม\\n$\\\\vec{p} = m\\\\vec{v}$, กฎการอนุรักษ์โมเมนตัม: $\\\\sum \\\\vec{p}_{before} = \\\\sum \\\\vec{p}_{after}$...",
+    "youtubeId": "Y-QOf7G-t8o",
+    "tags": [
+      "science",
+      "physics"
+    ]
+  },
+  {
+    "id": "sci_phy_05",
+    "title": "ฟิสิกส์: การเคลื่อนที่แบบหมุน",
+    "content": "## การเคลื่อนที่แบบหมุน\\nทอร์ก ($\\\\tau = rF \\\\sin \\\\theta$), โมเมนต์ความเฉื่อย ($), โมเมนตัมเชิงมุม ( = I\\\\omega$)...",
+    "youtubeId": "zX6Eis6n0l0",
+    "tags": [
+      "science",
+      "physics"
+    ]
+  },
+  {
+    "id": "sci_phy_06",
+    "title": "ฟิสิกส์: คลื่นและเสียง",
+    "content": "## คลื่นและเสียง\\nสมบัติของคลื่น: การสะท้อน, การหักเห, การเลี้ยวเบน, การแทรกสอด. สูตร:  = f\\\\lambda$...",
+    "youtubeId": "J_6t0X-n6_Y",
+    "tags": [
+      "science",
+      "physics"
+    ]
+  },
+  {
+    "id": "sci_phy_07",
+    "title": "ฟิสิกส์: แสงเชิงฟิสิกส์",
+    "content": "## แสงเชิงฟิสิกส์\\nการแทรกสอดของแสงผ่านสลิตคู่, การเลี้ยวเบนผ่านสลิตเดี่ยว...",
+    "youtubeId": "0qMll_B2-9k",
+    "tags": [
+      "science",
+      "physics"
+    ]
+  },
+  {
+    "id": "sci_phy_08",
+    "title": "ฟิสิกส์: ไฟฟ้าสถิต",
+    "content": "## ไฟฟ้าสถิต\\nแรงระหว่างประจุ ( = k \\\\frac{q_1q_2}{r^2}$), สนามไฟฟ้า ( = \\\\frac{F}{q}$), ศักย์ไฟฟ้า ( = \\\\frac{kQ}{r}$)...",
+    "youtubeId": "vi0AtnZTo-w",
+    "tags": [
+      "science",
+      "physics"
+    ]
+  },
+  {
+    "id": "sci_phy_09",
+    "title": "ฟิสิกส์: ไฟฟ้ากระแสตรง",
+    "content": "## ไฟฟ้ากระแสตรง\\nกฎของโอห์ม ( = IR$), ความต้านทาน ( = \\\\rho \\\\frac{L}{A}$), วงจรอนุกรมและขนาน...",
+    "youtubeId": "h-9G_7S8h_0",
+    "tags": [
+      "science",
+      "physics"
+    ]
+  },
+  {
+    "id": "sci_phy_10",
+    "title": "ฟิสิกส์: แม่เหล็กและไฟฟ้า",
+    "content": "## แม่เหล็กไฟฟ้า\\nแรงแม่เหล็กกระทำต่อประจุที่เคลื่อนที่ ( = qvB \\\\sin \\\\theta$), กฎของฟาราเดย์...",
+    "youtubeId": "8Xm2t6-HIdA",
+    "tags": [
+      "science",
+      "physics"
+    ]
+  },
+  {
+    "id": "sci_phy_11",
+    "title": "ฟิสิกส์: ความร้อนและแก๊ส",
+    "content": "## ความร้อนและแก๊ส\\nการถ่ายโอนความร้อน ( = mc\\\\Delta T$,  = mL$), กฎของแก๊สอุดมคติ ( = nRT$)...",
+    "youtubeId": "7Vrn7YFm8v8",
+    "tags": [
+      "science",
+      "physics"
+    ]
+  },
+  {
+    "id": "sci_phy_12",
+    "title": "ฟิสิกส์: ของแข็งและของไหล",
+    "content": "## ของไหล\\nความดัน ( = \\\\rho gh$), กฎของพาสคัล, แรงพยุง (อาร์คิมีดีส), สมการแบร์นูลลี...",
+    "youtubeId": "kgX6_h_M0mY",
+    "tags": [
+      "science",
+      "physics"
+    ]
+  },
+  {
+    "id": "sci_phy_13",
+    "title": "ฟิสิกส์: ฟิสิกส์อะตอม",
+    "content": "## ฟิสิกส์อะตอม\\nแบบจำลองอะตอมของโบร์, ปรากฏการณ์โฟโตอิเล็กทริก ( = \\\\Phi + E_{k,max}$)...",
+    "youtubeId": "9FmZid_9_sM",
+    "tags": [
+      "science",
+      "physics"
+    ]
+  },
+  {
+    "id": "sci_phy_14",
+    "title": "ฟิสิกส์: ฟิสิกส์นิวเคลียร์",
+    "content": "## ฟิสิกส์นิวเคลียร์\\nกัมมันตภาพรังสี ($\\\\alpha, \\\\beta, \\\\gamma$), ครึ่งชีวิต ({1/2}$), ฟิชชันและฟิวชัน...",
+    "youtubeId": "FU6y15E_278",
+    "tags": [
+      "science",
+      "physics"
+    ]
+  },
+  {
+    "id": "sci_phy_15",
+    "title": "ฟิสิกส์: ฟิสิกส์อนุภาค",
+    "content": "## ฟิสิกส์อนุภาค\\nมาตรฐานโมเดล (Standard Model), ควาร์ก, เลปตอน, โบซอน...",
+    "youtubeId": "dQw4w9WgXcQ",
+    "tags": [
+      "science",
+      "physics"
+    ]
+  },
+  {
+    "id": "sci_chem_01",
+    "title": "เคมี: โครงสร้างอะตอม",
+    "content": "## โครงสร้างอะตอม\\nเลขอะตอม, เลขมวล, ไอโซโทป, การจัดเรียงอิเล็กตรอน (s, p, d, f)...",
+    "youtubeId": "jNQXAC9IVRw",
+    "tags": [
+      "science",
+      "chemistry"
+    ]
+  },
+  {
+    "id": "sci_chem_02",
+    "title": "เคมี: ตารางธาตุ",
+    "content": "## ตารางธาตุ\\nแนวโน้มสมบัติตามคาบและหมู่: ขนาดอะตอม, IE, EN, EA, จุดเดือดจุดหลอมเหลว...",
+    "youtubeId": "M7lc1UVf-VE",
+    "tags": [
+      "science",
+      "chemistry"
+    ]
+  },
+  {
+    "id": "sci_chem_03",
+    "title": "เคมี: พันธะเคมี",
+    "content": "## พันธะเคมี\\nพันธะไอออนิก, พันธะโคเวเลนต์ (VSEPR, รูปร่างโมเลกุล), พันธะโลหะ...",
+    "youtubeId": "V-_O7nl0Ii0",
+    "tags": [
+      "science",
+      "chemistry"
+    ]
+  },
+  {
+    "id": "sci_chem_04",
+    "title": "เคมี: ปริมาณสารสัมพันธ์",
+    "content": "## ปริมาณสารสัมพันธ์\\nโมล, มวลโมเลกุล, ความเข้มข้นสารละลาย, สูตรเอมพิริกัล, ตัวทำละลายจำกัด...",
+    "youtubeId": "zQ5fA3J_c8Q",
+    "tags": [
+      "science",
+      "chemistry"
+    ]
+  },
+  {
+    "id": "sci_chem_05",
+    "title": "เคมี: ของแข็ง ของเหลว แก๊ส",
+    "content": "## แก๊สและสมบัติของแก๊ส\\nกฎของบอยล์, ชาร์ล, เกย์-ลูสแซก, อะโวแกโดร. สมการแก๊สอุดมคติ:  = nRT$...",
+    "youtubeId": "7Vrn7YFm8v8",
+    "tags": [
+      "science",
+      "chemistry"
+    ]
+  },
+  {
+    "id": "sci_chem_06",
+    "title": "เคมี: อัตราการเกิดปฏิกิริยา",
+    "content": "## อัตราการเกิดปฏิกิริยา\\nทฤษฎีการชน, พลังงานก่อกัมมันต์ ($), ปัจจัยที่มีผลต่ออัตรา...",
+    "youtubeId": "kgX6_h_M0mY",
+    "tags": [
+      "science",
+      "chemistry"
+    ]
+  },
+  {
+    "id": "sci_chem_07",
+    "title": "เคมี: สมดุลเคมี",
+    "content": "## สมดุลเคมี\\nค่าคงที่สมดุล (, K_p$), หลักของเลอชาเตอลิเย (การรบกวนสมดุล)...",
+    "youtubeId": "dQw4w9WgXcQ",
+    "tags": [
+      "science",
+      "chemistry"
+    ]
+  },
+  {
+    "id": "sci_chem_08",
+    "title": "เคมี: กรด-เบส",
+    "content": "## กรด-เบส\\nทฤษฎีกรด-เบส, ค่า pH, การแตกตัวของกรดแก่เบสแก่, อินดิเคเตอร์, การไทเทรต...",
+    "youtubeId": "jNQXAC9IVRw",
+    "tags": [
+      "science",
+      "chemistry"
+    ]
+  },
+  {
+    "id": "sci_chem_09",
+    "title": "เคมี: ไฟฟ้าเคมี",
+    "content": "## ไฟฟ้าเคมี\\nปฏิกิริยารีดอกซ์, เลขออกซิเดชัน, เซลล์กัลวานิก, เซลล์อิเล็กโทรลิติก...",
+    "youtubeId": "V-_O7nl0Ii0",
+    "tags": [
+      "science",
+      "chemistry"
+    ]
+  },
+  {
+    "id": "sci_chem_10",
+    "title": "เคมี: เคมีอินทรีย์",
+    "content": "## เคมีอินทรีย์\\nหมู่ฟังก์ชัน, สารประกอบไฮโดรคาร์บอน (แอลเคน, แอลกีน, แอลไกน์), การเรียกชื่อ IUPAC...",
+    "youtubeId": "M7lc1UVf-VE",
+    "tags": [
+      "science",
+      "chemistry"
+    ]
+  },
+  {
+    "id": "sci_chem_11",
+    "title": "เคมี: พอลิเมอร์",
+    "content": "## พอลิเมอร์\\nปฏิกิริยาพอลิเมอไรเซชัน, พอลิเมอร์เทอร์โมพลาสติกและเทอร์โมเซต...",
+    "youtubeId": "zQ5fA3J_c8Q",
+    "tags": [
+      "science",
+      "chemistry"
+    ]
+  },
+  {
+    "id": "sci_chem_12",
+    "title": "เคมี: เคมีอาหารและสิ่งแวดล้อม",
+    "content": "## เคมีในชีวิตประจำวัน\\nสบู่และผงซักฟอก, สารมลพิษในอากาศและน้ำ...",
+    "youtubeId": "dQw4w9WgXcQ",
+    "tags": [
+      "science",
+      "chemistry"
+    ]
+  },
+  {
+    "id": "sci_bio_001",
+    "title": "Biology: โครงสร้างเซลล์และออร์แกเนลล์ (Cell Structure and Organelles)",
+    "content": "เซลล์คือหน่วยพื้นฐานของสิ่งมีชีวิต แบ่งเป็น Prokaryote (ไม่มีนิวเคลียส) และ Eukaryote (มีนิวเคลียส)\n\n**ออร์แกเนลล์ที่สำคัญ:**\n1. **Nucleus:** ศูนย์กลางควบคุมเซลล์ บรรจุ DNA\n2. **Mitochondria:** แหล่งผลิตพลังงาน ATP ผ่านกระบวนการ Cellular Respiration\n3. **Chloroplast:** (เฉพาะพืช/สาหร่าย) แหล่งสังเคราะห์ด้วยแสง บรรจุคลอโรฟิลล์\n4. **Ribosome:** แหล่งสังเคราะห์โปรตีน\n5. **Endoplasmic Reticulum (ER):**\n   - RER: มีไรโบโซมเกาะ สังเคราะห์โปรตีนส่งออก\n   - SER: กำจัดสารพิษ สังเคราะห์ลิพิด\n6. **Golgi Complex:** แต่งเติมและแพ็คโปรตีนใส่ถุง (Vesicle)\n7. **Lysosome:** (เฉพาะสัตว์) บรรจุเอนไซม์ย่อยอาหารและเซลล์ที่ตายแล้ว\n\n**Asclepius's Insight:** โครงสร้างกำหนดหน้าที่ (Structure determines Function) เช่น เซลล์กล้ามเนื้อจะมี Mitochondria มากเป็นพิเศษเพื่อใช้พลังงาน",
+    "youtubeId": "URUJD5NEXC8",
+    "tags": [
+      "science",
+      "biology",
+      "cell"
+    ]
+  },
+  {
+    "id": "sci_bio_002",
+    "title": "Biology: การลำเลียงสารผ่านเซลล์ (Cell Transport)",
+    "content": "เยื่อหุ้มเซลล์ (Cell Membrane) มีคุณสมบัติเป็นเยื่อเลือกผ่าน (Semi-permeable membrane) ตามแบบจำลอง Fluid Mosaic Model\n\n**1. การลำเลียงแบบไม่ใช้พลังงาน (Passive Transport):**\n- **Simple Diffusion:** สารเคลื่อนที่จากเข้มข้นมากไปน้อย (เช่น O2, CO2)\n- **Facilitated Diffusion:** ใช้โปรตีนตัวพา (Carrier) ช่วยสารที่มีประจุหรือโมเลกุลใหญ่\n- **Osmosis:** การแพร่ของน้ำจากสารละลายเจือจางไปเข้มข้น\n\n**2. การลำเลียงแบบใช้พลังงาน (Active Transport):**\n- เคลื่อนที่สวนทิศทางความเข้มข้น (น้อยไปมาก) ต้องใช้ ATP และโปรตีนตัวพา เช่น Sodium-Potassium Pump\n\n**3. การลำเลียงสารขนาดใหญ่ (Bulk Transport):**\n- **Endocytosis:** นำเข้า (Phagocytosis - กิน, Pinocytosis - ดื่ม)\n- **Exocytosis:** ส่งออก (เช่น การหลั่งเอนไซม์หรือฮอร์โมน)",
+    "youtubeId": "Ptmlvtei8hw",
+    "tags": [
+      "science",
+      "biology",
+      "cell"
+    ]
+  },
+  {
+    "id": "sci_bio_003",
+    "title": "Biology: การแบ่งเซลล์ (Cell Division)",
+    "content": "วัฏจักรเซลล์ (Cell Cycle) ประกอบด้วยระยะ Interphase (เตรียมตัว) และ M-phase (แบ่งนิวเคลียส)\n\n**1. Mitosis:**\n- แบ่งเพื่อเพิ่มจำนวนเซลล์ร่างกาย (Somatic cell)\n- ผลลัพธ์: ได้ 2 เซลล์ใหม่ที่มีโครโมโซมเท่าเดิม (2n -> 2n)\n- ระยะ: Prophase, Metaphase (โครโมโซมเรียงกลาง), Anaphase (แยกโครมาทิด), Telophase\n\n**2. Meiosis:**\n- แบ่งเพื่อสร้างเซลล์สืบพันธุ์ (Gamete)\n- ผลลัพธ์: ได้ 4 เซลล์ใหม่ที่มีโครโมโซมลดลงครึ่งหนึ่ง (2n -> n)\n- มีการเกิด Crossing Over ในระยะ Prophase I ทำให้เกิดความหลากหลายทางพันธุกรรม\n\n**คำเตือนของท่านเทพ:** ความผิดปกติในการแยกโครโมโซม (Non-disjunction) นำไปสู่โรคทางพันธุกรรม เช่น Down syndrome",
+    "youtubeId": "f-ldPgEfAHI",
+    "tags": [
+      "science",
+      "biology",
+      "genetics"
+    ]
+  },
+  {
+    "id": "sci_bio_004",
+    "title": "Biology: สารพันธุกรรมและการจำลองตัว (DNA & Replication)",
+    "content": "DNA (Deoxyribonucleic Acid) เป็นเกลียวคู่ (Double Helix) ประกอบด้วยนิวคลีโอไทด์\n\n**โครงสร้าง:**\n- น้ำตาล Deoxyribose + หมู่ฟอสเฟต + เบส (A, T, C, G)\n- การจับคู่เบส: A-T (พันธะไฮโดรเจน 2 พันธะ), C-G (พันธะไฮโดรเจน 3 พันธะ)\n\n**DNA Replication (การจำลองตัว):**\n- เกิดในระยะ S ของ Interphase\n- เป็นแบบกึ่งอนุรักษ์ (Semi-conservative)\n- เอนไซม์สำคัญ: Helicase (คลายเกลียว), DNA Polymerase (สร้างสายใหม่), Ligase (เชื่อมสาย)\n- สาย Leading strand สร้างต่อเนื่อง, สาย Lagging strand สร้างเป็นท่อนๆ (Okazaki fragments)",
+    "youtubeId": "TNKWgcFPHqw",
+    "tags": [
+      "science",
+      "biology",
+      "genetics"
+    ]
+  },
+  {
+    "id": "sci_bio_005",
+    "title": "Biology: การสังเคราะห์โปรตีน (Protein Synthesis)",
+    "content": "กระบวนการเปลี่ยนรหัสพันธุกรรมเป็นสายพอลิเพปไทด์\n\n**1. Transcription (การถอดรหัส):**\n- เกิดในนิวเคลียส\n- เปลี่ยน DNA เป็น mRNA โดยใช้ RNA Polymerase\n\n**2. Translation (การแปลรหัส):**\n- เกิดที่ไรโบโซมในไซโทพลาซึม\n- mRNA จับกับไรโบโซม\n- tRNA นำกรดอะมิโนที่มี Anticodon ตรงกับ Codon บน mRNA มาต่อกัน\n- รหัสเริ่มต้น (Start Codon) คือ AUG (กรดอะมิโน Methionine)\n- รหัสหยุด (Stop Codon) คือ UAA, UAG, UGA\n\n**Asclepius's Code:** รหัสพันธุกรรมหนึ่งชุดประกอบด้วย 3 เบส เรียกว่า Codon กำหนดกรดอะมิโน 1 ตัว",
+    "youtubeId": "itsb2H1_u7U",
+    "tags": [
+      "science",
+      "biology",
+      "genetics"
+    ]
+  },
+  {
+    "id": "sci_bio_006",
+    "title": "Biology: พันธุศาสตร์เมนเดล (Mendelian Genetics)",
+    "content": "เกรกอร์ เมนเดล บิดาแห่งวิชาพันธุศาสตร์ ศึกษาต้นถั่วลันเตาจนพบกฎสำคัญ\n\n**1. กฎการแยกตัว (Law of Segregation):**\n- ยีนที่อยู่เป็นคู่จะแยกออกจากกันไปสู่เซลล์สืบพันธุ์แต่ละเซลล์\n\n**2. กฎการรวมกลุ่มอย่างอิสระ (Law of Independent Assortment):**\n- การแยกตัวของยีนคู่หนึ่งไม่ส่งผลต่อการแยกตัวของอีกคู่หนึ่ง (ในกรณีที่ยีนอยู่คนละโครโมโซม)\n\n**ศัพท์สำคัญ:**\n- **Genotype:** รูปแบบยีน (เช่น AA, Aa, aa)\n- **Phenotype:** ลักษณะที่ปรากฏ (เช่น ต้นสูง, ต้นแคระ)\n- **Homozygous:** พันธุ์แท้ (AA หรือ aa)\n- **Heterozygous:** พันธุ์ทาง (Aa)",
+    "youtubeId": "hS8v6m_p2k0",
+    "tags": [
+      "science",
+      "biology",
+      "genetics"
+    ]
+  },
+  {
+    "id": "sci_bio_007",
+    "title": "Biology: ส่วนขยายพันธุศาสตร์เมนเดล (Non-Mendelian Genetics)",
+    "content": "ลักษณะทางพันธุกรรมที่ซับซ้อนกว่ากฎของเมนเดล\n\n1. **Incomplete Dominance (ข่มไม่สมบูรณ์):** ลักษณะฟีโนไทป์ของลูกผสมอยู่กึ่งกลางระหว่างพ่อแม่ เช่น ดอกสีชมพูจากพ่อแดงแม่ขาว\n2. **Codominance (ข่มร่วมกัน):** ปรากฏลักษณะของทั้งสองแอลลีลพร้อมกัน เช่น หมู่เลือด AB\n3. **Multiple Alleles:** ยีนหนึ่งตำแหน่งมีมากกว่า 2 แอลลีล เช่น หมู่เลือดระบบ ABO (IA, IB, i)\n4. **Sex-linked Inheritance:** ยีนบนโครโมโซมเพศ (ส่วนใหญ่บน X) เช่น ตาบอดสี, ฮีโมฟีเลีย มักพบในเพศชายมากกว่า\n5. **Polygenic Inheritance:** ลักษณะที่ควบคุมด้วยยีนหลายคู่ เช่น สีผิว, ความสูง (มีการกระจายตัวแบบโค้งปกติ)",
+    "youtubeId": "zX6_P_N2X0w",
+    "tags": [
+      "science",
+      "biology",
+      "genetics"
+    ]
+  },
+  {
+    "id": "sci_bio_008",
+    "title": "Biology: วิวัฒนาการและการคัดเลือกโดยธรรมชาติ (Evolution)",
+    "content": "วิวัฒนาการคือการเปลี่ยนแปลงองค์ประกอบทางพันธุกรรมของประชากรเมื่อเวลาผ่านไป\n\n**1. การคัดเลือกโดยธรรมชาติ (Natural Selection) โดย Darwin:**\n- สิ่งมีชีวิตผลิตลูกจำนวนมากที่มีความแปรผัน (Variation)\n- เกิดการแก่งแย่งทรัพยากร (Struggle for existence)\n- ตัวที่เหมาะสมที่สุดจะอยู่รอดและสืบพันธุ์ (Survival of the fittest)\n\n**2. กลไกอื่นๆ:**\n- **Genetic Drift:** การเปลี่ยนแปลงความถี่ยีนแบบสุ่ม (Founder effect, Bottleneck effect)\n- **Gene Flow:** การถ่ายเทยีนระหว่างประชากร\n- **Mutation:** แหล่งกำเนิดความแปรผันใหม่\n\n**หลักฐานวิวัฒนาการ:** ซากดึกดำบรรพ์ (Fossil), โครงสร้างโฮโมโลกัส (Homologous structures - ต้นกำเนิดเดียวกัน หน้าที่ต่างกัน), กายวิภาคเปรียบเทียบ",
+    "youtubeId": "BcpB_986wyk",
+    "tags": [
+      "science",
+      "biology",
+      "evolution"
+    ]
+  },
+  {
+    "id": "sci_bio_009",
+    "title": "Biology: เนื้อเยื่อและโครงสร้างพืช (Plant Tissues & Structure)",
+    "content": "พืชมีเนื้อเยื่อหลัก 2 ประเภท คือ เนื้อเยื่อเจริญ (Meristematic tissue) และเนื้อเยื่อถาวร (Permanent tissue)\n\n**1. เนื้อเยื่อเจริญ:** แบ่งเซลล์แบบ Mitosis ได้ตลอดชีวิต พบที่ปลายยอด ปลายราก และด้านข้าง (Cambium)\n**2. เนื้อเยื่อถาวร:**\n- **Epidermis:** ชั้นนอกสุด ป้องกันอันตราย\n- **Xylem:** ลำเลียงน้ำและแร่ธาตุ (ทิศทางล่างขึ้นบนเท่านั้น) ประกอบด้วย Vessel และ Tracheid (เซลล์ที่ตายแล้ว)\n- **Phloem:** ลำเลียงอาหาร/น้ำตาล (ไปได้ทุกทิศทาง) ประกอบด้วย Sieve tube และ Companion cell (เซลล์ที่มีชีวิต)\n\n**โครงสร้างรากและลำต้น:** ความแตกต่างระหว่างพืชใบเลี้ยงเดี่ยว (Monocot) และใบเลี้ยงคู่ (Dicot) ในเรื่องการจัดเรียงมัดท่อลำเลียง",
+    "youtubeId": "xVv6_S-S8-k",
+    "tags": [
+      "science",
+      "biology",
+      "plant"
+    ]
+  },
+  {
+    "id": "sci_bio_010",
+    "title": "Biology: การสังเคราะห์ด้วยแสง (Photosynthesis)",
+    "content": "กระบวนการเปลี่ยนพลังงานแสงเป็นพลังงานเคมีในรูปน้ำตาล เกิดขึ้นที่ Chloroplast\n\n**1. Light Reaction (ปฏิกิริยาแสง):**\n- เกิดที่ Thylakoid membrane\n- ใช้แสงและน้ำเพื่อสร้าง ATP และ NADPH และปล่อย O2 ออกมา\n\n**2. Calvin Cycle (การตรึงคาร์บอน):**\n- เกิดที่ Stroma\n- ใช้ CO2, ATP และ NADPH เพื่อสร้างน้ำตาล G3P (ซึ่งจะเปลี่ยนเป็นกลูโคส)\n- เอนไซม์สำคัญ: RuBisCO\n\n**Asclepius's Botany:** พืช C4 และ CAM มีกลไกพิเศษในการตรึง CO2 เพื่อลดการคายน้ำและการสูญเสียพลังงานในสภาวะที่ร้อนหรือแห้งแล้ง",
+    "youtubeId": "g78_q_Yp3pU",
+    "tags": [
+      "science",
+      "biology",
+      "plant"
+    ]
+  },
+  {
+    "id": "sci_bio_011",
+    "title": "Biology: ระบบย่อยอาหาร (Digestive System)",
+    "content": "การย่อยมี 2 แบบ: เชิงกล (เคี้ยว/บีบตัว) และเชิงเคมี (ใช้เอนไซม์)\n\n**ทางเดินอาหาร:**\n1. **ปาก:** ย่อยแป้งด้วยเอนไซม์ Amylase\n2. **กระเพาะอาหาร:** ย่อยโปรตีนด้วย Pepsin (ทำงานได้ดีในสภาวะกรด HCl)\n3. **ลำไส้เล็ก (Duodenum):** แหล่งย่อยและดูดซึมที่สำคัญที่สุด รับน้ำดีจากตับ (ช่วยให้ไขมันแตกตัว) และเอนไซม์จากตับอ่อน\n4. **ลำไส้ใหญ่:** ดูดซึมน้ำและวิตามิน เก็บกากอาหาร\n\n**ตับและตับอ่อน:** ตับสร้างน้ำดี ตับอ่อนสร้างเอนไซม์หลายชนิดและฮอร์โมนควบคุมน้ำตาล",
+    "youtubeId": "jGmcA0M9nB0",
+    "tags": [
+      "science",
+      "biology",
+      "human",
+      "anatomy"
+    ]
+  },
+  {
+    "id": "sci_bio_012",
+    "title": "Biology: ระบบหมุนเวียนเลือดและหายใจ (Circulatory & Respiratory)",
+    "content": "ทำงานร่วมกันเพื่อขนส่ง O2 ไปยังเซลล์และนำ CO2 ออกจากร่างกาย\n\n**ระบบหมุนเวียนเลือด:**\n- หัวใจ 4 ห้อง: บนขวา (รับเลือดดำ) -> ล่างขวา (ไปปอด) -> บนซ้าย (รับเลือดแดง) -> ล่างซ้าย (ไปทั่วร่างกาย - ผนังหนาสุด)\n- หลอดเลือด: Artery (ออกจากหัวใจ), Vein (เข้าหาหัวใจ มีลิ้นกั้น), Capillary (แลกเปลี่ยนสาร)\n\n**ระบบหายใจ:**\n- การแลกเปลี่ยนแก๊สเกิดที่ ถุงลมปอด (Alveoli)\n- O2 ขนส่งโดยจับกับ Hemoglobin ในเม็ดเลือดแดง\n- CO2 ขนส่งส่วนใหญ่ในรูป Bicarbonate ion (HCO3-) ในพลาสม่า\n\n**Asclepius's Clinic:** อัตราการหายใจถูกควบคุมโดยระดับ CO2 ในเลือด (ความเป็นกรด-ด่าง) ไม่ใช่ระดับ O2",
+    "youtubeId": "fR5M_7_U_fA",
+    "tags": [
+      "science",
+      "biology",
+      "human",
+      "anatomy"
+    ]
+  },
+  {
+    "id": "sci_bio_013",
+    "title": "Biology: ระบบประสาท (Nervous System)",
+    "content": "ควบคุมการตอบสนองผ่านสัญญาณไฟฟ้าและสารเคมี\n\n**1. เซลล์ประสาท (Neuron):** ประกอบด้วย Dendrite (รับสัญญาณ) และ Axon (ส่งสัญญาณ)\n**2. การเกิดกระแสประสาท (Action Potential):**\n- Resting stage -> Depolarization (Na+ เข้า) -> Repolarization (K+ ออก) -> Hyperpolarization\n**3. การถ่ายทอดสัญญาณระหว่างเซลล์:** เกิดที่ Synapse โดยใช้สารสื่อประสาท (Neurotransmitter)\n**4. ระบบประสาทส่วนกลาง (CNS):** สมองและไขสันหลัง\n- Cerebrum: คิด วิเคราะห์ ความจำ\n- Cerebellum: การทรงตัว การประสานงานกล้ามเนื้อ\n- Medulla Oblongata: ควบคุมระบบอัตโนมัติ (หายใจ, การเต้นของหัวใจ)",
+    "youtubeId": "U8R9i_qA2M8",
+    "tags": [
+      "science",
+      "biology",
+      "human",
+      "anatomy"
+    ]
+  },
+  {
+    "id": "sci_bio_014",
+    "title": "Biology: ระบบต่อมไร้ท่อ (Endocrine System)",
+    "content": "ผลิตฮอร์โมน (Hormones) เพื่อรักษาดุลยภาพของร่างกายผ่านกระแสเลือด\n\n**ต่อมและฮอร์โมนที่สำคัญ:**\n1. **Hypothalamus:** ศูนย์ควบคุมหลัก เชื่อมโยงระบบประสาทและต่อมไร้ท่อ\n2. **Pituitary Gland:** 'ต่อมใต้สมอง' สร้าง GH (การเจริญเติบโต), ADH (ดูดน้ำกลับที่ไต)\n3. **Thyroid:** สร้าง Thyroxine ควบคุมเมทาบอลิซึม\n4. **Pancreas (Islets of Langerhans):**\n   - Insulin: ลดระดับน้ำตาลในเลือด\n   - Glucagon: เพิ่มระดับน้ำตาลในเลือด\n5. **Adrenal Gland:** สร้าง Epinephrine (ตอบสนองต่อความเครียด/ตกใจ)\n\n**ระบบ Feedback:** ส่วนใหญ่เป็น Negative Feedback (เมื่อมีสารมากเกินไปจะไปยับยั้งการผลิต)",
+    "youtubeId": "L0fEAnE39Y8",
+    "tags": [
+      "science",
+      "biology",
+      "human",
+      "anatomy"
+    ]
+  },
+  {
+    "id": "sci_bio_015",
+    "title": "Biology: ระบบภูมิคุ้มกัน (Immune System)",
+    "content": "กลไกป้องกันร่างกายจากสิ่งแปลกปลอม (Antigen)\n\n**1. Innate Immunity (ไม่จำเพาะ):** ผิวหนัง, กรดในกระเพาะ, การอักเสบ, เม็ดเลือดแดงกลุ่ม Phagocyte (เช่น Macrophage)\n**2. Adaptive Immunity (จำเพาะ):**\n- **Humoral Immunity:** B-lymphocyte สร้าง Antibody เพื่อทำลายสิ่งแปลกปลอมในของเหลว\n- **Cell-mediated Immunity:** T-lymphocyte (Helper T-cell ช่วยกระตุ้นระบบ, Cytotoxic T-cell ทำลายเซลล์ที่ติดเชื้อหรือเซลล์มะเร็ง)\n\n**Memory Cells:** เซลล์ที่จดจำเชื้อโรค ทำให้เมื่อติดเชื้อซ้ำ ร่างกายจะตอบสนองได้อย่างรวดเร็ว (หลักการของวัคซีน)",
+    "youtubeId": "JpG4_iE1S4o",
+    "tags": [
+      "science",
+      "biology",
+      "human",
+      "medicine"
+    ]
+  },
+  {
+    "id": "sci_bio_016",
+    "title": "Biology: ระบบขับถ่ายและการรักษาดุลยภาพ (Excretory System)",
+    "content": "เน้นการกำจัดของเสียที่มีไนโตรเจน (Nitrogenous waste) และรักษาสมดุลน้ำ/แร่ธาตุ\n\n**ไต (Kidney):** หน่วยทำงานคือ **Nephron (หน่วยไต)**\n**ขั้นตอนการสร้างปัสสาวะ:**\n1. **Filtration:** การกรองที่ Glomerulus (สารโมเลกุลใหญ่ เช่น โปรตีนและเม็ดเลือดจะกรองไม่ได้)\n2. **Reabsorption:** การดูดกลับสารที่มีประโยชน์ (น้ำ, กลูโคส, อะมิโน) ที่ท่อหน่วยไต\n3. **Secretion:** การหลั่งสารพิษหรือส่วนเกินลงสู่ท่อหน่วยไต\n\n**การกำจัดของเสีย:**\n- Ammonia (ปลา - พิษสูง ใช้น้ำมาก)\n- Urea (สัตว์เลี้ยงลูกด้วยนม - พิษปานกลาง)\n- Uric Acid (นก, แมลง, สัตว์เลื้อยคลาน - พิษน้อย ประหยัดน้ำสุด)",
+    "youtubeId": "gI96_I-oP78",
+    "tags": [
+      "science",
+      "biology",
+      "human",
+      "anatomy"
+    ]
+  },
+  {
+    "id": "sci_bio_017",
+    "title": "Biology: นิเวศวิทยาและประชากร (Ecology)",
+    "content": "ความสัมพันธ์ระหว่างสิ่งมีชีวิตและสิ่งแวดล้อม\n\n**1. ระดับองค์ประกอบ:** สิ่งมีชีวิต -> ประชากร -> กลุ่มสิ่งมีชีวิต -> ระบบนิเวศ -> ชีววน (Biosphere)\n**2. การถ่ายทอดพลังงาน:** โซ่อาหาร (Food chain) และสายใยอาหาร (Food web)\n- กฎ 10 เปอร์เซ็นต์: พลังงานจะถูกส่งต่อไปยังลำดับขั้นการกินถัดไปเพียง 10%\n**3. ความสัมพันธ์ระหว่างสิ่งมีชีวิต:**\n- Mutualism (+/+): พึ่งพากัน ขาดกันไม่ได้ เช่น ไลเคน\n- Protocooperation (+/+): ได้ประโยชน์ร่วมกัน แยกกันอยู่ได้ เช่น นกเอี้ยงกับควาย\n- Commensalism (+/0): เกื้อกูล เช่น ฉลามกับเหาฉลาม\n- Parasitism (+/-): ปรสิต เช่น พยาธิในลำไส้\n**4. การเปลี่ยนแปลงแทนที่ (Succession):** แบบปฐมภูมิ (เริ่มจากพื้นที่ว่างเปล่า) และทุติยภูมิ (เริ่มจากพื้นที่ที่เคยมีสิ่งมีชีวิตแต่ถูกทำลาย)",
+    "youtubeId": "qW60o6jE38U",
+    "tags": [
+      "science",
+      "biology",
+      "ecology"
+    ]
+  },
+  {
+    "id": "sci_bio_018",
+    "title": "Biology: เทคโนโลยีชีวภาพ (Biotechnology)",
+    "content": "การประยุกต์ใช้ความรู้ด้านชีววิทยาเพื่อประโยชน์ในด้านต่างๆ\n\n**1. Genetic Engineering (พันธุวิศวกรรม):**\n- การสร้าง Recombinant DNA โดยใช้เอนไซม์ตัดจำเพาะ (Restriction enzyme) และเอนไซม์เชื่อมสาย DNA (Ligase)\n- GMOs: สิ่งมีชีวิตดัดแปรพันธุกรรม\n**2. PCR (Polymerase Chain Reaction):** เทคนิคการเพิ่มปริมาณ DNA ในหลอดทดลองอย่างรวดเร็ว\n**3. Gel Electrophoresis:** การแยกโมเลกุล DNA ตามขนาดโดยใช้กระแสไฟฟ้า\n**4. DNA Fingerprinting:** การทำลายพิมพ์ DNA เพื่อระบุตัวบุคคลหรือหาความสัมพันธ์ทางสายเลือด\n**5. CRISPR-Cas9:** เทคโนโลยีการแก้ไขยีนที่แม่นยำสูง\n\n**Asclepius's Ethics:** เทคโนโลยีชีวภาพนำมาซึ่งโอกาสในการรักษาโรค แต่ต้องพิจารณาถึงจริยธรรมและความปลอดภัยทางชีวภาพเสมอ",
+    "youtubeId": "K2D-vS0Y56Q",
+    "tags": [
+      "science",
+      "biology",
+      "technology"
+    ]
+  }
+]

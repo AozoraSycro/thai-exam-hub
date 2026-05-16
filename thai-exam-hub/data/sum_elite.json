@@ -1,0 +1,82 @@
+[
+  {
+    "id": 6001,
+    "subject": "TPAT 1",
+    "title": "จริยธรรมทางการแพทย์: หลักจริยศาสตร์พื้นฐาน",
+    "content": "เจาะลึกหลักการ 4 ประการ (Autonomy, Beneficence, Non-maleficence, Justice) ที่เป็นหัวใจของการสอบ TPAT 1 จริยธรรม... [Case Study: Informed Consent]",
+    "youtubeId": "dQw4w9WgXcQ",
+    "tags": ["TPAT 1", "Medicine", "Ethics"]
+  },
+  {
+    "id": 6002,
+    "subject": "TPAT 1",
+    "title": "วิเคราะห์สถานการณ์จริยธรรมทางการแพทย์",
+    "content": "เทคนิคการตีโจทย์และเลือกคำตอบที่เหมาะสมที่สุดในสถานการณ์ที่ขัดแย้งกันของหลักจริยธรรม... [Keywords: Paternalism, Confidentiality, Conflict of Interest]",
+    "youtubeId": "dQw4w9WgXcQ",
+    "tags": ["TPAT 1", "Medicine", "Ethics"]
+  },
+  {
+    "id": 6003,
+    "subject": "TPAT 3",
+    "title": "ตรรกศาสตร์วิศวกรรม: Syllogisms และความสมเหตุสมผล",
+    "content": "การพิสูจน์ความสมเหตุสมผลของข้อสรุปจากเหตุที่กำหนด และการจับผิด Logical Fallacies ที่พบบ่อยในข้อสอบ... [Keywords: Deductive Reasoning, Venn Diagrams]",
+    "youtubeId": "dQw4w9WgXcQ",
+    "tags": ["TPAT 3", "Engineering", "Logic"]
+  },
+  {
+    "id": 6004,
+    "subject": "TPAT 3",
+    "title": "การคิดเชิงมิติสัมพันธ์และอนุกรมภาพ",
+    "content": "เทคนิคการหมุนภาพในใจ (Mental Rotation) และการมองหารูปแบบในอนุกรมภาพที่ซับซ้อน... [Keywords: Spatial Intelligence, Pattern Recognition]",
+    "youtubeId": "dQw4w9WgXcQ",
+    "tags": ["TPAT 3", "Engineering", "Spatial Reasoning"]
+  },
+  {
+    "id": 6005,
+    "subject": "Mathematics",
+    "title": "จำนวนเชิงซ้อนขั้นสูง: รูปเชิงขั้วและทฤษฎีบทเดอมัวร์",
+    "content": "การใช้พิกัดเชิงขั้ว (r(cos \theta + i \sin \theta)) และการหาค่ารากที่ n ของจำนวนเชิงซ้อน... [Formula: (r e^{i\theta})^n = r^n e^{in\theta}]",
+    "youtubeId": "dQw4w9WgXcQ",
+    "tags": ["Mathematics", "Complex Numbers", "A-Level"]
+  },
+  {
+    "id": 6006,
+    "subject": "Mathematics",
+    "title": "แคลคูลัส: เทคนิคการอินทิเกรตขั้นสูง",
+    "content": "การหาปริพันธ์โดยการแยกส่วน (Integration by Parts) และการแทนค่าด้วยตัวแปรชุดใหม่ที่ซับซ้อน... [Formula: \int u dv = uv - \int v du]",
+    "youtubeId": "dQw4w9WgXcQ",
+    "tags": ["Mathematics", "Calculus", "Elite Math"]
+  },
+  {
+    "id": 6007,
+    "subject": "Mathematics",
+    "title": "ความน่าจะเป็น: ทฤษฎีบทของเบย์ (Bayes' Theorem)",
+    "content": "การคำนวณความน่าจะเป็นแบบมีเงื่อนไขและการประยุกต์ใช้ในโจทย์สถานการณ์จริงที่ต้องอาศัยการ update ความเชื่อ... [Formula: P(A|B) = \frac{P(B|A)P(A)}{P(B)}]",
+    "youtubeId": "dQw4w9WgXcQ",
+    "tags": ["Mathematics", "Probability", "Statistics"]
+  },
+  {
+    "id": 6008,
+    "subject": "Science",
+    "title": "ฟิสิกส์ควอนตัม: ทวิภาวะของคลื่นและอนุภาค",
+    "content": "การทดลองช่องคู่ (Double-slit experiment) และสมมติฐานของเดอบรอยล์ที่เปลี่ยนมุมมองโลกของอนุภาคขนาดเล็ก... [Keywords: Wave-particle Duality, Uncertainty Principle]",
+    "youtubeId": "dQw4w9WgXcQ",
+    "tags": ["Physics", "Quantum", "Elite Science"]
+  },
+  {
+    "id": 6009,
+    "subject": "Science",
+    "title": "เคมีอินทรีย์: กลไกการเกิดปฏิกิริยาและการสังเคราะห์",
+    "content": "การวิเคราะห์กลไกแบบ SN1, SN2, E1, E2 และการวางแผนสังเคราะห์สารอินทรีย์หลายขั้นตอน... [Keywords: Reaction Mechanism, Stereochemistry]",
+    "youtubeId": "dQw4w9WgXcQ",
+    "tags": ["Chemistry", "Organic Chemistry", "A-Level Science"]
+  },
+  {
+    "id": 6010,
+    "subject": "Science",
+    "title": "ชีววิทยาโมเลกุล: CRISPR/Cas9 และเทคโนโลยีการแก้ไขยีน",
+    "content": "กลไกการทำงานของ 'กรรไกรระดับโมเลกุล' และการประยุกต์ใช้ในการดัดแปรพันธุกรรมเพื่อการแพทย์และการเกษตร... [Keywords: Gene Editing, Guide RNA, Biotechnology]",
+    "youtubeId": "dQw4w9WgXcQ",
+    "tags": ["Biology", "Genetics", "Advanced Science"]
+  }
+]
