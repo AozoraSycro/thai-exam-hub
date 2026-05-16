@@ -1,6 +1,7 @@
 /**
  * app.js - The Brain of Thai Exam Hub
- * FIXED: Universal Data Loading with Subject Mapping for 500+ Summaries.
+ * FIXED: Universal Data Bridge for 500+ Summaries and 1,200+ Questions.
+ * Optimized for GitHub Pages and High-Precision Data Mapping.
  */
 
 import { Storage } from './storage.js';
@@ -8,23 +9,24 @@ import { Storage } from './storage.js';
 class ThemeManager {
     init() {
         const settings = Storage.getSettings();
-        document.documentElement.setAttribute('data-theme', settings.theme || 'light');
-        this.injectToggle();
+        const body = document.body;
+        const currentTheme = settings.theme || 'light';
+        document.documentElement.setAttribute('data-theme', currentTheme);
+        this.updateIcon(currentTheme);
+        
+        const btn = document.getElementById('theme-toggle');
+        if (btn) {
+            btn.onclick = () => this.toggle();
+        }
     }
 
-    injectToggle() {
-        if (document.getElementById('theme-toggle')) return;
-        const btn = document.createElement('button');
-        btn.id = 'theme-toggle';
-        btn.className = 'floating-btn';
-        this.updateToggleIcon(btn);
-        btn.onclick = () => this.toggle();
-        document.body.appendChild(btn);
-    }
-
-    updateToggleIcon(btn) {
-        const theme = document.documentElement.getAttribute('data-theme');
-        btn.innerHTML = theme === 'dark' ? '☀️' : '🌙';
+    updateIcon(theme) {
+        const btn = document.getElementById('theme-toggle');
+        if (!btn) return;
+        const icon = btn.querySelector('i');
+        if (icon) {
+            icon.className = theme === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
+        }
     }
 
     toggle() {
@@ -32,7 +34,7 @@ class ThemeManager {
         const next = current === 'dark' ? 'light' : 'dark';
         document.documentElement.setAttribute('data-theme', next);
         Storage.saveSettings({ theme: next });
-        this.updateToggleIcon(document.getElementById('theme-toggle'));
+        this.updateIcon(next);
     }
 }
 
@@ -40,16 +42,16 @@ class App {
     constructor() {
         this.theme = new ThemeManager();
         this.subjectMeta = {
-            'math': { title: 'คณิตศาสตร์', icon: '📐', description: 'A-Level 1&2, TGAT 2, ONET', matchTags: ['math', 'mathematics'] },
-            'english': { title: 'ภาษาอังกฤษ', icon: '🌍', description: 'TGAT 1, A-Level, ONET', matchTags: ['english'] },
-            'science': { title: 'วิทยาศาสตร์', icon: '🧪', description: 'A-Level, TPAT 3, ONET', matchTags: ['science', 'physics', 'chemistry', 'biology'] },
-            'medical': { title: 'กสพท / แพทย์', icon: '🩺', description: 'TPAT 1 วิชาเฉพาะแพทย์', matchTags: ['medical', 'medicine', 'ethics'] },
-            'thai': { title: 'ภาษาไทย', icon: '📚', description: 'A-Level, ONET', matchTags: ['thai'] },
-            'social': { title: 'สังคม / ครู', icon: '⚖️', description: 'A-Level, TPAT 5, ONET', matchTags: ['social', 'social studies', 'teacher', 'law'] },
-            'arts': { title: 'สถาปัตย์/ศิลป์', icon: '🎨', description: 'TPAT 2 & TPAT 4', matchTags: ['arts', 'architecture', 'design'] },
-            'language': { title: 'ภาษาต่างประเทศ', icon: '⛩️', description: 'A-Level 7 ภาษาหลัก', matchTags: ['language', 'foreign language', 'japanese', 'chinese', 'french', 'korean'] },
-            'elite': { title: 'Elite Mocks', icon: '💎', description: 'ความยากระดับสูงสุด', matchTags: ['elite', 'mock'] },
-            'future': { title: 'ทักษะอนาคต', icon: '🚀', description: 'TGAT 3, AI, Finance', matchTags: ['future', 'ai', 'finance', 'digital'] }
+            'math': { title: 'คณิตศาสตร์', icon: '📐', description: 'A-Level 1&2, TGAT 2, ONET', bridge: ['math', 'mathematics', 'sets', 'logic', 'algebra', 'calculus', 'statistics'] },
+            'english': { title: 'ภาษาอังกฤษ', icon: '🌍', description: 'TGAT 1, A-Level, ONET', bridge: ['english', 'grammar', 'vocabulary', 'reading', 'tense'] },
+            'science': { title: 'วิทยาศาสตร์', icon: '🧪', description: 'A-Level, TPAT 3, ONET', bridge: ['science', 'physics', 'chemistry', 'biology', 'earth', 'astronomy'] },
+            'medical': { title: 'กสพท / แพทย์', icon: '🩺', description: 'TPAT 1 วิชาเฉพาะแพทย์', bridge: ['medical', 'medicine', 'ethics', 'biology', 'general'] },
+            'thai': { title: 'ภาษาไทย', icon: '📚', description: 'A-Level, ONET', bridge: ['thai', 'วรรณคดี', 'หลักภาษา'] },
+            'social': { title: 'สังคม / ครู', icon: '⚖️', description: 'A-Level, TPAT 5, ONET', bridge: ['social', 'history', 'geography', 'economics', 'civics', 'law', 'teacher'] },
+            'arts': { title: 'สถาปัตยกรรม', icon: '🎨', description: 'TPAT 4 ศิลปะ/สถาปัตย์', bridge: ['arts', 'architecture', 'design', 'drawing', 'general'] },
+            'language': { title: 'ภาษาต่างประเทศ', icon: '⛩️', description: 'A-Level 7 ภาษาหลัก', bridge: ['language', 'foreign', 'japanese', 'chinese', 'french', 'korean', 'german', 'spanish', 'pali'] },
+            'elite': { title: 'Elite Mocks', icon: '💎', description: 'ความยากระดับสูงสุด', bridge: ['elite', 'mock', 'difficult', 'advanced'] },
+            'future': { title: 'ทักษะอนาคต', icon: '🚀', description: 'TGAT 3, AI, Finance', bridge: ['future', 'ai', 'finance', 'digital', 'general'] }
         };
         this.basePath = window.location.pathname.includes('/subjects/') || window.location.pathname.includes('/faq/') ? '../' : './';
     }
@@ -103,13 +105,15 @@ class App {
                     </div>
                 `).join('');
             }
-        } catch (e) { console.error('Dashboard error:', e); }
+        } catch (e) { console.error('Dashboard data error:', e); }
     }
 
     async renderSubjectPage(subjectId) {
         const meta = this.subjectMeta[subjectId];
         const titleEl = document.getElementById('subject-title');
+        const breadcrumbEl = document.getElementById('breadcrumb-current');
         if (titleEl) titleEl.textContent = meta ? meta.title : 'คลังความรู้';
+        if (breadcrumbEl) breadcrumbEl.textContent = meta ? meta.title : 'วิชา';
 
         try {
             // 1. Load Exams
@@ -122,28 +126,27 @@ class App {
                     <div class="exam-card">
                         <div class="exam-info">
                             <h4>${exam.title}</h4>
-                            <p>ปี ${exam.year} • ${exam.duration_minutes} นาที</p>
+                            <p>ปี ${exam.year} • ${exam.duration_minutes} นาที • ${this.getDifficultyBadge(exam.difficulty)}</p>
                         </div>
                         <button class="start-btn" onclick="location.href='${this.basePath}quiz.html?id=${exam.id}'">เริ่มทำข้อสอบ</button>
                     </div>
                 `).join('') : '<p class="empty-state">ยังไม่มีข้อสอบในหมวดนี้</p>';
             }
 
-            // 2. Load Summaries (Flexible Search)
+            // 2. Load Summaries (Universal Bridge Matching)
             const sumRes = await fetch(`${this.basePath}data/summaries.json`);
             const allSummariesRaw = await sumRes.json();
             
-            const matchTags = meta ? meta.matchTags : [subjectId];
+            const bridgeTags = meta ? meta.bridge : [subjectId];
             const summaries = allSummariesRaw.filter(s => {
-                const sSubject = (s.subject || '').toLowerCase();
+                const sSub = (s.subject || '').toLowerCase();
+                const sTitle = (s.title || '').toLowerCase();
                 const sTags = (s.tags || []).map(t => t.toLowerCase());
-                const sTopicId = (s.topicId || '').toLowerCase();
                 
-                return matchTags.some(tag => 
-                    sSubject.includes(tag) || 
+                return bridgeTags.some(tag => 
+                    sSub.includes(tag) || 
                     sTags.includes(tag) || 
-                    sTopicId === tag ||
-                    (s.title || '').toLowerCase().includes(tag)
+                    sTitle.includes(tag)
                 );
             });
 
@@ -161,7 +164,7 @@ class App {
                     this.renderSummaryGrid(filtered, subjectId);
                 };
             }
-        } catch (e) { console.error('Subject error:', e); }
+        } catch (e) { console.error('Subject data error:', e); }
     }
 
     renderSummaryGrid(summaries, subjectId) {
@@ -170,44 +173,96 @@ class App {
         gridEl.innerHTML = summaries.length ? summaries.map(s => `
             <div class="summary-card">
                 <div class="summary-info">
+                    <span class="tag-meta">${(s.subject || 'General').toUpperCase()}</span>
                     <h4>${s.title}</h4>
-                    <p>${(s.content || '').substring(0, 100).replace(/[#*`$]/g, '')}...</p>
+                    <p>${(s.content || '').substring(0, 120).replace(/[#*`$]/g, '')}...</p>
                 </div>
-                <a href="${this.basePath}study.html?subject=${subjectId}&id=${s.id}" class="read-btn">อ่านสรุปความรู้</a>
+                <a href="${this.basePath}study.html?subject=${subjectId}&id=${s.id}" class="read-btn">อ่านสรุปบทเรียน</a>
             </div>
-        `).join('') : '<p class="empty-state" style="grid-column: 1/-1;">ยังไม่มีเนื้อหาสรุปในหมวดนี้</p>';
+        `).join('') : '<p class="empty-state" style="grid-column: 1/-1;">กำลังเตรียมเนื้อหาสรุปในหมวดนี้...</p>';
     }
 
     renderRecommendations() {
         const container = document.getElementById('recommendations-container');
         if (!container) return;
+
         const stats = Storage.getStats();
-        const topWeak = Object.entries(stats.byTopic || {}).sort((a, b) => b[1].wrong - a[1].wrong).filter(t => t[1].wrong > 0).slice(0, 3);
-        if (topWeak.length === 0) {
-            container.innerHTML = '<div class="info-card" style="padding:20px; text-align:center; background:var(--card-bg); border-radius:12px; border:1px solid var(--border-color);"><p>เริ่มทำข้อสอบเพื่อให้ระบบวิเคราะห์จุดที่ควรเน้น!</p></div>';
+        const topWeakTopics = Object.entries(stats.byTopic || {})
+            .sort((a, b) => b[1].wrong - a[1].wrong)
+            .filter(t => t[1].wrong > 0)
+            .slice(0, 3);
+
+        if (topWeakTopics.length === 0) {
+            container.innerHTML = '<div class="info-card" style="padding:20px; text-align:center; background:var(--card-bg); border-radius:12px; border:1px solid var(--border-color);"><p>เริ่มทำข้อสอบเพื่อวิเคราะห์เนื้อหาที่คุณควรติวเพิ่ม!</p></div>';
             return;
         }
-        container.innerHTML = `<div class="recommendation-grid">${topWeak.map(t => `<div class="recommend-card"><span class="tag-alert">ทบทวนด่วน</span><h4>เรื่อง: ${t[0]}</h4><p>พลาดไปแล้ว ${t[1].wrong} ครั้ง</p><a href="${this.basePath}subject.html?s=search&q=${t[0]}" class="read-btn">หาเนื้อหาติว →</a></div>`).join('')}</div>`;
+
+        container.innerHTML = `
+            <div class="recommendation-grid">
+                ${topWeakTopics.map(t => `
+                    <div class="recommend-card">
+                        <span class="tag-alert"><i class="fas fa-lightbulb"></i> แนะนำให้ทบทวน</span>
+                        <h4>หัวข้อ: ${t[0]}</h4>
+                        <p>คุณพลาดเรื่องนี้ไปแล้ว ${t[1].wrong} ครั้ง</p>
+                        <a href="${this.basePath}subject.html?s=search&q=${t[0]}" class="read-btn">หาเนื้อหาติว →</a>
+                    </div>
+                `).join('')}
+            </div>
+        `;
     }
 
     renderFullHistory() {
-        const list = document.getElementById('history-list');
-        if (!list) return;
+        const historyList = document.getElementById('history-list');
+        if (!historyList) return;
         const history = Storage.getAllProgress();
-        if (history.length === 0) { list.innerHTML = '<p class="empty-state">ยังไม่มีประวัติการสอบ</p>'; return; }
-        list.innerHTML = history.map(item => `<div class="history-item"><div class="history-info"><strong>${item.examId.toUpperCase().replace(/_/g, ' ')}</strong><span>${new Date(item.completedAt).toLocaleDateString('th-TH')}</span></div><div class="history-score ${(item.score/item.totalQuestions) >= 0.5 ? 'pass' : 'fail'}">${item.score} / ${item.totalQuestions}</div></div>`).join('');
+
+        if (history.length === 0) {
+            historyList.innerHTML = '<p class="empty-state">ยังไม่มีประวัติการสอบ</p>';
+            return;
+        }
+
+        historyList.innerHTML = history.map(item => `
+            <div class="history-item">
+                <div class="history-info">
+                    <strong>${item.examId.toUpperCase().replace(/_/g, ' ')}</strong>
+                    <span>${new Date(item.completedAt).toLocaleDateString('th-TH')}</span>
+                </div>
+                <div class="history-score ${(item.score/item.totalQuestions) >= 0.5 ? 'pass' : 'fail'}">
+                    ${item.score} / ${item.totalQuestions}
+                </div>
+            </div>
+        `).join('');
     }
 
     initCharts() {
         if (!window.Chart) return;
-        const radarCtx = document.getElementById('subjectRadarChart') || document.getElementById('results-radar-chart');
+        const radarCtx = document.getElementById('subjectRadarChart');
         if (radarCtx) {
             const stats = Storage.getStats();
             const subjects = Object.keys(stats.bySubject);
             if (subjects.length >= 3) {
                 const data = subjects.map(s => (stats.bySubject[s].correct / stats.bySubject[s].answered) * 100);
-                new Chart(radarCtx, { type: 'radar', data: { labels: subjects.map(s => s.toUpperCase()), datasets: [{ label: 'ความแม่นยำ (%)', data: data, backgroundColor: 'rgba(14, 165, 233, 0.2)', borderColor: '#0ea5e9', pointBackgroundColor: '#0ea5e9' }] }, options: { scales: { r: { beginAtZero: true, max: 100 } }, plugins: { legend: { display: false } } } });
-            } else { radarCtx.parentElement.innerHTML = '<p class="empty-state">ทำข้อสอบให้ครบ 3 หมวดเพื่อแสดงกราฟ</p>'; }
+                new Chart(radarCtx, {
+                    type: 'radar',
+                    data: {
+                        labels: subjects.map(s => s.toUpperCase()),
+                        datasets: [{
+                            label: 'ความแม่นยำ (%)',
+                            data: data,
+                            backgroundColor: 'rgba(14, 165, 233, 0.2)',
+                            borderColor: '#0ea5e9',
+                            pointBackgroundColor: '#0ea5e9',
+                            borderWidth: 2
+                        }]
+                    },
+                    options: {
+                        scales: { r: { beginAtZero: true, max: 100, ticks: { display: false } } },
+                        plugins: { legend: { display: false } }
+                    }
+                });
+            } else {
+                radarCtx.parentElement.innerHTML = '<p class="empty-state">ทำข้อสอบให้ครบ 3 หมวดเพื่อแสดงกราฟสมรรถนะ</p>';
+            }
         }
     }
 
