@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>Thai Exam Hub - System Diagnostic</title>
+    <style>
+        body { font-family: monospace; padding: 20px; background: #1a1a1a; color: #00ff00; line-height: 1.4; }
+        .success { color: #00ff00; }
+        .error { color: #ff0000; font-weight: bold; }
+        .info { color: #00ffff; }
+        hr { border: 1px solid #333; }
+    </style>
+</head>
+<body>
+    <h1>🔍 Thai Exam Hub Diagnostic Tool</h1>
+    <div id="log"></div>
+
+    <script>
+        const log = (msg, type = 'info') => {
+            const div = document.getElementById('log');
+            const p = document.createElement('div');
+            p.className = type;
+            p.textContent = `[${new Date().toLocaleTimeString()}] ${msg}`;
+            div.appendChild(p);
+            console.log(msg);
+        };
+
+        async function runDiagnostic() {
+            log('Starting diagnostic...');
+            log('URL: ' + window.location.href);
+            log('Pathname: ' + window.location.pathname);
+            
+            // 1. Test subjects.json
+            try {
+                log('Testing subjects.json...');
+                const res = await fetch('./data/subjects.json');
+                log(`Response status: ${res.status}`);
+                if (res.ok) {
+                    const data = await res.json();
+                    log(`SUCCESS: Loaded ${data.length} exams.`, 'success');
+                } else {
+                    throw new Error('HTTP ' + res.status);
+                }
+            } catch (e) {
+                log('FAILED subjects.json: ' + e.message, 'error');
+            }
+
+            hr();
+
+            // 2. Test summaries.json
+            try {
+                log('Testing sum_math.json...');
+                const res = await fetch('./data/sum_math.json');
+                log(`Response status: ${res.status}`);
+                if (res.ok) {
+                    const data = await res.json();
+                    log(`SUCCESS: Loaded ${data.length} math summaries.`, 'success');
+                } else {
+                    throw new Error('HTTP ' + res.status);
+                }
+            } catch (e) {
+                log('FAILED sum_math.json: ' + e.message, 'error');
+            }
+
+            hr();
+
+            // 3. Test Storage module
+            try {
+                log('Importing Storage module...');
+                const { Storage } = await import('./js/storage.js');
+                log('SUCCESS: Storage module loaded.', 'success');
+                const stats = Storage.getStats();
+                log('Current Stats: ' + JSON.stringify(stats));
+            } catch (e) {
+                log('FAILED Storage module: ' + e.message, 'error');
+            }
+        }
+
+        function hr() {
+            document.getElementById('log').appendChild(document.createElement('hr'));
+        }
+
+        runDiagnostic();
+    </script>
+</body>
+</html>
