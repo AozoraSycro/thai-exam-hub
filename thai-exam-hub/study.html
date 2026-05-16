@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>สรุปบทเรียน - Thai Exam Hub</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- KaTeX for Math Rendering -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" onload="renderMathInElement(document.body);"></script>
+    <!-- Marked for Markdown rendering -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body class="study-page">
+    <div class="progress-container">
+        <div class="progress-bar" id="reading-progress"></div>
+    </div>
+    
+    <header>
+        <div class="container" style="display: flex; justify-content: space-between; align-items: center;">
+            <div style="display: flex; align-items: center; gap: 15px;">
+                <button class="back-btn" onclick="history.back()" style="background: none; border: none; cursor: pointer; color: var(--text-color); font-size: 1.2rem;"><i class="fas fa-arrow-left"></i></button>
+                <a href="index.html" class="logo">Thai Exam Hub</a>
+            </div>
+            <div class="header-right">
+                <span id="reading-time" style="font-size: 0.9rem; color: var(--text-light); font-weight: 600;"><i class="far fa-clock"></i> กำลังคำนวณ...</span>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <nav style="margin: 20px 0; font-size: 0.9rem; color: var(--text-light);">
+            <a href="index.html" style="color: var(--text-light); text-decoration: none;">หน้าหลัก</a> <i class="fas fa-chevron-right" style="font-size: 0.7rem; margin: 0 5px;"></i>
+            <a href="#" id="breadcrumb-subject" style="color: var(--text-light); text-decoration: none;">วิชา</a> <i class="fas fa-chevron-right" style="font-size: 0.7rem; margin: 0 5px;"></i>
+            <span id="breadcrumb-title" style="color: var(--primary-color); font-weight: 600;">หัวข้อ</span>
+        </nav>
+
+        <main class="reading-view">
+            <article class="study-article-premium" style="animation: slide-up 0.6s ease-out;">
+                <header class="article-header" style="margin-bottom: 40px; text-align: center;">
+                    <div class="diff-badge med" id="article-subject-tag" style="display: inline-block; margin-bottom: 15px;">SUBJECT</div>
+                    <h1 id="study-title" style="font-size: 2.5rem; margin-bottom: 20px;">กำลังเตรียมเนื้อหา...</h1>
+                    <div class="article-info" style="color: var(--text-light); font-size: 0.95rem;">
+                        <span id="last-updated"><i class="far fa-calendar-alt"></i> อัปเดตล่าสุด: 2567</span>
+                        <span style="margin: 0 10px;">•</span>
+                        <span><i class="far fa-user"></i> โดย ทีมงาน Thai Exam Hub</span>
+                    </div>
+                </header>
+
+                <!-- YouTube Integration -->
+                <div id="video-container" style="display: none; margin-bottom: 50px; border-radius: 24px; overflow: hidden; box-shadow: var(--shadow-lg); border: var(--glass-border);">
+                    <div style="position: relative; padding-bottom: 56.25%; height: 0;">
+                        <iframe id="study-video" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <div id="study-body" class="markdown-body-premium">
+                    <div class="skeleton-loader"></div>
+                </div>
+
+                <footer class="article-footer" style="margin-top: 60px; padding-top: 40px; border-top: var(--glass-border); text-align: center;">
+                    <div class="finish-section" style="background: rgba(13, 148, 136, 0.05); padding: 40px; border-radius: 24px;">
+                        <h3 style="margin-bottom: 15px;">เรียนรู้จบแล้ว! พร้อมลุยข้อสอบหรือยัง?</h3>
+                        <p style="margin-bottom: 30px; color: var(--text-light);">นำความรู้ที่เพิ่งอ่านมาไปทดสอบความเข้าใจกับข้อสอบจำลอง</p>
+                        <button class="start-btn" id="go-to-exam" style="padding: 18px 40px; font-size: 1.1rem;">เริ่มทำข้อสอบวิชานี้ <i class="fas fa-rocket"></i></button>
+                    </div>
+                </footer>
+            </article>
+        </main>
+    </div>
+
+    <button class="floating-btn" id="scroll-top-btn" title="กลับไปด้านบน" style="display: none; bottom: 100px;">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+    
+    <button class="floating-btn" id="theme-toggle" title="เปลี่ยนโหมด">
+        <i class="fas fa-moon"></i>
+    </button>
+
+    <script>
+        // Theme Management
+        const themeToggle = document.getElementById('theme-toggle');
+        const body = document.body;
+        const themeIcon = themeToggle.querySelector('i');
+
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme) {
+            body.setAttribute('data-theme', savedTheme);
+            updateThemeIcon(savedTheme);
+        }
+
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = body.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            body.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            updateThemeIcon(newTheme);
+        });
+
+        function updateThemeIcon(theme) {
+            themeIcon.className = theme === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
+        }
+
+        async function loadStudyContent() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const subjectId = urlParams.get('subject'); 
+            const summaryId = urlParams.get('id');
+
+            if (!summaryId) {
+                window.location.href = 'index.html';
+                return;
+            }
+
+            try {
+                const response = await fetch('data/summaries.json');
+                const allSummaries = await response.json();
+                
+                const summary = allSummaries.find(s => s.id === summaryId);
+                
+                if (summary) {
+                    const displaySubject = summary.topicId || subjectId || 'General';
+                    
+                    document.title = `${summary.title} - Thai Exam Hub`;
+                    document.getElementById('study-title').textContent = summary.title;
+                    document.getElementById('article-subject-tag').textContent = displaySubject.toUpperCase();
+                    document.getElementById('breadcrumb-subject').textContent = displaySubject;
+                    document.getElementById('breadcrumb-subject').href = `subject.html?s=${displaySubject.toLowerCase()}`;
+                    document.getElementById('breadcrumb-title').textContent = summary.title;
+                    document.getElementById('go-to-exam').onclick = () => {
+                        location.href = `subject.html?s=${displaySubject.toLowerCase()}`;
+                    };
+
+                    if (summary.youtubeId) {
+                        document.getElementById('study-video').src = `https://www.youtube.com/embed/${summary.youtubeId}`;
+                        document.getElementById('video-container').style.display = 'block';
+                    }
+
+                    const wordCount = summary.content.split(/\s+/).length;
+                    const readingMinutes = Math.max(1, Math.round(wordCount / 200));
+                    document.getElementById('reading-time').innerHTML = `<i class="far fa-clock"></i> ${readingMinutes} นาทีในการอ่าน`;
+                    
+                    if (window.marked) {
+                        document.getElementById('study-body').innerHTML = marked.parse(summary.content);
+                    } else {
+                        document.getElementById('study-body').textContent = summary.content;
+                    }
+
+                    if (window.renderMathInElement) {
+                        renderMathInElement(document.getElementById('study-body'), {
+                            delimiters: [
+                                {left: '$$', right: '$$', display: true},
+                                {left: '$', right: '$', display: false}
+                            ],
+                            throwOnError : false
+                        });
+                    }
+                } else {
+                    document.getElementById('study-body').innerHTML = '<p class="empty-state">ไม่พบเนื้อหาที่คุณต้องการ</p>';
+                }
+            } catch (error) {
+                console.error('Error:', error);
+            }
+        }
+
+        window.onscroll = function() {
+            let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            let scrolled = (winScroll / height) * 100;
+            document.getElementById("reading-progress").style.width = scrolled + "%";
+
+            const btn = document.getElementById("scroll-top-btn");
+            if (winScroll > 300) {
+                btn.style.display = "flex";
+            } else {
+                btn.style.display = "none";
+            }
+        };
+
+        document.getElementById("scroll-top-btn").onclick = function() {
+            window.scrollTo({top: 0, behavior: 'smooth'});
+        };
+
+        window.onload = loadStudyContent;
+    </script>
+</body>
+</html>

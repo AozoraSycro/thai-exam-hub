@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เริ่มทำข้อสอบออนไลน์ — Thai Exam Hub</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body class="quiz-page">
+    <header>
+        <div class="container" style="display: flex; justify-content: space-between; align-items: center;">
+            <a href="index.html" class="logo">Thai Exam Hub</a>
+            <div id="timer" class="quiz-timer" style="font-family: 'Bai Jamjuree'; font-weight: 700; color: var(--primary-color); font-size: 1.2rem; background: rgba(13, 148, 136, 0.1); padding: 5px 15px; border-radius: 10px; border: 1px solid var(--primary-color);">00:00</div>
+        </div>
+    </header>
+
+    <div class="container">
+        <main id="quiz-view" class="quiz-container">
+            <div class="quiz-header" style="margin-bottom: 30px;">
+                <div class="quiz-info">
+                    <span id="quiz-progress-text" style="font-weight: 600; color: var(--text-light);">ข้อที่ <span id="current-question-num" style="color: var(--primary-color);">0</span> จาก <span id="total-questions">0</span></span>
+                    <div class="progress-container" style="position: static; height: 8px; background: rgba(0,0,0,0.05); border-radius: 4px; margin-top: 10px;">
+                        <div class="progress-bar" id="quiz-progress-bar" style="width: 0%; border-radius: 4px;"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question-card">
+                <h2 id="question-text" style="margin-bottom: 30px; line-height: 1.4;">กำลังโหลดโจทย์...</h2>
+                <div class="options-list" id="options-grid">
+                    <!-- Loaded by quiz.js -->
+                </div>
+            </div>
+
+            <div class="quiz-nav" style="display: flex; justify-content: space-between; gap: 20px; margin-top: 30px;">
+                <button id="prev-btn" class="start-btn" onclick="window.engine.prevQuestion()" style="background: rgba(0,0,0,0.05); color: var(--text-color); box-shadow: none;">
+                    <i class="fas fa-arrow-left"></i> ข้อก่อน
+                </button>
+                <div style="display: flex; gap: 15px;">
+                    <button id="bookmark-btn" class="start-btn" onclick="window.engine.toggleBookmark()" style="background: rgba(255, 215, 0, 0.1); color: #ca8a04; box-shadow: none;">
+                        <i class="far fa-star"></i> บันทึก
+                    </button>
+                    <button id="next-btn" class="start-btn" onclick="window.engine.nextQuestion()">
+                        ข้อถัดไป <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+                <button id="submit-btn" class="start-btn" style="display: none;" onclick="window.engine.finishQuiz()">
+                    ส่งข้อสอบ <i class="fas fa-check-double"></i>
+                </button>
+            </div>
+        </main>
+
+        <!-- Results View -->
+        <section id="result-view" style="display: none; animation: slide-up 0.6s ease-out;">
+            <div class="question-card" style="text-align: center; padding: 60px 40px;">
+                <div class="glow-icon" style="margin-bottom: 30px;">
+                    <i class="fas fa-trophy" style="font-size: 5rem; color: #FFD700; filter: drop-shadow(0 0 15px rgba(255, 215, 0, 0.5));"></i>
+                </div>
+                <h1>สรุปคะแนนของคุณ</h1>
+                <div id="score-display" style="font-size: 4rem; font-weight: 800; color: var(--primary-color); margin: 20px 0; font-family: 'Bai Jamjuree';">0 / 0</div>
+                <p style="color: var(--text-light); font-size: 1.1rem; margin-bottom: 40px;">ทำสำเร็จแล้ว! มาดูเฉลยละเอียดด้านล่างกันเลย</p>
+                
+                <div class="result-actions" style="display: flex; justify-content: center; gap: 20px;">
+                    <button class="start-btn" onclick="window.engine.shareScore()">
+                        <i class="fas fa-share-nodes"></i> แชร์คะแนน
+                    </button>
+                    <a href="index.html" class="start-btn" style="background: rgba(0,0,0,0.05); color: var(--text-color); text-decoration: none; box-shadow: none;">กลับหน้าหลัก</a>
+                </div>
+            </div>
+
+            <div id="explanation-container" style="margin-top: 40px;">
+                <!-- Populated by quiz.js -->
+            </div>
+        </section>
+    </div>
+
+    <button class="floating-btn" id="theme-toggle" title="เปลี่ยนโหมด">
+        <i class="fas fa-moon"></i>
+    </button>
+
+    <script type="module" src="js/quiz.js"></script>
+    <script>
+        // Theme Management
+        const themeToggle = document.getElementById('theme-toggle');
+        const body = document.body;
+        const themeIcon = themeToggle.querySelector('i');
+
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme) {
+            body.setAttribute('data-theme', savedTheme);
+            updateThemeIcon(savedTheme);
+        }
+
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = body.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            body.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            updateThemeIcon(newTheme);
+        });
+
+        function updateThemeIcon(theme) {
+            themeIcon.className = theme === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
+        }
+
+        // Share logic placeholder
+        window.engine = window.engine || {};
+        window.engine.shareScore = function() {
+            const score = document.getElementById('score-display').textContent;
+            const text = `ฉันทำข้อสอบใน Thai Exam Hub ได้คะแนน ${score}! ลองมาทำกันได้ที่ https://thaiexamhub.com/`;
+            if (navigator.share) {
+                navigator.share({
+                    title: 'Thai Exam Hub Score',
+                    text: text,
+                    url: window.location.href
+                });
+            } else {
+                window.open(`https://social-plugins.line.me/lineit/share?url=${encodeURIComponent(window.location.href)}&text=${encodeURIComponent(text)}`);
+            }
+        };
+    </script>
+</body>
+</html>

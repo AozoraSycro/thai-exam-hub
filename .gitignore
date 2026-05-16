@@ -1,0 +1,14 @@
+# Local Workspace Files
+Req.txt
+Req2.txt
+memory/
+.gemini/
+.DS_Store
+Thumbs.db
+node_modules/
+dist/
+build/
+*.log
+.env
+.vscode/
+.idea/

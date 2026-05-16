@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thai Exam Hub - คลังข้อสอบ ม.ปลาย ฟรี</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600;700&family=Sarabun:wght@400;700&family=Bai+Jamjuree:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container" style="display: flex; justify-content: space-between; align-items: center;">
+            <a href="index.html" class="logo">Thai Exam Hub</a>
+            <nav class="main-nav">
+                <a href="index.html" class="active"><i class="fas fa-home"></i> หน้าหลัก</a>
+                <a href="results.html"><i class="fas fa-chart-line"></i> วิเคราะห์ผล</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <section class="hero-section">
+            <div class="hero-glow-blob"></div>
+            <h1>เก่งขึ้นทุกวัน เริ่มต้นที่นี่</h1>
+            <p>รวมข้อสอบ TCAS (ONET, TGAT, TPAT, A-Level) พร้อมเฉลยละเอียดและวิเคราะห์จุดอ่อนด้วย AI</p>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-value" id="stat-total-solved">0</span>
+                    <span class="stat-label">ข้อที่ทำแล้ว</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-value" id="stat-streak">0</span>
+                    <span class="stat-label">Streak (วัน)</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Smart Recommendations -->
+        <section id="recommendations-section">
+            <h2 class="section-title">แนะนำสำหรับคุณ <i class="fas fa-sparkles" style="color: var(--primary-color);"></i></h2>
+            <div id="recommendations-container">
+                <!-- Calculated by app.js -->
+                <p class="empty-state">กำลังวิเคราะห์ข้อมูลการเรียนของคุณ...</p>
+            </div>
+        </section>
+
+        <!-- Analytics Preview -->
+        <section class="analytics-grid">
+            <div class="chart-card">
+                <h3><i class="fas fa-radar"></i> ภาพรวมรายวิชา</h3>
+                <canvas id="subjectRadarChart"></canvas>
+            </div>
+            <div class="chart-card" style="display: flex; flex-direction: column; justify-content: center; text-align: center;">
+                <div class="glow-icon">
+                    <i class="fas fa-medal" style="font-size: 5rem; color: #FFD700; margin-bottom: 15px; filter: drop-shadow(0 0 15px rgba(255, 215, 0, 0.5));"></i>
+                </div>
+                <h3>ความก้าวหน้า</h3>
+                <p>ทำข้อสอบให้ครบทุกวิชาเพื่อดูแผนผังความแม่นยำของคุณ!</p>
+            </div>
+        </section>
+
+        <h2 class="section-title">เลือกวิชาฝึกฝน</h2>
+        <div class="subject-grid" id="subject-grid">
+            <!-- Loaded by app.js -->
+        </div>
+    </div>
+
+    <button class="floating-btn" id="theme-toggle" title="เปลี่ยนโหมด">
+        <i class="fas fa-moon"></i>
+    </button>
+
+    <script type="module" src="js/app.js"></script>
+    <script>
+        const themeToggle = document.getElementById('theme-toggle');
+        const body = document.body;
+        const icon = themeToggle.querySelector('i');
+
+        // Check for saved theme
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme) {
+            body.setAttribute('data-theme', savedTheme);
+            updateIcon(savedTheme);
+        }
+
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = body.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            
+            body.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            updateIcon(newTheme);
+        });
+
+        function updateIcon(theme) {
+            if (theme === 'dark') {
+                icon.classList.replace('fa-moon', 'fa-sun');
+            } else {
+                icon.classList.replace('fa-sun', 'fa-moon');
+            }
+        }
+    </script>
+</body>
+</html>

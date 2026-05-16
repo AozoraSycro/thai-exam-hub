@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /js/
+Disallow: /data/
+
+Sitemap: https://thaiexamhub.com/sitemap.xml

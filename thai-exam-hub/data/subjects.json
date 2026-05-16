@@ -1,0 +1,38 @@
+[
+  { "id": "tgat1_2567", "title": "TGAT 1 การสื่อสารภาษาอังกฤษ", "subject": "english", "year": 2567, "difficulty": "medium", "duration_minutes": 60 },
+  { "id": "tgat2_2567", "title": "TGAT 2 การคิดอย่างมีเหตุผล", "subject": "math", "year": 2567, "difficulty": "medium", "duration_minutes": 60 },
+  { "id": "tgat3_2567", "title": "TGAT 3 สมรรถนะการทำงาน", "subject": "future", "year": 2567, "difficulty": "medium", "duration_minutes": 60 },
+  
+  { "id": "tpat1_2567", "title": "TPAT 1 กสพท (วิชาเฉพาะแพทย์)", "subject": "medical", "year": 2567, "difficulty": "hard", "duration_minutes": 180 },
+  { "id": "tpat2_2567", "title": "TPAT 2 ความถนัดศิลปกรรม", "subject": "arts", "year": 2567, "difficulty": "medium", "duration_minutes": 180 },
+  { "id": "tpat3_2567", "title": "TPAT 3 ความถนัดวิศวกรรม/วิทยาศาสตร์", "subject": "science", "year": 2567, "difficulty": "hard", "duration_minutes": 180 },
+  { "id": "tpat4_2567", "title": "TPAT 4 ความถนัดสถาปัตยกรรม", "subject": "arts", "year": 2567, "difficulty": "medium", "duration_minutes": 180 },
+  { "id": "tpat5_2567", "title": "TPAT 5 ความถนัดครู", "subject": "social", "year": 2567, "difficulty": "medium", "duration_minutes": 180 },
+  
+  { "id": "alevel_math1_2567", "title": "A-Level คณิต 1 (วิทย์)", "subject": "math", "year": 2567, "difficulty": "hard", "duration_minutes": 90 },
+  { "id": "alevel_math2_2567", "title": "A-Level คณิต 2 (ศิลป์)", "subject": "math", "year": 2567, "difficulty": "medium", "duration_minutes": 90 },
+  { "id": "alevel_physics_2567", "title": "A-Level ฟิสิกส์", "subject": "science", "year": 2567, "difficulty": "hard", "duration_minutes": 90 },
+  { "id": "alevel_chemistry_2567", "title": "A-Level เคมี", "subject": "science", "year": 2567, "difficulty": "hard", "duration_minutes": 90 },
+  { "id": "alevel_biology_2567", "title": "A-Level ชีววิทยา", "subject": "science", "year": 2567, "difficulty": "hard", "duration_minutes": 90 },
+  { "id": "alevel_science_2567", "title": "A-Level วิทย์ประยุกต์", "subject": "science", "year": 2567, "difficulty": "medium", "duration_minutes": 90 },
+  { "id": "alevel_thai_2567", "title": "A-Level ภาษาไทย", "subject": "thai", "year": 2567, "difficulty": "medium", "duration_minutes": 90 },
+  { "id": "alevel_social_2567", "title": "A-Level สังคมศึกษา", "subject": "social", "year": 2567, "difficulty": "medium", "duration_minutes": 90 },
+  { "id": "alevel_english_2567", "title": "A-Level ภาษาอังกฤษ", "subject": "english", "year": 2567, "difficulty": "hard", "duration_minutes": 90 },
+  
+  { "id": "alevel_japanese_2567", "title": "A-Level ภาษาญี่ปุ่น", "subject": "language", "year": 2567, "difficulty": "hard", "duration_minutes": 90 },
+  { "id": "alevel_french_2567", "title": "A-Level ภาษาฝรั่งเศส", "subject": "language", "year": 2567, "difficulty": "hard", "duration_minutes": 90 },
+  { "id": "alevel_german_2567", "title": "A-Level ภาษาเยอรมัน", "subject": "language", "year": 2567, "difficulty": "hard", "duration_minutes": 90 },
+  { "id": "alevel_chinese_2567", "title": "A-Level ภาษาจีน", "subject": "language", "year": 2567, "difficulty": "hard", "duration_minutes": 90 },
+  { "id": "alevel_korean_2567", "title": "A-Level ภาษาเกาหลี", "subject": "language", "year": 2567, "difficulty": "hard", "duration_minutes": 90 },
+  { "id": "alevel_pali_2567", "title": "A-Level ภาษาบาลี", "subject": "language", "year": 2567, "difficulty": "hard", "duration_minutes": 90 },
+  
+  { "id": "math_elite_mock", "title": "MATH ELITE MOCK (ชุดจำลองโหดพิเศษ)", "subject": "elite", "year": 2568, "difficulty": "hard", "duration_minutes": 180 },
+  { "id": "science_elite_mock", "title": "SCIENCE ELITE MOCK (ชุดจำลองโหดพิเศษ)", "subject": "elite", "year": 2568, "difficulty": "hard", "duration_minutes": 180 },
+  { "id": "english_elite_mock", "title": "ENGLISH ELITE MOCK (ชุดจำลองโหดพิเศษ)", "subject": "elite", "year": 2568, "difficulty": "hard", "duration_minutes": 90 },
+  
+  { "id": "onet_math_2567", "title": "ONET คณิตศาสตร์ (ม.6)", "subject": "math", "year": 2567, "difficulty": "easy", "duration_minutes": 120 },
+  { "id": "onet_science_2567", "title": "ONET วิทยาศาสตร์ (ม.6)", "subject": "science", "year": 2567, "difficulty": "easy", "duration_minutes": 120 },
+  { "id": "onet_english_2567", "title": "ONET ภาษาอังกฤษ (ม.6)", "subject": "english", "year": 2567, "difficulty": "easy", "duration_minutes": 120 },
+  { "id": "onet_thai_2567", "title": "ONET ภาษาไทย (ม.6)", "subject": "thai", "year": 2567, "difficulty": "easy", "duration_minutes": 120 },
+  { "id": "onet_social_2567", "title": "ONET สังคมศึกษา (ม.6)", "subject": "social", "year": 2567, "difficulty": "easy", "duration_minutes": 120 }
+]
