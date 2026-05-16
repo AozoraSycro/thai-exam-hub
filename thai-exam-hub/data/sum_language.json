@@ -1,0 +1,492 @@
+[
+  {
+    "id": "fra_001",
+    "title": "French: Definite & Indefinite Articles",
+    "content": "Definite: le (m), la (f), l' (vowel), les (pl). Indefinite: un (m), une (f), des (pl). Gender is crucial for all nouns.",
+    "youtubeId": "mIByu36fPy4",
+    "tags": ["french", "grammar", "basics"]
+  },
+  {
+    "id": "fra_002",
+    "title": "French: Essential Verbs (Être & Avoir)",
+    "content": "Être (to be) and Avoir (to have) are the most important verbs. They are used as auxiliaries for compound tenses.",
+    "youtubeId": "mIByu36fPy4",
+    "tags": ["french", "grammar", "verbs"]
+  },
+  {
+    "id": "fra_003",
+    "title": "French: Verb Groups (-er, -ir, -re)",
+    "content": "Regular verbs follow patterns based on their endings. -er verbs are the largest group (e.g., parler, manger).",
+    "youtubeId": "mIByu36fPy4",
+    "tags": ["french", "grammar", "verbs"]
+  },
+  {
+    "id": "fra_004",
+    "title": "French: Passé Composé",
+    "content": "Used for completed actions in the past. Formed with auxiliary (avoir/être) + past participle. Watch for 'Dr. Mrs. Vandertramp' verbs for être.",
+    "youtubeId": "mIByu36fPy4",
+    "tags": ["french", "grammar", "tenses"]
+  },
+  {
+    "id": "fra_005",
+    "title": "French: Adjective Agreement",
+    "content": "Adjectives must match the gender and number of the noun they describe. Usually, add -e for feminine and -s for plural.",
+    "youtubeId": "mIByu36fPy4",
+    "tags": ["french", "grammar", "adjectives"]
+  },
+  {
+    "id": "fra_006",
+    "title": "French: Negation (Ne... pas)",
+    "content": "Sandwich the conjugated verb between 'ne' and 'pas'. Example: 'Je ne mange pas' (I do not eat).",
+    "youtubeId": "mIByu36fPy4",
+    "tags": ["french", "grammar", "negation"]
+  },
+  {
+    "id": "fra_007",
+    "title": "French: Question Formation",
+    "content": "Three ways: Intonation (rising voice), 'Est-ce que...', or Inversion (e.g., Parles-tu?).",
+    "youtubeId": "mIByu36fPy4",
+    "tags": ["french", "grammar", "questions"]
+  },
+  {
+    "id": "fra_008",
+    "title": "French: Basic Greetings",
+    "content": "Bonjour (hello), Salut (hi/bye), Merci (thanks), S'il vous plaît (please), Enchanté (nice to meet you).",
+    "youtubeId": "mIByu36fPy4",
+    "tags": ["french", "vocabulary", "basics"]
+  },
+  {
+    "id": "fra_009",
+    "title": "French: Pronunciation (Silent Letters)",
+    "content": "Final consonants (d, s, t, x) are usually silent unless followed by a word starting with a vowel (Liaison).",
+    "youtubeId": "mIByu36fPy4",
+    "tags": ["french", "phonetics"]
+  },
+  {
+    "id": "fra_010",
+    "title": "French: Partitive Articles",
+    "content": "Used for unspecified quantities: du (m), de la (f), de l' (vowel). Usually translated as 'some'.",
+    "youtubeId": "mIByu36fPy4",
+    "tags": ["french", "grammar", "articles"]
+  },
+  {
+    "id": "deu_001",
+    "title": "German: The Four Cases",
+    "content": "Nominative (subject), Accusative (direct object), Dative (indirect object), and Genitive (possession). Case affects articles and endings.",
+    "youtubeId": "mIByu36fPy4",
+    "tags": ["german", "grammar", "cases"]
+  },
+  {
+    "id": "deu_002",
+    "title": "German: Three Genders",
+    "content": "Der (masculine), Die (feminine), Das (neuter). Noun gender is often arbitrary and must be learned with the noun.",
+    "youtubeId": "mIByu36fPy4",
+    "tags": ["german", "grammar", "basics"]
+  },
+  {
+    "id": "deu_003",
+    "title": "German: Verb Position (V2 Rule)",
+    "content": "In a main clause, the conjugated verb is always the second element. The subject can move, but the verb stays at position 2.",
+    "youtubeId": "mIByu36fPy4",
+    "tags": ["german", "grammar", "syntax"]
+  },
+  {
+    "id": "deu_004",
+    "title": "German: Plural Nouns",
+    "content": "Plurals are varied (add -e, -er, -en, -s, or umlaut). There is no single rule, but all plurals use 'die' in the nominative.",
+    "youtubeId": "mIByu36fPy4",
+    "tags": ["german", "grammar", "basics"]
+  },
+  {
+    "id": "deu_005",
+    "title": "German: Modal Verbs",
+    "content": "Können (can), Müssen (must), Sollen (should), Wollen (want), Dürfen (may), Mögen (like). They change word order.",
+    "youtubeId": "mIByu36fPy4",
+    "tags": ["german", "grammar", "verbs"]
+  },
+  {
+    "id": "deu_006",
+    "title": "German: Separable Verbs",
+    "content": "Prefixes that separate and move to the end of the sentence (e.g., 'aufstehen' -> 'Ich stehe um 8 Uhr auf').",
+    "youtubeId": "mIByu36fPy4",
+    "tags": ["german", "grammar", "verbs"]
+  },
+  {
+    "id": "deu_007",
+    "title": "German: Personal Pronouns",
+    "content": "Ich, du, er/sie/es, wir, ihr, sie, Sie (formal). Note the difference between informal 'du' and formal 'Sie'.",
+    "youtubeId": "mIByu36fPy4",
+    "tags": ["german", "grammar", "pronouns"]
+  },
+  {
+    "id": "deu_008",
+    "title": "German: Basic Greetings",
+    "content": "Guten Tag (hello), Auf Wiedersehen (goodbye), Danke (thanks), Bitte (please/welcome), Entschuldigung (excuse me).",
+    "youtubeId": "mIByu36fPy4",
+    "tags": ["german", "vocabulary", "basics"]
+  },
+  {
+    "id": "deu_009",
+    "title": "German: Compound Nouns",
+    "content": "German loves joining nouns to create new words. The gender of the compound is determined by the last noun (e.g., der Haustürschlüssel).",
+    "youtubeId": "mIByu36fPy4",
+    "tags": ["german", "vocabulary", "nuance"]
+  },
+  {
+    "id": "deu_010",
+    "title": "German: Perfekt Tense",
+    "content": "Spoken past tense. Formed with 'haben' or 'sein' + past participle (usually starting with ge- and ending at the end of the sentence).",
+    "youtubeId": "mIByu36fPy4",
+    "tags": ["german", "grammar", "tenses"]
+  },
+  {
+    "id": "jpn_001",
+    "title": "Japanese: Writing Systems",
+    "content": "Three scripts: Hiragana (phonetic, native words), Katakana (phonetic, foreign words), and Kanji (logographic, Chinese characters).",
+    "youtubeId": "mIByu36fPy4",
+    "tags": ["japanese", "basics", "writing"]
+  },
+  {
+    "id": "jpn_002",
+    "title": "Japanese: Particles (Wa & Ga)",
+    "content": "Wa (は) marks the topic (what we are talking about). Ga (が) marks the specific subject (the doer of the action).",
+    "youtubeId": "mIByu36fPy4",
+    "tags": ["japanese", "grammar", "particles"]
+  },
+  {
+    "id": "jpn_003",
+    "title": "Japanese: Particles (Ni, De, Wo)",
+    "content": "Wo (を) marks direct object. Ni (に) marks destination/time. De (で) marks location of action/method.",
+    "youtubeId": "mIByu36fPy4",
+    "tags": ["japanese", "grammar", "particles"]
+  },
+  {
+    "id": "jpn_004",
+    "title": "Japanese: Desu & Masu (Politeness)",
+    "content": "Basic polite forms. 'Desu' for nouns/adjectives, 'Masu' for verbs. Crucial for social interactions.",
+    "youtubeId": "mIByu36fPy4",
+    "tags": ["japanese", "grammar", "politeness"]
+  },
+  {
+    "id": "jpn_005",
+    "title": "Japanese: Verb Conjugation (Groups)",
+    "content": "Group 1 (U-verbs), Group 2 (Ru-verbs), and 2 Irregulars (Suru, Kuru). Conjugation depends on the final syllable.",
+    "youtubeId": "mIByu36fPy4",
+    "tags": ["japanese", "grammar", "verbs"]
+  },
+  {
+    "id": "jpn_006",
+    "title": "Japanese: Adjectives (i vs na)",
+    "content": "i-adjectives (end in -i, conjugate like verbs) and na-adjectives (behave like nouns, need 'na' before nouns).",
+    "youtubeId": "mIByu36fPy4",
+    "tags": ["japanese", "grammar", "adjectives"]
+  },
+  {
+    "id": "jpn_007",
+    "title": "Japanese: Sentence Structure (SOV)",
+    "content": "Subject-Object-Verb. The verb always comes last. Subject is often omitted if understood from context.",
+    "youtubeId": "mIByu36fPy4",
+    "tags": ["japanese", "grammar", "syntax"]
+  },
+  {
+    "id": "jpn_008",
+    "title": "Japanese: Basic Greetings",
+    "content": "Konnichiwa (hello), Arigatou (thanks), Sumimasen (excuse me/sorry), Sayounara (goodbye), Ohayou (morning).",
+    "youtubeId": "mIByu36fPy4",
+    "tags": ["japanese", "vocabulary", "basics"]
+  },
+  {
+    "id": "jpn_009",
+    "title": "Japanese: Numbers & Counters",
+    "content": "Japanese uses specific 'counters' depending on the object's shape/type (e.g., -mai for flat things, -hon for long things).",
+    "youtubeId": "mIByu36fPy4",
+    "tags": ["japanese", "vocabulary", "counters"]
+  },
+  {
+    "id": "jpn_010",
+    "title": "Japanese: Te-form Verbs",
+    "content": "Used for connecting sentences, requesting (te kudasai), or ongoing actions (te iru). Foundational for intermediate grammar.",
+    "youtubeId": "mIByu36fPy4",
+    "tags": ["japanese", "grammar", "verbs"]
+  },
+  {
+    "id": "zho_001",
+    "title": "Chinese: The Four Tones",
+    "content": "Mandarin has 4 tones: Flat, Rising, Dipping, Falling. A change in tone changes the word's meaning (e.g., ma).",
+    "youtubeId": "mIByu36fPy4",
+    "tags": ["chinese", "phonetics", "tones"]
+  },
+  {
+    "id": "zho_002",
+    "title": "Chinese: Pinyin System",
+    "content": "The official system to transcribe Chinese characters into Latin script. Crucial for learning pronunciation and typing.",
+    "youtubeId": "mIByu36fPy4",
+    "tags": ["chinese", "basics", "writing"]
+  },
+  {
+    "id": "zho_003",
+    "title": "Chinese: Sentence Structure (SVO)",
+    "content": "Basic order is similar to English: Subject + Verb + Object. Time and location usually come before the verb.",
+    "youtubeId": "mIByu36fPy4",
+    "tags": ["chinese", "grammar", "syntax"]
+  },
+  {
+    "id": "zho_004",
+    "title": "Chinese: Measure Words (Measure Particles)",
+    "content": "Mandarin requires measure words between a number and a noun. 'Ge' (个) is the most common general measure word.",
+    "youtubeId": "mIByu36fPy4",
+    "tags": ["chinese", "grammar", "basics"]
+  },
+  {
+    "id": "zho_005",
+    "title": "Chinese: Negation (Bu & Mei)",
+    "content": "'Bu' (不) is used for present/future. 'Mei' (没) is used to negate 'you' (to have) and past actions.",
+    "youtubeId": "mIByu36fPy4",
+    "tags": ["chinese", "grammar", "negation"]
+  },
+  {
+    "id": "zho_006",
+    "title": "Chinese: Particles (Ma, Le, De)",
+    "content": "'Ma' (吗) for questions, 'Le' (了) for change of state/completion, 'De' (的) for possession or description.",
+    "youtubeId": "mIByu36fPy4",
+    "tags": ["chinese", "grammar", "particles"]
+  },
+  {
+    "id": "zho_007",
+    "title": "Chinese: Basic Greetings",
+    "content": "Ni hao (hello), Xie xie (thanks), Zai jian (goodbye), Dui bu qi (sorry), Mei guan xi (no problem).",
+    "youtubeId": "mIByu36fPy4",
+    "tags": ["chinese", "vocabulary", "basics"]
+  },
+  {
+    "id": "zho_008",
+    "title": "Chinese: Pronouns",
+    "content": "Wo (I), Ni (you), Ta (he/she/it). Add 'men' (们) for plural (e.g., women = we).",
+    "youtubeId": "mIByu36fPy4",
+    "tags": ["chinese", "grammar", "pronouns"]
+  },
+  {
+    "id": "zho_009",
+    "title": "Chinese: Numbers 1-10",
+    "content": "Yi (1), Er (2), San (3), Si (4), Wu (5), Liu (6), Qi (7), Ba (8), Jiu (9), Shi (10). Logical system for larger numbers.",
+    "youtubeId": "mIByu36fPy4",
+    "tags": ["chinese", "vocabulary", "basics"]
+  },
+  {
+    "id": "zho_010",
+    "title": "Chinese: Verbs (No Conjugation)",
+    "content": "Chinese verbs never change form for tense or person. Tense is indicated by context or specific particles like 'le'.",
+    "youtubeId": "mIByu36fPy4",
+    "tags": ["chinese", "grammar", "verbs"]
+  },
+  {
+    "id": "kor_001",
+    "title": "Korean: Hangeul (Alphabet)",
+    "content": "A scientific writing system consisting of 24 basic letters (14 consonants, 10 vowels) arranged in blocks.",
+    "youtubeId": "mIByu36fPy4",
+    "tags": ["korean", "basics", "writing"]
+  },
+  {
+    "id": "kor_002",
+    "title": "Korean: Subject & Topic Particles",
+    "content": "Un/Neun (은/는) for topics. I/Ga (이/가) for subjects. Correct usage is key to sounding natural.",
+    "youtubeId": "mIByu36fPy4",
+    "tags": ["korean", "grammar", "particles"]
+  },
+  {
+    "id": "kor_003",
+    "title": "Korean: Object Particle (Eul/Reul)",
+    "content": "Eul/Reul (을/를) marks the direct object of a sentence. It follows the noun receiving the action.",
+    "youtubeId": "mIByu36fPy4",
+    "tags": ["korean", "grammar", "particles"]
+  },
+  {
+    "id": "kor_004",
+    "title": "Korean: Sentence Structure (SOV)",
+    "content": "Similar to Japanese: Subject-Object-Verb. The verb always comes last and carries the tense/politeness markers.",
+    "youtubeId": "mIByu36fPy4",
+    "tags": ["korean", "grammar", "syntax"]
+  },
+  {
+    "id": "kor_005",
+    "title": "Korean: Honorifics & Politeness",
+    "content": "Speech levels are built into the language. Common endings: -nida (formal), -yo (polite/standard), banmal (informal).",
+    "youtubeId": "mIByu36fPy4",
+    "tags": ["korean", "grammar", "politeness"]
+  },
+  {
+    "id": "kor_006",
+    "title": "Korean: Basic Greetings",
+    "content": "Annyeong-haseyo (hello), Gamsa-hamnida (thanks), Joesong-hamnida (sorry), Ssaranghae (I love you - informal).",
+    "youtubeId": "mIByu36fPy4",
+    "tags": ["korean", "vocabulary", "basics"]
+  },
+  {
+    "id": "kor_007",
+    "title": "Korean: Numbers (Sino vs. Native)",
+    "content": "Two systems: Native Korean (for age, hours, counting) and Sino-Korean (for dates, money, minutes, phone numbers).",
+    "youtubeId": "mIByu36fPy4",
+    "tags": ["korean", "vocabulary", "numbers"]
+  },
+  {
+    "id": "kor_008",
+    "title": "Korean: Verbs & Adjectives",
+    "content": "Verbs and adjectives behave similarly (descriptive verbs). All end in '-da' in dictionary form.",
+    "youtubeId": "mIByu36fPy4",
+    "tags": ["korean", "grammar", "verbs"]
+  },
+  {
+    "id": "kor_009",
+    "title": "Korean: Question Words",
+    "content": "Nugu (who), Mueot (what), Eodi (where), Eonje (when), Wae (why), Eotteoke (how).",
+    "youtubeId": "mIByu36fPy4",
+    "tags": ["korean", "vocabulary", "basics"]
+  },
+  {
+    "id": "kor_010",
+    "title": "Korean: Past Tense Formation",
+    "content": "Usually involves adding -at/eot- (았/었) to the verb stem before the final ending.",
+    "youtubeId": "mIByu36fPy4",
+    "tags": ["korean", "grammar", "tenses"]
+  },
+  {
+    "id": "pli_001",
+    "title": "Pali: Language of Theravada",
+    "content": "An Indo-Aryan language used in the Buddhist scriptures (Tipitaka). Closely related to Sanskrit but structurally simpler.",
+    "youtubeId": "mIByu36fPy4",
+    "tags": ["pali", "basics", "buddhism"]
+  },
+  {
+    "id": "pli_002",
+    "title": "Pali: Connection to Thai",
+    "content": "Thai vocabulary is heavily influenced by Pali, especially in religion, law, and academic terms (e.g., Sathana, Metta).",
+    "youtubeId": "mIByu36fPy4",
+    "tags": ["pali", "history", "thai"]
+  },
+  {
+    "id": "pli_003",
+    "title": "Pali: Noun Inflection (Declension)",
+    "content": "Nouns change endings based on 8 cases, 3 genders, and 2 numbers. Similar to Latin or Sanskrit.",
+    "youtubeId": "mIByu36fPy4",
+    "tags": ["pali", "grammar", "cases"]
+  },
+  {
+    "id": "pli_004",
+    "title": "Pali: The 8 Cases",
+    "content": "Nominative, Vocative, Accusative, Instrumental, Ablative, Dative, Genitive, Locative. Each indicates a different role.",
+    "youtubeId": "mIByu36fPy4",
+    "tags": ["pali", "grammar", "cases"]
+  },
+  {
+    "id": "pli_005",
+    "title": "Pali: Verb Conjugation",
+    "content": "Verbs are conjugated for person (1st, 2nd, 3rd) and number (singular, plural). Tenses include Present, Aorist, Future.",
+    "youtubeId": "mIByu36fPy4",
+    "tags": ["pali", "grammar", "verbs"]
+  },
+  {
+    "id": "pli_006",
+    "title": "Pali: Sandhi (Euphony)",
+    "content": "The process of sounds blending at word boundaries. Essential for chanting and reading original texts correctly.",
+    "youtubeId": "mIByu36fPy4",
+    "tags": ["pali", "phonetics", "grammar"]
+  },
+  {
+    "id": "pli_007",
+    "title": "Pali: Essential Vocabulary",
+    "content": "Dhamma (truth/law), Sangha (community), Buddha (enlightened one), Kamma (action), Nibban (extinction of suffering).",
+    "youtubeId": "mIByu36fPy4",
+    "tags": ["pali", "vocabulary", "basics"]
+  },
+  {
+    "id": "pli_008",
+    "title": "Pali: Tipiṭaka Structure",
+    "content": "Vinaya (discipline), Sutta (discourses), Abhidhamma (philosophy). All written in Pali.",
+    "youtubeId": "mIByu36fPy4",
+    "tags": ["pali", "buddhism", "literature"]
+  },
+  {
+    "id": "pli_009",
+    "title": "Pali: Three Genders",
+    "content": "Masculine (Pullinga), Feminine (Ithilinga), Neuter (Napumsakalinga). Gender affects the endings of nouns and adjectives.",
+    "youtubeId": "mIByu36fPy4",
+    "tags": ["pali", "grammar", "basics"]
+  },
+  {
+    "id": "pli_010",
+    "title": "Pali: Roots (Dhatu)",
+    "content": "Words are built from 'roots'. For example, the root 'Bhū' (to be) gives 'Bhavati' (he is) and 'Bhava' (becoming).",
+    "youtubeId": "mIByu36fPy4",
+    "tags": ["pali", "etymology", "grammar"]
+  },
+  {
+    "id": "spa_001",
+    "title": "Spanish: Gender of Nouns",
+    "content": "Nouns ending in -o are usually masculine (el). Nouns ending in -a are usually feminine (la). There are exceptions like 'el mapa'.",
+    "youtubeId": "mIByu36fPy4",
+    "tags": ["spanish", "grammar", "basics"]
+  },
+  {
+    "id": "spa_002",
+    "title": "Spanish: Verb Conjugation (-ar, -er, -ir)",
+    "content": "Three regular verb groups. Conjugation changes the ending to match the subject (e.g., Yo hablo, Tú hablas).",
+    "youtubeId": "mIByu36fPy4",
+    "tags": ["spanish", "grammar", "verbs"]
+  },
+  {
+    "id": "spa_003",
+    "title": "Spanish: Ser vs. Estar (To Be)",
+    "content": "'Ser' for permanent traits (identity, origin). 'Estar' for temporary states (location, mood). Crucial distinction.",
+    "youtubeId": "mIByu36fPy4",
+    "tags": ["spanish", "grammar", "verbs"]
+  },
+  {
+    "id": "spa_004",
+    "title": "Spanish: Subject Pronouns",
+    "content": "Yo, tú, él/ella/usted, nosotros, vosotros, ellos/ellas/ustedes. Subject pronouns are often omitted as the verb ending shows the subject.",
+    "youtubeId": "mIByu36fPy4",
+    "tags": ["spanish", "grammar", "pronouns"]
+  },
+  {
+    "id": "spa_005",
+    "title": "Spanish: Basic Greetings",
+    "content": "Hola (hello), Gracias (thanks), Por favor (please), De nada (you're welcome), Adiós (goodbye).",
+    "youtubeId": "mIByu36fPy4",
+    "tags": ["spanish", "vocabulary", "basics"]
+  },
+  {
+    "id": "spa_006",
+    "title": "Spanish: Plural Formation",
+    "content": "Add -s to words ending in a vowel. Add -es to words ending in a consonant (e.g., libro -> libros, ciudad -> ciudades).",
+    "youtubeId": "mIByu36fPy4",
+    "tags": ["spanish", "grammar", "basics"]
+  },
+  {
+    "id": "spa_007",
+    "title": "Spanish: Questions & Negation",
+    "content": "Use 'no' before the verb for negation. Questions use inverted marks (¿?) and often just change intonation.",
+    "youtubeId": "mIByu36fPy4",
+    "tags": ["spanish", "grammar", "basics"]
+  },
+  {
+    "id": "spa_008",
+    "title": "Spanish: Numbers 1-10",
+    "content": "Uno, dos, tres, cuatro, cinco, seis, siete, ocho, nueve, diez. Spelling changes in 11-20.",
+    "youtubeId": "mIByu36fPy4",
+    "tags": ["spanish", "vocabulary", "basics"]
+  },
+  {
+    "id": "spa_009",
+    "title": "Spanish: Possession (De)",
+    "content": "Spanish doesn't use 's. Use 'de' (of). Example: 'El perro de Juan' (Juan's dog).",
+    "youtubeId": "mIByu36fPy4",
+    "tags": ["spanish", "grammar", "possession"]
+  },
+  {
+    "id": "spa_010",
+    "title": "Spanish: Adjective Placement",
+    "content": "Adjectives usually come AFTER the noun they describe (e.g., el gato negro). They must agree in gender and number.",
+    "youtubeId": "mIByu36fPy4",
+    "tags": ["spanish", "grammar", "adjectives"]
+  }
+]

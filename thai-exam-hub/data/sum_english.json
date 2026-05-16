@@ -208,5 +208,89 @@
     "content": "Modifiers must be placed next to the word they describe. Example: 'Walking down the street, the tree fell' implies the tree was walking.",
     "youtubeId": "6mZfX2F3kEw",
     "tags": ["english", "grammar", "error-id"]
+  },
+  {
+    "id": "eng_031",
+    "title": "Grammar: Inversion for Emphasis",
+    "content": "Inverting the subject and verb after certain negative adverbs (Never, Seldom, Rarely). Example: 'Never have I seen such beauty.'",
+    "youtubeId": "mIByu36fPy4",
+    "tags": ["english", "grammar", "nuance"]
+  },
+  {
+    "id": "eng_032",
+    "title": "The Subjunctive Mood",
+    "content": "Used for wishes, suggestions, or hypothetical situations. Examples: 'I suggest that he be on time' or 'If I were you.'",
+    "youtubeId": "I_4Ak_TzZfU",
+    "tags": ["english", "grammar", "academic"]
+  },
+  {
+    "id": "eng_033",
+    "title": "Defining vs. Non-Defining Clauses",
+    "content": "Defining clauses provide essential info (no commas). Non-defining provide extra info (with commas). Example: 'The man who lives next door is a doctor.'",
+    "youtubeId": "H7SNo6hN3Lw",
+    "tags": ["english", "grammar", "nuance"]
+  },
+  {
+    "id": "eng_034",
+    "title": "Academic Hedging",
+    "content": "Using cautious language in research. Instead of 'This proves', use 'This suggests' or 'It is possible that'.",
+    "youtubeId": "v8V2X-Oa-uM",
+    "tags": ["english", "writing", "academic"]
+  },
+  {
+    "id": "eng_035",
+    "title": "Academic Reporting Verbs",
+    "content": "Choosing precise verbs to introduce sources: 'Argues', 'Claims', 'Suggests', 'Demonstrates', 'Notes', 'Challenges'.",
+    "youtubeId": "v8V2X-Oa-uM",
+    "tags": ["english", "writing", "academic"]
+  },
+  {
+    "id": "eng_036",
+    "title": "Collocations: Verb + Noun",
+    "content": "Words that naturally go together. 'Make a decision' (not 'do a decision'), 'Perform an experiment', 'Conduct research'.",
+    "youtubeId": "6mZfX2F3kEw",
+    "tags": ["english", "vocabulary", "nuance"]
+  },
+  {
+    "id": "eng_037",
+    "title": "Phrasal Verbs in Academic Context",
+    "content": "Replacing phrasal verbs with formal equivalents: 'Look into' -> 'Investigate', 'Find out' -> 'Discover', 'Put off' -> 'Postpone'.",
+    "youtubeId": "6mZfX2F3kEw",
+    "tags": ["english", "vocabulary", "academic"]
+  },
+  {
+    "id": "eng_038",
+    "title": "Nominalization",
+    "content": "Converting verbs/adjectives into nouns to sound more academic. 'We analyzed' -> 'The analysis was conducted'.",
+    "youtubeId": "mIByu36fPy4",
+    "tags": ["english", "writing", "academic"]
+  },
+  {
+    "id": "eng_039",
+    "title": "Cohesive Devices: Addition & Contrast",
+    "content": "Addition: 'Furthermore', 'Moreover'. Contrast: 'However', 'Nevertheless', 'Conversely', 'In contrast'.",
+    "youtubeId": "H7SNo6hN3Lw",
+    "tags": ["english", "writing", "patterns"]
+  },
+  {
+    "id": "eng_040",
+    "title": "Denotation and Connotation",
+    "content": "Denotation is the literal meaning. Connotation is the emotional/cultural association (e.g., 'Youthful' vs 'Childish').",
+    "youtubeId": "H7SNo6hN3Lw",
+    "tags": ["english", "vocabulary", "nuance"]
+  },
+  {
+    "id": "eng_041",
+    "title": "Error ID: Common Diction Errors",
+    "content": "Confusing similar words: 'Affect' (verb) vs 'Effect' (noun), 'Complement' vs 'Compliment', 'Stationary' vs 'Stationery'.",
+    "youtubeId": "6mZfX2F3kEw",
+    "tags": ["english", "grammar", "error-id"]
+  },
+  {
+    "id": "eng_042",
+    "title": "Articles with Abstract Nouns",
+    "content": "General abstract nouns take no article ('Love is blind'). Specific instances take 'the' ('The love he felt was deep').",
+    "youtubeId": "nnR6V9v_uO8",
+    "tags": ["english", "grammar", "nuance"]
   }
 ]

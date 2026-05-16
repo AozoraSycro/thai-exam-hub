@@ -1,0 +1,254 @@
+[
+  {
+    "id": 501,
+    "subject": "Chemistry",
+    "title": "Analytical: Titration Fundamentals & Indicators",
+    "content": "การไทเทรต (Titration) คือการหาความเข้มข้นของสารละลายที่ต้องการทราบค่า โดยใช้สารละลายมาตรฐาน (Standard Solution) ที่ทราบความเข้มข้นแน่นอน \\n\\nจุดสำคัญ: \\n1. จุดสมมูล (Equivalent Point): จุดที่จำนวนโมลของกรดและเบสทำปฏิกิริยากันพอดีตามสัดส่วนโมลในสมการ \\n2. จุดยุติ (End Point): จุดที่อินดิเคเตอร์เปลี่ยนสี ซึ่งเราควรเลือกอินดิเคเตอร์ที่เปลี่ยนสีในช่วง pH ใกล้เคียงกับจุดสมมูล \\n\\nสูตรคำนวณ: a * M1 * V1 = b * M2 * V2 (เมื่อ a, b คือจำนวน H+ หรือ OH- ที่แตกตัวได้) \\n\\nPtah's Master Tip: 'จงเลือกผู้นำทางให้ถูก' การเลือก Indicator ที่มีช่วงการเปลี่ยนสี (pH range) ไม่ตรงกับจุดสมมูลจะทำให้เกิดความผิดพลาดของการไทเทรต (Titration Error)",
+    "youtubeId": "dQw4w9WgXcQ",
+    "tags": [
+      "Chemistry",
+      "Analytical",
+      "Titration"
+    ]
+  },
+  {
+    "id": 502,
+    "subject": "Chemistry",
+    "title": "Analytical: Redox Titration (Permanganometry)",
+    "content": "Redox Titration ใช้การถ่ายโอนอิเล็กตรอนในการหาความเข้มข้น ที่พบบ่อยคือการใช้ KMnO4 เป็นสารละลายมาตรฐาน \\n\\nคุณสมบัติของ KMnO4: \\n1. เป็น Self-indicator: เปลี่ยนจากสีม่วง (MnO4-) เป็นไม่มีสี (Mn2+) ในสภาวะกรด ไม่ต้องเติมอินดิเคเตอร์เพิ่ม \\n2. สภาวะกรด: MnO4- + 8H+ + 5e- -> Mn2+ + 4H2O (E0 = +1.51 V) \\n\\nการคำนวณ: ใช้สมดุลอิเล็กตรอน mol(Oxidant) * n = mol(Reductant) * n \\n\\nPtah's Master Tip: 'พลังของการเปลี่ยนแปลงสี' ในสภาวะเบส KMnO4 จะเปลี่ยนเป็น MnO2 (ตะกอนสีน้ำตาล) หรือ MnO4^2- (สีเขียว) ซึ่งมีค่า E0 ต่ำกว่า การวิเคราะห์เชิงปริมาณจึงนิยมทำในสภาวะกรดเข้มข้น",
+    "youtubeId": "dQw4w9WgXcQ",
+    "tags": [
+      "Chemistry",
+      "Redox",
+      "Titration"
+    ]
+  },
+  {
+    "id": 503,
+    "subject": "Chemistry",
+    "title": "Analytical: Chromatography & Rf Value",
+    "content": "โครมาโทกราฟี (Chromatography) ใช้แยกสารผสมโดยอาศัยความสามารถในการละลายในตัวทำละลาย (Mobile phase) และการดูดซับบนตัวดูดซับ (Stationary phase) ที่ต่างกัน \\n\\nค่า Rf (Retention Factor): \\nRf = ระยะทางที่สารเคลื่อนที่ / ระยะทางที่ตัวทำละลายเคลื่อนที่ \\n\\nหลักการ: \\n- สารที่ละลายดีและถูกดูดซับน้อยจะเคลื่อนที่ได้ไกล (Rf สูง) \\n- สารที่ละลายแย่และถูกดูดซับดีจะเคลื่อนที่ได้ใกล้ (Rf ต่ำ) \\n\\nPtah's Master Tip: 'ค่า Rf คือลายนิ้วมือของสาร' แต่ต้องระบุเงื่อนไขตัวทำละลายและตัวดูดซับเสมอ เพราะหากเปลี่ยนสภาวะ ค่า Rf ก็จะเปลี่ยนไป",
+    "youtubeId": "dQw4w9WgXcQ",
+    "tags": [
+      "Chemistry",
+      "Analytical",
+      "Chromatography"
+    ]
+  },
+  {
+    "id": 504,
+    "subject": "Chemistry",
+    "title": "Analytical: Spectrophotometry & Beer-Lambert Law",
+    "content": "การวิเคราะห์โดยใช้แสง (Spectrophotometry) อาศัยการดูดกลืนแสงของสารละลายในช่วงความยาวคลื่นเฉพาะ \\n\\nกฎของเบียร์-ลัมเบิร์ต (Beer-Lambert Law): \\nA = ε * b * c \\nโดยที่: \\nA = Absorbance (ค่าการดูดกลืนแสง) \\nε = Molar absorptivity (ค่าสัมประสิทธิ์การดูดกลืนแสง) \\nb = Path length (ความกว้างของเซลล์/คูเวต) \\nc = Concentration (ความเข้มข้น) \\n\\nความสัมพันธ์: A แปรผันตรงกับความเข้มข้น (c) \\n\\nPtah's Master Tip: 'แสงเปิดเผยความจริง' เครื่องมือนี้มีความแม่นยำสูงมากในการหาความเข้มข้นที่น้อยมากๆ (Trace amount) แต่สารนั้นต้องมีสีหรือดูดกลืนแสงในช่วง UV-Visible ได้",
+    "youtubeId": "dQw4w9WgXcQ",
+    "tags": [
+      "Chemistry",
+      "Analytical",
+      "Spectrophotometry"
+    ]
+  },
+  {
+    "id": 505,
+    "subject": "Chemistry",
+    "title": "Biomolecules: Carbohydrates - Benedict's Test",
+    "content": "คาร์โบไฮเดรตประกอบด้วย C, H, O สัดส่วน H:O มักเป็น 2:1 แบ่งตามขนาดโมเลกุลเป็น Monosaccharide, Disaccharide และ Polysaccharide \\n\\nการทดสอบเบเนดิกต์ (Benedict's Test): \\n- ใช้ทดสอบน้ำตาลรีดิวซ์ (Reducing Sugars) ที่มีหมู่ Aldehyde อิสระ \\n- ผลบวก: เกิดตะกอนสีอิฐของ Cu2O \\n- น้ำตาลที่ไม่ให้ผลทดสอบทันที: Sucrose (ต้องต้มกับกรดเพื่อ Hydrolysis ก่อน) \\n\\nPtah's Master Tip: 'พันธะไกลโคซิดิก (Glycosidic bond)' คือกาวที่เชื่อมน้ำตาลเข้าด้วยกัน การสร้างพันธะนี้จะมีการเสียน้ำออกไป 1 โมเลกุล (Condensation)",
+    "youtubeId": "dQw4w9WgXcQ",
+    "tags": [
+      "Chemistry",
+      "Biomolecules",
+      "Carbohydrates"
+    ]
+  },
+  {
+    "id": 506,
+    "subject": "Chemistry",
+    "title": "Biomolecules: Proteins & Denaturation",
+    "content": "โปรตีนเป็น Polymer ของกรดอะมิโน (Amino acids) เชื่อมกันด้วยพันธะเพปไทด์ (Peptide bond) \\n\\nโครงสร้างโปรตีน: \\n1. Primary: ลำดับกรดอะมิโน \\n2. Secondary: Alpha-helix หรือ Beta-sheet (พันธะไฮโดรเจน) \\n3. Tertiary: โครงสร้าง 3 มิติ (แรง Van der waals, disulfide bridge) \\n4. Quaternary: การรวมกันของหน่วยย่อย \\n\\nการแปลงสภาพ (Denaturation): การทำลายโครงสร้างระดับ 2, 3, 4 ด้วยความร้อน, pH, หรือสารเคมี ทำให้โปรตีนเสียหน้าที่แต่พันธะเพปไทด์ (Primary) ยังอยู่ \\n\\nPtah's Master Tip: 'ความร้อนทำลายรูปทรง แต่ไม่ทำลายลำดับ' การต้มไข่คือตัวอย่างการแปลงสภาพที่ผันกลับไม่ได้",
+    "youtubeId": "dQw4w9WgXcQ",
+    "tags": [
+      "Chemistry",
+      "Biomolecules",
+      "Protein"
+    ]
+  },
+  {
+    "id": 507,
+    "subject": "Chemistry",
+    "title": "Biomolecules: Lipids - Saturated vs Unsaturated",
+    "content": "ไขมันและน้ำมันคือ Triglyceride เกิดจาก Glycerol + 3 Fatty acids \\n\\nข้อแตกต่างของกรดไขมัน: \\n1. อิ่มตัว (Saturated): มีพันธะเดี่ยวทั้งหมด จุดหลอมเหลวสูง มักเป็นของแข็งที่อุณหภูมิห้อง (ไขมันสัตว์) \\n2. ไม่อิ่มตัว (Unsaturated): มีพันธะคู่ จุดหลอมเหลวต่ำ มักเป็นของเหลว (น้ำมันพืช) \\n\\nการเหม็นหืน (Rancidity): เกิดจากปฏิกิริยา Oxidation ที่ตำแหน่งพันธะคู่ หรือ Hydrolysis โดยจุลินทรีย์ \\n\\nPtah's Master Tip: 'พันธะคู่คือจุดอ่อนของไขมัน' น้ำมันที่มีพันธะคู่มากจะฟอกจางสีสารละลายไอโอดีน (I2) ได้ดีกว่า และมีค่าไอโอดีนสูงกว่า",
+    "youtubeId": "dQw4w9WgXcQ",
+    "tags": [
+      "Chemistry",
+      "Biomolecules",
+      "Lipids"
+    ]
+  },
+  {
+    "id": 508,
+    "subject": "Chemistry",
+    "title": "Biomolecules: Nucleic Acids (DNA vs RNA)",
+    "content": "กรดนิวคลีอิกประกอบด้วยหน่วยย่อยที่เรียกว่า นิวคลีโอไทด์ (Nucleotide) ซึ่งมี 3 ส่วน: น้ำตาลเพนโทส + หมู่ฟอสเฟต + ไนโตรเจนเบส \\n\\nความต่าง: \\n- DNA: น้ำตาล Deoxyribose, เบส A-T, G-C, สายคู่ (Double helix) ทำหน้าที่เก็บข้อมูลพันธุกรรม \\n- RNA: น้ำตาล Ribose, เบส A-U, G-C, สายเดี่ยว ทำหน้าที่สังเคราะห์โปรตีน \\n\\nPtah's Master Tip: 'พันธะไฮโดรเจนคือความลับของชีวิต' เบส G กับ C เชื่อมกันด้วย 3 พันธะ H ขณะที่ A กับ T เชื่อมกันด้วย 2 พันธะ H ทำให้คู่ G-C เสถียรกว่าและทนความร้อนได้สูงกว่า",
+    "youtubeId": "dQw4w9WgXcQ",
+    "tags": [
+      "Chemistry",
+      "Biomolecules",
+      "Nucleic Acid"
+    ]
+  },
+  {
+    "id": 509,
+    "subject": "Chemistry",
+    "title": "Polymer: Addition Polymerization",
+    "content": "การเกิดพอลิเมอร์แบบเติม (Addition Polymerization) เกิดจากมอนอเมอร์ที่มีพันธะคู่ (Unsaturated) สร้างพันธะต่อกันโดยไม่มีส่วนใดหลุดออกมา \\n\\nตัวอย่างสำคัญ: \\n1. Polyethylene (PE): จาก Ethylene (CH2=CH2) ใช้ทำถุงพลาสติก, ขวดน้ำ \\n2. Polyvinyl Chloride (PVC): จาก Vinyl chloride ใช้ทำท่อน้ำ, หนังเทียม \\n3. Polystyrene (PS): จาก Styrene ใช้ทำโฟม, กล่องพลาสติกใส \\n4. Polypropylene (PP): ใช้ทำชิ้นส่วนรถยนต์, ตะกร้า \\n\\nPtah's Master Tip: 'พันธะคู่แตกออกเพื่อเชื่อมโยง' มวลของพอลิเมอร์แบบเติมจะเท่ากับมวลรวมของมอนอเมอร์เสมอ",
+    "youtubeId": "dQw4w9WgXcQ",
+    "tags": [
+      "Chemistry",
+      "Polymer",
+      "Plastic"
+    ]
+  },
+  {
+    "id": 510,
+    "subject": "Chemistry",
+    "title": "Polymer: Condensation Polymerization",
+    "content": "การเกิดพอลิเมอร์แบบควบแน่น (Condensation Polymerization) เกิดจากมอนอเมอร์ที่มีหมู่ฟังก์ชันมากกว่า 1 หมู่ ทำปฏิกิริยากันแล้วมีโมเลกุลขนาดเล็ก (น้ำ, NH3, HCl) หลุดออกมา \\n\\nตัวอย่างสำคัญ: \\n1. Nylon-6,6: เกิดจาก Diamine + Dicarboxylic acid (พันธะ Amide) \\n2. Polyester: เกิดจาก Diol + Dicarboxylic acid (พันธะ Ester) \\n3. Bakelite: พอลิเมอร์แบบร่างแห ทนความร้อนสูงมาก \\n\\nPtah's Master Tip: 'แลกเปลี่ยนเพื่อรวมตัว' มวลโมเลกุลของพอลิเมอร์แบบนี้จะน้อยกว่ามวลรวมของมอนอเมอร์เพราะมีส่วนที่หลุดออกไป",
+    "youtubeId": "dQw4w9WgXcQ",
+    "tags": [
+      "Chemistry",
+      "Polymer",
+      "Synthetic"
+    ]
+  },
+  {
+    "id": 511,
+    "subject": "Chemistry",
+    "title": "Polymer: Thermoplastic vs Thermosetting",
+    "content": "สมบัติทางความร้อนของพลาสติกแบ่งได้ 2 ประเภทหลัก: \\n1. เทอร์มอพลาสติก (Thermoplastic): โครงสร้างโซ่ตรงหรือกิ่ง เมื่อได้รับความร้อนจะอ่อนตัวและหลอมเหลว นำกลับมาหลอมใหม่ได้ (Recycle) เช่น PE, PVC, PS, PP \\n2. พลาสติกเทอร์มอเซต (Thermosetting): โครงสร้างร่างแห (Cross-linked) เมื่อแข็งตัวแล้วจะทนความร้อนได้สูง ไม่หลอมเหลวแต่จะไหม้หรือแตกสลาย ไม่สามารถนำมาหลอมใหม่ได้ เช่น เมลามีน, เบกาไลต์ \\n\\nPtah's Master Tip: 'โครงสร้างกำหนดชะตากรรม' โซ่ที่พันกันอิสระยอมให้ขยับได้เมื่อร้อน แต่ร่างแหที่ยึดแข็งตึงจะล็อกตำแหน่งไว้ตลอดกาล",
+    "youtubeId": "dQw4w9WgXcQ",
+    "tags": [
+      "Chemistry",
+      "Polymer",
+      "Material"
+    ]
+  },
+  {
+    "id": 512,
+    "subject": "Chemistry",
+    "title": "Polymer: Rubber & Vulcanization",
+    "content": "ยางธรรมชาติ (Natural Rubber) คือ พอลิไอโซพรีน (Polyisoprene) มีโครงสร้างแบบ cis มีความยืดหยุ่นดีแต่ไม่ทนความร้อนและละลายในน้ำมันได้ \\n\\nวัลคาไนเซชัน (Vulcanization): \\n- คือกระบวนการเติมกำมะถัน (S) ลงในยางที่ร้อน \\n- อะตอมกำมะถันจะสร้างพันธะเชื่อมโยง (Cross-link) ระหว่างสายโซ่ของยาง \\n- ผลลัพธ์: ยางแข็งแรงขึ้น ยืดหยุ่นได้ดีกว่าเดิม ทนความร้อนและสารเคมีมากขึ้น \\n\\nPtah's Master Tip: 'กำมะถันคือสะพานเชื่อม' การควบคุมปริมาณ Cross-link จะกำหนดความแข็งของยาง ตั้งแต่ยางลบไปจนถึงยางรถยนต์",
+    "youtubeId": "dQw4w9WgXcQ",
+    "tags": [
+      "Chemistry",
+      "Polymer",
+      "Rubber"
+    ]
+  },
+  {
+    "id": 513,
+    "subject": "Chemistry",
+    "title": "Industrial: Haber-Bosch Process (Ammonia)",
+    "content": "กระบวนการฮาเบอร์ใช้ผลิตแอมโมเนีย (NH3) ซึ่งเป็นสารตั้งต้นปุ๋ยเคมี \\n\\nสมการ: N2(g) + 3H2(g) <=> 2NH3(g) + ความร้อน (Exothermic) \\n\\nเงื่อนไขที่เหมาะสมตามหลัก Le Chatelier: \\n1. ความดันสูง: เลื่อนสมดุลไปด้านโมลน้อย (ขวา) \\n2. อุณหภูมิต่ำ: เลื่อนสมดุลไปด้านคายความร้อน (ขวา) \\n3. ตัวเร่งปฏิกิริยา: ใช้ผงเหล็ก (Fe) เพื่อให้ถึงสมดุลเร็วขึ้น \\n\\nPtah's Master Tip: 'ความขัดแย้งของอุตสาหกรรม' แม้สมดุลจะชอบอุณหภูมิต่ำ แต่ในทางปฏิบัติ (Kinetics) ต้องใช้อุณหภูมิสูงพอประมาณ (400-500 C) เพื่อให้ปฏิกิริยาเกิดเร็วพอที่จะคุ้มค่าเชิงพาณิชย์",
+    "youtubeId": "dQw4w9WgXcQ",
+    "tags": [
+      "Chemistry",
+      "Industry",
+      "Equilibrium"
+    ]
+  },
+  {
+    "id": 514,
+    "subject": "Chemistry",
+    "title": "Industrial: Contact Process (Sulfuric Acid)",
+    "content": "กรดซัลฟิวริก (H2SO4) เป็นสารเคมีพื้นฐานที่ใช้มากที่สุดในโลก ผลิตผ่านกระบวนการสัมผัส (Contact Process) \\n\\nขั้นตอนหลัก: \\n1. เผา S หรือ FeS2 เพื่อให้ได้ SO2 \\n2. เปลี่ยน SO2 เป็น SO3: 2SO2 + O2 <=> 2SO3 (ใช้ V2O5 เป็นตัวเร่ง) \\n3. ละลาย SO3 ใน H2SO4 เข้มข้น ได้เป็น Oleum (H2S2O7) แล้วค่อยเติมน้ำ \\n\\nPtah's Master Tip: 'เหตุใดไม่เติม SO3 ในน้ำโดยตรง?' เพราะปฏิกิริยาคายความร้อนสูงมากจนเกิดหมอกกรดที่ควบคุมไม่ได้ การผ่าน Oleum จึงเป็นวิธีที่ฉลาดและปลอดภัยกว่า",
+    "youtubeId": "dQw4w9WgXcQ",
+    "tags": [
+      "Chemistry",
+      "Industry",
+      "Acid"
+    ]
+  },
+  {
+    "id": 515,
+    "subject": "Chemistry",
+    "title": "Industrial: Saponification & Soap",
+    "content": "สบู่เกิดจากปฏิกิริยาไฮโดรลิซิสของไขมันในสภาวะเบส (Saponification) \\n\\nสมการ: Triglyceride + 3NaOH -> Glycerol + 3Soap (เกลือโซเดียมของกรดไขมัน) \\n\\nหลักการทำความสะอาด: \\n- ส่วนหัว (Hydrophilic): มีขั้ว ชอบน้ำ \\n- ส่วนหาง (Hydrophobic): ไม่มีขั้ว ชอบไขมัน \\n- สบู่จะล้อมรอบไขมันเกิดเป็น 'Micelle' ทำให้ไขมันหลุดออกไปกับน้ำได้ \\n\\nPtah's Master Tip: 'ศัตรูของสบู่คือความกระด้าง' ในน้ำกระด้าง (มี Ca2+, Mg2+) สบู่จะเกิดตะกอนขาว (ไคลสบู่) และสูญเสียประสิทธิภาพ ซึ่งแก้ไขได้โดยการใช้ผงซักฟอก (Detergent)",
+    "youtubeId": "dQw4w9WgXcQ",
+    "tags": [
+      "Chemistry",
+      "Industry",
+      "Soap"
+    ]
+  },
+  {
+    "id": 516,
+    "subject": "Chemistry",
+    "title": "Industrial: Petroleum & Fractional Distillation",
+    "content": "น้ำมันดิบเป็นสารผสมไฮโดรคาร์บอนจำนวนมาก การแยกใช้การกลั่นลำดับส่วน (Fractional Distillation) ตามจุดเดือด \\n\\nลำดับจากบนลงล่างของหอกลั่น: \\n1. ก๊าซปิโตรเลียม (C1-C4) \\n2. แนฟทา (Naphtha) - วัตถุดิบปิโตรเคมี \\n3. น้ำมันเบนซิน (Gasoline) \\n4. น้ำมันก๊าด (Kerosene) - เชื้อเพลิงเครื่องบิน \\n5. น้ำมันดีเซล (Diesel) \\n6. น้ำมันหล่อลื่น, ไข, น้ำมันเตา \\n7. บิทูเมน (Bitumen) - ยางมะตอย \\n\\nPtah's Master Tip: 'จุดเดือดต่ำอยู่บน จุดเดือดสูงอยู่ล่าง' ยิ่งจำนวนอะตอม C มาก แรงยึดเหนี่ยวระหว่างโมเลกุลยิ่งสูง จุดเดือดจึงยิ่งสูงตามไปด้วย",
+    "youtubeId": "dQw4w9WgXcQ",
+    "tags": [
+      "Chemistry",
+      "Industry",
+      "Petroleum"
+    ]
+  },
+  {
+    "id": 517,
+    "subject": "Chemistry",
+    "title": "Industrial: Octane & Cetane Number",
+    "content": "ดัชนีระบุคุณภาพเชื้อเพลิง: \\n1. เลขออกเทน (Octane Number): สำหรับเครื่องยนต์เบนซิน วัดความสามารถในการทนต่อการชิงจุดระเบิด (Knocking) Iso-octane = 100, n-Heptane = 0 \\n2. เลขซีเทน (Cetane Number): สำหรับเครื่องยนต์ดีเซล วัดความสามารถในการจุดระเบิดได้เร็วและสม่ำเสมอ n-Cetane = 100 \\n\\nPtah's Master Tip: 'การปรับปรุงโครงสร้าง' เชื้อเพลิงจุดเดือดสูงสามารถเปลี่ยนเป็นจุดเดือดต่ำได้ผ่านการ Crack (ทำให้สายโซ่สั้นลง) หรือ Reforming (เปลี่ยนโซ่ตรงเป็นโซ่กิ่ง/วงแหวน) เพื่อเพิ่มเลขออกเทน",
+    "youtubeId": "dQw4w9WgXcQ",
+    "tags": [
+      "Chemistry",
+      "Industry",
+      "Fuel"
+    ]
+  },
+  {
+    "id": 518,
+    "subject": "Chemistry",
+    "title": "Biomolecules: Amino Acids - Zwitterion",
+    "content": "กรดอะมิโนมีทั้งหมู่กรด (-COOH) และหมู่เบส (-NH2) ในโมเลกุลเดียวกัน \\n\\nซวิตเตอร์ไอออน (Zwitterion): สภาวะที่กรดอะมิโนมีประจุบวกและลบในตัวเองแต่รวมเป็นกลาง เกิดขึ้นที่ pH เฉพาะเรียกว่า จุดไอโซอิเล็กทริก (Isoelectric point, pI) \\n- ใน pH ต่ำ (กรด): จะรับโปรตอน กลายเป็นประจุบวก \\n- ใน pH สูง (เบส): จะเสียโปรตอน กลายเป็นประจุลบ \\n\\nPtah's Master Tip: 'สมบัติแอมโฟเทอริก' ความสามารถในการเป็นได้ทั้งกรดและเบสทำให้กรดอะมิโนทำหน้าที่เป็น Buffer ธรรมชาติในร่างกายได้ยอดเยี่ยม",
+    "youtubeId": "dQw4w9WgXcQ",
+    "tags": [
+      "Chemistry",
+      "Biomolecules",
+      "Amino Acid"
+    ]
+  },
+  {
+    "id": 519,
+    "subject": "Chemistry",
+    "title": "Analytical: Flame Test (Qualitative)",
+    "content": "การทดสอบเปลวไฟใช้ตรวจหาไอออนของโลหะโดยอาศัยการคายพลังงานในรูปของแสงเมื่ออิเล็กตรอนกลับสู่สภาวะพื้นฐาน (Ground state) \\n\\nสีของเปลวไฟที่ควรจำ: \\n- Li+: แดงเลือดนก (Crimson) \\n- Na+: เหลืองส้ม \\n- K+: ม่วง (Lilac) \\n- Ca2+: แดงอิฐ \\n- Ba2+: เขียวอมเหลือง \\n- Cu2+: เขียว/น้ำเงินเข้ม \\n\\nPtah's Master Tip: 'แสงสะท้อนธาตุ' พลังงานที่คายออกมามีค่าเฉพาะตัว (E = hf = hc/λ) ความยาวคลื่นที่ต่างกันทำให้เราเห็นสีที่ต่างกัน เป็นหลักการเดียวกับที่ใช้ในพลุและดอกไม้ไฟ",
+    "youtubeId": "dQw4w9WgXcQ",
+    "tags": [
+      "Chemistry",
+      "Analytical",
+      "Flame Test"
+    ]
+  },
+  {
+    "id": 520,
+    "subject": "Chemistry",
+    "title": "Industrial: Green Chemistry & Atom Economy",
+    "content": "เคมีสีเขียวมุ่งเน้นการลดของเสียและประหยัดพลังงานในกระบวนการผลิต \\n\\nเศรษฐศาสตร์อะตอม (Atom Economy): \\n% Atom Economy = (มวลของผลิตภัณฑ์ที่ต้องการ / มวลรวมของสารตั้งต้นทั้งหมด) * 100 \\n\\nหลักการ 12 ประการ: เช่น การใช้ตัวเร่งปฏิกิริยาแทนการเพิ่มอุณหภูมิ, การใช้วัตถุดิบหมุนเวียน, และการออกแบบสารเคมีที่ย่อยสลายได้ง่าย \\n\\nPtah's Master Tip: 'ปฏิกิริยาการเติมมี Atom Economy 100%' เพราะทุกอะตอมในสารตั้งต้นจะกลายเป็นผลิตภัณฑ์ทั้งหมด ต่างจากปฏิกิริยาการแทนที่ที่มี By-product เกิดขึ้น",
+    "youtubeId": "dQw4w9WgXcQ",
+    "tags": [
+      "Chemistry",
+      "Industry",
+      "Environment"
+    ]
+  },
+  {
+    "id": 521,
+    "subject": "Chemistry",
+    "title": "Polymer: Biodegradable Polymers",
+    "content": "พอลิเมอร์ที่ย่อยสลายได้ทางชีวภาพออกแบบมาเพื่อลดปัญหาขยะพลาสติก โดยจุลินทรีย์สามารถย่อยให้กลายเป็นน้ำและก๊าซ CO2 ได้ \\n\\nตัวอย่างสำคัญ: \\n1. PLA (Polylactic acid): ผลิตจากข้าวโพดหรืออ้อย ใช้ทำบรรจุภัณฑ์รักษ์โลก \\n2. PHA (Polyhydroxyalkanoates): ผลิตโดยแบคทีเรีย ย่อยสลายได้ง่ายในธรรมชาติ \\n\\nPtah's Master Tip: 'คืนสู่สามัญ' แม้จะย่อยสลายได้ แต่ต้องอยู่ในสภาวะที่เหมาะสม เช่น การหมักเชิงอุตสาหกรรม ไม่ใช่การทิ้งลงแม่น้ำโดยตรง",
+    "youtubeId": "dQw4w9WgXcQ",
+    "tags": [
+      "Chemistry",
+      "Polymer",
+      "Environment"
+    ]
+  }
+]

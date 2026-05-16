@@ -1,0 +1,170 @@
+[
+  {
+    "id": 501,
+    "subject": "Biology",
+    "title": "Pathophysiology of Type 2 Diabetes: กลไกการเกิดโรคเบาหวานชนิดที่ 2",
+    "content": "โรคเบาหวานชนิดที่ 2 (T2DM) มีพยาธิสภาพหลัก 2 ประการคือ 1. การดื้อต่ออินซูลิน (Insulin Resistance) ซึ่งเกิดจากความบกพร่องของ Insulin Receptor หรือ Signaling pathway ภายในเซลล์ (เช่น IRS-1) ทำให้การดึงน้ำตาลเข้าสู่เซลล์ผ่าน GLUT4 ลดลง 2. การทำงานที่ลดลงของ Beta-cells ในตับอ่อนเพื่อชดเชยระดับน้ำตาลที่สูงขึ้นจนเกิดภาวะ 'Beta-cell exhaustion' ผลที่ตามมาคือภาวะน้ำตาลในเลือดสูงเรื้อรัง (Hyperglycemia) ซึ่งนำไปสู่ภาวะแทรกซ้อน เช่น Retinopathy, Nephropathy และ Neuropathy กลไกนี้มักสัมพันธ์กับภาวะอ้วนและภาวะอักเสบระดับต่ำ (Low-grade inflammation) ที่เกิดจาก Adipokines",
+    "youtubeId": "placeholder",
+    "tags": ["Medical", "Pathophysiology", "Endocrine"]
+  },
+  {
+    "id": 502,
+    "subject": "Biology",
+    "title": "Hypertension and Vascular Remodeling: ความดันโลหิตสูงและการเปลี่ยนแปลงของหลอดเลือด",
+    "content": "ภาวะความดันโลหิตสูงเรื้อรัง (Hypertension) ส่งผลให้เกิดแรงเค้นเฉือน (Shear stress) ต่อผนังหลอดเลือดชั้นใน (Endothelium) กระตุ้นการหลั่งสารสื่ออักเสบและการเพิ่มจำนวนของเซลล์กล้ามเนื้อเรียบ (Smooth muscle cell proliferation) นำไปสู่ภาวะผนังหลอดเลือดหนาตัวและสูญเสียความยืดหยุ่น (Vascular remodeling) ระบบที่เกี่ยวข้องสำคัญคือ Renin-Angiotensin-Aldosterone System (RAAS) ซึ่งหากทำงานมากเกินไปจะทำให้เกิดการคั่งของโซเดียมและน้ำ และการหดตัวของหลอดเลือดทั่วร่างกาย เพิ่มความเสี่ยงต่อโรคหลอดเลือดสมองและหัวใจล้มเหลว",
+    "youtubeId": "placeholder",
+    "tags": ["Medical", "Pathophysiology", "Circulatory"]
+  },
+  {
+    "id": 503,
+    "subject": "Biology",
+    "title": "Acute Inflammation: กลไกการอักเสบแบบเฉียบพลัน",
+    "content": "การอักเสบเฉียบพลันเป็นกลไกตอบสนองของร่างกายต่อสิ่งแปลกปลอมหรือเนื้อเยื่อที่บาดเจ็บ มีลำดับขั้นตอนหลักคือ: 1. Vasodilation (หลอดเลือดขยายตัว) นำเลือดมาเลี้ยงบริเวณนั้นมากขึ้น 2. Increased permeability (การเพิ่มการซึมผ่านของหลอดเลือด) ทำให้ของเหลวและโปรตีนรั่วไหลออกสู่เนื้อเยื่อ (Edema) 3. Leukocyte recruitment โดยเฉพาะ Neutrophils จะเคลื่อนที่มายังบริเวณที่บาดเจ็บผ่านกระบวนการ Chemotaxis และทำการจับกินสิ่งแปลกปลอม (Phagocytosis) สารสื่อกลางที่สำคัญคือ Histamine, Prostaglandins และ Leukotrienes ซึ่งเป็นเป้าหมายของยาแก้อักเสบกลุ่ม NSAIDs",
+    "youtubeId": "placeholder",
+    "tags": ["Medical", "Pathophysiology", "Immunology"]
+  },
+  {
+    "id": 504,
+    "subject": "Biology",
+    "title": "Cancer Cell Metabolism: The Warburg Effect",
+    "content": "เซลล์มะเร็งมีลักษณะการใช้พลังงานที่แตกต่างจากเซลล์ปกติที่เรียกว่า 'Warburg Effect' โดยเซลล์มะเร็งจะเลือกใช้กระบวนการ Glycolysis และการหมักกรดแลกติก (Lactic acid fermentation) แม้ว่าจะมีออกซิเจนเพียงพอ (Aerobic Glycolysis) กระบวนการนี้ช่วยให้เซลล์มะเร็งสามารถสร้าง Biosynthetic precursors (เช่น Carbon skeletons) สำหรับการแบ่งตัวอย่างรวดเร็วได้ดีกว่าการสลายน้ำตาลอย่างสมบูรณ์ในไมโทคอนเดรีย นอกจากนี้ยังช่วยสร้างสภาวะกรดรอบๆ ก้อนมะเร็ง ซึ่งเอื้อต่อการรุกรานเนื้อเยื่อข้างเคียงและการกดภูมิคุ้มกัน",
+    "youtubeId": "placeholder",
+    "tags": ["Medical", "Cancer", "Metabolism"]
+  },
+  {
+    "id": 505,
+    "subject": "Biology",
+    "title": "Renal Failure and Acid-Base Imbalance: ไตวายและสมดุลกรด-ด่าง",
+    "content": "เมื่อเกิดภาวะไตวาย (Renal Failure) ไตจะไม่สามารถกำจัดของเสียประเภท Nitrogenous waste (เช่น Urea, Creatinine) และไม่สามารถรักษาสมดุลกรด-ด่างได้ พยาธิสภาพที่สำคัญคือภาวะ Metabolic Acidosis เนื่องจากไตไม่สามารถขับ H+ และไม่สามารถดูดกลับ HCO3- (Bicarbonate) ได้อย่างมีประสิทธิภาพ นอกจากนี้ยังเกิดความผิดปกติของสมดุล Electrolytes เช่น Hyperkalemia (โพแทสเซียมในเลือดสูง) ซึ่งอาจส่งผลอันตรายต่อการเต้นของหัวใจ และการสูญเสียฮอร์โมน Erythropoietin (EPO) ทำให้เกิดภาวะโลหิตจาง",
+    "youtubeId": "placeholder",
+    "tags": ["Medical", "Pathophysiology", "Excretory"]
+  },
+  {
+    "id": 506,
+    "subject": "Biology",
+    "title": "CRISPR-Cas9: ระบบกรรไกรระดับโมเลกุล",
+    "content": "CRISPR-Cas9 เป็นเทคโนโลยีการดัดแปรพันธุกรรมที่ประยุกต์มาจากระบบภูมิคุ้มกันของแบคทีเรีย ประกอบด้วยส่วนประกอบหลัก 2 ส่วนคือ 1. Cas9 enzyme ทำหน้าที่เป็นกรรไกรตัดสาย DNA 2. guide RNA (gRNA) ทำหน้าที่นำทาง Cas9 ไปยังตำแหน่งเป้าหมายที่จำเพาะเจาะจงบนจีโนม โดยอาศัยหลักการจับคู่ของเบส (Base pairing) เมื่อ Cas9 ตัด DNA แล้ว เซลล์จะพยายามซ่อมแซมตัวเอง ซึ่งเราสามารถใช้จังหวะนี้ในการปิดการทำงานของยีน (Gene knockout) หรือแทรกยีนใหม่ (Gene insertion) ได้อย่างแม่นยำ หัวใจสำคัญคือลำดับ PAM (Protospacer Adjacent Motif) ที่จำเป็นต่อการจดจำของ Cas9",
+    "youtubeId": "placeholder",
+    "tags": ["Genetics", "Biotechnology", "CRISPR"]
+  },
+  {
+    "id": 507,
+    "subject": "Biology",
+    "title": "Gene Drive: การขับเคลื่อนทางพันธุกรรม",
+    "content": "Gene Drive คือเทคโนโลยีที่ทำให้ยีนที่ต้องการถูกถ่ายทอดไปยังรุ่นลูกในสัดส่วนที่มากกว่ากฎของเมนเดล (ซึ่งปกติคือ 50%) โดยอาศัยระบบ CRISPR เพื่อตัดและคัดลอกยีนที่ดัดแปลงไปยังโครโมโซมอีกข้างหนึ่งในเซลล์สืบพันธุ์ ผลลัพธ์คือลักษณะดังกล่าวจะกระจายไปทั่วประชากรอย่างรวดเร็ว ตัวอย่างเช่น การสร้างยุงที่ไม่สามารถแพร่เชื้อมาลาเรียได้ อย่างไรก็ตาม เทคโนโลยีนี้ยังคงเป็นที่ถกเถียงในด้านจริยธรรมและผลกระทบต่อระบบนิเวศเนื่องจากอาจทำให้สิ่งมีชีวิตบางชนิดสูญพันธุ์ได้ในวงกว้าง",
+    "youtubeId": "placeholder",
+    "tags": ["Genetics", "Ecology", "Biotechnology"]
+  },
+  {
+    "id": 508,
+    "subject": "Biology",
+    "title": "Somatic vs Germline Gene Therapy: การบำบัดทางยีน",
+    "content": "การบำบัดทางยีน (Gene Therapy) แบ่งเป็น 2 ประเภทหลัก: 1. Somatic cell therapy คือการแก้ไขพันธุกรรมในเซลล์ร่างกาย (เช่น เม็ดเลือดขาว, เซลล์ปอด) ผลการรักษาจะเกิดขึ้นเฉพาะในตัวผู้ป่วยและไม่ส่งต่อไปยังลูกหลาน ปัจจุบันมีการใช้รักษาโรคเช่น Sickle cell anemia 2. Germline therapy คือการแก้ไขในเซลล์สืบพันธุ์หรือตัวอ่อนในระยะแรก ซึ่งจะทำให้การเปลี่ยนแปลงนั้นถูกส่งต่อไปยังรุ่นต่อๆ ไปได้ทั้งหมด ประเภทยังเป็นที่ต้องห้ามในมนุษย์ส่วนใหญ่ทั่วโลกเนื่องจากความกังวลด้านความปลอดภัยและจริยธรรม",
+    "youtubeId": "placeholder",
+    "tags": ["Genetics", "Medical", "Ethics"]
+  },
+  {
+    "id": 509,
+    "subject": "Biology",
+    "title": "Base Editing and Prime Editing: นวัตกรรมต่อยอดจาก CRISPR",
+    "content": "เพื่อลดข้อเสียของการตัด DNA สายคู่ (Double-strand break) นักวิทยาศาสตร์ได้พัฒนา 1. Base Editing: การใช้ Cas9 รุ่นพิเศษที่ตัด DNA ไม่ได้ (dead Cas9) ร่วมกับ Deaminase enzyme เพื่อเปลี่ยนเบสหนึ่งไปเป็นอีกเบสหนึ่งโดยตรง (เช่น C เป็น T) โดยไม่ต้องตัดสาย DNA 2. Prime Editing: 'Search-and-replace' ที่แม่นยำยิ่งขึ้น ใช้ Cas9 nickase ร่วมกับ Reverse Transcriptase และ pegRNA ทำให้สามารถเพิ่ม ลบ หรือเปลี่ยนเบสได้หลากหลายแบบโดยลดความเสี่ยงจากการเกิดมิวเทชันที่ไม่ต้องการ (Off-target effects)",
+    "youtubeId": "placeholder",
+    "tags": ["Genetics", "Biotechnology", "Molecular"]
+  },
+  {
+    "id": 510,
+    "subject": "Biology",
+    "title": "CRISPR in Agriculture: อนาคตของพืช GMO",
+    "content": "เทคโนโลยี CRISPR ถูกนำมาใช้ในภาคการเกษตรเพื่อสร้างพืชที่มีคุณลักษณะเด่น เช่น 1. ทนทานต่อสภาพภูมิอากาศ (Drought tolerance) 2. ต้านทานโรคและแมลงศัตรูพืช 3. เพิ่มคุณค่าทางสารอาหาร (Biofortification) เช่น ข้าวที่มีวิตามินเอสูง ข้อได้เปรียบของ CRISPR คือการสร้างพืชที่ไม่มี DNA แปลกปลอม (Non-transgenic) ในขั้นตอนสุดท้าย ซึ่งในบางประเทศอาจไม่ถูกจัดว่าเป็นพืช GMO แบบดั้งเดิม ทำให้ผ่านเกณฑ์ความปลอดภัยและได้รับการยอมรับจากผู้บริโภคได้ง่ายขึ้น",
+    "youtubeId": "placeholder",
+    "tags": ["Genetics", "Agriculture", "Biotechnology"]
+  },
+  {
+    "id": 511,
+    "subject": "Biology",
+    "title": "Major Histocompatibility Complex (MHC) and Antigen Presentation",
+    "content": "MHC (ในมนุษย์เรียก HLA) คือโปรตีนบนผิวเซลล์ที่ทำหน้าที่นำเสนอแอนติเจนให้แก่ T-cells แบ่งเป็น: 1. MHC Class I: พบในเซลล์ที่มีนิวเคลียสทุกเซลล์ นำเสนอ Endogenous antigen (เช่น ไวรัสหรือโปรตีนมะเร็ง) ให้แก่ Cytotoxic T cells (CD8+) 2. MHC Class II: พบเฉพาะใน Antigen-Presenting Cells (APCs) เช่น Macrophages และ B cells นำเสนอ Exogenous antigen ให้แก่ Helper T cells (CD4+) กระบวนการนี้คือหัวใจสำคัญของการแยกแยะ 'Self' ออกจาก 'Non-self' หากผิดปกติอาจนำไปสู่โรคภูมิแพ้ตัวเอง (Autoimmune diseases)",
+    "youtubeId": "placeholder",
+    "tags": ["Immunology", "Molecular", "Medical"]
+  },
+  {
+    "id": 512,
+    "subject": "Biology",
+    "title": "Cytokine Storm: พายุไซโตไกน์",
+    "content": "Cytokine Storm คือภาวะที่ระบบภูมิคุ้มกันตอบสนองรุนแรงเกินไปจนควบคุมไม่ได้ มีการหลั่งไซโตไกน์ที่กระตุ้นการอักเสบ (Pro-inflammatory cytokines) เช่น IL-6, TNF-alpha ออกมาเป็นจำนวนมาก ส่งผลให้หลอดเลือดรั่ว ความดันโลหิตต่ำ อวัยวะหลายระบบล้มเหลว (Multi-organ failure) และอาจเสียชีวิตได้ ภาวะนี้มักพบในการติดเชื้อรุนแรง เช่น COVID-19 หรือไข้หวัดใหญ่บางสายพันธุ์ รวมถึงเป็นผลข้างเคียงจากการรักษาด้วยภูมิคุ้มกันบำบัดบางชนิด การรักษาจำเป็นต้องใช้ยากดภูมิคุ้มกันเพื่อระงับอาการอักเสบ",
+    "youtubeId": "placeholder",
+    "tags": ["Immunology", "Medical", "Pathophysiology"]
+  },
+  {
+    "id": 513,
+    "subject": "Biology",
+    "title": "CAR T-cell Therapy: อาวุธชีวภาพรักษามะเร็ง",
+    "content": "CAR T-cell therapy คือการรักษามะเร็งแบบเฉพาะเจาะจงโดยการนำ T-cells ของผู้ป่วยออกมาดัดแปรพันธุกรรมในห้องปฏิบัติการเพื่อใส่ตัวรับที่เรียกว่า Chimeric Antigen Receptor (CAR) ซึ่งมีความสามารถในการตรวจจับและทำลายเซลล์มะเร็งได้โดยตรงโดยไม่ต้องพึ่งการนำเสนอผ่าน MHC จากนั้นจึงฉีดเซลล์ที่ดัดแปลงแล้วกลับเข้าสู่ร่างกายผู้ป่วย เทคโนโลยีนี้แสดงประสิทธิภาพสูงมากในการรักษาโรคมะเร็งเม็ดเลือดขาวบางชนิดที่ดื้อต่อยาเคมีบำบัด",
+    "youtubeId": "placeholder",
+    "tags": ["Immunology", "Cancer", "Biotechnology"]
+  },
+  {
+    "id": 514,
+    "subject": "Biology",
+    "title": "Clonal Selection Theory: การเลือกเฟ้นโคลนของลิมโฟไซต์",
+    "content": "ทฤษฎี Clonal Selection อธิบายว่าร่างกายมี B-cell และ T-cell หลากหลายรูปแบบที่มีตัวรับ (Receptor) จำเพาะต่อแอนติเจนที่แตกต่างกันเตรียมพร้อมไว้อยู่แล้ว เมื่อแอนติเจนชนิดหนึ่งเข้าสู่ร่างกาย มันจะไปจับกับเซลล์ที่มีตัวรับที่เข้าคู่กันได้เท่านั้น (Selection) จากนั้นเซลล์ที่ถูกเลือกจะได้รับการกระตุ้นให้แบ่งตัวอย่างรวดเร็ว (Clonal expansion) เพื่อสร้างกองทัพเซลล์ที่เหมือนกันเป๊ะมาชวยกำจัดแอนติเจนนั้น บางส่วนจะกลายเป็น Plasma cells (สร้างแอนติบอดี) และบางส่วนจะกลายเป็น Memory cells สำหรับการจดจำในอนาคต",
+    "youtubeId": "placeholder",
+    "tags": ["Immunology", "Cell Biology"]
+  },
+  {
+    "id": 515,
+    "subject": "Biology",
+    "title": "Type I Hypersensitivity: กลไกการเกิดภูมิแพ้ฉับพลัน",
+    "content": "ภาวะภูมิแพ้ชนิดที่ 1 เกิดจากการที่ร่างกายสร้าง IgE antibody ต่อสารก่อภูมิแพ้ (Allergen) ในการสัมผัสครั้งแรก IgE จะไปจับบนผิวเซลล์ Mast cells เมื่อได้รับสารก่อภูมิแพ้อีกครั้ง สารนั้นจะไป Cross-link กับ IgE บน Mast cells กระตุ้นให้เกิดการหลั่ง Histamine และสารสื่ออักเสบอื่นๆ ทันที ส่งผลให้เกิดอาการแพ้ เช่น ผื่นคัน น้ำมูกไหล หรือในกรณีรุนแรงคือ Anaphylaxis (ภาวะช็อกจากการแพ้) ซึ่งทำให้หลอดลมตีบและความดันเลือดตกลงอย่างรวดเร็ว",
+    "youtubeId": "placeholder",
+    "tags": ["Immunology", "Medical"]
+  },
+  {
+    "id": 516,
+    "subject": "Biology",
+    "title": "Auxin and Phototropism: ฮอร์โมนออกซินกับการเบนเข้าหาแสง",
+    "content": "ออกซิน (Auxin/IAA) มีบทบาทสำคัญในการขยายตัวของเซลล์ (Cell elongation) ในกลไกการเบนเข้าหาแสง (Phototropism) เมื่อแสงส่องมาด้านหนึ่ง ออกซินจะเคลื่อนที่หนีแสงไปยังด้านที่มืดกว่า (Lateral transport) กระตุ้นการทำงานของ Proton pump เพื่อปั๊ม H+ ออกไปที่ผนังเซลล์ ทำให้ผนังเซลล์มีความเป็นกรดและอ่อนตัวลง (Acid Growth Hypothesis) เซลล์ฝั่งด้านมืดจึงขยายตัวได้มากกว่าฝั่งด้านสว่าง ส่งผลให้ปลายยอดพืชโค้งงอเข้าหาแสงเสมอ",
+    "youtubeId": "placeholder",
+    "tags": ["Plant Biology", "Hormones"]
+  },
+  {
+    "id": 517,
+    "subject": "Biology",
+    "title": "Gibberellins: การงอกของเมล็ดและการยืดตัวของลำต้น",
+    "content": "จิบเบอเรลลิน (Gibberellins/GA) มีหน้าที่หลักในการกระตุ้นการยืดตัวของข้อปล้อง (Internode elongation) และการงอกของเมล็ด ในเมล็ดที่กำลังงอก GA จะถูกสร้างจาก Embryo และแพร่ไปยังชั้น Aleurone เพื่อกระตุ้นการสังเคราะห์เอนไซม์ Alpha-amylase มาย่อยแป้งใน Endosperm ให้กลายเป็นน้ำตาลเพื่อใช้เป็นพลังงานในการเติบโต นอกจากนี้ GA ยังช่วยทำลายการพักตัวของเมล็ดและตาพืช และใช้ในอุตสาหกรรมการผลิตองุ่นไร้เมล็ดให้มีผลขนาดใหญ่ขึ้น",
+    "youtubeId": "placeholder",
+    "tags": ["Plant Biology", "Hormones"]
+  },
+  {
+    "id": 518,
+    "subject": "Biology",
+    "title": "Cytokinins: การแบ่งเซลล์และการชะลอความชรา",
+    "content": "ไซโตไกนิน (Cytokinins) ทำงานร่วมกับออกซินในการควบคุมการแบ่งเซลล์ (Cell division) และการสร้างอวัยวะ (Organogenesis) สัดส่วนของฮอร์โมนสองชนิดนี้มีความสำคัญมาก: Cytokinin สูง/Auxin ต่ำ จะกระตุ้นการสร้างหน่อ (Shoots) ในขณะที่สัดส่วนตรงข้ามจะกระตุ้นการสร้างราก นอกจากนี้ไซโตไกนินยังช่วยชะลอการเสื่อมสลายของคลอโรฟิลล์ (Anti-aging effect) ทำให้ใบพืชมีความเขียวสดนานขึ้น และลดการเด่นของยอด (Apical dominance) โดยกระตุ้นการเจริญของตาข้าง",
+    "youtubeId": "placeholder",
+    "tags": ["Plant Biology", "Hormones"]
+  },
+  {
+    "id": 519,
+    "subject": "Biology",
+    "title": "Ethylene: ฮอร์โมนก๊าซและการสุกของผลไม้",
+    "content": "เอทิลีน (Ethylene) เป็นฮอร์โมนพืชเพียงชนิดเดียวที่มีสถานะเป็นก๊าซ มีบทบาทสำคัญในการเร่งการสุกของผลไม้ (Fruit ripening) โดยการกระตุ้นการสลายแป้งเป็นน้ำตาลและการอ่อนตัวของผนังเซลล์ นอกจากนี้ยังเกี่ยวข้องกับการหลุดร่วงของใบและดอก (Abscission) และการตอบสนองต่อความเครียดทางกายภาพที่เรียกว่า 'Triple Response' ในต้นอ่อน (ลำต้นสั้น หนา และโตในแนวราบ) เพื่อช่วยให้ต้นอ่อนสามารถเติบโตผ่านสิ่งกีดขวางในดินได้",
+    "youtubeId": "placeholder",
+    "tags": ["Plant Biology", "Hormones"]
+  },
+  {
+    "id": 520,
+    "subject": "Biology",
+    "title": "Abscisic Acid (ABA): ฮอร์โมนแห่งความเครียด",
+    "content": "กรดแอบไซซิก (Abscisic Acid/ABA) ทำหน้าที่เป็นสัญญาณเตือนเมื่อพืชเผชิญสภาวะไม่เหมาะสม โดยเฉพาะการขาดน้ำ เมื่อพืชขาดน้ำ ABA จะถูกสร้างในรากและใบเพื่อกระตุ้นให้ปากใบปิด (Stomatal closure) โดยการควบคุมการไหลออกของโพแทสเซียมไอออนใน Guard cells เพื่อลดการคายน้ำ นอกจากนี้ ABA ยังช่วยรักษาสภาพการพักตัวของเมล็ด (Seed dormancy) ป้องกันไม่ให้เมล็ดงอกในช่วงฤดูที่ไม่เหมาะสม เช่น ฤดูหนาวหรือฤดูแล้ง",
+    "youtubeId": "placeholder",
+    "tags": ["Plant Biology", "Hormones"]
+  },
+  {
+    "id": 521,
+    "subject": "Biology",
+    "title": "Biological Feedback Loops: การรักษาสมดุลในสิ่งมีชีวิต",
+    "content": "ระบบการควบคุมในร่างกายมักใช้ Negative Feedback Loop เป็นหลักเพื่อรักษาภาวะธำรงดุล (Homeostasis) เช่น การควบคุมระดับน้ำตาลในเลือด เมื่อน้ำตาลสูง ตับอ่อนจะหลั่งอินซูลินเพื่อลดระดับน้ำตาล เมื่อน้ำตาลลดลงสู่ระดับปกติ การหลั่งอินซูลินก็จะหยุดลง ในทางตรงกันข้าม Positive Feedback Loop จะเป็นการกระตุ้นให้เหตุการณ์เกิดขึ้นรุนแรงขึ้นเรื่อยๆ จนสิ้นสุดกระบวนการ เช่น การหลั่งฮอร์โมน Oxytocin เพื่อกระตุ้นการบีบตัวของมดลูกระหว่างคลอด หรือการแข็งตัวของเลือด",
+    "youtubeId": "placeholder",
+    "tags": ["Biology", "Physiology", "Homeostasis"]
+  }
+]

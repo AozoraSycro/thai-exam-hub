@@ -472,5 +472,636 @@
       "biology",
       "technology"
     ]
+  },
+  {
+    "id": "sci_phy_501",
+    "title": "ฟิสิกส์การแพทย์: หลักการ MRI",
+    "content": "Magnetic Resonance Imaging (MRI)... [Formula: f = \\gamma B]",
+    "youtubeId": "dQw4w9WgXcQ",
+    "tags": [
+      "science",
+      "physics",
+      "medical"
+    ]
+  },
+  {
+    "id": "sci_phy_502",
+    "title": "ฟิสิกส์การแพทย์: อัลตราซาวด์ (Ultrasound)",
+    "content": "Acoustic Impedance [Formula: Z = \\rho v]...",
+    "youtubeId": "dQw4w9WgXcQ",
+    "tags": [
+      "science",
+      "physics",
+      "medical"
+    ]
+  },
+  {
+    "id": "sci_phy_503",
+    "title": "ฟิสิกส์การแพทย์: การลดทอนรังสีเอกซ์",
+    "content": "X-ray Attenuation [Formula: I = I_0 e^{-\\mu x}]...",
+    "youtubeId": "dQw4w9WgXcQ",
+    "tags": [
+      "science",
+      "physics",
+      "medical"
+    ]
+  },
+  {
+    "id": "sci_phy_504",
+    "title": "กลศาสตร์: กรอบอ้างอิงไม่เฉื่อย",
+    "content": "Fictitious Force [Formula: F_c = m\\omega^2 r]...",
+    "youtubeId": "dQw4w9WgXcQ",
+    "tags": [
+      "science",
+      "physics"
+    ]
+  },
+  {
+    "id": "sci_phy_505",
+    "title": "กลศาสตร์: ทฤษฎีแกนขนาน",
+    "content": "Parallel Axis Theorem [Formula: I = I_{cm} + Md^2]...",
+    "youtubeId": "dQw4w9WgXcQ",
+    "tags": [
+      "science",
+      "physics"
+    ]
+  },
+  {
+    "id": "sci_phy_506",
+    "title": "กลศาสตร์: การอนุรักษ์โมเมนตัมเชิงมุม",
+    "content": "Angular Momentum [Formula: L = I\\omega]...",
+    "youtubeId": "dQw4w9WgXcQ",
+    "tags": [
+      "science",
+      "physics"
+    ]
+  },
+  {
+    "id": "sci_phy_507",
+    "title": "ของไหล: สมการแบร์นูลลี",
+    "content": "Bernoulli [Formula: P + \\frac{1}{2}\\rho v^2 + \\rho gh = const]...",
+    "youtubeId": "dQw4w9WgXcQ",
+    "tags": [
+      "science",
+      "physics"
+    ]
+  },
+  {
+    "id": "sci_phy_508",
+    "title": "สัมพัทธภาพ: การยืดออกของเวลา",
+    "content": "Time Dilation [Formula: \\Delta t = \\gamma \\Delta t_0]...",
+    "youtubeId": "dQw4w9WgXcQ",
+    "tags": [
+      "science",
+      "physics"
+    ]
+  },
+  {
+    "id": "sci_phy_509",
+    "title": "นิวเคลียร์: สมมูลมวล-พลังงาน",
+    "content": "Binding Energy [Formula: E = (\\Delta m)c^2]...",
+    "youtubeId": "dQw4w9WgXcQ",
+    "tags": [
+      "science",
+      "physics"
+    ]
+  },
+  {
+    "id": "sci_phy_510",
+    "title": "ควอนตัม: ปรากฏการณ์โฟโตอิเล็กทริก",
+    "content": "Photoelectric [Formula: K_{max} = hf - \\Phi]...",
+    "youtubeId": "dQw4w9WgXcQ",
+    "tags": [
+      "science",
+      "physics"
+    ]
+  },
+  {
+    "id": "sci_phy_511",
+    "title": "ควอนตัม: สมมติฐานของเดอบรอยล์",
+    "content": "De Broglie [Formula: \\lambda = h / p]...",
+    "youtubeId": "dQw4w9WgXcQ",
+    "tags": [
+      "science",
+      "physics"
+    ]
+  },
+  {
+    "id": "sci_phy_512",
+    "title": "ควอนตัม: หลักความไม่แน่นอน",
+    "content": "Heisenberg [Formula: \\Delta x \\Delta p \\geq \\hbar / 2]...",
+    "youtubeId": "dQw4w9WgXcQ",
+    "tags": [
+      "science",
+      "physics"
+    ]
+  },
+  {
+    "id": "sci_phy_513",
+    "title": "ควอนตัม: แบบจำลองอะตอมของโบร์",
+    "content": "Bohr Model [Formula: E_n = -13.6 / n^2 eV]...",
+    "youtubeId": "dQw4w9WgXcQ",
+    "tags": [
+      "science",
+      "physics"
+    ]
+  },
+  {
+    "id": "sci_phy_514",
+    "title": "นิวเคลียร์: การสลายตัว",
+    "content": "Radioactive Decay [Formula: N = N_0 e^{-\\lambda t}]...",
+    "youtubeId": "dQw4w9WgXcQ",
+    "tags": [
+      "science",
+      "physics"
+    ]
+  },
+  {
+    "id": "sci_phy_515",
+    "title": "นิวเคลียร์: ฟิชชันและฟิวชัน",
+    "content": "Heavy nucleus vs Light nuclei...",
+    "youtubeId": "dQw4w9WgXcQ",
+    "tags": [
+      "science",
+      "physics"
+    ]
+  },
+  {
+    "id": "sci_phy_516",
+    "title": "สารกึ่งตัวนำ: รอยต่อ P-N",
+    "content": "Diode logic...",
+    "youtubeId": "dQw4w9WgXcQ",
+    "tags": [
+      "science",
+      "physics"
+    ]
+  },
+  {
+    "id": "sci_phy_517",
+    "title": "ตรรกะดิจิทัล: ทรานซิสเตอร์สวิตช์",
+    "content": "Transistor as switch...",
+    "youtubeId": "dQw4w9WgXcQ",
+    "tags": [
+      "science",
+      "physics"
+    ]
+  },
+  {
+    "id": "sci_phy_518",
+    "title": "ตรรกะดิจิทัล: Universal Gates",
+    "content": "NAND and NOR...",
+    "youtubeId": "dQw4w9WgXcQ",
+    "tags": [
+      "science",
+      "physics"
+    ]
+  },
+  {
+    "id": "sci_phy_519",
+    "title": "ควอนตัม: ฟังก์ชันคลื่น",
+    "content": "Wave Function [Formula: \\Psi(x, t)]...",
+    "youtubeId": "dQw4w9WgXcQ",
+    "tags": [
+      "science",
+      "physics"
+    ]
+  },
+  {
+    "id": "sci_phy_520",
+    "title": "กลศาสตร์: การแกว่งแบบมีความต้านทาน",
+    "content": "Damped Oscillations...",
+    "youtubeId": "dQw4w9WgXcQ",
+    "tags": [
+      "science",
+      "physics"
+    ]
+  },
+  {
+    "id": "sci_chem_501",
+    "title": "เคมีวิเคราะห์: การไทเทรต",
+    "content": "Titration [Formula: a * M1 * V1 = b * M2 * V2]...",
+    "youtubeId": "dQw4w9WgXcQ",
+    "tags": [
+      "science",
+      "chemistry"
+    ]
+  },
+  {
+    "id": "sci_chem_502",
+    "title": "เคมีวิเคราะห์: รีดอกซ์ไทเทรต",
+    "content": "Permanganometry [Formula: E0 = +1.51 V]...",
+    "youtubeId": "dQw4w9WgXcQ",
+    "tags": [
+      "science",
+      "chemistry"
+    ]
+  },
+  {
+    "id": "sci_chem_503",
+    "title": "เคมีวิเคราะห์: โครมาโทกราฟี",
+    "content": "Rf Value [Formula: Rf = d_{solute}/d_{solvent}]...",
+    "youtubeId": "dQw4w9WgXcQ",
+    "tags": [
+      "science",
+      "chemistry"
+    ]
+  },
+  {
+    "id": "sci_chem_504",
+    "title": "เคมีวิเคราะห์: Spectrophotometry",
+    "content": "Beer-Lambert [Formula: A = \\epsilon * b * c]...",
+    "youtubeId": "dQw4w9WgXcQ",
+    "tags": [
+      "science",
+      "chemistry"
+    ]
+  },
+  {
+    "id": "sci_chem_505",
+    "title": "ชีวโมเลกุล: คาร์โบไฮเดรต",
+    "content": "Benedict Test...",
+    "youtubeId": "dQw4w9WgXcQ",
+    "tags": [
+      "science",
+      "chemistry"
+    ]
+  },
+  {
+    "id": "sci_chem_506",
+    "title": "ชีวโมเลกุล: โปรตีนและการแปลงสภาพ",
+    "content": "Peptide bond...",
+    "youtubeId": "dQw4w9WgXcQ",
+    "tags": [
+      "science",
+      "chemistry"
+    ]
+  },
+  {
+    "id": "sci_chem_507",
+    "title": "ชีวโมเลกุล: ไขมัน อิ่มตัว vs ไม่อิ่มตัว",
+    "content": "Triglyceride...",
+    "youtubeId": "dQw4w9WgXcQ",
+    "tags": [
+      "science",
+      "chemistry"
+    ]
+  },
+  {
+    "id": "sci_chem_508",
+    "title": "ชีวโมเลกุล: กรดนิวคลีอิก DNA vs RNA",
+    "content": "Nucleotide...",
+    "youtubeId": "dQw4w9WgXcQ",
+    "tags": [
+      "science",
+      "chemistry"
+    ]
+  },
+  {
+    "id": "sci_chem_509",
+    "title": "พอลิเมอร์: แบบเติม (Addition)",
+    "content": "Polyethylene, PVC...",
+    "youtubeId": "dQw4w9WgXcQ",
+    "tags": [
+      "science",
+      "chemistry"
+    ]
+  },
+  {
+    "id": "sci_chem_510",
+    "title": "พอลิเมอร์: แบบควบแน่น (Condensation)",
+    "content": "Nylon, Polyester...",
+    "youtubeId": "dQw4w9WgXcQ",
+    "tags": [
+      "science",
+      "chemistry"
+    ]
+  },
+  {
+    "id": "sci_chem_511",
+    "title": "พอลิเมอร์: เทอร์มอพลาสติก vs เทอร์มอเซต",
+    "content": "Heat resistance...",
+    "youtubeId": "dQw4w9WgXcQ",
+    "tags": [
+      "science",
+      "chemistry"
+    ]
+  },
+  {
+    "id": "sci_chem_512",
+    "title": "พอลิเมอร์: ยางและวัลคาไนเซชัน",
+    "content": "Cross-link S...",
+    "youtubeId": "dQw4w9WgXcQ",
+    "tags": [
+      "science",
+      "chemistry"
+    ]
+  },
+  {
+    "id": "sci_chem_513",
+    "title": "อุตสาหกรรม: กระบวนการฮาเบอร์",
+    "content": "Ammonia synthesis...",
+    "youtubeId": "dQw4w9WgXcQ",
+    "tags": [
+      "science",
+      "chemistry"
+    ]
+  },
+  {
+    "id": "sci_chem_514",
+    "title": "อุตสาหกรรม: กระบวนการสัมผัส",
+    "content": "Sulfuric acid...",
+    "youtubeId": "dQw4w9WgXcQ",
+    "tags": [
+      "science",
+      "chemistry"
+    ]
+  },
+  {
+    "id": "sci_chem_515",
+    "title": "อุตสาหกรรม: สบู่และสารซักฟอก",
+    "content": "Saponification...",
+    "youtubeId": "dQw4w9WgXcQ",
+    "tags": [
+      "science",
+      "chemistry"
+    ]
+  },
+  {
+    "id": "sci_chem_516",
+    "title": "อุตสาหกรรม: การกลั่นปิโตรเลียม",
+    "content": "Fractional Distillation...",
+    "youtubeId": "dQw4w9WgXcQ",
+    "tags": [
+      "science",
+      "chemistry"
+    ]
+  },
+  {
+    "id": "sci_chem_517",
+    "title": "อุตสาหกรรม: เลขออกเทนและซีเทน",
+    "content": "Knocking...",
+    "youtubeId": "dQw4w9WgXcQ",
+    "tags": [
+      "science",
+      "chemistry"
+    ]
+  },
+  {
+    "id": "sci_chem_518",
+    "title": "ชีวโมเลกุล: กรดอะมิโน Zwitterion",
+    "content": "pI value...",
+    "youtubeId": "dQw4w9WgXcQ",
+    "tags": [
+      "science",
+      "chemistry"
+    ]
+  },
+  {
+    "id": "sci_chem_519",
+    "title": "เคมีวิเคราะห์: Flame Test",
+    "content": "Li, Na, K, Ca colors...",
+    "youtubeId": "dQw4w9WgXcQ",
+    "tags": [
+      "science",
+      "chemistry"
+    ]
+  },
+  {
+    "id": "sci_chem_520",
+    "title": "เคมีสีเขียว: Atom Economy",
+    "content": "Sustainable chem...",
+    "youtubeId": "dQw4w9WgXcQ",
+    "tags": [
+      "science",
+      "chemistry"
+    ]
+  },
+  {
+    "id": "sci_chem_521",
+    "title": "พอลิเมอร์: พลาสติกย่อยสลายได้",
+    "content": "PLA, PHA...",
+    "youtubeId": "dQw4w9WgXcQ",
+    "tags": [
+      "science",
+      "chemistry"
+    ]
+  },
+  {
+    "id": "sci_bio_501",
+    "title": "พยาธิสรีรวิทยา: เบาหวานชนิดที่ 2",
+    "content": "T2DM Insulin Resistance...",
+    "youtubeId": "dQw4w9WgXcQ",
+    "tags": [
+      "science",
+      "biology",
+      "medical"
+    ]
+  },
+  {
+    "id": "sci_bio_502",
+    "title": "พยาธิสรีรวิทยา: ความดันโลหิตสูง",
+    "content": "Vascular Remodeling...",
+    "youtubeId": "dQw4w9WgXcQ",
+    "tags": [
+      "science",
+      "biology",
+      "medical"
+    ]
+  },
+  {
+    "id": "sci_bio_503",
+    "title": "ภูมิคุ้มกัน: การอักเสบเฉียบพลัน",
+    "content": "Acute Inflammation...",
+    "youtubeId": "dQw4w9WgXcQ",
+    "tags": [
+      "science",
+      "biology",
+      "medical"
+    ]
+  },
+  {
+    "id": "sci_bio_504",
+    "title": "มะเร็ง: Warburg Effect",
+    "content": "Cancer Metabolism...",
+    "youtubeId": "dQw4w9WgXcQ",
+    "tags": [
+      "science",
+      "biology",
+      "medical"
+    ]
+  },
+  {
+    "id": "sci_bio_505",
+    "title": "พยาธิสรีรวิทยา: ไตวายและสมดุลกรดด่าง",
+    "content": "Renal Failure...",
+    "youtubeId": "dQw4w9WgXcQ",
+    "tags": [
+      "science",
+      "biology",
+      "medical"
+    ]
+  },
+  {
+    "id": "sci_bio_506",
+    "title": "เทคโนโลยีชีวภาพ: CRISPR-Cas9",
+    "content": "Molecular Scissors...",
+    "youtubeId": "dQw4w9WgXcQ",
+    "tags": [
+      "science",
+      "biology"
+    ]
+  },
+  {
+    "id": "sci_bio_507",
+    "title": "พันธุศาสตร์: Gene Drive",
+    "content": "Inheritance bias...",
+    "youtubeId": "dQw4w9WgXcQ",
+    "tags": [
+      "science",
+      "biology"
+    ]
+  },
+  {
+    "id": "sci_bio_508",
+    "title": "การบำบัดทางยีน: Somatic vs Germline",
+    "content": "Gene Therapy...",
+    "youtubeId": "dQw4w9WgXcQ",
+    "tags": [
+      "science",
+      "biology"
+    ]
+  },
+  {
+    "id": "sci_bio_509",
+    "title": "พันธุศาสตร์โมเลกุล: Prime Editing",
+    "content": "Precise search-and-replace...",
+    "youtubeId": "dQw4w9WgXcQ",
+    "tags": [
+      "science",
+      "biology"
+    ]
+  },
+  {
+    "id": "sci_bio_510",
+    "title": "เกษตรกรรม: CRISPR in Crops",
+    "content": "Drought tolerance...",
+    "youtubeId": "dQw4w9WgXcQ",
+    "tags": [
+      "science",
+      "biology"
+    ]
+  },
+  {
+    "id": "sci_bio_511",
+    "title": "ภูมิคุ้มกัน: MHC และการนำเสนอแอนติเจน",
+    "content": "HLA presentation...",
+    "youtubeId": "dQw4w9WgXcQ",
+    "tags": [
+      "science",
+      "biology",
+      "medical"
+    ]
+  },
+  {
+    "id": "sci_bio_512",
+    "title": "ภูมิคุ้มกัน: พายุไซโตไกน์ (Cytokine Storm)",
+    "content": "Over-immune response...",
+    "youtubeId": "dQw4w9WgXcQ",
+    "tags": [
+      "science",
+      "biology",
+      "medical"
+    ]
+  },
+  {
+    "id": "sci_bio_513",
+    "title": "มะเร็ง: CAR T-cell Therapy",
+    "content": "Bio-weapon for cancer...",
+    "youtubeId": "dQw4w9WgXcQ",
+    "tags": [
+      "science",
+      "biology"
+    ]
+  },
+  {
+    "id": "sci_bio_514",
+    "title": "ภูมิคุ้มกัน: Clonal Selection Theory",
+    "content": "B-cell activation...",
+    "youtubeId": "dQw4w9WgXcQ",
+    "tags": [
+      "science",
+      "biology"
+    ]
+  },
+  {
+    "id": "sci_bio_515",
+    "title": "ภูมิคุ้มกัน: Type I Hypersensitivity",
+    "content": "Allergy mechanism...",
+    "youtubeId": "dQw4w9WgXcQ",
+    "tags": [
+      "science",
+      "biology",
+      "medical"
+    ]
+  },
+  {
+    "id": "sci_bio_516",
+    "title": "ฮอร์โมนพืช: ออกซินและการเบนหาแสง",
+    "content": "Auxin Phototropism...",
+    "youtubeId": "dQw4w9WgXcQ",
+    "tags": [
+      "science",
+      "biology"
+    ]
+  },
+  {
+    "id": "sci_bio_517",
+    "title": "ฮอร์โมนพืช: จิบเบอเรลลินและการงอก",
+    "content": "Seed germination...",
+    "youtubeId": "dQw4w9WgXcQ",
+    "tags": [
+      "science",
+      "biology"
+    ]
+  },
+  {
+    "id": "sci_bio_518",
+    "title": "ฮอร์โมนพืช: ไซโตไกนินและการแบ่งเซลล์",
+    "content": "Anti-aging effect...",
+    "youtubeId": "dQw4w9WgXcQ",
+    "tags": [
+      "science",
+      "biology"
+    ]
+  },
+  {
+    "id": "sci_bio_519",
+    "title": "ฮอร์โมนพืช: เอทิลีนและการสุก",
+    "content": "Gas hormone...",
+    "youtubeId": "dQw4w9WgXcQ",
+    "tags": [
+      "science",
+      "biology"
+    ]
+  },
+  {
+    "id": "sci_bio_520",
+    "title": "ฮอร์โมนพืช: กรดแอบไซซิก (ABA)",
+    "content": "Stress hormone...",
+    "youtubeId": "dQw4w9WgXcQ",
+    "tags": [
+      "science",
+      "biology"
+    ]
+  },
+  {
+    "id": "sci_bio_521",
+    "title": "การรักษาสมดุล: Feedback Loops",
+    "content": "Homeostasis...",
+    "youtubeId": "dQw4w9WgXcQ",
+    "tags": [
+      "science",
+      "biology"
+    ]
   }
 ]

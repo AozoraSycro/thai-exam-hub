@@ -78,5 +78,253 @@
     "content": "กลไกการทำงานของ 'กรรไกรระดับโมเลกุล' และการประยุกต์ใช้ในการดัดแปรพันธุกรรมเพื่อการแพทย์และการเกษตร... [Keywords: Gene Editing, Guide RNA, Biotechnology]",
     "youtubeId": "dQw4w9WgXcQ",
     "tags": ["Biology", "Genetics", "Advanced Science"]
+  },
+  {
+    "id": 6011,
+    "subject": "Logic",
+    "title": "ตรรกศาสตร์นิรนัยขั้นสูง: Mood and Figure",
+    "content": "การจำแนกประเภทของ Categorical Syllogisms ตามรูปแบบ (A, E, I, O) และตำแหน่งของคำกลาง (Figure 1-4)... [Keywords: Deductive Logic, Valid Forms, Aristotle]",
+    "youtubeId": "dQw4w9WgXcQ",
+    "tags": ["Logic", "Philosophy", "Elite"]
+  },
+  {
+    "id": 6012,
+    "subject": "Logic",
+    "title": "Venn Diagrams สำหรับโจทย์ตรรกะซับซ้อน",
+    "content": "เทคนิคการวาดและวิเคราะห์แผนภาพเวนน์ 3 วงเพื่อตรวจสอบความสมเหตุสมผลของข้อสรุป... [Keywords: Set Theory, Overlap, Logical Validity]",
+    "youtubeId": "dQw4w9WgXcQ",
+    "tags": ["Logic", "Math", "TPAT"]
+  },
+  {
+    "id": 6013,
+    "subject": "Logic",
+    "title": "สัญลักษณ์ตรรกศาสตร์และการพิสูจน์",
+    "content": "การใช้ตัวเชื่อมทางตรรกศาสตร์ (And, Or, If-Then, If and Only If) และการสร้างตารางค่าความจริง... [Keywords: Propositional Logic, Truth Tables, Logical Operators]",
+    "youtubeId": "dQw4w9WgXcQ",
+    "tags": ["Logic", "Math", "Computer Science"]
+  },
+  {
+    "id": 6014,
+    "subject": "Logic",
+    "title": "การจับผิดเหตุผลวิบัติ (Logical Fallacies)",
+    "content": "เจาะลึก Fallacies ที่พบบ่อย เช่น Ad Hominem, Straw Man, Slippery Slope และการนำไปใช้ในข้อสอบวิเคราะห์... [Keywords: Critical Thinking, Argumentation, Rhetoric]",
+    "youtubeId": "dQw4w9WgXcQ",
+    "tags": ["Logic", "Critical Thinking", "General"]
+  },
+  {
+    "id": 6015,
+    "subject": "Spatial IQ",
+    "title": "การคลี่รูปทรง 3 มิติ (3D Net Diagrams)",
+    "content": "เทคนิคการจับคู่หน้าของลูกบาศก์และรูปทรงเรขาคณิตเมื่อถูกคลี่ออกเป็นแผ่น 2 มิติ... [Keywords: Spatial Reasoning, Mental Folding, Geometry]",
+    "youtubeId": "dQw4w9WgXcQ",
+    "tags": ["IQ", "Spatial", "Engineering"]
+  },
+  {
+    "id": 6016,
+    "subject": "Spatial IQ",
+    "title": "การหมุนภาพในใจหลายแกน (Multi-axis Rotation)",
+    "content": "แบบฝึกหัดการหมุนวัตถุซับซ้อนในใจทั้งในแนวตั้ง แนวนอน และแนวลึก เพื่อหาภาพที่ตรงกัน... [Keywords: Mental Rotation, Spatial Ability, IQ Tests]",
+    "youtubeId": "dQw4w9WgXcQ",
+    "tags": ["IQ", "Spatial", "Visual"]
+  },
+  {
+    "id": 6017,
+    "subject": "Spatial IQ",
+    "title": "การเจาะกระดาษและสมมาตร (Paper Folding & Punching)",
+    "content": "การทำนายผลลัพธ์ของการเจาะรูบนกระดาษที่ถูกพับหลายทบโดยใช้หลักการสมมาตร... [Keywords: Symmetry, Visual Pattern, IQ]",
+    "youtubeId": "dQw4w9WgXcQ",
+    "tags": ["IQ", "Spatial", "Patterns"]
+  },
+  {
+    "id": 6018,
+    "subject": "Spatial IQ",
+    "title": "ภาพฉายและมุมมอง (Front, Side, Top Views)",
+    "content": "การมองวัตถุจากด้านต่างๆ (Orthographic Projection) และการระบุรูปทรง 3 มิติจากภาพฉาย 2 มิติ... [Keywords: Engineering Drawing, Projection, Visualization]",
+    "youtubeId": "dQw4w9WgXcQ",
+    "tags": ["Spatial", "Engineering", "IQ"]
+  },
+  {
+    "id": 6019,
+    "subject": "Logic",
+    "title": "ทฤษฎีเกมเบื้องต้น (Introduction to Game Theory)",
+    "content": "ความเข้าใจเรื่อง Nash Equilibrium และความขัดแย้งของนักโทษ (Prisoner's Dilemma) ในการตัดสินใจเชิงตรรกะ... [Keywords: Strategic Thinking, Economics, Rationality]",
+    "youtubeId": "dQw4w9WgXcQ",
+    "tags": ["Logic", "Economics", "Strategy"]
+  },
+  {
+    "id": 6020,
+    "subject": "Mathematics",
+    "title": "ทฤษฎีเซตขั้นสูง: เซตกำลังและคาร์ดินาลิตี้",
+    "content": "การศึกษาขนาดของอนันต์และโครงสร้างของเซต (Power Sets, Cantor's Theorem)... [Keywords: Set Theory, Infinity, Mathematical Logic]",
+    "youtubeId": "dQw4w9WgXcQ",
+    "tags": ["Mathematics", "Logic", "Elite"]
+  },
+  {
+    "id": 6021,
+    "subject": "Mathematics",
+    "title": "ทฤษฎีกราฟ: เส้นทางและวงจร",
+    "content": "การประยุกต์ใช้ Eulerian Path และ Hamiltonian Cycle ในการแก้ปัญหาเส้นทางที่สั้นที่สุด... [Keywords: Graph Theory, Nodes, Edges, Optimization]",
+    "youtubeId": "dQw4w9WgXcQ",
+    "tags": ["Mathematics", "Computer Science", "Algorithms"]
+  },
+  {
+    "id": 6022,
+    "subject": "Mathematics",
+    "title": "ทฤษฎีจำนวน: เลขคณิตมอดุลาร์ (Modular Arithmetic)",
+    "content": "การคำนวณเศษที่เหลือจากการหารและการประยุกต์ใช้ในระบบรหัสลับ (Cryptography)... [Keywords: Number Theory, Modulo, Prime Numbers]",
+    "youtubeId": "dQw4w9WgXcQ",
+    "tags": ["Mathematics", "Cryptography", "Competition"]
+  },
+  {
+    "id": 6023,
+    "subject": "Science",
+    "title": "อุณหพลศาสตร์และเอนโทรปี (Entropy)",
+    "content": "ความเข้าใจเรื่องกฎข้อที่สองของอุณหพลศาสตร์และความไร้ระเบียบของระบบ... [Keywords: Thermodynamics, Physics, Energy]",
+    "youtubeId": "dQw4w9WgXcQ",
+    "tags": ["Physics", "Science", "Advanced"]
+  },
+  {
+    "id": 6024,
+    "subject": "Science",
+    "title": "พันธุศาสตร์เชิงปริมาณและวิวัฒนาการ",
+    "content": "การวิเคราะห์การถ่ายทอดลักษณะทางพันธุกรรมที่ซับซ้อนและการคัดเลือกโดยธรรมชาติ... [Keywords: Population Genetics, Evolution, Statistics]",
+    "youtubeId": "dQw4w9WgXcQ",
+    "tags": ["Biology", "Science", "Research"]
+  },
+  {
+    "id": 6025,
+    "subject": "Mathematics",
+    "title": "สถิติขั้นสูง: การทดสอบสมมติฐาน (Hypothesis Testing)",
+    "content": "การใช้ P-value, T-test และ ANOVA ในการตัดสินใจเชิงสถิติจากข้อมูลตัวอย่าง... [Keywords: Statistics, Data Analysis, Research Methodology]",
+    "youtubeId": "dQw4w9WgXcQ",
+    "tags": ["Mathematics", "Statistics", "Analysis"]
+  },
+  {
+    "id": 6026,
+    "subject": "Mathematics",
+    "title": "เวกเตอร์แคลคูลัสเบื้องต้น",
+    "content": "การทำงานกับสนามเวกเตอร์ และความเข้าใจพื้นฐานเรื่อง Gradient, Divergence และ Curl... [Keywords: Vector Calculus, Physics, Engineering Math]",
+    "youtubeId": "dQw4w9WgXcQ",
+    "tags": ["Mathematics", "Physics", "Engineering"]
+  },
+  {
+    "id": 6027,
+    "subject": "Computer Science",
+    "title": "อัลกอริทึมพันธุกรรม (Genetic Algorithms)",
+    "content": "การจำลองกระบวนการทางธรรมชาติเพื่อใช้ในการหาคำตอบที่ดีที่สุดในโจทย์ Optimization... [Keywords: AI, Machine Learning, Evolutionary Computing]",
+    "youtubeId": "dQw4w9WgXcQ",
+    "tags": ["Computer Science", "AI", "Optimization"]
+  },
+  {
+    "id": 6028,
+    "subject": "Logic",
+    "title": "ตรรกะคลุมเครือ (Fuzzy Logic)",
+    "content": "การรับมือกับความไม่แน่นอนที่ไม่ได้มีแค่ 'จริง' หรือ 'เท็จ' แต่เป็นระดับของความจริง... [Keywords: Uncertainty, Control Systems, Logic Systems]",
+    "youtubeId": "dQw4w9WgXcQ",
+    "tags": ["Logic", "Computer Science", "Engineering"]
+  },
+  {
+    "id": 6029,
+    "subject": "Science",
+    "title": "สัมพัทธภาพพิเศษ (Special Relativity)",
+    "content": "หลักการของไอน์สไตน์เรื่องเวลาที่ยืดออกและความยาวที่หดสั้นเมื่อเคลื่อนที่ใกล้ความเร็วแสง... [Keywords: Physics, Einstein, Time Dilation]",
+    "youtubeId": "dQw4w9WgXcQ",
+    "tags": ["Physics", "Science", "Elite"]
+  },
+  {
+    "id": 6030,
+    "subject": "Logic",
+    "title": "Paradoxes: ปริศนาทางตรรกะที่ท้าทายความคิด",
+    "content": "การศึกษา Paradoxes ชื่อดังเช่น Liar Paradox และ Ship of Theseus เพื่อขยายขอบเขตความเข้าใจเรื่องความจริง... [Keywords: Philosophy, Logic, Paradox]",
+    "youtubeId": "dQw4w9WgXcQ",
+    "tags": ["Logic", "Philosophy", "Deep Thinking"]
+  },
+  {
+    "id": 6031,
+    "subject": "Spatial IQ",
+    "title": "การวิเคราะห์รูปแบบใน Figure Matrix",
+    "content": "เทคนิคการมองหาความสัมพันธ์แบบแถวและหลักในโจทย์ตารางรูปภาพซับซ้อน... [Keywords: Pattern Recognition, Inductive Reasoning, IQ Test]",
+    "youtubeId": "dQw4w9WgXcQ",
+    "tags": ["IQ", "Spatial", "Patterns"]
+  },
+  {
+    "id": 6032,
+    "subject": "Spatial IQ",
+    "title": "รูปทรงที่ซ้อนอยู่ (Embedded Figures)",
+    "content": "การฝึกสายตาเพื่อหารูปภาพย่อยที่ซ่อนอยู่ในภาพรวมที่ซับซ้อนและมีเส้นรบกวน... [Keywords: Visual Perception, Attention to Detail, IQ]",
+    "youtubeId": "dQw4w9WgXcQ",
+    "tags": ["IQ", "Visual", "Spatial"]
+  },
+  {
+    "id": 6033,
+    "subject": "Mathematics",
+    "title": "คอมบิเนทอริกส์: การนับในสถานการณ์ซับซ้อน",
+    "content": "การใช้ Inclusion-Exclusion Principle และ Stars and Bars ในโจทย์การจัดหมู่ขั้นสูง... [Keywords: Combinatorics, Counting, Probability]",
+    "youtubeId": "dQw4w9WgXcQ",
+    "tags": ["Mathematics", "Competition", "Elite"]
+  },
+  {
+    "id": 6034,
+    "subject": "Science",
+    "title": "กลศาสตร์คลาสสิก: ระบบอนุภาคและการหมุน",
+    "content": "การคำนวณโมเมนต์ความเฉื่อยและโมเมนตัมเชิงมุมของวัตถุเกร็ง... [Keywords: Physics, Angular Momentum, Rigid Body Dynamics]",
+    "youtubeId": "dQw4w9WgXcQ",
+    "tags": ["Physics", "Engineering", "Advanced"]
+  },
+  {
+    "id": 6035,
+    "subject": "Logic",
+    "title": "ตรรกศาสตร์แสดงลักษณะ (Predicate Logic)",
+    "content": "การใช้ Quantifiers (\forall, \exists) เพื่อระบุขอบเขตของสมาชิกในประพจน์... [Keywords: Formal Logic, Quantifiers, Mathematical Proof]",
+    "youtubeId": "dQw4w9WgXcQ",
+    "tags": ["Logic", "Mathematics", "CS"]
+  },
+  {
+    "id": 6036,
+    "subject": "Computer Science",
+    "title": "โครงสร้างข้อมูลขั้นสูง: Segment Trees และ Fenwick Trees",
+    "content": "การจัดการข้อมูลแบบช่วง (Range Queries) และการอัปเดตข้อมูลที่มีประสิทธิภาพสูง... [Keywords: Data Structures, Algorithms, Competitive Programming]",
+    "youtubeId": "dQw4w9WgXcQ",
+    "tags": ["Computer Science", "Algorithms", "Elite Coding"]
+  },
+  {
+    "id": 6037,
+    "subject": "Science",
+    "title": "คลื่นแม่เหล็กไฟฟ้าและทัศนศาสตร์เชิงกายภาพ",
+    "content": "การแทรกสอดและการเลี้ยวเบนของแสงในสถานการณ์ต่างๆ... [Keywords: Physics, Optics, Wave Mechanics]",
+    "youtubeId": "dQw4w9WgXcQ",
+    "tags": ["Physics", "Science", "Advanced"]
+  },
+  {
+    "id": 6038,
+    "subject": "Mathematics",
+    "title": "ฟังก์ชันหลายตัวแปร: อนุพันธ์ย่อยและค่าสูงสุดต่ำสุด",
+    "content": "การหาจุดวิกฤตของฟังก์ชัน f(x, y) และการใช้ Lagrange Multipliers... [Keywords: Calculus, Optimization, Multi-variable]",
+    "youtubeId": "dQw4w9WgXcQ",
+    "tags": ["Mathematics", "Calculus", "Elite Math"]
+  },
+  {
+    "id": 6039,
+    "subject": "Logic",
+    "title": "การให้เหตุผลเชิงอุปนัย (Inductive Reasoning)",
+    "content": "ความเข้าใจเรื่องความน่าจะเป็นในการสรุปผลจากกรณีเฉพาะ และขีดจำกัดของการอุปนัย... [Keywords: Scientific Method, Logic, Probability]",
+    "youtubeId": "dQw4w9WgXcQ",
+    "tags": ["Logic", "Philosophy", "Science"]
+  },
+  {
+    "id": 6040,
+    "subject": "Spatial IQ",
+    "title": "ลำดับภาพอนุกรม (Abstract Reasoning Sequences)",
+    "content": "กฎการเปลี่ยนแปลงของรูปภาพ: การเลื่อน, การสลับสี, การทับซ้อน และการลบส่วน... [Keywords: Pattern Analysis, Abstract Reasoning, IQ]",
+    "youtubeId": "dQw4w9WgXcQ",
+    "tags": ["IQ", "Spatial", "Logic"]
+  },
+  {
+    "id": 6041,
+    "subject": "Science",
+    "title": "เคมีไฟฟ้า: สมการของเนิร์นสต์และการประยุกต์",
+    "content": "การคำนวณศักย์ไฟฟ้าของเซลล์ในสภาวะที่ไม่เป็นมาตรฐาน... [Keywords: Chemistry, Electrochemistry, Nernst Equation]",
+    "youtubeId": "dQw4w9WgXcQ",
+    "tags": ["Chemistry", "Science", "Advanced"]
   }
 ]

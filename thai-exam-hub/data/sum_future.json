@@ -86,5 +86,245 @@
     "content": "สรุปสาระสำคัญของ พ.ร.บ. คุ้มครองข้อมูลส่วนบุคคล (PDPA) สิทธิของเจ้าของข้อมูล และหน้าที่ของผู้ควบคุมข้อมูล... [Keywords: Data Privacy, Consent, Personal Data]",
     "youtubeId": "dQw4w9WgXcQ",
     "tags": ["Law", "Digital Literacy", "Privacy"]
+  },
+  {
+    "id": 5012,
+    "subject": "Prompt Engineering",
+    "title": "Prompt Engineering สำหรับงานกฎหมาย (Legal Tech)",
+    "content": "การใช้ AI ช่วยร่างสัญญา วิเคราะห์ข้อกฎหมาย และสรุปคำพิพากษา โดยเน้นความแม่นยำและการอ้างอิงบทบัญญัติ... [Keywords: Contract Analysis, Legal Reasoning, Citation]",
+    "youtubeId": "dQw4w9WgXcQ",
+    "tags": ["AI", "Legal", "Prompt Engineering"]
+  },
+  {
+    "id": 5013,
+    "subject": "Prompt Engineering",
+    "title": "Prompt Engineering สำหรับบุคลากรทางการแพทย์",
+    "content": "เทคนิคการใช้ AI ช่วยสรุปประวัติคนไข้ วิเคราะห์งานวิจัยล่าสุด และช่วยเตรียมข้อมูลเพื่อประกอบการวินิจฉัย... [Keywords: Medical Summarization, Clinical Support, HIPAA Compliance]",
+    "youtubeId": "dQw4w9WgXcQ",
+    "tags": ["AI", "Medical", "Health Tech"]
+  },
+  {
+    "id": 5014,
+    "subject": "Prompt Engineering",
+    "title": "AI-Driven Coding: การเขียนโปรแกรมร่วมกับ AI",
+    "content": "การใช้ Prompt เพื่อสร้าง Code, Refactor, และ Debug อย่างมีประสิทธิภาพสูงสุด (GitHub Copilot, Cursor)... [Keywords: Code Generation, Unit Testing, Documentation]",
+    "youtubeId": "dQw4w9WgXcQ",
+    "tags": ["Programming", "AI", "Software Development"]
+  },
+  {
+    "id": 5015,
+    "subject": "Prompt Engineering",
+    "title": "Prompt Engineering สำหรับงานการตลาดและการสร้าง Content",
+    "content": "การเขียนคำสั่งเพื่อสร้าง Copywriting, แผนการตลาด และกลยุทธ์ Social Media ที่ตอบโจทย์กลุ่มเป้าหมาย... [Keywords: Marketing Strategy, SEO, Persona Crafting]",
+    "youtubeId": "dQw4w9WgXcQ",
+    "tags": ["Marketing", "AI", "Content Creation"]
+  },
+  {
+    "id": 5016,
+    "subject": "Prompt Engineering",
+    "title": "การวิเคราะห์ข้อมูลด้วย AI (Data Analysis Prompting)",
+    "content": "การสั่งงาน AI ให้เขียน SQL, วิเคราะห์ชุดข้อมูลขนาดใหญ่ และสร้าง Visualization ที่สื่อสารได้ชัดเจน... [Keywords: SQL, Python, Data Insights]",
+    "youtubeId": "dQw4w9WgXcQ",
+    "tags": ["Data Science", "AI", "Analysis"]
+  },
+  {
+    "id": 5017,
+    "subject": "AI Ethics",
+    "title": "ความลำเอียงของอัลกอริทึม (Algorithmic Bias)",
+    "content": "ทำไม AI ถึงมีความลำเอียง? เจาะลึกแหล่งที่มาของ Bias ในข้อมูลฝึกฝนและวิธีแก้ไขเพื่อความเท่าเทียม... [Keywords: Fairness, Training Data, Diversity]",
+    "youtubeId": "dQw4w9WgXcQ",
+    "tags": ["AI Ethics", "Social Impact", "Data Science"]
+  },
+  {
+    "id": 5018,
+    "subject": "AI Ethics",
+    "title": "AI ที่อธิบายได้ (Explainable AI - XAI)",
+    "content": "ความสำคัญของการทำให้ AI ไม่เป็น 'Black Box' เพื่อให้มนุษย์เข้าใจเหตุผลเบื้องหลังการตัดสินใจของมัน... [Keywords: Transparency, Interpretability, Accountability]",
+    "youtubeId": "dQw4w9WgXcQ",
+    "tags": ["AI Ethics", "Technology", "Governance"]
+  },
+  {
+    "id": 5019,
+    "subject": "AI Ethics",
+    "title": "ความปลอดภัยและความสอดคล้อง (AI Safety & Alignment)",
+    "content": "ปัญหาเรื่องความสอดคล้องระหว่างเป้าหมายของ AI กับค่านิยมของมนุษย์ และความเสี่ยงในอนาคต... [Keywords: Superintelligence, Reward Hacking, Value Alignment]",
+    "youtubeId": "dQw4w9WgXcQ",
+    "tags": ["AI Ethics", "Safety", "Future of AI"]
+  },
+  {
+    "id": 5020,
+    "subject": "AI Ethics",
+    "title": "ลิขสิทธิ์และทรัพย์สินทางปัญญาในยุค AI",
+    "content": "ใครคือเจ้าของผลงานที่ AI สร้างขึ้น? การถกเถียงเรื่องลิขสิทธิ์ข้อมูลที่ใช้เทรน AI... [Keywords: IP Law, Fair Use, Generative Art]",
+    "youtubeId": "dQw4w9WgXcQ",
+    "tags": ["AI Ethics", "Law", "Intellectual Property"]
+  },
+  {
+    "id": 5021,
+    "subject": "AI Ethics",
+    "title": "ผลกระทบของ AI ต่อตลาดแรงงานและการทำงาน",
+    "content": "การปรับตัวสู่ยุค AI Automation: งานไหนจะหายไป งานไหนจะเกิดขึ้นใหม่ และทักษะที่จำเป็นต้องมี... [Keywords: Automation, Reskilling, Upskilling]",
+    "youtubeId": "dQw4w9WgXcQ",
+    "tags": ["AI Ethics", "Future of Work", "Economics"]
+  },
+  {
+    "id": 5022,
+    "subject": "Future IQ",
+    "title": "อนุกรมตัวเลข: การมองหาลำดับความสัมพันธ์ซับซ้อน",
+    "content": "เทคนิคการแก้โจทย์อนุกรมหลายชั้น, อนุกรมผสม, และความสัมพันธ์แบบเลขยกกำลัง... [Keywords: Number Series, Patterns, Quantitative Reasoning]",
+    "youtubeId": "dQw4w9WgXcQ",
+    "tags": ["IQ", "Logic", "Math"]
+  },
+  {
+    "id": 5023,
+    "subject": "Future IQ",
+    "title": "ลำดับฟีโบนักชี (Fibonacci) ในโจทย์เชาวน์ปัญญา",
+    "content": "ความเข้าใจเรื่องลำดับ 0, 1, 1, 2, 3, 5, 8... และการนำไปประยุกต์ในโจทย์คณิตศาสตร์และธรรมชาติ... [Keywords: Golden Ratio, Sequence, Recursive]",
+    "youtubeId": "dQw4w9WgXcQ",
+    "tags": ["IQ", "Math", "Patterns"]
+  },
+  {
+    "id": 5024,
+    "subject": "Future IQ",
+    "title": "ตรรกะแบบตาราง (Matrix Logic)",
+    "content": "วิธีการแก้โจทย์เงื่อนไขภาษาโดยใช้ตารางช่วยคิด (Logic Grid Puzzles) เพื่อหาข้อสรุปที่ถูกต้อง... [Keywords: Deductive Logic, Problem Solving, Grid Method]",
+    "youtubeId": "dQw4w9WgXcQ",
+    "tags": ["IQ", "Logic", "Critical Thinking"]
+  },
+  {
+    "id": 5025,
+    "subject": "Future IQ",
+    "title": "การคิดเชิงวิพากษ์ (Critical Thinking) ในยุคข้อมูลล้น",
+    "content": "การประเมินความน่าเชื่อถือของแหล่งข้อมูล การวิเคราะห์เหตุผล และการหลีกเลี่ยงอคติทางความคิด... [Keywords: Information Literacy, Bias, Evaluation]",
+    "youtubeId": "dQw4w9WgXcQ",
+    "tags": ["Skills", "Critical Thinking", "Soft Skills"]
+  },
+  {
+    "id": 5026,
+    "subject": "Future IQ",
+    "title": "การแก้ปัญหาด้วย Root Cause Analysis (5 Whys)",
+    "content": "เทคนิคการตั้งคำถาม 'ทำไม' 5 ครั้งเพื่อค้นหาต้นตอที่แท้จริงของปัญหาและการแก้ไขอย่างยั่งยืน... [Keywords: Problem Solving, Toyota Production System, Root Cause]",
+    "youtubeId": "dQw4w9WgXcQ",
+    "tags": ["Skills", "Problem Solving", "Management"]
+  },
+  {
+    "id": 5027,
+    "subject": "Future IQ",
+    "title": "การคิดเชิงคำนวณ (Computational Thinking)",
+    "content": "การย่อยปัญหา (Decomposition), การหาแบบแผน (Pattern Recognition), การคิดเชิงนามธรรม (Abstraction), และอัลกอริทึม... [Keywords: Algorithm Design, Computer Science Foundations]",
+    "youtubeId": "dQw4w9WgXcQ",
+    "tags": ["Skills", "CS", "Logic"]
+  },
+  {
+    "id": 5028,
+    "subject": "Future IQ",
+    "title": "ความฉลาดทางอารมณ์ในยุคดิจิทัล (Digital EQ)",
+    "content": "การสื่อสารอย่างเห็นอกเห็นใจผ่านหน้าจอ และการจัดการอารมณ์ในโลกโซเชียลที่มีความกดดันสูง... [Keywords: Empathy, Communication, Self-regulation]",
+    "youtubeId": "dQw4w9WgXcQ",
+    "tags": ["Skills", "EQ", "Digital Well-being"]
+  },
+  {
+    "id": 5029,
+    "subject": "Future IQ",
+    "title": "การทำงานร่วมกับ AI (Collaborative Intelligence)",
+    "content": "การหาจุดสมดุลระหว่างความสามารถของมนุษย์และ AI เพื่อเพิ่มประสิทธิภาพการทำงานสูงสุด... [Keywords: Human-AI Collaboration, Synergy, Future Skills]",
+    "youtubeId": "dQw4w9WgXcQ",
+    "tags": ["Skills", "AI", "Collaboration"]
+  },
+  {
+    "id": 5030,
+    "subject": "AI Ethics",
+    "title": "ความรับผิดชอบและความน่าเชื่อถือของ AI",
+    "content": "ใครต้องรับผิดชอบเมื่อ AI ทำงานผิดพลาด? กรอบจริยธรรมสากลและมาตรฐานความปลอดภัย... [Keywords: Accountability, Reliability, Ethics Guidelines]",
+    "youtubeId": "dQw4w9WgXcQ",
+    "tags": ["AI Ethics", "Governance", "Safety"]
+  },
+  {
+    "id": 5031,
+    "subject": "AI Ethics",
+    "title": "Deepfakes และการปกป้องความถูกต้องของข้อมูล",
+    "content": "กลไกการสร้าง Deepfake และเทคโนโลยีที่ใช้ตรวจสอบ เพื่อป้องกันข้อมูลเท็จและการปลอมแปลง... [Keywords: Deepfake Detection, Misinformation, Digital Integrity]",
+    "youtubeId": "dQw4w9WgXcQ",
+    "tags": ["AI Ethics", "Cybersecurity", "Media Literacy"]
+  },
+  {
+    "id": 5032,
+    "subject": "Prompt Engineering",
+    "title": "Prompt Engineering สำหรับงานวิจัยเชิงวิชาการ",
+    "content": "การใช้ AI ช่วยค้นหาวรรณกรรม สรุปบทความวิจัย และตรวจสอบความถูกต้องของเนื้อหาเชิงวิชาการ... [Keywords: Research Assistant, Literature Review, Synthesis]",
+    "youtubeId": "dQw4w9WgXcQ",
+    "tags": ["AI", "Research", "Education"]
+  },
+  {
+    "id": 5033,
+    "subject": "Prompt Engineering",
+    "title": "การสร้าง Creative Writing ด้วย Prompt ขั้นสูง",
+    "content": "เทคนิคการคุม Mood & Tone, การสร้างตัวละคร และการวางโครงเรื่องที่น่าสนใจโดยใช้ AI... [Keywords: Narrative Design, Storytelling, Creative AI]",
+    "youtubeId": "dQw4w9WgXcQ",
+    "tags": ["AI", "Writing", "Creative"]
+  },
+  {
+    "id": 5034,
+    "subject": "AI Ethics",
+    "title": "Data Privacy ในยุค Large Language Models",
+    "content": "ความเสี่ยงเรื่องข้อมูลรั่วไหลผ่าน Prompt และการจัดการความปลอดภัยของข้อมูลส่วนบุคคลในองค์กร... [Keywords: Data Leakage, LLM Security, Privacy Policy]",
+    "youtubeId": "dQw4w9WgXcQ",
+    "tags": ["AI Ethics", "Privacy", "Cybersecurity"]
+  },
+  {
+    "id": 5035,
+    "subject": "Future IQ",
+    "title": "การคิดเชิงระบบ (Systems Thinking)",
+    "content": "การมองปัญหาเป็นภาพรวมและทำความเข้าใจความเชื่อมโยงระหว่างส่วนประกอบต่างๆ... [Keywords: Feedback Loops, Holism, Complexity]",
+    "youtubeId": "dQw4w9WgXcQ",
+    "tags": ["Skills", "Logic", "Strategy"]
+  },
+  {
+    "id": 5036,
+    "subject": "Future IQ",
+    "title": "Digital Literacy: การตรวจสอบข่าวปลอม (Fact Checking)",
+    "content": "เครื่องมือและกระบวนการพิสูจน์ความจริงในโลกออนไลน์ เพื่อไม่ให้ตกเป็นเหยื่อข่าวลวง... [Keywords: Verification, News Literacy, Digital Safety]",
+    "youtubeId": "dQw4w9WgXcQ",
+    "tags": ["Skills", "Digital Literacy", "Information"]
+  },
+  {
+    "id": 5037,
+    "subject": "Prompt Engineering",
+    "title": "Prompt Engineering สำหรับการบริการลูกค้า (Customer Support)",
+    "content": "การสร้าง Chatbot ที่มีบุคลิกภาพแบรนด์และแก้ปัญหาให้ลูกค้าได้อย่างตรงจุดและเป็นกันเอง... [Keywords: Conversational AI, Customer Experience, Persona]",
+    "youtubeId": "dQw4w9WgXcQ",
+    "tags": ["AI", "Business", "Customer Service"]
+  },
+  {
+    "id": 5038,
+    "subject": "AI Ethics",
+    "title": "มนุษย์ในกระบวนการตัดสินใจ (Human-in-the-loop)",
+    "content": "การออกแบบระบบที่ AI และมนุษย์ทำงานร่วมกันเพื่อให้เกิดผลลัพธ์ที่แม่นยำและมีจริยธรรมที่สุด... [Keywords: Oversight, Human Centric AI, Quality Control]",
+    "youtubeId": "dQw4w9WgXcQ",
+    "tags": ["AI Ethics", "Safety", "Design"]
+  },
+  {
+    "id": 5039,
+    "subject": "Future IQ",
+    "title": "ทักษะการปรับตัว (Adaptability) ในโลกที่เปลี่ยนแปลงเร็ว",
+    "content": "ทำไม AQ (Adaptability Quotient) ถึงสำคัญกว่า IQ ในยุค Disruptive Technology... [Keywords: Flexibility, Resilience, Lifelong Learning]",
+    "youtubeId": "dQw4w9WgXcQ",
+    "tags": ["Skills", "Mindset", "Adaptability"]
+  },
+  {
+    "id": 5040,
+    "subject": "Future IQ",
+    "title": "Growth Mindset สำหรับผู้เรียนยุคใหม่",
+    "content": "ความเชื่อว่าความสามารถพัฒนาได้ และการมองความล้มเหลวเป็นบทเรียนในการก้าวข้ามขีดจำกัด... [Keywords: Continuous Improvement, Learning, Psychology]",
+    "youtubeId": "dQw4w9WgXcQ",
+    "tags": ["Skills", "Mindset", "Education"]
+  },
+  {
+    "id": 5041,
+    "subject": "AI Ethics",
+    "title": "ธรรมาภิบาล AI (AI Governance) ในระดับองค์กร",
+    "content": "การวางโครงสร้างและนโยบายการใช้ AI ในบริษัทให้มีความโปร่งใสและตรวจสอบได้... [Keywords: Policy, Risk Management, Corporate Responsibility]",
+    "youtubeId": "dQw4w9WgXcQ",
+    "tags": ["AI Ethics", "Business", "Governance"]
   }
 ]
