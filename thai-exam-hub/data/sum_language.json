@@ -70,6 +70,13 @@
     "tags": ["french", "grammar", "articles"]
   },
   {
+    "id": "fra_011",
+    "title": "French: Future Proche",
+    "content": "Used for actions that will happen soon. Formed with conjugated 'aller' (to go) + infinitive. Example: 'Je vais manger' (I am going to eat).",
+    "youtubeId": "mIByu36fPy4",
+    "tags": ["french", "grammar", "tenses"]
+  },
+  {
     "id": "deu_001",
     "title": "German: The Four Cases",
     "content": "Nominative (subject), Accusative (direct object), Dative (indirect object), and Genitive (possession). Case affects articles and endings.",
@@ -140,6 +147,13 @@
     "tags": ["german", "grammar", "tenses"]
   },
   {
+    "id": "deu_011",
+    "title": "German: Prepositions with Dative",
+    "content": "Certain prepositions always take the dative case: aus, bei, mit, nach, seit, von, zu. Memorizing these is essential.",
+    "youtubeId": "mIByu36fPy4",
+    "tags": ["german", "grammar", "cases"]
+  },
+  {
     "id": "jpn_001",
     "title": "Japanese: Writing Systems",
     "content": "Three scripts: Hiragana (phonetic, native words), Katakana (phonetic, foreign words), and Kanji (logographic, Chinese characters).",
@@ -206,6 +220,13 @@
     "id": "jpn_010",
     "title": "Japanese: Te-form Verbs",
     "content": "Used for connecting sentences, requesting (te kudasai), or ongoing actions (te iru). Foundational for intermediate grammar.",
+    "youtubeId": "mIByu36fPy4",
+    "tags": ["japanese", "grammar", "verbs"]
+  },
+  {
+    "id": "jpn_011",
+    "title": "Japanese: Potential Form (Can do)",
+    "content": "Used to express ability. Group 1: change final -u to -eru. Group 2: change -ru to -rare-ru. Irregulars: Suru -> Dekiru, Kuru -> Korareru.",
     "youtubeId": "mIByu36fPy4",
     "tags": ["japanese", "grammar", "verbs"]
   },
@@ -280,6 +301,13 @@
     "tags": ["chinese", "grammar", "verbs"]
   },
   {
+    "id": "zho_011",
+    "title": "Chinese: Comparative Structures (Bi)",
+    "content": "Use 'Bi' (比) to compare two things. Structure: A + Bi + B + Adjective. Example: 'Ta bi wo gao' (He is taller than me).",
+    "youtubeId": "mIByu36fPy4",
+    "tags": ["chinese", "grammar", "comparisons"]
+  },
+  {
     "id": "kor_001",
     "title": "Korean: Hangeul (Alphabet)",
     "content": "A scientific writing system consisting of 24 basic letters (14 consonants, 10 vowels) arranged in blocks.",
@@ -348,6 +376,13 @@
     "content": "Usually involves adding -at/eot- (았/었) to the verb stem before the final ending.",
     "youtubeId": "mIByu36fPy4",
     "tags": ["korean", "grammar", "tenses"]
+  },
+  {
+    "id": "kor_011",
+    "title": "Korean: Connecting Sentences (-go)",
+    "content": "Use '-go' (고) to connect two actions or states. It's like 'and' in English. Example: 'Meokgo masyeoyo' (I eat and drink).",
+    "youtubeId": "mIByu36fPy4",
+    "tags": ["korean", "grammar", "conjunctions"]
   },
   {
     "id": "pli_001",
@@ -420,6 +455,13 @@
     "tags": ["pali", "etymology", "grammar"]
   },
   {
+    "id": "pli_011",
+    "title": "Pali: Numbers 1-10",
+    "content": "Eka (1), Dvi (2), Ti (3), Catu (4), Pañca (5), Cha (6), Satta (7), Attha (8), Nava (9), Dasa (10). Similar to Sanskrit numbers.",
+    "youtubeId": "mIByu36fPy4",
+    "tags": ["pali", "vocabulary", "numbers"]
+  },
+  {
     "id": "spa_001",
     "title": "Spanish: Gender of Nouns",
     "content": "Nouns ending in -o are usually masculine (el). Nouns ending in -a are usually feminine (la). There are exceptions like 'el mapa'.",
@@ -488,5 +530,12 @@
     "content": "Adjectives usually come AFTER the noun they describe (e.g., el gato negro). They must agree in gender and number.",
     "youtubeId": "mIByu36fPy4",
     "tags": ["spanish", "grammar", "adjectives"]
+  },
+  {
+    "id": "spa_011",
+    "title": "Spanish: Reflexive Verbs",
+    "content": "Used when the subject and object are the same. Need reflexive pronouns: me, te, se, nos, os, se. Example: 'Me llamo' (I call myself).",
+    "youtubeId": "mIByu36fPy4",
+    "tags": ["spanish", "grammar", "verbs"]
   }
 ]
