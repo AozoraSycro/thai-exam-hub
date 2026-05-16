@@ -1,9 +1,36 @@
 /**
  * quiz.js - The Quiz Engine
  * Handles question rendering, timer, user input, scoring, and progress saving.
+ * REWRITTEN: Bulletproof Data Fetching & Rendering
  */
 
 import { Storage } from './storage.js';
+
+const Config = {
+    get isLocal() {
+        return window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
+    },
+    get basePath() {
+        return this.isLocal ? '/' : '/thai-exam-hub/';
+    },
+    get dataPath() {
+        return `${this.basePath}data/`;
+    },
+    get version() {
+        return '1.0.' + new Date().getTime();
+    }
+};
+
+async function fetchJSON(url) {
+    try {
+        const response = await fetch(`${url}?v=${Config.version}`);
+        if (!response.ok) throw new Error(`Failed to load: ${url} (Status: ${response.status})`);
+        return await response.json();
+    } catch (error) {
+        console.error('Fetch Error:', error);
+        throw error;
+    }
+}
 
 class QuizEngine {
     constructor() {
@@ -41,35 +68,37 @@ class QuizEngine {
         this.examId = urlParams.get('id');
 
         if (!this.examId) {
-            this.handleError('ไม่พบรหัสข้อสอบ');
+            this.handleError('ไม่พบรหัสข้อสอบ กรุณากลับไปที่หน้าหลัก');
             return;
         }
 
-        await this.loadExamData();
-        this.startTimer();
-        this.startTime = new Date();
-        this.renderQuestion();
-    }
-
-    async loadExamData() {
         try {
-            const response = await fetch(`./data/${this.examId}.json`);
-            if (!response.ok) throw new Error('Exam file not found');
-            const data = await response.json();
-            
-            this.questions = data.questions;
-            this.examTitle = data.title;
-            this.subject = data.subject;
-            this.secondsRemaining = (data.duration_minutes || 60) * 60;
-            
-            if (this.elements.totalNum) this.elements.totalNum.textContent = this.questions.length;
-            document.title = `${this.examTitle} - Thai Exam Hub`;
+            await this.loadExamData();
+            this.startTimer();
+            this.startTime = new Date();
+            this.renderQuestion();
         } catch (e) {
-            this.handleError('ไม่สามารถโหลดข้อสอบได้ กรุณาลองใหม่อีกครั้ง');
+            this.handleError('ไม่สามารถโหลดข้อมูลข้อสอบได้ กรุณาตรวจสอบการเชื่อมต่อ');
         }
     }
 
+    async loadExamData() {
+        const data = await fetchJSON(`${Config.dataPath}${this.examId}.json`);
+        
+        this.questions = data.questions;
+        this.examTitle = data.title;
+        this.subject = data.subject;
+        this.secondsRemaining = (data.duration_minutes || 60) * 60;
+        
+        if (this.elements.totalNum) this.elements.totalNum.textContent = this.questions.length;
+        document.title = `${this.examTitle} - Thai Exam Hub`;
+        
+        const titleEl = document.querySelector('.exam-title-display');
+        if (titleEl) titleEl.textContent = this.examTitle;
+    }
+
     startTimer() {
+        if (this.timer) clearInterval(this.timer);
         this.timer = setInterval(() => {
             this.secondsRemaining--;
             this.updateTimerDisplay();
@@ -84,6 +113,10 @@ class QuizEngine {
         const secs = this.secondsRemaining % 60;
         if (this.elements.timerDisplay) {
             this.elements.timerDisplay.textContent = `${mins.toString().padStart(2, '0')}:${secs.toString().padStart(2, '0')}`;
+            if (this.secondsRemaining < 300) { // Last 5 minutes
+                this.elements.timerDisplay.style.color = '#e11d48';
+                this.elements.timerDisplay.style.fontWeight = 'bold';
+            }
         }
     }
 
@@ -94,11 +127,9 @@ class QuizEngine {
         this.elements.questionText.textContent = q.text;
         this.elements.currentNum.textContent = this.currentIndex + 1;
         
-        // Update Progress Bar
         const progress = ((this.currentIndex + 1) / this.questions.length) * 100;
         if (this.elements.progressBar) this.elements.progressBar.style.width = `${progress}%`;
 
-        // Render Options
         this.elements.optionsGrid.innerHTML = q.options.map((opt, i) => `
             <button class="option-btn ${this.userAnswers[this.currentIndex] === i ? 'selected' : ''}" 
                     onclick="window.engine.selectOption(${i})">
@@ -107,7 +138,6 @@ class QuizEngine {
             </button>
         `).join('');
 
-        // Update Nav Buttons
         this.elements.prevBtn.disabled = this.currentIndex === 0;
         if (this.currentIndex === this.questions.length - 1) {
             this.elements.nextBtn.style.display = 'none';
@@ -117,7 +147,6 @@ class QuizEngine {
             this.elements.submitBtn.style.display = 'none';
         }
 
-        // Bookmark state
         this.updateBookmarkUI();
     }
 
@@ -130,6 +159,7 @@ class QuizEngine {
         if (this.currentIndex < this.questions.length - 1) {
             this.currentIndex++;
             this.renderQuestion();
+            window.scrollTo(0, 0);
         }
     }
 
@@ -137,11 +167,12 @@ class QuizEngine {
         if (this.currentIndex > 0) {
             this.currentIndex--;
             this.renderQuestion();
+            window.scrollTo(0, 0);
         }
     }
 
     toggleBookmark() {
-        const isBookmarked = Storage.toggleBookmark(this.examId, this.currentIndex);
+        Storage.toggleBookmark(this.examId, this.currentIndex);
         this.updateBookmarkUI();
     }
 
@@ -149,7 +180,8 @@ class QuizEngine {
         const isBookmarked = Storage.isBookmarked(this.examId, this.currentIndex);
         if (this.elements.bookmarkBtn) {
             this.elements.bookmarkBtn.classList.toggle('active', isBookmarked);
-            this.elements.bookmarkBtn.querySelector('i').className = isBookmarked ? 'fas fa-star' : 'far fa-star';
+            const icon = this.elements.bookmarkBtn.querySelector('i');
+            if (icon) icon.className = isBookmarked ? 'fas fa-star' : 'far fa-star';
         }
     }
 
@@ -163,7 +195,6 @@ class QuizEngine {
             const isCorrect = this.userAnswers[i] === q.answer;
             if (isCorrect) score++;
             
-            // Fallback for tags if not present in JSON
             const tags = q.tags || [this.subject.toUpperCase()];
             Storage.recordAnswer(this.subject, isCorrect, tags);
         });
@@ -193,6 +224,7 @@ class QuizEngine {
     }
 
     renderReview() {
+        if (!this.elements.explanationContainer) return;
         this.elements.explanationContainer.innerHTML = '<h3 class="section-title">เฉลยและคำอธิบาย</h3>';
         
         this.questions.forEach((q, i) => {
@@ -209,7 +241,7 @@ class QuizEngine {
                     <p>คำตอบที่ถูกต้อง: <span class="correct-ans">${q.options[q.answer]}</span></p>
                 </div>
                 <div class="explanation">
-                    <strong>💡 คำอธิบาย:</strong> ${q.explanation}
+                    <strong>💡 คำอธิบาย:</strong> ${q.explanation || 'ไม่มีคำอธิบายเพิ่มเติม'}
                 </div>
             `;
             this.elements.explanationContainer.appendChild(item);
@@ -217,11 +249,14 @@ class QuizEngine {
     }
 
     renderCharts() {
-        const stats = Storage.getStats();
+        if (!window.Chart) return;
         const canvas = document.getElementById('results-radar-chart');
         if (!canvas) return;
 
+        const stats = Storage.getStats();
         const subjects = Object.keys(stats.bySubject);
+        if (subjects.length < 1) return;
+
         const data = subjects.map(s => {
             const stat = stats.bySubject[s];
             return (stat.correct / stat.answered) * 100;
@@ -232,11 +267,11 @@ class QuizEngine {
             data: {
                 labels: subjects.map(s => s.toUpperCase()),
                 datasets: [{
-                    label: 'Performance (%)',
+                    label: 'สมรรถนะสะสม (%)',
                     data: data,
-                    backgroundColor: 'rgba(52, 152, 219, 0.2)',
-                    borderColor: 'rgba(52, 152, 219, 1)',
-                    pointBackgroundColor: 'rgba(52, 152, 219, 1)',
+                    backgroundColor: 'rgba(14, 165, 233, 0.2)',
+                    borderColor: '#0ea5e9',
+                    pointBackgroundColor: '#0ea5e9',
                 }]
             },
             options: {
@@ -251,12 +286,23 @@ class QuizEngine {
     }
 
     handleError(msg) {
-        alert(msg);
-        window.location.href = 'index.html';
+        const container = document.getElementById('quiz-view');
+        if (container) {
+            container.innerHTML = `
+                <div class="error-box" style="padding: 40px; text-align: center; background: white; border-radius: 20px; box-shadow: 0 10px 25px rgba(0,0,0,0.1);">
+                    <i class="fas fa-exclamation-triangle" style="font-size: 3rem; color: #f59e0b; margin-bottom: 20px;"></i>
+                    <h2>เกิดข้อผิดพลาด</h2>
+                    <p style="color: #64748b; margin-bottom: 30px;">${msg}</p>
+                    <a href="index.html" class="start-btn" style="text-decoration: none; display: inline-block;">กลับหน้าหลัก</a>
+                </div>
+            `;
+        } else {
+            alert(msg);
+            window.location.href = 'index.html';
+        }
     }
 }
 
-// Global instance for inline onclick handlers
 window.engine = new QuizEngine();
 document.addEventListener('DOMContentLoaded', () => {
     if (document.getElementById('quiz-view')) {

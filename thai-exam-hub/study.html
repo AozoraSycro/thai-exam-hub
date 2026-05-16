@@ -80,27 +80,56 @@
     </button>
 
     <script>
+        // Centralized Config for Bulletproof Pathing
+        const Config = {
+            get isLocal() {
+                return window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
+            },
+            get basePath() {
+                return this.isLocal ? '/' : '/thai-exam-hub/';
+            },
+            get dataPath() {
+                return `${this.basePath}data/`;
+            },
+            get version() {
+                return '1.0.' + new Date().getTime();
+            }
+        };
+
+        async function fetchJSON(url) {
+            try {
+                const response = await fetch(`${url}?v=${Config.version}`);
+                if (!response.ok) throw new Error(`HTTP ${response.status}`);
+                return await response.json();
+            } catch (error) {
+                console.error('Fetch Error:', error);
+                throw error;
+            }
+        }
+
         // Theme Management
         const themeToggle = document.getElementById('theme-toggle');
         const body = document.body;
-        const themeIcon = themeToggle.querySelector('i');
+        const themeIcon = themeToggle ? themeToggle.querySelector('i') : null;
 
         const savedTheme = localStorage.getItem('theme');
         if (savedTheme) {
             body.setAttribute('data-theme', savedTheme);
-            updateThemeIcon(savedTheme);
+            if (themeIcon) updateThemeIcon(savedTheme);
         }
 
-        themeToggle.addEventListener('click', () => {
-            const currentTheme = body.getAttribute('data-theme');
-            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-            body.setAttribute('data-theme', newTheme);
-            localStorage.setItem('theme', newTheme);
-            updateThemeIcon(newTheme);
-        });
+        if (themeToggle) {
+            themeToggle.addEventListener('click', () => {
+                const currentTheme = body.getAttribute('data-theme');
+                const next = currentTheme === 'dark' ? 'light' : 'dark';
+                body.setAttribute('data-theme', next);
+                localStorage.setItem('theme', next);
+                updateThemeIcon(next);
+            });
+        }
 
         function updateThemeIcon(theme) {
-            themeIcon.className = theme === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
+            if (themeIcon) themeIcon.className = theme === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
         }
 
         async function loadStudyContent() {
@@ -113,14 +142,27 @@
                 return;
             }
 
+            const subjectMeta = {
+                'math': 'sum_math.json',
+                'english': 'sum_english.json',
+                'science': 'sum_science.json',
+                'medical': 'sum_medical.json',
+                'thai': 'sum_thai.json',
+                'social': 'sum_social.json',
+                'arts': 'sum_arts.json',
+                'language': 'sum_language.json',
+                'elite': 'sum_elite.json',
+                'future': 'sum_future.json'
+            };
+
+            const dataFile = subjectMeta[subjectId] || 'summaries.json';
+
             try {
-                const response = await fetch('data/summaries.json');
-                const allSummaries = await response.json();
-                
-                const summary = allSummaries.find(s => s.id === summaryId);
+                const allSummaries = await fetchJSON(`${Config.dataPath}${dataFile}`);
+                const summary = allSummaries.find(s => String(s.id) === String(summaryId));
                 
                 if (summary) {
-                    const displaySubject = summary.topicId || subjectId || 'General';
+                    const displaySubject = subjectId || 'General';
                     
                     document.title = `${summary.title} - Thai Exam Hub`;
                     document.getElementById('study-title').textContent = summary.title;
@@ -137,14 +179,14 @@
                         document.getElementById('video-container').style.display = 'block';
                     }
 
-                    const wordCount = summary.content.split(/\s+/).length;
+                    const wordCount = (summary.content || '').split(/\s+/).length;
                     const readingMinutes = Math.max(1, Math.round(wordCount / 200));
                     document.getElementById('reading-time').innerHTML = `<i class="far fa-clock"></i> ${readingMinutes} นาทีในการอ่าน`;
                     
-                    if (window.marked) {
+                    if (window.marked && summary.content) {
                         document.getElementById('study-body').innerHTML = marked.parse(summary.content);
                     } else {
-                        document.getElementById('study-body').textContent = summary.content;
+                        document.getElementById('study-body').textContent = summary.content || 'ไม่มีเนื้อหา';
                     }
 
                     if (window.renderMathInElement) {
@@ -157,10 +199,18 @@
                         });
                     }
                 } else {
-                    document.getElementById('study-body').innerHTML = '<p class="empty-state">ไม่พบเนื้อหาที่คุณต้องการ</p>';
+                    document.getElementById('study-body').innerHTML = '<p class="empty-state">ไม่พบเนื้อหาที่คุณต้องการในไฟล์ ' + dataFile + '</p>';
                 }
             } catch (error) {
                 console.error('Error:', error);
+                document.getElementById('study-body').innerHTML = `
+                    <div class="error-box" style="padding: 30px; text-align: center; background: rgba(225, 29, 72, 0.05); border: 1px solid #e11d48; border-radius: 15px;">
+                        <i class="fas fa-wifi" style="font-size: 2.5rem; color: #e11d48; margin-bottom: 15px;"></i>
+                        <p style="font-weight: 600;">ไม่สามารถโหลดเนื้อหาได้</p>
+                        <p style="font-size: 0.9rem; color: var(--text-light); margin-bottom: 20px;">กรุณาตรวจสอบการเชื่อมต่ออินเทอร์เน็ตหรือรหัสเนื้อหา</p>
+                        <button onclick="location.reload()" class="start-btn">ลองใหม่อีกครั้ง</button>
+                    </div>
+                `;
             }
         }
 

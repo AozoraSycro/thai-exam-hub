@@ -1,9 +1,35 @@
 /**
  * app.js - The Brain of Thai Exam Hub
- * FIXED: Absolute-Relative Pathing for GitHub Pages & Robust Data Binding.
+ * REWRITTEN: Bulletproof Data Fetching & Rendering
  */
 
 import { Storage } from './storage.js';
+
+const Config = {
+    get isLocal() {
+        return window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
+    },
+    get basePath() {
+        return this.isLocal ? '/' : '/thai-exam-hub/';
+    },
+    get dataPath() {
+        return `${this.basePath}data/`;
+    },
+    get version() {
+        return '1.0.' + new Date().getTime(); // Simple cache buster
+    }
+};
+
+async function fetchJSON(url) {
+    try {
+        const response = await fetch(`${url}?v=${Config.version}`);
+        if (!response.ok) throw new Error(`Failed to load: ${url} (Status: ${response.status})`);
+        return await response.json();
+    } catch (error) {
+        console.error('Fetch Error:', error);
+        throw error;
+    }
+}
 
 class ThemeManager {
     init() {
@@ -12,7 +38,6 @@ class ThemeManager {
         document.documentElement.setAttribute('data-theme', currentTheme);
         this.updateIcon(currentTheme);
         
-        // Use a generic listener for any theme-toggle button
         document.addEventListener('click', (e) => {
             if (e.target.closest('#theme-toggle')) {
                 this.toggle();
@@ -33,8 +58,6 @@ class ThemeManager {
         document.documentElement.setAttribute('data-theme', next);
         Storage.saveSettings({ theme: next });
         this.updateIcon(next);
-        
-        // Dispatch event for other components if needed
         window.dispatchEvent(new CustomEvent('themeChanged', { detail: next }));
     }
 }
@@ -54,17 +77,10 @@ class App {
             'elite': { title: 'Elite Mocks', icon: '💎', file: 'sum_elite.json' },
             'future': { title: 'ทักษะอนาคต', icon: '🚀', file: 'sum_future.json' }
         };
-        
-        // DEFENSE: Absolute pathing for GitHub Pages
-        const isLocal = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
-        this.basePath = isLocal ? '/' : '/thai-exam-hub/';
-        
-        // Ensure trailing slash for data folder
-        this.dataPath = `${this.basePath}data/`;
     }
 
     async init() {
-        console.log('App initializing... BasePath:', this.basePath);
+        console.log('App initializing... BasePath:', Config.basePath);
         this.theme.init();
         this.renderStats();
         this.renderRecommendations();
@@ -77,6 +93,19 @@ class App {
         if (document.getElementById('history-list')) this.renderFullHistory();
         
         this.initCharts();
+    }
+
+    showError(containerId, message) {
+        const container = document.getElementById(containerId);
+        if (container) {
+            container.innerHTML = `
+                <div class="error-box" style="padding: 20px; text-align: center; color: #e11d48; background: rgba(225, 29, 72, 0.05); border: 1px solid #e11d48; border-radius: 12px; margin: 20px 0;">
+                    <i class="fas fa-exclamation-circle" style="font-size: 2rem; margin-bottom: 10px;"></i>
+                    <p style="font-weight: 600;">${message}</p>
+                    <button onclick="location.reload()" style="margin-top: 10px; padding: 8px 16px; background: #e11d48; color: white; border: none; border-radius: 6px; cursor: pointer;">ลองใหม่อีกครั้ง</button>
+                </div>
+            `;
+        }
     }
 
     renderStats() {
@@ -93,16 +122,14 @@ class App {
         grid.innerHTML = '';
         Object.entries(this.subjectMeta).forEach(([id, meta]) => {
             const card = document.createElement('a');
-            card.href = `${this.basePath}subject.html?s=${id}`;
+            card.href = `${Config.basePath}subject.html?s=${id}`;
             card.className = 'subject-card';
             card.innerHTML = `<span class="subject-icon">${meta.icon}</span><h3>${meta.title}</h3><p>${meta.description || ''}</p>`;
             grid.appendChild(card);
         });
 
         try {
-            const res = await fetch(`${this.dataPath}subjects.json`);
-            if (!res.ok) throw new Error('Network response was not ok');
-            const exams = await res.json();
+            const exams = await fetchJSON(`${Config.dataPath}subjects.json`);
             const featuredEl = document.getElementById('featured-exams');
             if (featuredEl) {
                 featuredEl.innerHTML = '';
@@ -112,15 +139,12 @@ class App {
                     div.innerHTML = `<div class="exam-info"><h4></h4><p></p></div><button class="start-btn">เริ่มทำ</button>`;
                     div.querySelector('h4').textContent = exam.title;
                     div.querySelector('p').textContent = `${exam.year} • ${exam.duration_minutes} นาที`;
-                    div.querySelector('button').onclick = () => location.href = `${this.basePath}quiz.html?id=${exam.id}`;
+                    div.querySelector('button').onclick = () => location.href = `${Config.basePath}quiz.html?id=${exam.id}`;
                     featuredEl.appendChild(div);
                 });
             }
         } catch (e) { 
-            console.error('Dashboard error:', e); 
-            if (document.getElementById('featured-exams')) {
-                document.getElementById('featured-exams').innerHTML = '<p class="error">โหลดข้อมูลข้อสอบไม่สำเร็จ</p>';
-            }
+            this.showError('featured-exams', 'โหลดข้อมูลข้อสอบไม่สำเร็จ กรุณาตรวจสอบการเชื่อมต่อ');
         }
     }
 
@@ -134,8 +158,7 @@ class App {
 
         try {
             // 1. Load Exams
-            const examRes = await fetch(`${this.dataPath}subjects.json`);
-            const exams = await examRes.json();
+            const exams = await fetchJSON(`${Config.dataPath}subjects.json`);
             const filtered = exams.filter(e => e.subject === subjectId);
             
             if (listEl) {
@@ -147,7 +170,7 @@ class App {
                         div.innerHTML = `<div class="exam-info"><h4></h4><p></p></div><button class="start-btn">เริ่มทำข้อสอบ</button>`;
                         div.querySelector('h4').textContent = exam.title;
                         div.querySelector('p').textContent = `ปี ${exam.year} • ${exam.duration_minutes} นาที`;
-                        div.querySelector('button').onclick = () => location.href = `${this.basePath}quiz.html?id=${exam.id}`;
+                        div.querySelector('button').onclick = () => location.href = `${Config.basePath}quiz.html?id=${exam.id}`;
                         listEl.appendChild(div);
                     });
                 } else { listEl.innerHTML = '<p class="empty-state">ยังไม่มีข้อสอบในหมวดนี้</p>'; }
@@ -155,28 +178,30 @@ class App {
 
             // 2. Load Summaries
             if (meta && meta.file) {
-                const sumRes = await fetch(`${this.dataPath}${meta.file}`);
-                if (!sumRes.ok) throw new Error('Summaries not found');
-                const summaries = await sumRes.json();
-                this.renderSummaryGrid(summaries, subjectId);
+                try {
+                    const summaries = await fetchJSON(`${Config.dataPath}${meta.file}`);
+                    this.renderSummaryGrid(summaries, subjectId);
 
-                const searchInput = document.getElementById('summary-search');
-                if (searchInput) {
-                    searchInput.oninput = (e) => {
-                        const q = e.target.value.toLowerCase();
-                        const filtered = summaries.filter(s => 
-                            (s.title || '').toLowerCase().includes(q) || 
-                            (s.content || '').toLowerCase().includes(q)
-                        );
-                        this.renderSummaryGrid(filtered, subjectId);
-                    };
+                    const searchInput = document.getElementById('summary-search');
+                    if (searchInput) {
+                        searchInput.oninput = (e) => {
+                            const q = e.target.value.toLowerCase();
+                            const filtered = summaries.filter(s => 
+                                (s.title || '').toLowerCase().includes(q) || 
+                                (s.content || '').toLowerCase().includes(q)
+                            );
+                            this.renderSummaryGrid(filtered, subjectId);
+                        };
+                    }
+                } catch (sumErr) {
+                    console.warn(`Summary file ${meta.file} missing or invalid:`, sumErr);
+                    if (gridEl) gridEl.innerHTML = '<p class="empty-state">ไม่พบข้อมูลสรุปความรู้ในหมวดนี้</p>';
                 }
             } else if (gridEl) {
                 gridEl.innerHTML = '<p class="empty-state" style="grid-column: 1/-1;">ไม่พบข้อมูลสรุปความรู้</p>';
             }
         } catch (e) { 
-            console.error('Subject error:', e); 
-            if (listEl) listEl.innerHTML = '<p class="error">โหลดข้อมูลไม่สำเร็จ</p>';
+            this.showError('exam-list', 'โหลดข้อมูลไม่สำเร็จ กรุณาลองใหม่อีกครั้ง');
         }
     }
 
@@ -184,15 +209,15 @@ class App {
         const gridEl = document.getElementById('knowledge-grid');
         if (!gridEl) return;
         gridEl.innerHTML = '';
-        if (summaries.length) {
+        if (summaries && summaries.length) {
             summaries.forEach(s => {
                 const div = document.createElement('div');
                 div.className = 'summary-card';
                 div.innerHTML = `<div class="summary-info"><span class="tag-meta"></span><h4></h4><p></p></div><a class="read-btn">อ่านสรุปบทเรียน</a>`;
-                div.querySelector('.tag-meta').textContent = (s.subject || 'GENERAL').toUpperCase();
+                div.querySelector('.tag-meta').textContent = (s.subject || subjectId || 'GENERAL').toUpperCase();
                 div.querySelector('h4').textContent = s.title;
                 div.querySelector('p').textContent = (s.content || '').substring(0, 100).replace(/[#*`$]/g, '') + '...';
-                div.querySelector('a').href = `${this.basePath}study.html?subject=${subjectId}&id=${s.id}`;
+                div.querySelector('a').href = `${Config.basePath}study.html?subject=${subjectId}&id=${s.id}`;
                 gridEl.appendChild(div);
             });
         } else { gridEl.innerHTML = '<p class="empty-state" style="grid-column: 1/-1;">ไม่พบเนื้อหาที่ต้องการ</p>'; }
@@ -218,7 +243,7 @@ class App {
             div.innerHTML = `<span class="tag-alert"><i class="fas fa-lightbulb"></i> ควรเน้นเป็นพิเศษ</span><h4></h4><p></p><a class="read-btn">หาเนื้อหาติว →</a>`;
             div.querySelector('h4').textContent = `หัวข้อ: ${t[0]}`;
             div.querySelector('p').textContent = `คุณพลาดเรื่องนี้ไปแล้ว ${t[1].wrong} ครั้ง`;
-            div.querySelector('a').href = `${this.basePath}subject.html?s=search&q=${encodeURIComponent(t[0])}`;
+            div.querySelector('a').href = `${Config.basePath}subject.html?s=search&q=${encodeURIComponent(t[0])}`;
             grid.appendChild(div);
         });
         container.appendChild(grid);
@@ -254,12 +279,6 @@ class App {
                 new Chart(radarCtx, { type: 'radar', data: { labels: subjects.map(s => s.toUpperCase()), datasets: [{ label: 'ความแม่นยำ (%)', data: data, backgroundColor: 'rgba(14, 165, 233, 0.2)', borderColor: '#0ea5e9', pointBackgroundColor: '#0ea5e9' }] }, options: { scales: { r: { beginAtZero: true, max: 100, ticks: { display: false } } }, plugins: { legend: { display: false } } } });
             } else { radarCtx.parentElement.innerHTML = '<p class="empty-state">ทำข้อสอบให้ครบ 3 หมวดเพื่อแสดงกราฟสมรรถนะ</p>'; }
         }
-    }
-
-    getDifficultyBadge(level) {
-        if (level === 'hard') return '<span class="diff-badge hard">ยากมาก</span>';
-        if (level === 'medium') return '<span class="diff-badge med">ปกติ</span>';
-        return '<span class="diff-badge easy">ง่าย</span>';
     }
 }
 
