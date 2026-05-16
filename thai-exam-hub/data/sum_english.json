@@ -1,296 +1,68 @@
 [
   {
-    "id": "eng_001",
-    "title": "Present Simple Tense",
-    "content": "Used for permanent situations, general truths, and habits. Structure: Subject + V.1 (s/es with he/she/it). Key markers: always, usually, often, every day.",
-    "youtubeId": "mIByu36fPy4",
-    "tags": ["english", "grammar", "tenses"]
+    "id": "english_master_1",
+    "title": "Master Summary: English Tenses",
+    "content": "### Present Simple Tense\nUsed for permanent situations, general truths, and habits. Structure: Subject + V.1 (s/es with he/she/it). Key markers: always, usually, often, every day.\n\n---\n\n### Present Continuous Tense\nUsed for actions happening exactly now or around the present time. Structure: Subject + is/am/are + V-ing. Key markers: now, at the moment, currently.\n\n---\n\n### Present Perfect Tense\nLinks past actions to the present. Used for experiences or actions with current relevance. Structure: Subject + have/has + V.3. Key markers: since, for, already, yet, just.\n\n---\n\n### Past Simple Tense\nUsed for completed actions at a specific time in the past. Structure: Subject + V.2 (regular -ed or irregular). Key markers: yesterday, ago, last week.\n\n---\n\n### Past Continuous Tense\nUsed for actions that were in progress at a specific time in the past. Structure: Subject + was/were + V-ing. Often used with 'while' or 'when'.\n\n---\n\n### Past Perfect Tense\nThe 'past of the past'. Used for an action that happened before another action in the past. Structure: Subject + had + V.3.\n\n---\n\n### Future Simple Tense\nUsed for spontaneous decisions, predictions without evidence, or promises. Structure: Subject + will + V.inf. Alternative: 'be going to' for planned actions.\n\n---\n\n### Future Continuous Tense\nUsed for actions that will be in progress at a specific time in the future. Structure: Subject + will + be + V-ing.\n\n---\n\n### Future Perfect Tense\nUsed for an action that will be completed by a certain time in the future. Structure: Subject + will + have + V.3. Often uses 'by...'.\n\n---\n\n### Passive Voice in All Tenses\nTransformation rules from active to passive. Remember to keep the tense of 'be' consistent with the original sentence.",
+    "youtubeId": "K0V-X_M1N0",
+    "tags": [
+      "english",
+      "grammar",
+      "tenses",
+      "passive"
+    ]
   },
   {
-    "id": "eng_002",
-    "title": "Present Continuous Tense",
-    "content": "Used for actions happening exactly now or around the present time. Structure: Subject + is/am/are + V-ing. Key markers: now, at the moment, currently.",
-    "youtubeId": "T49ZfF_9R_Y",
-    "tags": ["english", "grammar", "tenses"]
+    "id": "english_master_2",
+    "title": "Master Summary: grammar",
+    "content": "### Present Perfect Continuous\nEmphasizes the duration of an action that started in the past and continues now. Structure: Subject + have/has + been + V-ing.\n\n---\n\n### Past Perfect Continuous\nFocuses on the duration of an action that was happening up until another point in the past. Structure: Subject + had + been + V-ing.\n\n---\n\n### Future Perfect Continuous\nUsed to show how long an action will have been in progress at a point in the future. Structure: Subject + will + have + been + V-ing.\n\n---\n\n### Passive Voice Basics\nThe focus is on the object rather than the doer. Structure: Object + be + V.3. Example: 'The cake was eaten by Mary.'\n\n---\n\n### Zero Conditional\nUsed for general truths and scientific facts. Structure: If + Present Simple, Present Simple. Example: 'If you heat ice, it melts.'\n\n---\n\n### First Conditional\nUsed for real or possible future situations. Structure: If + Present Simple, will + V.inf. Example: 'If it rains, I will stay home.'\n\n---\n\n### Second Conditional\nUsed for hypothetical or imaginary present/future situations. Structure: If + Past Simple, would + V.inf. Example: 'If I were you, I would go.'\n\n---\n\n### Third Conditional\nUsed for imaginary past situations (regrets). Structure: If + Past Perfect, would + have + V.3. Example: 'If I had studied, I would have passed.'\n\n---\n\n### Mixed Conditionals\nCombines elements of second and third conditionals to show past causes with present results or vice versa. Example: 'If I had won the lottery (past), I would be rich now (present).'\n\n---\n\n### Error ID: Subject-Verb Agreement\nSingular subjects take singular verbs; plural subjects take plural verbs. Watch out for phrases between subject and verb.\n\n---\n\n### Error ID: Parallel Structure\nItems in a list or series must have the same grammatical form. Example: 'I like swimming, hiking, and to run' is incorrect.\n\n---\n\n### Error ID: Pronoun Case\nEnsure pronouns are used in the correct case (subjective vs objective). Example: 'Between you and me' (not 'you and I').\n\n---\n\n### Error ID: Misplaced Modifiers\nModifiers must be placed next to the word they describe. Example: 'Walking down the street, the tree fell' implies the tree was walking.\n\n---\n\n### Grammar: Inversion for Emphasis\nInverting the subject and verb after certain negative adverbs (Never, Seldom, Rarely). Example: 'Never have I seen such beauty.'\n\n---\n\n### The Subjunctive Mood\nUsed for wishes, suggestions, or hypothetical situations. Examples: 'I suggest that he be on time' or 'If I were you.'\n\n---\n\n### Defining vs. Non-Defining Clauses\nDefining clauses provide essential info (no commas). Non-defining provide extra info (with commas). Example: 'The man who lives next door is a doctor.'\n\n---\n\n### Error ID: Common Diction Errors\nConfusing similar words: 'Affect' (verb) vs 'Effect' (noun), 'Complement' vs 'Compliment', 'Stationary' vs 'Stationery'.\n\n---\n\n### Articles with Abstract Nouns\nGeneral abstract nouns take no article ('Love is blind'). Specific instances take 'the' ('The love he felt was deep').",
+    "youtubeId": "_Yh6qN6vV9Y",
+    "tags": [
+      "english",
+      "grammar",
+      "tenses",
+      "passive",
+      "conditionals",
+      "error-id",
+      "nuance",
+      "academic"
+    ]
   },
   {
-    "id": "eng_003",
-    "title": "Present Perfect Tense",
-    "content": "Links past actions to the present. Used for experiences or actions with current relevance. Structure: Subject + have/has + V.3. Key markers: since, for, already, yet, just.",
-    "youtubeId": "fR4H56fXf7E",
-    "tags": ["english", "grammar", "tenses"]
-  },
-  {
-    "id": "eng_004",
-    "title": "Present Perfect Continuous",
-    "content": "Emphasizes the duration of an action that started in the past and continues now. Structure: Subject + have/has + been + V-ing.",
-    "youtubeId": "u69P9K4Z7X8",
-    "tags": ["english", "grammar", "tenses"]
-  },
-  {
-    "id": "eng_005",
-    "title": "Past Simple Tense",
-    "content": "Used for completed actions at a specific time in the past. Structure: Subject + V.2 (regular -ed or irregular). Key markers: yesterday, ago, last week.",
-    "youtubeId": "01Tscv6O28Q",
-    "tags": ["english", "grammar", "tenses"]
-  },
-  {
-    "id": "eng_006",
-    "title": "Past Continuous Tense",
-    "content": "Used for actions that were in progress at a specific time in the past. Structure: Subject + was/were + V-ing. Often used with 'while' or 'when'.",
-    "youtubeId": "38R8D5y7_cM",
-    "tags": ["english", "grammar", "tenses"]
-  },
-  {
-    "id": "eng_007",
-    "title": "Past Perfect Tense",
-    "content": "The 'past of the past'. Used for an action that happened before another action in the past. Structure: Subject + had + V.3.",
-    "youtubeId": "X7W3Bf-vW-o",
-    "tags": ["english", "grammar", "tenses"]
-  },
-  {
-    "id": "eng_008",
-    "title": "Past Perfect Continuous",
-    "content": "Focuses on the duration of an action that was happening up until another point in the past. Structure: Subject + had + been + V-ing.",
-    "youtubeId": "9W4qN7Y7S4Y",
-    "tags": ["english", "grammar", "tenses"]
-  },
-  {
-    "id": "eng_009",
-    "title": "Future Simple Tense",
-    "content": "Used for spontaneous decisions, predictions without evidence, or promises. Structure: Subject + will + V.inf. Alternative: 'be going to' for planned actions.",
-    "youtubeId": "mIByu36fPy4",
-    "tags": ["english", "grammar", "tenses"]
-  },
-  {
-    "id": "eng_010",
-    "title": "Future Continuous Tense",
-    "content": "Used for actions that will be in progress at a specific time in the future. Structure: Subject + will + be + V-ing.",
-    "youtubeId": "38R8D5y7_cM",
-    "tags": ["english", "grammar", "tenses"]
-  },
-  {
-    "id": "eng_011",
-    "title": "Future Perfect Tense",
-    "content": "Used for an action that will be completed by a certain time in the future. Structure: Subject + will + have + V.3. Often uses 'by...'.",
-    "youtubeId": "fR4H56fXf7E",
-    "tags": ["english", "grammar", "tenses"]
-  },
-  {
-    "id": "eng_012",
-    "title": "Future Perfect Continuous",
-    "content": "Used to show how long an action will have been in progress at a point in the future. Structure: Subject + will + have + been + V-ing.",
-    "youtubeId": "u69P9K4Z7X8",
-    "tags": ["english", "grammar", "tenses"]
-  },
-  {
-    "id": "eng_013",
-    "title": "Passive Voice Basics",
-    "content": "The focus is on the object rather than the doer. Structure: Object + be + V.3. Example: 'The cake was eaten by Mary.'",
-    "youtubeId": "nnR6V9v_uO8",
-    "tags": ["english", "grammar", "passive"]
-  },
-  {
-    "id": "eng_014",
-    "title": "Passive Voice in All Tenses",
-    "content": "Transformation rules from active to passive. Remember to keep the tense of 'be' consistent with the original sentence.",
-    "youtubeId": "nnR6V9v_uO8",
-    "tags": ["english", "grammar", "passive"]
-  },
-  {
-    "id": "eng_015",
-    "title": "Zero Conditional",
-    "content": "Used for general truths and scientific facts. Structure: If + Present Simple, Present Simple. Example: 'If you heat ice, it melts.'",
-    "youtubeId": "I_4Ak_TzZfU",
-    "tags": ["english", "grammar", "conditionals"]
-  },
-  {
-    "id": "eng_016",
-    "title": "First Conditional",
-    "content": "Used for real or possible future situations. Structure: If + Present Simple, will + V.inf. Example: 'If it rains, I will stay home.'",
-    "youtubeId": "hS2_t_o5UeM",
-    "tags": ["english", "grammar", "conditionals"]
-  },
-  {
-    "id": "eng_017",
-    "title": "Second Conditional",
-    "content": "Used for hypothetical or imaginary present/future situations. Structure: If + Past Simple, would + V.inf. Example: 'If I were you, I would go.'",
-    "youtubeId": "mIByu36fPy4",
-    "tags": ["english", "grammar", "conditionals"]
-  },
-  {
-    "id": "eng_018",
-    "title": "Third Conditional",
-    "content": "Used for imaginary past situations (regrets). Structure: If + Past Perfect, would + have + V.3. Example: 'If I had studied, I would have passed.'",
-    "youtubeId": "mIByu36fPy4",
-    "tags": ["english", "grammar", "conditionals"]
-  },
-  {
-    "id": "eng_019",
-    "title": "Mixed Conditionals",
-    "content": "Combines elements of second and third conditionals to show past causes with present results or vice versa. Example: 'If I had won the lottery (past), I would be rich now (present).'",
-    "youtubeId": "I_4Ak_TzZfU",
-    "tags": ["english", "grammar", "conditionals"]
-  },
-  {
-    "id": "eng_020",
-    "title": "Vocabulary Roots: Spect, Dict, Scrib",
-    "content": "Latin roots: 'Spect' (to look, e.g., inspect), 'Dict' (to say, e.g., predict), 'Scrib/Scrip' (to write, e.g., describe).",
+    "id": "english_master_3",
+    "title": "Master Summary: vocabulary",
+    "content": "### Vocabulary Roots: Spect, Dict, Scrib\nLatin roots: 'Spect' (to look, e.g., inspect), 'Dict' (to say, e.g., predict), 'Scrib/Scrip' (to write, e.g., describe).\n\n---\n\n### Greek Roots: Bio, Geo, Tele\nGreek roots: 'Bio' (life, e.g., biology), 'Geo' (earth, e.g., geography), 'Tele' (far, e.g., telephone).\n\n---\n\n### Common Prefixes: Un, Re, Dis\nPrefixes change word meaning: 'Un-' (not, e.g., unhappy), 'Re-' (again, e.g., redo), 'Dis-' (opposite, e.g., disagree).\n\n---\n\n### Common Suffixes: Tion, Ness, Ly\nSuffixes change word class: '-Tion' (noun, e.g., action), '-Ness' (noun, e.g., kindness), '-Ly' (adverb, e.g., slowly).\n\n---\n\n### Collocations: Verb + Noun\nWords that naturally go together. 'Make a decision' (not 'do a decision'), 'Perform an experiment', 'Conduct research'.\n\n---\n\n### Phrasal Verbs in Academic Context\nReplacing phrasal verbs with formal equivalents: 'Look into' -> 'Investigate', 'Find out' -> 'Discover', 'Put off' -> 'Postpone'.\n\n---\n\n### Denotation and Connotation\nDenotation is the literal meaning. Connotation is the emotional/cultural association (e.g., 'Youthful' vs 'Childish').",
     "youtubeId": "v8V2X-Oa-uM",
-    "tags": ["english", "vocabulary", "roots"]
+    "tags": [
+      "english",
+      "vocabulary",
+      "roots",
+      "prefixes",
+      "suffixes",
+      "nuance",
+      "academic"
+    ]
   },
   {
-    "id": "eng_021",
-    "title": "Greek Roots: Bio, Geo, Tele",
-    "content": "Greek roots: 'Bio' (life, e.g., biology), 'Geo' (earth, e.g., geography), 'Tele' (far, e.g., telephone).",
+    "id": "english_master_4",
+    "title": "Master Summary: reading",
+    "content": "### Reading: Skimming and Scanning\nSkimming: Reading quickly for the main idea. Scanning: Searching for specific information like names or dates.\n\n---\n\n### Reading: Context Clues\nUsing surrounding words to guess the meaning of unknown vocabulary. Look for synonyms, antonyms, or examples.\n\n---\n\n### Reading: Inference & Tone\nReading between the lines. Identifying the author's attitude (positive, negative, neutral) based on word choice.",
+    "youtubeId": "H7S-No6hN3Lw",
+    "tags": [
+      "english",
+      "reading",
+      "strategies"
+    ]
+  },
+  {
+    "id": "english_master_5",
+    "title": "Master Summary: writing",
+    "content": "### Academic Hedging\nUsing cautious language in research. Instead of 'This proves', use 'This suggests' or 'It is possible that'.\n\n---\n\n### Academic Reporting Verbs\nChoosing precise verbs to introduce sources: 'Argues', 'Claims', 'Suggests', 'Demonstrates', 'Notes', 'Challenges'.\n\n---\n\n### Nominalization\nConverting verbs/adjectives into nouns to sound more academic. 'We analyzed' -> 'The analysis was conducted'.\n\n---\n\n### Cohesive Devices: Addition & Contrast\nAddition: 'Furthermore', 'Moreover'. Contrast: 'However', 'Nevertheless', 'Conversely', 'In contrast'.",
     "youtubeId": "v8V2X-Oa-uM",
-    "tags": ["english", "vocabulary", "roots"]
-  },
-  {
-    "id": "eng_022",
-    "title": "Common Prefixes: Un, Re, Dis",
-    "content": "Prefixes change word meaning: 'Un-' (not, e.g., unhappy), 'Re-' (again, e.g., redo), 'Dis-' (opposite, e.g., disagree).",
-    "youtubeId": "v8V2X-Oa-uM",
-    "tags": ["english", "vocabulary", "prefixes"]
-  },
-  {
-    "id": "eng_023",
-    "title": "Common Suffixes: Tion, Ness, Ly",
-    "content": "Suffixes change word class: '-Tion' (noun, e.g., action), '-Ness' (noun, e.g., kindness), '-Ly' (adverb, e.g., slowly).",
-    "youtubeId": "v8V2X-Oa-uM",
-    "tags": ["english", "vocabulary", "suffixes"]
-  },
-  {
-    "id": "eng_024",
-    "title": "Reading: Skimming and Scanning",
-    "content": "Skimming: Reading quickly for the main idea. Scanning: Searching for specific information like names or dates.",
-    "youtubeId": "H7SNo6hN3Lw",
-    "tags": ["english", "reading", "strategies"]
-  },
-  {
-    "id": "eng_025",
-    "title": "Reading: Context Clues",
-    "content": "Using surrounding words to guess the meaning of unknown vocabulary. Look for synonyms, antonyms, or examples.",
-    "youtubeId": "H7SNo6hN3Lw",
-    "tags": ["english", "reading", "strategies"]
-  },
-  {
-    "id": "eng_026",
-    "title": "Reading: Inference & Tone",
-    "content": "Reading between the lines. Identifying the author's attitude (positive, negative, neutral) based on word choice.",
-    "youtubeId": "H7SNo6hN3Lw",
-    "tags": ["english", "reading", "strategies"]
-  },
-  {
-    "id": "eng_027",
-    "title": "Error ID: Subject-Verb Agreement",
-    "content": "Singular subjects take singular verbs; plural subjects take plural verbs. Watch out for phrases between subject and verb.",
-    "youtubeId": "6mZfX2F3kEw",
-    "tags": ["english", "grammar", "error-id"]
-  },
-  {
-    "id": "eng_028",
-    "title": "Error ID: Parallel Structure",
-    "content": "Items in a list or series must have the same grammatical form. Example: 'I like swimming, hiking, and to run' is incorrect.",
-    "youtubeId": "6mZfX2F3kEw",
-    "tags": ["english", "grammar", "error-id"]
-  },
-  {
-    "id": "eng_029",
-    "title": "Error ID: Pronoun Case",
-    "content": "Ensure pronouns are used in the correct case (subjective vs objective). Example: 'Between you and me' (not 'you and I').",
-    "youtubeId": "6mZfX2F3kEw",
-    "tags": ["english", "grammar", "error-id"]
-  },
-  {
-    "id": "eng_030",
-    "title": "Error ID: Misplaced Modifiers",
-    "content": "Modifiers must be placed next to the word they describe. Example: 'Walking down the street, the tree fell' implies the tree was walking.",
-    "youtubeId": "6mZfX2F3kEw",
-    "tags": ["english", "grammar", "error-id"]
-  },
-  {
-    "id": "eng_031",
-    "title": "Grammar: Inversion for Emphasis",
-    "content": "Inverting the subject and verb after certain negative adverbs (Never, Seldom, Rarely). Example: 'Never have I seen such beauty.'",
-    "youtubeId": "mIByu36fPy4",
-    "tags": ["english", "grammar", "nuance"]
-  },
-  {
-    "id": "eng_032",
-    "title": "The Subjunctive Mood",
-    "content": "Used for wishes, suggestions, or hypothetical situations. Examples: 'I suggest that he be on time' or 'If I were you.'",
-    "youtubeId": "I_4Ak_TzZfU",
-    "tags": ["english", "grammar", "academic"]
-  },
-  {
-    "id": "eng_033",
-    "title": "Defining vs. Non-Defining Clauses",
-    "content": "Defining clauses provide essential info (no commas). Non-defining provide extra info (with commas). Example: 'The man who lives next door is a doctor.'",
-    "youtubeId": "H7SNo6hN3Lw",
-    "tags": ["english", "grammar", "nuance"]
-  },
-  {
-    "id": "eng_034",
-    "title": "Academic Hedging",
-    "content": "Using cautious language in research. Instead of 'This proves', use 'This suggests' or 'It is possible that'.",
-    "youtubeId": "v8V2X-Oa-uM",
-    "tags": ["english", "writing", "academic"]
-  },
-  {
-    "id": "eng_035",
-    "title": "Academic Reporting Verbs",
-    "content": "Choosing precise verbs to introduce sources: 'Argues', 'Claims', 'Suggests', 'Demonstrates', 'Notes', 'Challenges'.",
-    "youtubeId": "v8V2X-Oa-uM",
-    "tags": ["english", "writing", "academic"]
-  },
-  {
-    "id": "eng_036",
-    "title": "Collocations: Verb + Noun",
-    "content": "Words that naturally go together. 'Make a decision' (not 'do a decision'), 'Perform an experiment', 'Conduct research'.",
-    "youtubeId": "6mZfX2F3kEw",
-    "tags": ["english", "vocabulary", "nuance"]
-  },
-  {
-    "id": "eng_037",
-    "title": "Phrasal Verbs in Academic Context",
-    "content": "Replacing phrasal verbs with formal equivalents: 'Look into' -> 'Investigate', 'Find out' -> 'Discover', 'Put off' -> 'Postpone'.",
-    "youtubeId": "6mZfX2F3kEw",
-    "tags": ["english", "vocabulary", "academic"]
-  },
-  {
-    "id": "eng_038",
-    "title": "Nominalization",
-    "content": "Converting verbs/adjectives into nouns to sound more academic. 'We analyzed' -> 'The analysis was conducted'.",
-    "youtubeId": "mIByu36fPy4",
-    "tags": ["english", "writing", "academic"]
-  },
-  {
-    "id": "eng_039",
-    "title": "Cohesive Devices: Addition & Contrast",
-    "content": "Addition: 'Furthermore', 'Moreover'. Contrast: 'However', 'Nevertheless', 'Conversely', 'In contrast'.",
-    "youtubeId": "H7SNo6hN3Lw",
-    "tags": ["english", "writing", "patterns"]
-  },
-  {
-    "id": "eng_040",
-    "title": "Denotation and Connotation",
-    "content": "Denotation is the literal meaning. Connotation is the emotional/cultural association (e.g., 'Youthful' vs 'Childish').",
-    "youtubeId": "H7SNo6hN3Lw",
-    "tags": ["english", "vocabulary", "nuance"]
-  },
-  {
-    "id": "eng_041",
-    "title": "Error ID: Common Diction Errors",
-    "content": "Confusing similar words: 'Affect' (verb) vs 'Effect' (noun), 'Complement' vs 'Compliment', 'Stationary' vs 'Stationery'.",
-    "youtubeId": "6mZfX2F3kEw",
-    "tags": ["english", "grammar", "error-id"]
-  },
-  {
-    "id": "eng_042",
-    "title": "Articles with Abstract Nouns",
-    "content": "General abstract nouns take no article ('Love is blind'). Specific instances take 'the' ('The love he felt was deep').",
-    "youtubeId": "nnR6V9v_uO8",
-    "tags": ["english", "grammar", "nuance"]
+    "tags": [
+      "english",
+      "writing",
+      "academic",
+      "patterns"
+    ]
   }
 ]

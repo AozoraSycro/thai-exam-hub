@@ -1,366 +1,197 @@
 [
   {
-    "id": "math_001",
-    "title": "เซตและสับเซต (Sets and Subsets)",
-    "content": "เซตเป็นมโนทัศน์พื้นฐานในคณิตศาสตร์ที่ใช้รวบรวมวัตถุต่างๆ เข้าด้วยกัน\n\n**1. การเขียนเซต:**\n- แบบแจกแจงสมาชิก: $A = \\{1, 2, 3\\}$\n- แบบบอกเงื่อนไข: $B = \\{x \\in \\mathbb{R} \\mid x^2 = 4\\}$\n\n**2. สับเซต (Subsets):**\n$A \\subseteq B$ หมายความว่า สมาชิกทุกตัวของ $A$ เป็นสมาชิกของ $B$\n- พิสูจน์: $\\forall x [x \\in A \\implies x \\in B]$\n- จำนวนสับเซตทั้งหมดของเซตที่มีสมาชิก $n$ ตัวคือ $2^n$\n- พาวเวอร์เซต (Power Set): $P(A)$ คือเซตของสับเซตทั้งหมดของ $A$\n\n**เคล็ดลับของ Thoth:**\n- เซตว่าง ($\\emptyset$) เป็นสับเซตของทุกเซตเสมอ\n- เซต $A$ เป็นสับเซตของตัวมันเองเสมอ ($A \\subseteq A$)",
-    "youtubeId": "Q-pIuO_FmXo",
-    "tags": ["math", "sets", "foundations"]
-  },
-  {
-    "id": "math_002",
-    "title": "การดำเนินการระหว่างเซต (Set Operations)",
-    "content": "การสร้างเซตใหม่จากเซตเดิมที่กำหนดให้\n\n**1. ยูเนียน (Union):** $A \\cup B = \\{x \\mid x \\in A \\text{ หรือ } x \\in B\\}$\n**2. อินเตอร์เซกชัน (Intersection):** $A \\cap B = \\{x \\mid x \\in A \\text{ และ } x \\in B\\}$\n**3. ผลต่าง (Difference):** $A - B = \\{x \\mid x \\in A \\text{ และ } x \\notin B\\}$\n**4. คอมพลีเมนต์ (Complement):** $A' = \\{x \\mid x \\in U \\text{ และ } x \\notin A\\}$\n\n**กฎที่สำคัญ (De Morgan's Laws):**\n1. $(A \\cup B)' = A' \\cap B'$\n2. $(A \\cap B)' = A' \\cup B'$\n\n**บทพิสูจน์สั้นๆ:**\n$x \\in (A \\cup B)' \\iff x \\notin (A \\cup B) \\iff \\neg(x \\in A \\lor x \\in B) \\iff (x \\notin A \\land x \\notin B) \\iff x \\in A' \\cap B'$",
+    "id": "math_master_1",
+    "title": "Master Summary: sets",
+    "content": "### เซตและสับเซต (Sets and Subsets)\nเซตเป็นมโนทัศน์พื้นฐานในคณิตศาสตร์ที่ใช้รวบรวมวัตถุต่างๆ เข้าด้วยกัน\n\n**1. การเขียนเซต:**\n- แบบแจกแจงสมาชิก: $A = \\{1, 2, 3\\}$\n- แบบบอกเงื่อนไข: $B = \\{x \\in \\mathbb{R} \\mid x^2 = 4\\}$\n\n**2. สับเซต (Subsets):**\n$A \\subseteq B$ หมายความว่า สมาชิกทุกตัวของ $A$ เป็นสมาชิกของ $B$\n- พิสูจน์: $\\forall x [x \\in A \\implies x \\in B]$\n- จำนวนสับเซตทั้งหมดของเซตที่มีสมาชิก $n$ ตัวคือ $2^n$\n- พาวเวอร์เซต (Power Set): $P(A)$ คือเซตของสับเซตทั้งหมดของ $A$\n\n**เคล็ดลับของ Thoth:**\n- เซตว่าง ($\\emptyset$) เป็นสับเซตของทุกเซตเสมอ\n- เซต $A$ เป็นสับเซตของตัวมันเองเสมอ ($A \\subseteq A$)\n\n---\n\n### การดำเนินการระหว่างเซต (Set Operations)\nการสร้างเซตใหม่จากเซตเดิมที่กำหนดให้\n\n**1. ยูเนียน (Union):** $A \\cup B = \\{x \\mid x \\in A \\text{ หรือ } x \\in B\\}$\n**2. อินเตอร์เซกชัน (Intersection):** $A \\cap B = \\{x \\mid x \\in A \\text{ และ } x \\in B\\}$\n**3. ผลต่าง (Difference):** $A - B = \\{x \\mid x \\in A \\text{ และ } x \\notin B\\}$\n**4. คอมพลีเมนต์ (Complement):** $A' = \\{x \\mid x \\in U \\text{ และ } x \\notin A\\}$\n\n**กฎที่สำคัญ (De Morgan's Laws):**\n1. $(A \\cup B)' = A' \\cap B'$\n2. $(A \\cap B)' = A' \\cup B'$\n\n**บทพิสูจน์สั้นๆ:**\n$x \\in (A \\cup B)' \\iff x \\notin (A \\cup B) \\iff \\neg(x \\in A \\lor x \\in B) \\iff (x \\notin A \\land x \\notin B) \\iff x \\in A' \\cap B'$\n\n---\n\n### จำนวนสมาชิกของเซตจำกัด (Cardinality)\nการหาจำนวนสมาชิกในเหตุการณ์ต่างๆ โดยใช้แผนภาพเวนน์-ออยเลอร์\n\n**สูตรที่สำคัญ:**\n- สองเซต: $n(A \\cup B) = n(A) + n(B) - n(A \\cap B)$\n- สามเซต: $n(A \\cup B \\cup C) = n(A) + n(B) + n(C) - n(A \\cap B) - n(A \\cap C) - n(B \\cap C) + n(A \\cap B \\cap C)$\n\n**Thoth's Laws of Counting:**\nเมื่อโจทย์ถามคำว่า 'อย่างน้อยหนึ่ง' ให้พิจารณาคอมพลีเมนต์ (ทั้งหมด - ไม่เลือกเลย)\nเมื่อโจทย์ถามสมาชิกที่อยู่ใน $A$ แต่ไม่อยู่ใน $B$ ให้ใช้ $n(A) - n(A \\cap B)$",
     "youtubeId": "zX7p-X_T-D8",
-    "tags": ["math", "sets"]
+    "tags": [
+      "math",
+      "sets",
+      "foundations",
+      "counting"
+    ]
   },
   {
-    "id": "math_003",
-    "title": "จำนวนสมาชิกของเซตจำกัด (Cardinality)",
-    "content": "การหาจำนวนสมาชิกในเหตุการณ์ต่างๆ โดยใช้แผนภาพเวนน์-ออยเลอร์\n\n**สูตรที่สำคัญ:**\n- สองเซต: $n(A \\cup B) = n(A) + n(B) - n(A \\cap B)$\n- สามเซต: $n(A \\cup B \\cup C) = n(A) + n(B) + n(C) - n(A \\cap B) - n(A \\cap C) - n(B \\cap C) + n(A \\cap B \\cap C)$\n\n**Thoth's Laws of Counting:**\nเมื่อโจทย์ถามคำว่า 'อย่างน้อยหนึ่ง' ให้พิจารณาคอมพลีเมนต์ (ทั้งหมด - ไม่เลือกเลย)\nเมื่อโจทย์ถามสมาชิกที่อยู่ใน $A$ แต่ไม่อยู่ใน $B$ ให้ใช้ $n(A) - n(A \\cap B)$",
-    "youtubeId": "I8R9i_qA2M8",
-    "tags": ["math", "sets", "counting"]
-  },
-  {
-    "id": "math_004",
-    "title": "ตรรกศาสตร์พื้นฐาน (Mathematical Logic)",
-    "content": "ตรรกศาสตร์คือรากฐานของการพิสูจน์ทางคณิตศาสตร์\n\n**ตัวเชื่อมประพาส (Connectives):**\n- และ ($\\land$): จริงเมื่อจริงทั้งคู่\n- หรือ ($\\lor$): เท็จเมื่อเท็จทั้งคู่\n- ถ้า...แล้ว... ($\\implies$): เท็จกรณีเดียวคือ หน้าจริงหลังเท็จ ($T \\implies F$)\n- ก็ต่อเมื่อ ($\\iff$): จริงเมื่อเหมือนกัน\n\n**ลำดับการทำงาน (Precedence):**\n$\\sim$ (นิเสธ) > $\\land, \\lor$ > $\\implies$ > $\\iff$\n\n**สัจนิรันดร์ (Tautology):** ประพจน์ที่มีค่าความจริงเป็นจริงทุกกรณี",
+    "id": "math_master_2",
+    "title": "Master Summary: logic",
+    "content": "### ตรรกศาสตร์พื้นฐาน (Mathematical Logic)\nตรรกศาสตร์คือรากฐานของการพิสูจน์ทางคณิตศาสตร์\n\n**ตัวเชื่อมประพาส (Connectives):**\n- และ ($\\land$): จริงเมื่อจริงทั้งคู่\n- หรือ ($\\lor$): เท็จเมื่อเท็จทั้งคู่\n- ถ้า...แล้ว... ($\\implies$): เท็จกรณีเดียวคือ หน้าจริงหลังเท็จ ($T \\implies F$)\n- ก็ต่อเมื่อ ($\\iff$): จริงเมื่อเหมือนกัน\n\n**ลำดับการทำงาน (Precedence):**\n$\\sim$ (นิเสธ) > $\\land, \\lor$ > $\\implies$ > $\\iff$\n\n**สัจนิรันดร์ (Tautology):** ประพจน์ที่มีค่าความจริงเป็นจริงทุกกรณี\n\n---\n\n### การสมมูลและนิเสธ (Equivalence and Negation)\nประพจน์ที่สมมูลกันจะมีค่าความจริงเหมือนกันทุกกรณี\n\n**คู่สมมูลที่ออกสอบบ่อย:**\n1. $P \\implies Q \\equiv \\sim P \\lor Q$ (เปลี่ยนถ้าแล้วเป็นหรือ)\n2. $P \\implies Q \\equiv \\sim Q \\implies \\sim P$ (แย้งสลับที่ - Contrapositive)\n3. $\\sim(P \\land Q) \\equiv \\sim P \\lor \\sim Q$\n4. $\\sim(P \\implies Q) \\equiv P \\land \\sim Q$ (นิเสธของถ้าแล้ว คือ หน้าและไม่หลัง)\n\n**เทคนิคของ Thoth:**\nในการเช็คสัจนิรันดร์ของ $P \\implies Q$ ให้สมมติว่าเป็นเท็จ ($P=T, Q=F$) แล้วหาข้อขัดแย้ง ถ้าเจอข้อขัดแย้ง แสดงว่าเป็นสัจนิรันดร์\n\n---\n\n### ตัวบ่งปริมาณ (Quantifiers)\nการศึกษาข้อความที่มี $\\forall$ (สำหรับสมาชิกทุกตัว) และ $\\exists$ (สำหรับสมาชิกบางตัว)\n\n**1. ค่าความจริง:**\n- $\\forall x [P(x)]$ จริงเมื่อ $P(x)$ จริงสำหรับทุก $x$ ในเอกภพสัมพัทธ์ ($U$)\n- $\\exists x [P(x)]$ จริงเมื่อพบอย่างน้อยหนึ่ง $x$ ที่ทำให้ $P(x)$ จริง\n\n**2. นิเสธของตัวบ่งปริมาณ:**\n- $\\sim \\forall x [P(x)] \\equiv \\exists x [\\sim P(x)]$\n- $\\sim \\exists x [P(x)] \\equiv \\forall x [\\sim P(x)]$\n\n**ตัวอย่างการพิสูจน์:**\nการพิสูจน์ว่า $\\forall x [P(x)]$ เป็นเท็จ ทำได้โดยการยก 'ตัวอย่างค้าน' (Counterexample) เพียงตัวเดียว\n\n---\n\n### ความผิดพลาดทางตรรกะเชิงรูปแบบ (Formal Fallacies)\nการอ้างเหตุผลที่ดูเหมือนจะถูกแต่ผิดในเชิงโครงสร้าง\n\n**1. การยืนยันส่วนหลัง (Affirming the Consequent):**\nรูปแบบ: $[(P \\implies Q) \\land Q] \\implies P$ **(ไม่เป็นสัจนิรันดร์)**\nตัวอย่าง: 'ถ้าฝนตกแล้วถนนเปียก ตอนนี้ถนนเปียก ดังนั้นฝนตก' (ผิด เพราะอาจมีคนฉีดน้ำ)\n\n**2. การปฏิเสธส่วนหน้า (Denying the Antecedent):**\nรูปแบบ: $[(P \\implies Q) \\land \\sim P] \\implies \\sim Q$ **(ไม่เป็นสัจนิรันดร์)**\nตัวอย่าง: 'ถ้าฝนตกแล้วถนนเปียก ตอนนี้ฝนไม่ตก ดังนั้นถนนไม่เปียก' (ผิด เพราะถนนอาจเปียกจากสาเหตุอื่น)\n\n---\n\n### ความผิดพลาดทางตรรกะแบบอรูป (Informal Fallacies)\nข้อบกพร่องในการให้เหตุผลที่เกิดจากเนื้อหาหรือบริบท\n\n**1. การทวนคำถาม (Circular Reasoning):** การนำสรุปมาเป็นเหตุผล เช่น '$P$ เป็นจริงเพราะ $P$ เป็นจริง'\n\n**2. การสร้างหุ่นฟาง (Straw Man):** การบิดเบือนข้อโต้แย้งของอีกฝ่ายให้ดูอ่อนแอหรือสุดโต่งเกินจริงเพื่อให้โจมตีได้ง่าย\n\n**3. การอ้างความไม่รู้ (Appeal to Ignorance):** การสรุปว่าสิ่งหนึ่งจริงเพราะยังไม่มีใครพิสูจน์ได้ว่าเป็นเท็จ\n\n**Thoth's Truth:** ในคณิตศาสตร์ การพิสูจน์ต้องใช้ Axioms และทฤษฎีบทที่ยอมรับแล้วเท่านั้น การอ้างเหตุผลเหล่านี้ถือเป็นโมฆะ\n\n---\n\n### ตรรกศาสตร์ภาคแสดงและตัวบ่งปริมาณซ้อน (Predicate Logic & Nested Quantifiers)\nการวิเคราะห์ประโยคที่มีตัวบ่งปริมาณมากกว่าหนึ่งตัว\n\n**ตัวอย่าง:** $\\forall x \\exists y [P(x, y)]$\n- 'สำหรับคนทุกคน ($x$) จะมีแม่หนึ่งคน ($y$)' (จริง)\n- 'จะมีแม่หนึ่งคน ($y$) ที่เป็นแม่ของทุกคน ($x$)' (เท็จ - เขียนเป็น $\\exists y \\forall x [P(x, y)]$)\n\n**กฎการสลับ:** $\\forall x \\forall y \\equiv \\forall y \\forall x$ และ $\\exists x \\exists y \\equiv \\exists y \\exists x$ แต่การสลับ $\\forall$ กับ $\\exists$ จะทำให้ความหมายเปลี่ยนอย่างสิ้นเชิง",
     "youtubeId": "L0fEAnE39Y8",
-    "tags": ["math", "logic"]
+    "tags": [
+      "math",
+      "logic"
+    ]
   },
   {
-    "id": "math_005",
-    "title": "การสมมูลและนิเสธ (Equivalence and Negation)",
-    "content": "ประพจน์ที่สมมูลกันจะมีค่าความจริงเหมือนกันทุกกรณี\n\n**คู่สมมูลที่ออกสอบบ่อย:**\n1. $P \\implies Q \\equiv \\sim P \\lor Q$ (เปลี่ยนถ้าแล้วเป็นหรือ)\n2. $P \\implies Q \\equiv \\sim Q \\implies \\sim P$ (แย้งสลับที่ - Contrapositive)\n3. $\\sim(P \\land Q) \\equiv \\sim P \\lor \\sim Q$\n4. $\\sim(P \\implies Q) \\equiv P \\land \\sim Q$ (นิเสธของถ้าแล้ว คือ หน้าและไม่หลัง)\n\n**เทคนิคของ Thoth:**\nในการเช็คสัจนิรันดร์ของ $P \\implies Q$ ให้สมมติว่าเป็นเท็จ ($P=T, Q=F$) แล้วหาข้อขัดแย้ง ถ้าเจอข้อขัดแย้ง แสดงว่าเป็นสัจนิรันดร์",
-    "youtubeId": "JpG4_iE1S4o",
-    "tags": ["math", "logic"]
-  },
-  {
-    "id": "math_006",
-    "title": "ตัวบ่งปริมาณ (Quantifiers)",
-    "content": "การศึกษาข้อความที่มี $\\forall$ (สำหรับสมาชิกทุกตัว) และ $\\exists$ (สำหรับสมาชิกบางตัว)\n\n**1. ค่าความจริง:**\n- $\\forall x [P(x)]$ จริงเมื่อ $P(x)$ จริงสำหรับทุก $x$ ในเอกภพสัมพัทธ์ ($U$)\n- $\\exists x [P(x)]$ จริงเมื่อพบอย่างน้อยหนึ่ง $x$ ที่ทำให้ $P(x)$ จริง\n\n**2. นิเสธของตัวบ่งปริมาณ:**\n- $\\sim \\forall x [P(x)] \\equiv \\exists x [\\sim P(x)]$\n- $\\sim \\exists x [P(x)] \\equiv \\forall x [\\sim P(x)]$\n\n**ตัวอย่างการพิสูจน์:**\nการพิสูจน์ว่า $\\forall x [P(x)]$ เป็นเท็จ ทำได้โดยการยก 'ตัวอย่างค้าน' (Counterexample) เพียงตัวเดียว",
-    "youtubeId": "gI96_I-oP78",
-    "tags": ["math", "logic"]
-  },
-  {
-    "id": "math_007",
-    "title": "ระบบจำนวนจริง (Real Number System)",
-    "content": "โครงสร้างของจำนวนที่เป็นพื้นฐานของแคลคูลัส\n\n**แผนผัง:**\nจำนวนจริง ($\\mathbb{R}$) แบ่งเป็น:\n- จำนวนตรรกยะ ($\\mathbb{Q}$): เขียนในรูปเศษส่วนได้\n- จำนวนอตกรรกยะ ($\\mathbb{Q}'$): เช่น $\\pi, \\sqrt{2}$, ทศนิยมไม่ซ้ำไม่รู้จบ\n\n**สมบัติปิด (Closure Property):**\nถ้า $a, b \\in \\mathbb{R}$ แล้ว $a+b \\in \\mathbb{R}$ และ $ab \\in \\mathbb{R}$\n\n**สมบัติการแจกแจง:** $a(b+c) = ab + ac$\n\n**Thoth's Reminder:** ศูนย์ ($0$) ไม่มีอินเวอร์สการคูณ เพราะ $\\frac{1}{0}$ ไม่นิยาม",
+    "id": "math_master_3",
+    "title": "Master Summary: numbers",
+    "content": "### ระบบจำนวนจริง (Real Number System)\nโครงสร้างของจำนวนที่เป็นพื้นฐานของแคลคูลัส\n\n**แผนผัง:**\nจำนวนจริง ($\\mathbb{R}$) แบ่งเป็น:\n- จำนวนตรรกยะ ($\\mathbb{Q}$): เขียนในรูปเศษส่วนได้\n- จำนวนอตกรรกยะ ($\\mathbb{Q}'$): เช่น $\\pi, \\sqrt{2}$, ทศนิยมไม่ซ้ำไม่รู้จบ\n\n**สมบัติปิด (Closure Property):**\nถ้า $a, b \\in \\mathbb{R}$ แล้ว $a+b \\in \\mathbb{R}$ และ $ab \\in \\mathbb{R}$\n\n**สมบัติการแจกแจง:** $a(b+c) = ab + ac$\n\n**Thoth's Reminder:** ศูนย์ ($0$) ไม่มีอินเวอร์สการคูณ เพราะ $\\frac{1}{0}$ ไม่นิยาม",
     "youtubeId": "qW60o6jE38U",
-    "tags": ["math", "numbers"]
+    "tags": [
+      "math",
+      "numbers"
+    ]
   },
   {
-    "id": "math_008",
-    "title": "การแยกตัวประกอบพหุนาม (Polynomial Factorization)",
-    "content": "พื้นฐานการแก้สมการกำลัง $n$\n\n**สูตรสำคัญ:**\n- ผลต่างกำลังสอง: $a^2 - b^2 = (a-b)(a+b)$\n- กำลังสองสมบูรณ์: $(a \\pm b)^2 = a^2 \\pm 2ab + b^2$\n- ผลบวก/ต่างกำลังสาม:\n  $a^3 + b^3 = (a+b)(a^2 - ab + b^2)$\n  $a^3 - b^3 = (a-b)(a^2 + ab + b^2)$\n\n**ทฤษฎีบทเศษเหลือ (Remainder Theorem):**\nถ้าหาร $P(x)$ ด้วย $x-c$ เศษที่ได้คือ $P(c)$\n\n**ทฤษฎีบทตัวประกอบ (Factor Theorem):**\n$x-c$ เป็นตัวประกอบของ $P(x)$ ก็ต่อเมื่อ $P(c) = 0$",
+    "id": "math_master_4",
+    "title": "Master Summary: algebra",
+    "content": "### การแยกตัวประกอบพหุนาม (Polynomial Factorization)\nพื้นฐานการแก้สมการกำลัง $n$\n\n**สูตรสำคัญ:**\n- ผลต่างกำลังสอง: $a^2 - b^2 = (a-b)(a+b)$\n- กำลังสองสมบูรณ์: $(a \\pm b)^2 = a^2 \\pm 2ab + b^2$\n- ผลบวก/ต่างกำลังสาม:\n  $a^3 + b^3 = (a+b)(a^2 - ab + b^2)$\n  $a^3 - b^3 = (a-b)(a^2 + ab + b^2)$\n\n**ทฤษฎีบทเศษเหลือ (Remainder Theorem):**\nถ้าหาร $P(x)$ ด้วย $x-c$ เศษที่ได้คือ $P(c)$\n\n**ทฤษฎีบทตัวประกอบ (Factor Theorem):**\n$x-c$ เป็นตัวประกอบของ $P(x)$ ก็ต่อเมื่อ $P(c) = 0$\n\n---\n\n### สมการและอสมการพหุนาม (Equations and Inequalities)\nการหาเซตคำตอบของพหุนามบนเส้นจำนวน\n\n**ขั้นตอนการแก้อสมการ:**\n1. จัดฝั่งหนึ่งให้เป็น 0\n2. แยกตัวประกอบให้สัมประสิทธิ์หน้า $x$ เป็นบวก\n3. หาค่าวิกฤต (Critical points)\n4. พลอตบนเส้นจำนวน ใส่เครื่องหมาย $+ , - , +$ เริ่มจากขวาไปซ้าย\n\n**ข้อควรระวัง:**\n- ห้ามนำตัวแปรที่ยังไม่ทราบค่า (ที่อาจเป็นลบ) ไปคูณไขว้ในอสมการ เพราะเครื่องหมายอาจต้องเปลี่ยน\n- ถ้าคูณด้วยเลขลบ เครื่องหมายอสมการต้องกลับด้าน\n\n---\n\n### ค่าสัมบูรณ์ (Absolute Value)\nนิยาม: $|x| = x$ ถ้า $x \\ge 0$ และ $|x| = -x$ ถ้า $x < 0$\n\n**สมบัติที่สำคัญ:**\n1. $|x| = \\sqrt{x^2}$\n2. $|xy| = |x||y|$\n3. $|x+y| \\le |x| + |y|$ (อสมการอิงรูปสามเหลี่ยม)\n\n**การแก้สมการ/อสมการค่าสัมบูรณ์:**\n- $|x| = a \\iff x = a$ หรือ $x = -a$\n- $|x| < a \\iff -a < x < a$\n- $|x| > a \\iff x > a$ หรือ $x < -a$\n\n**Thoth's Technique:** เมื่อเจอ $|f(x)| = |g(x)|$ ให้ยกกำลังสองทั้งสองข้างเพื่อกำจัดค่าสัมบูรณ์\n\n---\n\n### ฟังก์ชันเอกซ์โพเนนเชียล (Exponential Functions)\nฟังก์ชันในรูป $f(x) = a^x$ โดยที่ $a > 0$ และ $a \\neq 1$\n\n**1. กราฟ:**\n- ถ้า $a > 1$: ฟังก์ชันเพิ่ม (Increasing)\n- ถ้า $0 < a < 1$: ฟังก์ชันลด (Decreasing)\n- กราฟผ่านจุด $(0, 1)$ เสมอ\n\n**2. กฎของเลขยกกำลัง:**\n- $a^m \\cdot a^n = a^{m+n}$\n- $(a^m)^n = a^{mn}$\n- $a^{-n} = \\frac{1}{a^n}$\n\n**Thoth's Tip:** ในการแก้สมการเอกซ์โพเนนเชียล พยายามจัดฐานให้เท่ากัน แล้วจับเลขชี้กำลังมาเท่ากัน\n\n---\n\n### ลอการิทึม (Logarithms)\nส่วนกลับของเอกซ์โพเนนเชียล: $y = \\log_a x \\iff a^y = x$\n\n**กฎของลอการิทึม (Log Laws):**\n1. $\\log_a (MN) = \\log_a M + \\log_a N$\n2. $\\log_a (M/N) = \\log_a M - \\log_a N$\n3. $\\log_a M^p = p \\log_a M$\n4. $\\log_a a = 1$ และ $\\log_a 1 = 0$\n5. เปลี่ยนฐาน: $\\log_a b = \\frac{\\log_c b}{\\log_c a}$\n\n**นิยาม:** ลอการิทึมธรรมชาติ (Natural Log) คือ $\\ln x = \\log_e x$ โดย $e \\approx 2.718$\n\n---\n\n### ทฤษฎีบททวินาม (Binomial Theorem)\nการขยายพจน์ของ $(x+y)^n$\n\n**สูตร:**\n$(x+y)^n = \\sum_{k=0}^n \\binom{n}{k} x^{n-k} y^k$\n\n**การหาพจน์ที่ $r+1$:**\n$T_{r+1} = \\binom{n}{r} x^{n-r} y^r$\n\n**สมบัติ:**\n- ผลบวกสัมประสิทธิ์ทั้งหมดหาได้โดยแทน $x=1, y=1$ ในนิพจน์ ซึ่งจะได้ $2^n$\n- สามเหลี่ยมปาสกาล (Pascal's Triangle) คือแผนผังของสัมประสิทธิ์ทวินาม",
     "youtubeId": "K2D-vS0Y56Q",
-    "tags": ["math", "algebra"]
+    "tags": [
+      "math",
+      "algebra",
+      "exponential",
+      "logarithm"
+    ]
   },
   {
-    "id": "math_009",
-    "title": "สมการและอสมการพหุนาม (Equations and Inequalities)",
-    "content": "การหาเซตคำตอบของพหุนามบนเส้นจำนวน\n\n**ขั้นตอนการแก้อสมการ:**\n1. จัดฝั่งหนึ่งให้เป็น 0\n2. แยกตัวประกอบให้สัมประสิทธิ์หน้า $x$ เป็นบวก\n3. หาค่าวิกฤต (Critical points)\n4. พลอตบนเส้นจำนวน ใส่เครื่องหมาย $+ , - , +$ เริ่มจากขวาไปซ้าย\n\n**ข้อควรระวัง:**\n- ห้ามนำตัวแปรที่ยังไม่ทราบค่า (ที่อาจเป็นลบ) ไปคูณไขว้ในอสมการ เพราะเครื่องหมายอาจต้องเปลี่ยน\n- ถ้าคูณด้วยเลขลบ เครื่องหมายอสมการต้องกลับด้าน",
-    "youtubeId": "fR5M_7_U_fA",
-    "tags": ["math", "algebra"]
-  },
-  {
-    "id": "math_010",
-    "title": "ค่าสัมบูรณ์ (Absolute Value)",
-    "content": "นิยาม: $|x| = x$ ถ้า $x \\ge 0$ และ $|x| = -x$ ถ้า $x < 0$\n\n**สมบัติที่สำคัญ:**\n1. $|x| = \\sqrt{x^2}$\n2. $|xy| = |x||y|$\n3. $|x+y| \\le |x| + |y|$ (อสมการอิงรูปสามเหลี่ยม)\n\n**การแก้สมการ/อสมการค่าสัมบูรณ์:**\n- $|x| = a \\iff x = a$ หรือ $x = -a$\n- $|x| < a \\iff -a < x < a$\n- $|x| > a \\iff x > a$ หรือ $x < -a$\n\n**Thoth's Technique:** เมื่อเจอ $|f(x)| = |g(x)|$ ให้ยกกำลังสองทั้งสองข้างเพื่อกำจัดค่าสัมบูรณ์",
-    "youtubeId": "5uO-6A38LpM",
-    "tags": ["math", "algebra"]
-  },
-  {
-    "id": "math_011",
-    "title": "ฟังก์ชันและนิยาม (Functions and Definitions)",
-    "content": "ความสัมพันธ์ที่สมาชิกแต่ละตัวในโดเมนจับคู่กับสมาชิกในเรนจ์เพียงตัวเดียว\n\n**1. โดเมน ($D_f$) และเรนจ์ ($R_f$):**\n- โดเมน: เซตของค่า $x$ ที่หาค่า $f(x)$ ได้\n- เรนจ์: เซตของค่า $y$ ที่เป็นไปได้ทั้งหมด\n\n**2. การเช็คฟังก์ชัน:**\n- ใช้ Vertical Line Test: ลากเส้นแนวตั้งตัดกราฟ ถ้าตัดไม่เกิน 1 จุด คือฟังก์ชัน\n\n**3. ฟังก์ชัน 1-1:**\n- เช็คโดย Horizontal Line Test: ลากเส้นแนวนอนตัดกราฟ ถ้าตัดไม่เกิน 1 จุด คือฟังก์ชัน 1-1",
+    "id": "math_master_5",
+    "title": "Master Summary: functions",
+    "content": "### ฟังก์ชันและนิยาม (Functions and Definitions)\nความสัมพันธ์ที่สมาชิกแต่ละตัวในโดเมนจับคู่กับสมาชิกในเรนจ์เพียงตัวเดียว\n\n**1. โดเมน ($D_f$) และเรนจ์ ($R_f$):**\n- โดเมน: เซตของค่า $x$ ที่หาค่า $f(x)$ ได้\n- เรนจ์: เซตของค่า $y$ ที่เป็นไปได้ทั้งหมด\n\n**2. การเช็คฟังก์ชัน:**\n- ใช้ Vertical Line Test: ลากเส้นแนวตั้งตัดกราฟ ถ้าตัดไม่เกิน 1 จุด คือฟังก์ชัน\n\n**3. ฟังก์ชัน 1-1:**\n- เช็คโดย Horizontal Line Test: ลากเส้นแนวนอนตัดกราฟ ถ้าตัดไม่เกิน 1 จุด คือฟังก์ชัน 1-1\n\n---\n\n### ฟังก์ชันประกอบและฟังก์ชันผกผัน (Composite and Inverse)\nการดำเนินการขั้นสูงของฟังก์ชัน\n\n**1. ฟังก์ชันประกอบ (Composite Function):**\n$(g \\circ f)(x) = g(f(x))$\n- เงื่อนไขการเกิด: $R_f \\cap D_g \\neq \\emptyset$\n\n**2. ฟังก์ชันผกผัน (Inverse Function):**\n$f^{-1}$ จะมีได้ก็ต่อเมื่อ $f$ เป็นฟังก์ชัน 1-1\n- วิธีหา: สลับที่ $x, y$ แล้วจัดรูป $y$ ในเทอม $x$\n- สมบัติ: $(f \\circ f^{-1})(x) = x$ และ $(f^{-1} \\circ f)(x) = x$\n- กราฟของ $f$ และ $f^{-1}$ จะสมมาตรกันรอบเส้นตรง $y = x$",
     "youtubeId": "hR6u_Dq6KxE",
-    "tags": ["math", "functions"]
+    "tags": [
+      "math",
+      "functions"
+    ]
   },
   {
-    "id": "math_012",
-    "title": "ฟังก์ชันประกอบและฟังก์ชันผกผัน (Composite and Inverse)",
-    "content": "การดำเนินการขั้นสูงของฟังก์ชัน\n\n**1. ฟังก์ชันประกอบ (Composite Function):**\n$(g \\circ f)(x) = g(f(x))$\n- เงื่อนไขการเกิด: $R_f \\cap D_g \\neq \\emptyset$\n\n**2. ฟังก์ชันผกผัน (Inverse Function):**\n$f^{-1}$ จะมีได้ก็ต่อเมื่อ $f$ เป็นฟังก์ชัน 1-1\n- วิธีหา: สลับที่ $x, y$ แล้วจัดรูป $y$ ในเทอม $x$\n- สมบัติ: $(f \\circ f^{-1})(x) = x$ และ $(f^{-1} \\circ f)(x) = x$\n- กราฟของ $f$ และ $f^{-1}$ จะสมมาตรกันรอบเส้นตรง $y = x$",
-    "youtubeId": "A2V8I_3S6E0",
-    "tags": ["math", "functions"]
-  },
-  {
-    "id": "math_013",
-    "title": "ฟังก์ชันเอกซ์โพเนนเชียล (Exponential Functions)",
-    "content": "ฟังก์ชันในรูป $f(x) = a^x$ โดยที่ $a > 0$ และ $a \\neq 1$\n\n**1. กราฟ:**\n- ถ้า $a > 1$: ฟังก์ชันเพิ่ม (Increasing)\n- ถ้า $0 < a < 1$: ฟังก์ชันลด (Decreasing)\n- กราฟผ่านจุด $(0, 1)$ เสมอ\n\n**2. กฎของเลขยกกำลัง:**\n- $a^m \\cdot a^n = a^{m+n}$\n- $(a^m)^n = a^{mn}$\n- $a^{-n} = \\frac{1}{a^n}$\n\n**Thoth's Tip:** ในการแก้สมการเอกซ์โพเนนเชียล พยายามจัดฐานให้เท่ากัน แล้วจับเลขชี้กำลังมาเท่ากัน",
-    "youtubeId": "6mPq6M8R8iU",
-    "tags": ["math", "algebra", "exponential"]
-  },
-  {
-    "id": "math_014",
-    "title": "ลอการิทึม (Logarithms)",
-    "content": "ส่วนกลับของเอกซ์โพเนนเชียล: $y = \\log_a x \\iff a^y = x$\n\n**กฎของลอการิทึม (Log Laws):**\n1. $\\log_a (MN) = \\log_a M + \\log_a N$\n2. $\\log_a (M/N) = \\log_a M - \\log_a N$\n3. $\\log_a M^p = p \\log_a M$\n4. $\\log_a a = 1$ และ $\\log_a 1 = 0$\n5. เปลี่ยนฐาน: $\\log_a b = \\frac{\\log_c b}{\\log_c a}$\n\n**นิยาม:** ลอการิทึมธรรมชาติ (Natural Log) คือ $\\ln x = \\log_e x$ โดย $e \\approx 2.718$",
-    "youtubeId": "q8xT8Yf-h4w",
-    "tags": ["math", "algebra", "logarithm"]
-  },
-  {
-    "id": "math_015",
-    "title": "ฟังก์ชันตรีโกณมิติและวงกลมหนึ่งหน่วย (Trigonometry and Unit Circle)",
-    "content": "การนิยามฟังก์ชันบนวงกลมรัศมี 1 หน่วย ($x^2 + y^2 = 1$)\n\n**นิยาม:**\n- $x = \\cos \\theta$\n- $y = \\sin \\theta$\n- $\\tan \\theta = y/x = \\sin \\theta / \\cos \\theta$\n\n**เอกลักษณ์พื้นฐาน:**\n- $\\sin^2 \\theta + \\cos^2 \\theta = 1$\n- $1 + \\tan^2 \\theta = \\sec^2 \\theta$\n- $1 + \\cot^2 \\theta = \\csc^2 \\theta$\n\n**ควอดรันต์ (Quadrant):**\n- Q1: All (+)\n- Q2: Sin (+)\n- Q3: Tan (+)\n- Q4: Cos (+)\nท่องว่า 'All-Sin-Tan-Cos'",
+    "id": "math_master_6",
+    "title": "Master Summary: trigonometry",
+    "content": "### ฟังก์ชันตรีโกณมิติและวงกลมหนึ่งหน่วย (Trigonometry and Unit Circle)\nการนิยามฟังก์ชันบนวงกลมรัศมี 1 หน่วย ($x^2 + y^2 = 1$)\n\n**นิยาม:**\n- $x = \\cos \\theta$\n- $y = \\sin \\theta$\n- $\\tan \\theta = y/x = \\sin \\theta / \\cos \\theta$\n\n**เอกลักษณ์พื้นฐาน:**\n- $\\sin^2 \\theta + \\cos^2 \\theta = 1$\n- $1 + \\tan^2 \\theta = \\sec^2 \\theta$\n- $1 + \\cot^2 \\theta = \\csc^2 \\theta$\n\n**ควอดรันต์ (Quadrant):**\n- Q1: All (+)\n- Q2: Sin (+)\n- Q3: Tan (+)\n- Q4: Cos (+)\nท่องว่า 'All-Sin-Tan-Cos'\n\n---\n\n### สูตรตรีโกณมิติที่สำคัญ (Trig Formulas)\nรวมสูตรสำหรับมุมประกอบและมุมหลายเท่า\n\n**1. มุมบวก/ลบ:**\n- $\\sin(A \\pm B) = \\sin A \\cos B \\pm \\cos A \\sin B$\n- $\\cos(A \\pm B) = \\cos A \\cos B \\mp \\sin A \\sin B$\n- $\\tan(A \\pm B) = \\frac{\\tan A \\pm \\tan B}{1 \\mp \\tan A \\tan B}$\n\n**2. มุมสองเท่า (Double Angle):**\n- $\\sin 2A = 2\\sin A \\cos A$\n- $\\cos 2A = \\cos^2 A - \\sin^2 A = 2\\cos^2 A - 1 = 1 - 2\\sin^2 A$\n- $\\tan 2A = \\frac{2\\tan A}{1 - \\tan^2 A}$\n\n**เคล็ดลับ Thoth:** $\\cos 2A$ มี 3 รูปแบบ เลือกใช้ตามสิ่งที่โจทย์กำหนดให้\n\n---\n\n### กฎของไซน์และโคไซน์ (Laws of Sines and Cosines)\nการแก้รูปสามเหลี่ยมใดๆ ที่ไม่ใช่สามเหลี่ยมมุมฉาก\n\n**1. กฎของไซน์ (Law of Sines):**\n$\\frac{a}{\\sin A} = \\frac{b}{\\sin B} = \\frac{c}{\\sin C} = 2R$ (เมื่อ $R$ คือรัศมีวงกลมล้อมรอบ)\n\n**2. กฎของโคไซน์ (Law of Cosines):**\n$a^2 = b^2 + c^2 - 2bc \\cos A$\n(ใช้เมื่อรู้ 2 ด้าน 1 มุมระหว่าง หรือรู้ 3 ด้าน)\n\n**3. พื้นที่สามเหลี่ยม:**\n$Area = \\frac{1}{2} ab \\sin C$\nหรือสูตร Heron: $\\sqrt{s(s-a)(s-b)(s-c)}$ เมื่อ $s = (a+b+c)/2$",
     "youtubeId": "pM-E_w4H1N0",
-    "tags": ["math", "trigonometry"]
+    "tags": [
+      "math",
+      "trigonometry",
+      "geometry"
+    ]
   },
   {
-    "id": "math_016",
-    "title": "สูตรตรีโกณมิติที่สำคัญ (Trig Formulas)",
-    "content": "รวมสูตรสำหรับมุมประกอบและมุมหลายเท่า\n\n**1. มุมบวก/ลบ:**\n- $\\sin(A \\pm B) = \\sin A \\cos B \\pm \\cos A \\sin B$\n- $\\cos(A \\pm B) = \\cos A \\cos B \\mp \\sin A \\sin B$\n- $\\tan(A \\pm B) = \\frac{\\tan A \\pm \\tan B}{1 \\mp \\tan A \\tan B}$\n\n**2. มุมสองเท่า (Double Angle):**\n- $\\sin 2A = 2\\sin A \\cos A$\n- $\\cos 2A = \\cos^2 A - \\sin^2 A = 2\\cos^2 A - 1 = 1 - 2\\sin^2 A$\n- $\\tan 2A = \\frac{2\\tan A}{1 - \\tan^2 A}$\n\n**เคล็ดลับ Thoth:** $\\cos 2A$ มี 3 รูปแบบ เลือกใช้ตามสิ่งที่โจทย์กำหนดให้",
-    "youtubeId": "L-S7B-X-F-E",
-    "tags": ["math", "trigonometry"]
-  },
-  {
-    "id": "math_017",
-    "title": "กฎของไซน์และโคไซน์ (Laws of Sines and Cosines)",
-    "content": "การแก้รูปสามเหลี่ยมใดๆ ที่ไม่ใช่สามเหลี่ยมมุมฉาก\n\n**1. กฎของไซน์ (Law of Sines):**\n$\\frac{a}{\\sin A} = \\frac{b}{\\sin B} = \\frac{c}{\\sin C} = 2R$ (เมื่อ $R$ คือรัศมีวงกลมล้อมรอบ)\n\n**2. กฎของโคไซน์ (Law of Cosines):**\n$a^2 = b^2 + c^2 - 2bc \\cos A$\n(ใช้เมื่อรู้ 2 ด้าน 1 มุมระหว่าง หรือรู้ 3 ด้าน)\n\n**3. พื้นที่สามเหลี่ยม:**\n$Area = \\frac{1}{2} ab \\sin C$\nหรือสูตร Heron: $\\sqrt{s(s-a)(s-b)(s-c)}$ เมื่อ $s = (a+b+c)/2$",
-    "youtubeId": "8J0_B1gS17g",
-    "tags": ["math", "trigonometry", "geometry"]
-  },
-  {
-    "id": "math_018",
-    "title": "เรขาคณิตวิเคราะห์ (Coordinate Geometry)",
-    "content": "การศึกษาความสัมพันธ์ของจุดและเส้นตรงบนระนาบคาร์ทีเซียน\n\n**1. ระยะทางระหว่างจุด:** $d = \\sqrt{(x_2-x_1)^2 + (y_2-y_1)^2}$\n**2. จุดกึ่งกลาง:** $(\\frac{x_1+x_2}{2}, \\frac{y_1+y_2}{2})$\n**3. ความชัน (Slope):** $m = \\frac{y_2-y_1}{x_2-x_1} = \\tan \\theta$\n\n**ความสัมพันธ์ของเส้นตรง:**\n- ขนานกัน: $m_1 = m_2$\n- ตั้งฉากกัน: $m_1 \\cdot m_2 = -1$\n\n**ระยะห่างระหว่างจุดกับเส้นตรง:**\n$d = \\frac{|Ax_1 + By_1 + C|}{\\sqrt{A^2 + B^2}}$ สำหรับเส้น $Ax + By + C = 0$",
+    "id": "math_master_7",
+    "title": "Master Summary: geometry",
+    "content": "### เรขาคณิตวิเคราะห์ (Coordinate Geometry)\nการศึกษาความสัมพันธ์ของจุดและเส้นตรงบนระนาบคาร์ทีเซียน\n\n**1. ระยะทางระหว่างจุด:** $d = \\sqrt{(x_2-x_1)^2 + (y_2-y_1)^2}$\n**2. จุดกึ่งกลาง:** $(\\frac{x_1+x_2}{2}, \\frac{y_1+y_2}{2})$\n**3. ความชัน (Slope):** $m = \\frac{y_2-y_1}{x_2-x_1} = \\tan \\theta$\n\n**ความสัมพันธ์ของเส้นตรง:**\n- ขนานกัน: $m_1 = m_2$\n- ตั้งฉากกัน: $m_1 \\cdot m_2 = -1$\n\n**ระยะห่างระหว่างจุดกับเส้นตรง:**\n$d = \\frac{|Ax_1 + By_1 + C|}{\\sqrt{A^2 + B^2}}$ สำหรับเส้น $Ax + By + C = 0$\n\n---\n\n### วงกลมและพาราโบลา (Circles and Parabolas)\nภาคตัดกรวยเบื้องต้น\n\n**1. วงกลม (Circle):**\n- รูปมาตรฐาน: $(x-h)^2 + (y-k)^2 = r^2$\n- จุดศูนย์กลาง $(h, k)$, รัศมี $r$\n\n**2. พาราโบลา (Parabola):**\n- รูปมาตรฐาน: $(y-k)^2 = 4p(x-h)$ (เปิดซ้าย/ขวา) หรือ $(x-h)^2 = 4p(y-k)$ (หงาย/คว่ำ)\n- จุดยอด $V(h, k)$\n- จุดโฟกัส $F$ ห่างจากจุดยอดเป็นระยะ $|p|$\n- เส้นไดเรกตริกซ์ (Directrix) อยู่ฝั่งตรงข้ามจุดโฟกัสห่างระยะ $|p|$ จากจุดยอด\n- Latus Rectum ยาว $|4p|$\n\n---\n\n### วงรีและไฮเพอร์โบลา (Ellipses and Hyperbolas)\nภาคตัดกรวยที่มีสองโฟกัส\n\n**1. วงรี (Ellipse):**\n- นิยาม: ผลบวกระยะทางจากจุดบนวงรีไปยังโฟกัสทั้งสองคงที่ $= 2a$\n- รูปแบบ: $\\frac{(x-h)^2}{a^2} + \\frac{(y-k)^2}{b^2} = 1$ (เมื่อ $a > b$)\n- ความสัมพันธ์: $a^2 = b^2 + c^2$ (เมื่อ $c$ คือระยะจากศูนย์กลางไปโฟกัส)\n\n**2. ไฮเพอร์โบลา (Hyperbola):**\n- นิยาม: ผลต่างระยะทางคงที่ $= 2a$\n- รูปแบบ: $\\frac{(x-h)^2}{a^2} - \\frac{(y-k)^2}{b^2} = 1$ (เปิดตามแกน $x$)\n- ความสัมพันธ์: $c^2 = a^2 + b^2$\n- เส้นกำกับ (Asymptote): $y-k = \\pm \\frac{b}{a}(x-h)$ (สำหรับเปิดตามแกน $x$)",
     "youtubeId": "T9A7C7K4N8M",
-    "tags": ["math", "geometry"]
+    "tags": [
+      "math",
+      "geometry",
+      "conics"
+    ]
   },
   {
-    "id": "math_019",
-    "title": "วงกลมและพาราโบลา (Circles and Parabolas)",
-    "content": "ภาคตัดกรวยเบื้องต้น\n\n**1. วงกลม (Circle):**\n- รูปมาตรฐาน: $(x-h)^2 + (y-k)^2 = r^2$\n- จุดศูนย์กลาง $(h, k)$, รัศมี $r$\n\n**2. พาราโบลา (Parabola):**\n- รูปมาตรฐาน: $(y-k)^2 = 4p(x-h)$ (เปิดซ้าย/ขวา) หรือ $(x-h)^2 = 4p(y-k)$ (หงาย/คว่ำ)\n- จุดยอด $V(h, k)$\n- จุดโฟกัส $F$ ห่างจากจุดยอดเป็นระยะ $|p|$\n- เส้นไดเรกตริกซ์ (Directrix) อยู่ฝั่งตรงข้ามจุดโฟกัสห่างระยะ $|p|$ จากจุดยอด\n- Latus Rectum ยาว $|4p|$",
-    "youtubeId": "3Y-B-K0D-8I",
-    "tags": ["math", "geometry", "conics"]
-  },
-  {
-    "id": "math_020",
-    "title": "วงรีและไฮเพอร์โบลา (Ellipses and Hyperbolas)",
-    "content": "ภาคตัดกรวยที่มีสองโฟกัส\n\n**1. วงรี (Ellipse):**\n- นิยาม: ผลบวกระยะทางจากจุดบนวงรีไปยังโฟกัสทั้งสองคงที่ $= 2a$\n- รูปแบบ: $\\frac{(x-h)^2}{a^2} + \\frac{(y-k)^2}{b^2} = 1$ (เมื่อ $a > b$)\n- ความสัมพันธ์: $a^2 = b^2 + c^2$ (เมื่อ $c$ คือระยะจากศูนย์กลางไปโฟกัส)\n\n**2. ไฮเพอร์โบลา (Hyperbola):**\n- นิยาม: ผลต่างระยะทางคงที่ $= 2a$\n- รูปแบบ: $\\frac{(x-h)^2}{a^2} - \\frac{(y-k)^2}{b^2} = 1$ (เปิดตามแกน $x$)\n- ความสัมพันธ์: $c^2 = a^2 + b^2$\n- เส้นกำกับ (Asymptote): $y-k = \\pm \\frac{b}{a}(x-h)$ (สำหรับเปิดตามแกน $x$)",
-    "youtubeId": "X7Y1V-S8G-k",
-    "tags": ["math", "geometry", "conics"]
-  },
-  {
-    "id": "math_021",
-    "title": "เมทริกซ์และพีชคณิตเชิงเส้น (Matrices)",
-    "content": "กลุ่มของจำนวนที่เรียงเป็นแถวและหลัก\n\n**1. การคูณเมทริกซ์:** แถวของตัวหน้าคูณหลักของตัวหลัง $(m \\times n) \\cdot (n \\times p) = (m \\times p)$\n\n**2. ดีเทอร์มิแนนต์ (Determinant):**\n- $2 \\times 2$: $\\det(A) = ad - bc$\n- สมบัติ: $\\det(AB) = \\det(A)\\det(B)$ และ $\\det(A^n) = (\\det A)^n$\n- $\\det(kA) = k^n \\det(A)$ (เมื่อ $n$ คือมิติของเมทริกซ์)\n\n**3. อินเวอร์ส (Inverse Matrix):** $A^{-1} = \\frac{1}{\\det A} \\text{adj}(A)$\n- จะหา $A^{-1}$ ได้ก็ต่อเมื่อ $\\det A \\neq 0$ (เรียกว่า Non-singular Matrix)",
+    "id": "math_master_8",
+    "title": "Master Summary: matrix",
+    "content": "### เมทริกซ์และพีชคณิตเชิงเส้น (Matrices)\nกลุ่มของจำนวนที่เรียงเป็นแถวและหลัก\n\n**1. การคูณเมทริกซ์:** แถวของตัวหน้าคูณหลักของตัวหลัง $(m \\times n) \\cdot (n \\times p) = (m \\times p)$\n\n**2. ดีเทอร์มิแนนต์ (Determinant):**\n- $2 \\times 2$: $\\det(A) = ad - bc$\n- สมบัติ: $\\det(AB) = \\det(A)\\det(B)$ และ $\\det(A^n) = (\\det A)^n$\n- $\\det(kA) = k^n \\det(A)$ (เมื่อ $n$ คือมิติของเมทริกซ์)\n\n**3. อินเวอร์ส (Inverse Matrix):** $A^{-1} = \\frac{1}{\\det A} \\text{adj}(A)$\n- จะหา $A^{-1}$ ได้ก็ต่อเมื่อ $\\det A \\neq 0$ (เรียกว่า Non-singular Matrix)",
     "youtubeId": "I8R9i_qA2M8",
-    "tags": ["math", "matrix"]
+    "tags": [
+      "math",
+      "matrix"
+    ]
   },
   {
-    "id": "math_022",
-    "title": "เวกเตอร์ในสองและสามมิติ (Vectors)",
-    "content": "ปริมาณที่มีทั้งขนาดและทิศทาง\n\n**1. ผลคูณเชิงสเกลาร์ (Dot Product):**\n$\\vec{u} \\cdot \\vec{v} = |\\vec{u}||\\vec{v}| \\cos \\theta = u_1 v_1 + u_2 v_2 + u_3 v_3$\n- ถ้า $\\vec{u} \\cdot \\vec{v} = 0$ แสดงว่าเวกเตอร์ตั้งฉากกัน\n\n**2. ผลคูณเชิงเวกเตอร์ (Cross Product):**\n$\\vec{u} \\times \\vec{v} = \\det \\begin{vmatrix} \\mathbf{i} & \\mathbf{j} & \\mathbf{k} \\\\ u_1 & u_2 & u_3 \\\\ v_1 & v_2 & v_3 \\end{vmatrix}$\n- ผลลัพธ์เป็นเวกเตอร์ที่ตั้งฉากกับทั้ง $\\vec{u}$ และ $\\vec{v}$\n- $|\\vec{u} \\times \\vec{v}| = |\\vec{u}||\\vec{v}| \\sin \\theta$ (เท่ากับพื้นที่สี่เหลี่ยมด้านขนาน)",
+    "id": "math_master_9",
+    "title": "Master Summary: vector",
+    "content": "### เวกเตอร์ในสองและสามมิติ (Vectors)\nปริมาณที่มีทั้งขนาดและทิศทาง\n\n**1. ผลคูณเชิงสเกลาร์ (Dot Product):**\n$\\vec{u} \\cdot \\vec{v} = |\\vec{u}||\\vec{v}| \\cos \\theta = u_1 v_1 + u_2 v_2 + u_3 v_3$\n- ถ้า $\\vec{u} \\cdot \\vec{v} = 0$ แสดงว่าเวกเตอร์ตั้งฉากกัน\n\n**2. ผลคูณเชิงเวกเตอร์ (Cross Product):**\n$\\vec{u} \\times \\vec{v} = \\det \\begin{vmatrix} \\mathbf{i} & \\mathbf{j} & \\mathbf{k} \\\\ u_1 & u_2 & u_3 \\\\ v_1 & v_2 & v_3 \\end{vmatrix}$\n- ผลลัพธ์เป็นเวกเตอร์ที่ตั้งฉากกับทั้ง $\\vec{u}$ และ $\\vec{v}$\n- $|\\vec{u} \\times \\vec{v}| = |\\vec{u}||\\vec{v}| \\sin \\theta$ (เท่ากับพื้นที่สี่เหลี่ยมด้านขนาน)\n\n---\n\n### สมการระนาบใน 3 มิติ (Equations of Planes)\nการระบุตำแหน่งพื้นผิวในปริภูมิ 3 มิติ\n\n**สมการมาตรฐาน:** $A(x - x_0) + B(y - y_0) + C(z - z_0) = 0$\nหรือ $Ax + By + Cz + D = 0$\n\nโดยที่:\n- $\\vec{n} = \\langle A, B, C \\rangle$ คือ **เวกเตอร์แนวฉาก (Normal Vector)** ซึ่งตั้งฉากกับระนาบ\n- $(x_0, y_0, z_0)$ คือจุดใดๆ บนระนา\n\n**Thoth's Law:** ถ้าระนาบสองระนาบขนานกัน เวกเตอร์แนวฉากของทั้งคู่จะขนานกัน (เป็นสัดส่วนกัน)\n\n---\n\n### ระยะห่างในปริภูมิ 3 มิติ (Distances in 3D Space)\nสูตรการหาระยะที่สั้นที่สุด\n\n**1. จุดไปยังระนาบ:** ระยะจาก $(x_1, y_1, z_1)$ ไปยังระนาบ $Ax+By+Cz+D=0$ คือ:\n$d = \\frac{|Ax_1 + By_1 + Cz_1 + D|}{\\sqrt{A^2 + B^2 + C^2}}$\n\n**2. ระนาบขนานสองระนาบ:** $d = \\frac{|D_1 - D_2|}{\\sqrt{A^2 + B^2 + C^2}}$\n\n**3. เส้นตรงไขว้ต่างระนาบ (Skew Lines):** ระยะห่างสั้นที่สุดระหว่าง $L_1$ และ $L_2$ หาได้จาก:\n$d = \\frac{|(\\vec{P_2} - \\vec{P_1}) \\cdot (\\vec{v_1} \\times \\vec{v_2})|}{|\\vec{v_1} \\times \\vec{v_2}|}$\nเมื่อ $\\vec{P}$ คือจุดบนเส้น และ $\\vec{v}$ คือเวกเตอร์ทิศทาง\n\n---\n\n### ผลคูณเชิงสเกลาร์สามชั้น (Triple Scalar Product)\nการคำนวณปริมาตรโดยใช้เวกเตอร์\n\n**สูตร:** $\\text{Volume} = |\\vec{a} \\cdot (\\vec{b} \\times \\vec{c})|$\n\n**การคำนวณ:** สามารถหาได้จากการหา Determinant ของเมทริกซ์ที่นำเวกเตอร์ทั้งสามมาเรียงกัน:\n$\\det \\begin{vmatrix} a_1 & a_2 & a_3 \\\\ b_1 & b_2 & b_3 \\\\ c_1 & c_2 & c_3 \\end{vmatrix}$\n\n**ความหมาย:** คือปริมาตรของทรงสี่เหลี่ยมด้านขนาน (Parallelepiped) ที่มีเวกเตอร์ $\\vec{a}, \\vec{b}, \\vec{c}$ เป็นด้านประกอบ\n\n**Thoth's Note:** ถ้าค่านี้เป็น 0 แสดงว่าเวกเตอร์ทั้งสามอยู่ในระนาบเดียวกัน (Coplanar)",
     "youtubeId": "S-S9B-K1J-k",
-    "tags": ["math", "vector"]
+    "tags": [
+      "math",
+      "vector",
+      "3d",
+      "geometry"
+    ]
   },
   {
-    "id": "math_023",
-    "title": "จำนวนเชิงซ้อน (Complex Numbers)",
-    "content": "จำนวนในรูป $z = a + bi$ โดย $i = \\sqrt{-1}$\n\n**1. สังยุค (Conjugate):** $\\bar{z} = a - bi$\n**2. ค่าสัมบูรณ์:** $|z| = \\sqrt{a^2 + b^2}$\n**3. รูปเชิงขั้ว (Polar Form):** $z = r(\\cos \\theta + i\\sin \\theta)$ หรือ $z = r \\text{cis } \\theta$\n- โดย $r = |z|$ และ $\\tan \\theta = b/a$\n\n**ทฤษฎีบทของเดอมัวฟ์ (De Moivre's Theorem):**\n$z^n = r^n (\\cos n\\theta + i \\sin n\\theta)$\n\n**Thoth's Law:** รากที่ $n$ ของจำนวนเชิงซ้อนจะมีทั้งหมด $n$ ค่า และจุดบนระนาบเชิงซ้อนจะเรียงกันเป็นรูป $n$-เหลี่ยมด้านเท่า",
+    "id": "math_master_10",
+    "title": "Master Summary: complex",
+    "content": "### จำนวนเชิงซ้อน (Complex Numbers)\nจำนวนในรูป $z = a + bi$ โดย $i = \\sqrt{-1}$\n\n**1. สังยุค (Conjugate):** $\\bar{z} = a - bi$\n**2. ค่าสัมบูรณ์:** $|z| = \\sqrt{a^2 + b^2}$\n**3. รูปเชิงขั้ว (Polar Form):** $z = r(\\cos \\theta + i\\sin \\theta)$ หรือ $z = r \\text{cis } \\theta$\n- โดย $r = |z|$ และ $\\tan \\theta = b/a$\n\n**ทฤษฎีบทของเดอมัวฟ์ (De Moivre's Theorem):**\n$z^n = r^n (\\cos n\\theta + i \\sin n\\theta)$\n\n**Thoth's Law:** รากที่ $n$ ของจำนวนเชิงซ้อนจะมีทั้งหมด $n$ ค่า และจุดบนระนาบเชิงซ้อนจะเรียงกันเป็นรูป $n$-เหลี่ยมด้านเท่า",
     "youtubeId": "9E6_T-X-V-E",
-    "tags": ["math", "complex"]
+    "tags": [
+      "math",
+      "complex"
+    ]
   },
   {
-    "id": "math_024",
-    "title": "ลำดับและอนุกรม (Sequences and Series)",
-    "content": "การเรียงตัวของจำนวนอย่างมีแบบแผน\n\n**1. ลำดับเลขคณิต (Arithmetic):** $a_n = a_1 + (n-1)d$\n- ผลบวก $n$ พจน์แรก: $S_n = \\frac{n}{2}(a_1 + a_n)$\n\n**2. ลำดับเรขาคณิต (Geometric):** $a_n = a_1 r^{n-1}$\n- ผลบวก $n$ พจน์แรก: $S_n = \\frac{a_1(1-r^n)}{1-r}$\n\n**3. อนุกรมอนันต์ (Infinite Series):**\n- สำหรับอนุกรมเรขาคณิต: $S_\\infty = \\frac{a_1}{1-r} จะหาค่าได้เมื่อ $|r| < 1$\n- ถ้า $|r| \\ge 1$ อนุกรมจะลู่ออก (Divergent)",
+    "id": "math_master_11",
+    "title": "Master Summary: sequence",
+    "content": "### ลำดับและอนุกรม (Sequences and Series)\nการเรียงตัวของจำนวนอย่างมีแบบแผน\n\n**1. ลำดับเลขคณิต (Arithmetic):** $a_n = a_1 + (n-1)d$\n- ผลบวก $n$ พจน์แรก: $S_n = \\frac{n}{2}(a_1 + a_n)$\n\n**2. ลำดับเรขาคณิต (Geometric):** $a_n = a_1 r^{n-1}$\n- ผลบวก $n$ พจน์แรก: $S_n = \\frac{a_1(1-r^n)}{1-r}$\n\n**3. อนุกรมอนันต์ (Infinite Series):**\n- สำหรับอนุกรมเรขาคณิต: $S_\\infty = \\frac{a_1}{1-r} จะหาค่าได้เมื่อ $|r| < 1$\n- ถ้า $|r| \\ge 1$ อนุกรมจะลู่ออก (Divergent)",
     "youtubeId": "L-S7B-X-F-E",
-    "tags": ["math", "sequence"]
+    "tags": [
+      "math",
+      "sequence"
+    ]
   },
   {
-    "id": "math_025",
-    "title": "ลิมิตและความต่อเนื่อง (Limits and Continuity)",
-    "content": "หัวใจสำคัญของแคลคูลัส\n\n**1. ลิมิต (Limit):**\n$\\lim_{x \\to a} f(x) = L$ หมายความว่าเมื่อ $x$ เข้าใกล้ $a$ แล้ว $f(x)$ เข้าใกล้ $L$\n- ลิมิตจะมีค่าได้ก็ต่อเมื่อ ลิมิตซ้าย = ลิมิตขวา ($\\lim_{x \\to a^-} f(x) = \\lim_{x \\to a^+} f(x)$)\n\n**2. ความต่อเนื่อง (Continuity):**\n$f(x)$ ต่อเนื่องที่จุด $x=a$ เมื่อ:\n1. $f(a)$ หาค่าได้\n2. $\\lim_{x \\to a} f(x)$ หาค่าได้\n3. $\\lim_{x \\to a} f(x) = f(a)$\n\n**Thoth's Strategy:** เมื่อเจอ $\\frac{0}{0}$ ให้ลองแยกตัวประกอบเพื่อตัดกัน หรือใช้กฎของโลปิตาล (L'Hôpital's rule)",
-    "youtubeId": "q8xT8Yf-h4w",
-    "tags": ["math", "calculus"]
+    "id": "math_master_12",
+    "title": "Master Summary: calculus",
+    "content": "### ลิมิตและความต่อเนื่อง (Limits and Continuity)\nหัวใจสำคัญของแคลคูลัส\n\n**1. ลิมิต (Limit):**\n$\\lim_{x \\to a} f(x) = L$ หมายความว่าเมื่อ $x$ เข้าใกล้ $a$ แล้ว $f(x)$ เข้าใกล้ $L$\n- ลิมิตจะมีค่าได้ก็ต่อเมื่อ ลิมิตซ้าย = ลิมิตขวา ($\\lim_{x \\to a^-} f(x) = \\lim_{x \\to a^+} f(x)$)\n\n**2. ความต่อเนื่อง (Continuity):**\n$f(x)$ ต่อเนื่องที่จุด $x=a$ เมื่อ:\n1. $f(a)$ หาค่าได้\n2. $\\lim_{x \\to a} f(x)$ หาค่าได้\n3. $\\lim_{x \\to a} f(x) = f(a)$\n\n**Thoth's Strategy:** เมื่อเจอ $\\frac{0}{0}$ ให้ลองแยกตัวประกอบเพื่อตัดกัน หรือใช้กฎของโลปิตาล (L'Hôpital's rule)\n\n---\n\n### อนุพันธ์ของฟังก์ชัน (Differentiation)\nคืออัตราการเปลี่ยนแปลงขณะใดขณะหนึ่ง หรือความชันของเส้นสัมผัสโค้ง\n\n**สูตรพื้นฐาน:**\n- $\\frac{d}{dx} x^n = nx^{n-1}$\n- กฎผลคูณ: $(uv)' = uv' + vu'$\n- กฎผลหาร: $(\\frac{u}{v})' = \\frac{vu' - uv'}{v^2}$\n- กฎลูกโซ่ (Chain Rule): $\\frac{dy}{dx} = \\frac{dy}{du} \\cdot \\frac{du}{dx}$\n\n**การประยุกต์:**\n- จุดวิกฤต (Critical Points): $f'(x) = 0$\n- $f''(x) > 0$ แสดงว่าเป็นจุดต่ำสุดสัมพัทธ์ (Relative Minimum)\n- $f''(x) < 0$ แสดงว่าเป็นจุดสูงสุดสัมพัทธ์ (Relative Maximum)\n\n---\n\n### ปริพันธ์ (Integration)\nกระบวนการย้อนกลับของอนุพันธ์ ใช้หาพื้นที่ใต้กราฟ\n\n**1. ปริพันธ์ไม่จำกัดเขต:** $\\int x^n dx = \\frac{x^{n+1}}{n+1} + C$\n**2. ปริพันธ์จำกัดเขต:** $\\int_a^b f(x) dx = F(b) - F(a)$\n\n**ทฤษฎีบทหลักมูลของแคลคูลัส (Fundamental Theorem of Calculus):**\nความเชื่อมโยงระหว่างอนุพันธ์และอินทิกรัล: $\\frac{d}{dx} \\int_a^x f(t) dt = f(x)$\n\n**การประยุกต์:** พื้นที่ระหว่างเส้นโค้ง $f(x)$ และแกน $x$ คือ $\\int_a^b |f(x)| dx$\n\n---\n\n### ทฤษฎีบทค่าเฉลี่ย (Mean Value Theorem - MVT)\nเป็นหนึ่งในทฤษฎีบทที่สำคัญที่สุดในวิเคราะห์จริง (Real Analysis)\n\n**ทฤษฎีบท:** ถ้า $f$ ต่อเนื่องบนช่วงปิด $[a, b]$ และหาอนุพันธ์ได้บนช่วงเปิด $(a, b)$ แล้วจะมีอย่างน้อยหนึ่งจุด $c \\in (a, b)$ ที่ทำให้:\n$f'(c) = \\frac{f(b) - f(a)}{b - a}$\n\n**ความหมายเชิงเรขาคณิต:** จะมีจุดที่ความชันของเส้นสัมผัสโค้ง ($f'(c)$) เท่ากับความชันของเส้นเซแคนต์ที่ลากผ่านจุด $(a, f(a))$ และ $(b, f(b))$\n\n**บทพิสูจน์:** สร้างฟังก์ชันช่วย $g(x) = f(x) - [f(a) + \\frac{f(b)-f(a)}{b-a}(x-a)]$ แล้วใช้ทฤษฎีบทของโรล (Rolle's Theorem)\n\n---\n\n### อนุกรมเทย์เลอร์และแมคลอริน (Taylor and Maclaurin Series)\nการประมาณฟังก์ชันด้วยพหุนามอนันต์\n\n**สูตรทั่วไป:** $f(x) = \\sum_{n=0}^{\\infty} \\frac{f^{(n)}(a)}{n!}(x-a)^n$\n\n**อนุกรมแมคลอริน (เมื่อ $a=0$):** $f(x) = f(0) + f'(0)x + \\frac{f''(0)}{2!}x^2 + ...$\n\n**ตัวอย่างที่ควรจำ:**\n- $e^x = 1 + x + \\frac{x^2}{2!} + \\frac{x^3}{3!} + ...$\n- $\\sin x = x - \\frac{x^3}{3!} + \\frac{x^5}{5!} - ...$\n- $\\cos x = 1 - \\frac{x^2}{2!} + \\frac{x^4}{4!} - ...$\n\n---\n\n### การหาปริพันธ์แยกส่วน (Integration by Parts)\nเทคนิคการอินทิเกรตที่ตรงข้ามกับกฎผลคูณของอนุพันธ์\n\n**สูตร:** $\\int u \\, dv = uv - \\int v \\, du$\n\n**ที่มา:** จากกฎผลคูณ $d(uv) = u \\, dv + v \\, du$ ย้ายข้างจะได้ $u \\, dv = d(uv) - v \\, du$ แล้วทำการอินทิเกรตทั้งสองข้าง\n\n**เทคนิคการเลือก $u$ (LIATE Rule):**\n1. **L**ogarithmic\n2. **I**nverse Trig\n3. **A**lgebraic\n4. **T**rigonometric\n5. **E**xponential\nเลือกตัวที่อยู่สูงกว่าในลิสต์ให้เป็น $u$",
+    "youtubeId": "_8-D-Ym7-1Y",
+    "tags": [
+      "math",
+      "calculus",
+      "proof",
+      "series"
+    ]
   },
   {
-    "id": "math_026",
-    "title": "อนุพันธ์ของฟังก์ชัน (Differentiation)",
-    "content": "คืออัตราการเปลี่ยนแปลงขณะใดขณะหนึ่ง หรือความชันของเส้นสัมผัสโค้ง\n\n**สูตรพื้นฐาน:**\n- $\\frac{d}{dx} x^n = nx^{n-1}$\n- กฎผลคูณ: $(uv)' = uv' + vu'$\n- กฎผลหาร: $(\\frac{u}{v})' = \\frac{vu' - uv'}{v^2}$\n- กฎลูกโซ่ (Chain Rule): $\\frac{dy}{dx} = \\frac{dy}{du} \\cdot \\frac{du}{dx}$\n\n**การประยุกต์:**\n- จุดวิกฤต (Critical Points): $f'(x) = 0$\n- $f''(x) > 0$ แสดงว่าเป็นจุดต่ำสุดสัมพัทธ์ (Relative Minimum)\n- $f''(x) < 0$ แสดงว่าเป็นจุดสูงสุดสัมพัทธ์ (Relative Maximum)",
+    "id": "math_master_13",
+    "title": "Master Summary: probability",
+    "content": "### หลักการนับเบื้องต้น (Basic Counting)\nวิธีการนับจำนวนเหตุการณ์โดยไม่ใช้การแจกแจง\n\n**1. กฎการคูณ:** ถ้างานแบ่งเป็น $k$ ขั้นตอน ให้เอาจำนวนวิธีในแต่ละขั้นตอนมาคูณกัน\n**2. แฟกทอเรียล (Factorial):** $n! = n \\times (n-1) \\times ... \\times 1$\n**3. การจัดหมู่ (Combination):** เลือกสิ่งของโดยไม่สนลำดับ\n$C_{n,r} = \\binom{n}{r} = \\frac{n!}{(n-r)!r!}$\n**4. การเรียงสับเปลี่ยน (Permutation):** เลือกสิ่งของโดยสนลำดับ\n$P_{n,r} = \\frac{n!}{(n-r)!}$\n\n**Thoth's Rule:** ของติดกันให้มัดรวมกันเป็น 1 สิ่ง ของแยกกันให้แทรกทีหลัง\n\n---\n\n### ความน่าจะเป็น (Probability)\nการวัดโอกาสในการเกิดเหตุการณ์ที่สนใจ\n\n**นิยาม:** $P(E) = \\frac{n(E)}{n(S)}$ เมื่อ $S$ คือ Sample Space\n\n**สมบัติ:**\n1. $0 \\le P(E) \\le 1$\n2. $P(A \\cup B) = P(A) + P(B) - P(A \\cap B)$\n3. $P(A') = 1 - P(A)$\n\n**ความน่าจะเป็นแบบมีเงื่อนไข (Conditional Probability):**\n$P(A|B) = \\frac{P(A \\cap B)}{P(B)}$ (โอกาสเกิด $A$ เมื่อรู้ว่า $B$ เกิดขึ้นแล้ว)\n\n---\n\n### ทฤษฎีบทของเบย์ (Bayes' Theorem)\nการอัปเดตความน่าจะเป็นเมื่อมีข้อมูลใหม่เข้ามา\n\n**สูตร:** $P(A|B) = \\frac{P(B|A)P(A)}{P(B)}$\n\nโดยที่:\n- $P(A|B)$ คือความน่าจะเป็นภายหลัง (Posterior)\n- $P(B|A)$ คือ Likelihood\n- $P(A)$ คือความน่าจะเป็นก่อนหน้า (Prior)\n\n**การประยุกต์:** การวินิจฉัยโรค (Medical Testing) โอกาสที่เป็นโรคจริงๆ เมื่อผลตรวจเป็นบวก มักจะต่ำกว่าที่คนส่วนใหญ่คาดคิดหากโรคนั้นพบน้อยมากในประชากร",
+    "youtubeId": "v-J-K-L-M-N",
+    "tags": [
+      "math",
+      "probability",
+      "statistics"
+    ]
+  },
+  {
+    "id": "math_master_14",
+    "title": "Master Summary: statistics",
+    "content": "### สถิติพรรณนา (Descriptive Statistics)\nการหาค่าตัวแทนของข้อมูล\n\n**1. ค่ากลาง:**\n- ค่าเฉลี่ยเลขคณิต (Mean): $\\mu = \\frac{\\sum x_i}{N}$\n- มัธยฐาน (Median): ค่าที่อยู่กึ่งกลางเมื่อเรียงข้อมูล\n- ฐานนิยม (Mode): ข้อมูลที่มีความถี่สูงสุด\n\n**2. การวัดตำแหน่ง:** ควอไทล์ ($Q_r$), เดไซล์ ($D_r$), เปอร์เซ็นไทล์ ($P_r$)\n- ขั้นตอน: เรียงข้อมูล -> หาตำแหน่ง -> คำนวณค่า\n\n**3. ความสัมพันธ์:** ในข้อมูลเบ้ขวา (Positive Skew): ฐานนิยม < มัธยฐาน < ค่าเฉลี่ย\n\n---\n\n### การวัดการกระจายของข้อมูล (Measures of Dispersion)\nการศึกษาว่าข้อมูลเกาะกลุ่มหรือกระจายตัวเพียงใด\n\n**1. การกระจายสัมบูรณ์:**\n- ส่วนเบี่ยงเบนมาตรฐาน (Standard Deviation: $s$ or $\\sigma$):\n  $\\sigma = \\sqrt{\\frac{\\sum (x_i - \\mu)^2}{N}}$\n- ความแปรปรวน (Variance): $\\sigma^2$\n\n**2. การกระจายสัมพัทธ์:**\n- สัมประสิทธิ์การแปรผัน (C.V.): $\\frac{\\sigma}{|\\mu|}$\n\n**Thoth's Insights:** ถ้าบวกค่าคงที่ $k$ ให้ข้อมูลทุกตัว ค่าเฉลี่ยจะเปลี่ยนแต่ส่วนเบี่ยงเบนมาตรฐานจะ 'เท่าเดิม' แต่ถ้าคูณด้วย $k$ ส่วนเบี่ยงเบนมาตรฐานจะเปลี่ยนไป $|k|$ เท่า\n\n---\n\n### การแจกแจงปกติและคะแนนมาตรฐาน (Normal Distribution and Z-Score)\nการวิเคราะห์ข้อมูลที่มีรูปทรงระฆังคว่ำ\n\n**1. คะแนนมาตรฐาน (Z-score):**\n$z = \\frac{x - \\mu}{\\sigma}$\n- ช่วยในการเปรียบเทียบข้อมูลที่มาจากคนละชุดกัน\n\n**2. พื้นที่ใต้เส้นโค้งปกติ:**\n- $P(-1 < z < 1) \\approx 68.3\\%$\n- $P(-2 < z < 2) \\approx 95.4\\%$\n- $P(-3 < z < 3) \\approx 99.7\\%$\n\n**Thoth's Warning:** พื้นที่ใต้กราฟรวมทั้งหมดต้องเท่ากับ $1$ และกราฟสมมาตรรอบค่าเฉลี่ย ($z=0$)\n\n---\n\n### การทดสอบสมมติฐาน (Hypothesis Testing)\nการตัดสินใจทางสถิติเพื่อสรุปผลเกี่ยวกับประชากร\n\n**1. สมมติฐาน:** $H_0$ (Null) และ $H_1$ (Alternative)\n\n**2. ระดับนัยสำคัญ ($\\alpha$):** โอกาสที่เกิด Type I Error (ปฏิเสธ $H_0$ ทั้งที่เป็นจริง)\n\n**3. การเลือกสถิติทดสอบ:**\n- **Z-test:** ใช้เมื่อรู้ความแปรปรวนประชากร หรือกลุ่มตัวอย่างขนาดใหญ่ ($n \\ge 30$)\n- **T-test:** ใช้เมื่อไม่รู้ความแปรปรวนประชากร และกลุ่มตัวอย่างขนาดเล็ก\n\n**4. การตัดสินใจ:** ถ้า $p$-value $< \\alpha$ ให้ 'ปฏิเสธ $H_0$'",
     "youtubeId": "P-O-S-X-Y-E",
-    "tags": ["math", "calculus"]
+    "tags": [
+      "math",
+      "statistics"
+    ]
   },
   {
-    "id": "math_027",
-    "title": "ปริพันธ์ (Integration)",
-    "content": "กระบวนการย้อนกลับของอนุพันธ์ ใช้หาพื้นที่ใต้กราฟ\n\n**1. ปริพันธ์ไม่จำกัดเขต:** $\\int x^n dx = \\frac{x^{n+1}}{n+1} + C$\n**2. ปริพันธ์จำกัดเขต:** $\\int_a^b f(x) dx = F(b) - F(a)$\n\n**ทฤษฎีบทหลักมูลของแคลคูลัส (Fundamental Theorem of Calculus):**\nความเชื่อมโยงระหว่างอนุพันธ์และอินทิกรัล: $\\frac{d}{dx} \\int_a^x f(t) dt = f(x)$\n\n**การประยุกต์:** พื้นที่ระหว่างเส้นโค้ง $f(x)$ และแกน $x$ คือ $\\int_a^b |f(x)| dx$",
-    "youtubeId": "L-S7B-X-F-E",
-    "tags": ["math", "calculus"]
-  },
-  {
-    "id": "math_028",
-    "title": "หลักการนับเบื้องต้น (Basic Counting)",
-    "content": "วิธีการนับจำนวนเหตุการณ์โดยไม่ใช้การแจกแจง\n\n**1. กฎการคูณ:** ถ้างานแบ่งเป็น $k$ ขั้นตอน ให้เอาจำนวนวิธีในแต่ละขั้นตอนมาคูณกัน\n**2. แฟกทอเรียล (Factorial):** $n! = n \\times (n-1) \\times ... \\times 1$\n**3. การจัดหมู่ (Combination):** เลือกสิ่งของโดยไม่สนลำดับ\n$C_{n,r} = \\binom{n}{r} = \\frac{n!}{(n-r)!r!}$\n**4. การเรียงสับเปลี่ยน (Permutation):** เลือกสิ่งของโดยสนลำดับ\n$P_{n,r} = \\frac{n!}{(n-r)!}$\n\n**Thoth's Rule:** ของติดกันให้มัดรวมกันเป็น 1 สิ่ง ของแยกกันให้แทรกทีหลัง",
-    "youtubeId": "S-S9B-K1J-k",
-    "tags": ["math", "probability"]
-  },
-  {
-    "id": "math_029",
-    "title": "ความน่าจะเป็น (Probability)",
-    "content": "การวัดโอกาสในการเกิดเหตุการณ์ที่สนใจ\n\n**นิยาม:** $P(E) = \\frac{n(E)}{n(S)}$ เมื่อ $S$ คือ Sample Space\n\n**สมบัติ:**\n1. $0 \\le P(E) \\le 1$\n2. $P(A \\cup B) = P(A) + P(B) - P(A \\cap B)$\n3. $P(A') = 1 - P(A)$\n\n**ความน่าจะเป็นแบบมีเงื่อนไข (Conditional Probability):**\n$P(A|B) = \\frac{P(A \\cap B)}{P(B)}$ (โอกาสเกิด $A$ เมื่อรู้ว่า $B$ เกิดขึ้นแล้ว)",
-    "youtubeId": "v-J-K-L-M-N",
-    "tags": ["math", "probability"]
-  },
-  {
-    "id": "math_030",
-    "title": "สถิติพรรณนา (Descriptive Statistics)",
-    "content": "การหาค่าตัวแทนของข้อมูล\n\n**1. ค่ากลาง:**\n- ค่าเฉลี่ยเลขคณิต (Mean): $\\mu = \\frac{\\sum x_i}{N}$\n- มัธยฐาน (Median): ค่าที่อยู่กึ่งกลางเมื่อเรียงข้อมูล\n- ฐานนิยม (Mode): ข้อมูลที่มีความถี่สูงสุด\n\n**2. การวัดตำแหน่ง:** ควอไทล์ ($Q_r$), เดไซล์ ($D_r$), เปอร์เซ็นไทล์ ($P_r$)\n- ขั้นตอน: เรียงข้อมูล -> หาตำแหน่ง -> คำนวณค่า\n\n**3. ความสัมพันธ์:** ในข้อมูลเบ้ขวา (Positive Skew): ฐานนิยม < มัธยฐาน < ค่าเฉลี่ย",
-    "youtubeId": "P-O-S-X-Y-E",
-    "tags": ["math", "statistics"]
-  },
-  {
-    "id": "math_031",
-    "title": "การวัดการกระจายของข้อมูล (Measures of Dispersion)",
-    "content": "การศึกษาว่าข้อมูลเกาะกลุ่มหรือกระจายตัวเพียงใด\n\n**1. การกระจายสัมบูรณ์:**\n- ส่วนเบี่ยงเบนมาตรฐาน (Standard Deviation: $s$ or $\\sigma$):\n  $\\sigma = \\sqrt{\\frac{\\sum (x_i - \\mu)^2}{N}}$\n- ความแปรปรวน (Variance): $\\sigma^2$\n\n**2. การกระจายสัมพัทธ์:**\n- สัมประสิทธิ์การแปรผัน (C.V.): $\\frac{\\sigma}{|\\mu|}$\n\n**Thoth's Insights:** ถ้าบวกค่าคงที่ $k$ ให้ข้อมูลทุกตัว ค่าเฉลี่ยจะเปลี่ยนแต่ส่วนเบี่ยงเบนมาตรฐานจะ 'เท่าเดิม' แต่ถ้าคูณด้วย $k$ ส่วนเบี่ยงเบนมาตรฐานจะเปลี่ยนไป $|k|$ เท่า",
-    "youtubeId": "v-J-K-L-M-N",
-    "tags": ["math", "statistics"]
-  },
-  {
-    "id": "math_032",
-    "title": "การแจกแจงปกติและคะแนนมาตรฐาน (Normal Distribution and Z-Score)",
-    "content": "การวิเคราะห์ข้อมูลที่มีรูปทรงระฆังคว่ำ\n\n**1. คะแนนมาตรฐาน (Z-score):**\n$z = \\frac{x - \\mu}{\\sigma}$\n- ช่วยในการเปรียบเทียบข้อมูลที่มาจากคนละชุดกัน\n\n**2. พื้นที่ใต้เส้นโค้งปกติ:**\n- $P(-1 < z < 1) \\approx 68.3\\%$\n- $P(-2 < z < 2) \\approx 95.4\\%$\n- $P(-3 < z < 3) \\approx 99.7\\%$\n\n**Thoth's Warning:** พื้นที่ใต้กราฟรวมทั้งหมดต้องเท่ากับ $1$ และกราฟสมมาตรรอบค่าเฉลี่ย ($z=0$)",
-    "youtubeId": "q8xT8Yf-h4w",
-    "tags": ["math", "statistics"]
-  },
-  {
-    "id": "math_033",
-    "title": "คณิตศาสตร์การเงิน (Financial Mathematics)",
-    "content": "การคำนวณมูลค่าของเงินตามเวลา (Time Value of Money)\n\n**1. ดอกเบี้ยทบต้น (Compound Interest):**\n$A = P(1 + r)^n$\n- $P$ = เงินต้น, $r$ = อัตราดอกเบี้ยต่อคราว, $n$ = จำนวนคราว\n\n**2. มูลค่าปัจจุบันและอนาคต:**\n- $FV = PV(1+i)^n$\n- $PV = FV(1+i)^{-n}$\n\n**3. ค่างวด (Annuity):**\nการรับหรือจ่ายเงินเท่ากันทุกงวด\n$S = R[\\frac{(1+i)^n - 1}{i}]$ (สำหรับค่างวดตอนสิ้นงวด)\n\n**เคล็ดลับ:** อย่าลืมเช็คว่าดอกเบี้ยคิดเป็นรายปี รายเดือน หรือรายไตรมาส เพราะจะมีผลต่อค่า $i$ และ $n$",
-    "youtubeId": "v-J-K-L-M-N",
-    "tags": ["math", "finance"]
-  },
-  {
-    "id": "math_034",
-    "title": "ทฤษฎีบททวินาม (Binomial Theorem)",
-    "content": "การขยายพจน์ของ $(x+y)^n$\n\n**สูตร:**\n$(x+y)^n = \\sum_{k=0}^n \\binom{n}{k} x^{n-k} y^k$\n\n**การหาพจน์ที่ $r+1$:**\n$T_{r+1} = \\binom{n}{r} x^{n-r} y^r$\n\n**สมบัติ:**\n- ผลบวกสัมประสิทธิ์ทั้งหมดหาได้โดยแทน $x=1, y=1$ ในนิพจน์ ซึ่งจะได้ $2^n$\n- สามเหลี่ยมปาสกาล (Pascal's Triangle) คือแผนผังของสัมประสิทธิ์ทวินาม",
-    "youtubeId": "S-S9B-K1J-k",
-    "tags": ["math", "algebra"]
-  },
-  {
-    "id": "math_035",
-    "title": "ระบบอสมการและกำหนดการเชิงเส้น (Linear Programming)",
-    "content": "การหาค่าสูงสุดหรือต่ำสุดของฟังก์ชันเป้าหมายภายใต้ข้อจำกัด\n\n**ขั้นตอน:**\n1. กำหนดตัวแปร $x, y$\n2. สร้างฟังก์ชันเป้าหมาย $P = ax + by$\n3. สร้างอสมการข้อจำกัด\n4. วาดกราฟพื้นที่ที่คำตอบเป็นไปได้ (Feasible Region)\n5. หาจุดมุม (Vertex) ของพื้นที่\n6. นำจุดมุมไปแทนในฟังก์ชันเป้าหมายเพื่อหาค่าที่ต้องการ\n\n**Thoth's Observation:** ค่าสูงสุดหรือต่ำสุดมักจะเกิดขึ้นที่ 'จุดมุม' ของอาณาเขตเสมอ",
-    "youtubeId": "I8R9i_qA2M8",
-    "tags": ["math", "programming", "algebra"]
-  },
-  {
-    "id": "math_036",
-    "title": "ทฤษฎีบทค่าเฉลี่ย (Mean Value Theorem - MVT)",
-    "content": "เป็นหนึ่งในทฤษฎีบทที่สำคัญที่สุดในวิเคราะห์จริง (Real Analysis)\n\n**ทฤษฎีบท:** ถ้า $f$ ต่อเนื่องบนช่วงปิด $[a, b]$ และหาอนุพันธ์ได้บนช่วงเปิด $(a, b)$ แล้วจะมีอย่างน้อยหนึ่งจุด $c \\in (a, b)$ ที่ทำให้:\n$f'(c) = \\frac{f(b) - f(a)}{b - a}$\n\n**ความหมายเชิงเรขาคณิต:** จะมีจุดที่ความชันของเส้นสัมผัสโค้ง ($f'(c)$) เท่ากับความชันของเส้นเซแคนต์ที่ลากผ่านจุด $(a, f(a))$ และ $(b, f(b))$\n\n**บทพิสูจน์:** สร้างฟังก์ชันช่วย $g(x) = f(x) - [f(a) + \\frac{f(b)-f(a)}{b-a}(x-a)]$ แล้วใช้ทฤษฎีบทของโรล (Rolle's Theorem)",
-    "youtubeId": "7e-fX-Z9-X0",
-    "tags": ["math", "calculus", "proof"]
-  },
-  {
-    "id": "math_037",
-    "title": "อนุกรมเทย์เลอร์และแมคลอริน (Taylor and Maclaurin Series)",
-    "content": "การประมาณฟังก์ชันด้วยพหุนามอนันต์\n\n**สูตรทั่วไป:** $f(x) = \\sum_{n=0}^{\\infty} \\frac{f^{(n)}(a)}{n!}(x-a)^n$\n\n**อนุกรมแมคลอริน (เมื่อ $a=0$):** $f(x) = f(0) + f'(0)x + \\frac{f''(0)}{2!}x^2 + ...$\n\n**ตัวอย่างที่ควรจำ:**\n- $e^x = 1 + x + \\frac{x^2}{2!} + \\frac{x^3}{3!} + ...$\n- $\\sin x = x - \\frac{x^3}{3!} + \\frac{x^5}{5!} - ...$\n- $\\cos x = 1 - \\frac{x^2}{2!} + \\frac{x^4}{4!} - ...$",
-    "youtubeId": "3d6DsjIBzJ4",
-    "tags": ["math", "calculus", "series"]
-  },
-  {
-    "id": "math_038",
-    "title": "สมการระนาบใน 3 มิติ (Equations of Planes)",
-    "content": "การระบุตำแหน่งพื้นผิวในปริภูมิ 3 มิติ\n\n**สมการมาตรฐาน:** $A(x - x_0) + B(y - y_0) + C(z - z_0) = 0$\nหรือ $Ax + By + Cz + D = 0$\n\nโดยที่:\n- $\\vec{n} = \\langle A, B, C \\rangle$ คือ **เวกเตอร์แนวฉาก (Normal Vector)** ซึ่งตั้งฉากกับระนาบ\n- $(x_0, y_0, z_0)$ คือจุดใดๆ บนระนา\n\n**Thoth's Law:** ถ้าระนาบสองระนาบขนานกัน เวกเตอร์แนวฉากของทั้งคู่จะขนานกัน (เป็นสัดส่วนกัน)",
-    "youtubeId": "lpZ-8e_AIB4",
-    "tags": ["math", "vector", "3d"]
-  },
-  {
-    "id": "math_039",
-    "title": "ระยะห่างในปริภูมิ 3 มิติ (Distances in 3D Space)",
-    "content": "สูตรการหาระยะที่สั้นที่สุด\n\n**1. จุดไปยังระนาบ:** ระยะจาก $(x_1, y_1, z_1)$ ไปยังระนาบ $Ax+By+Cz+D=0$ คือ:\n$d = \\frac{|Ax_1 + By_1 + Cz_1 + D|}{\\sqrt{A^2 + B^2 + C^2}}$\n\n**2. ระนาบขนานสองระนาบ:** $d = \\frac{|D_1 - D_2|}{\\sqrt{A^2 + B^2 + C^2}}$\n\n**3. เส้นตรงไขว้ต่างระนาบ (Skew Lines):** ระยะห่างสั้นที่สุดระหว่าง $L_1$ และ $L_2$ หาได้จาก:\n$d = \\frac{|(\\vec{P_2} - \\vec{P_1}) \\cdot (\\vec{v_1} \\times \\vec{v_2})|}{|\\vec{v_1} \\times \\vec{v_2}|}$\nเมื่อ $\\vec{P}$ คือจุดบนเส้น และ $\\vec{v}$ คือเวกเตอร์ทิศทาง",
-    "youtubeId": "HC5Y7m9S_A",
-    "tags": ["math", "vector", "geometry"]
-  },
-  {
-    "id": "math_040",
-    "title": "ค่างวดสามัญ (Ordinary Annuities)",
-    "content": "การคำนวณเงินรายงวดในทางคณิตศาสตร์การเงิน\n\n**1. มูลค่าอนาคต (Future Value - $FV$):**\n$FV = R \\left[ \\frac{(1+i)^n - 1}{i} \\right]$\nใช้หาเงินสะสมเมื่อสิ้นสุดระยะเวลา (เช่น การออมเงินเท่ากันทุกเดือน)\n\n**2. มูลค่าปัจจุบัน (Present Value - $PV$):**\n$PV = R \\left[ \\frac{1 - (1+i)^{-n}}{i} \\right]$\nใช้หาจำนวนเงินกู้ที่สามารถผ่อนชำระได้ (เช่น การคำนวณยอดจัดไฟแนนซ์รถยนต์)\n\n**โดยที่:** $R$ = เงินรายงวด, $i$ = อัตราดอกเบี้ยต่องวด, $n$ = จำนวนงวดทั้งหมด",
+    "id": "math_master_15",
+    "title": "Master Summary: finance",
+    "content": "### คณิตศาสตร์การเงิน (Financial Mathematics)\nการคำนวณมูลค่าของเงินตามเวลา (Time Value of Money)\n\n**1. ดอกเบี้ยทบต้น (Compound Interest):**\n$A = P(1 + r)^n$\n- $P$ = เงินต้น, $r$ = อัตราดอกเบี้ยต่อคราว, $n$ = จำนวนคราว\n\n**2. มูลค่าปัจจุบันและอนาคต:**\n- $FV = PV(1+i)^n$\n- $PV = FV(1+i)^{-n}$\n\n**3. ค่างวด (Annuity):**\nการรับหรือจ่ายเงินเท่ากันทุกงวด\n$S = R[\\frac{(1+i)^n - 1}{i}]$ (สำหรับค่างวดตอนสิ้นงวด)\n\n**เคล็ดลับ:** อย่าลืมเช็คว่าดอกเบี้ยคิดเป็นรายปี รายเดือน หรือรายไตรมาส เพราะจะมีผลต่อค่า $i$ และ $n$\n\n---\n\n### ค่างวดสามัญ (Ordinary Annuities)\nการคำนวณเงินรายงวดในทางคณิตศาสตร์การเงิน\n\n**1. มูลค่าอนาคต (Future Value - $FV$):**\n$FV = R \\left[ \\frac{(1+i)^n - 1}{i} \\right]$\nใช้หาเงินสะสมเมื่อสิ้นสุดระยะเวลา (เช่น การออมเงินเท่ากันทุกเดือน)\n\n**2. มูลค่าปัจจุบัน (Present Value - $PV$):**\n$PV = R \\left[ \\frac{1 - (1+i)^{-n}}{i} \\right]$\nใช้หาจำนวนเงินกู้ที่สามารถผ่อนชำระได้ (เช่น การคำนวณยอดจัดไฟแนนซ์รถยนต์)\n\n**โดยที่:** $R$ = เงินรายงวด, $i$ = อัตราดอกเบี้ยต่องวด, $n$ = จำนวนงวดทั้งหมด\n\n---\n\n### ภาษีเงินได้บุคคลธรรมดา (Personal Income Tax - TCAS Style)\nการคำนวณภาษีตามขั้นบันได (Progressive Tax)\n\n**สูตรพื้นฐาน:** ภาษีที่ต้องจ่าย = (เงินได้สุทธิ $\\times$ อัตราภาษี) - ภาษีสะสมขั้นก่อนหน้า\n\n**เงินได้สุทธิ** = เงินได้พึงประเมิน - ค่าใช้จ่าย - ค่าลดหย่อน\n\n**โครงสร้างภาษีไทย:**\n- 0 - 150,000: ยกเว้น\n- 150,001 - 300,000: 5%\n- 300,001 - 500,000: 10%\n(และสูงขึ้นไปจนถึง 35%)\n\n**Thoth's Tip:** ระวังคำว่า 'เงินได้พึงประเมิน' กับ 'เงินได้สุทธิ' โจทย์มักหลอกให้เราคำนวณจากยอดที่ยังไม่ได้หักค่าใช้จ่าย\n\n---\n\n### กองทุนจมและการตัดหนี้ (Sinking Funds and Amortization)\nการวางแผนการเงินระยะยาว\n\n**1. กองทุนจม (Sinking Fund):** การเก็บเงินรายงวดเพื่อสะสมให้ได้ยอดเป้าหมายในอนาคต\n$R = FV \\left[ \\frac{i}{(1+i)^n - 1} \\right]$\n\n**2. การตัดหนี้ (Amortization):** การผ่อนชำระเงินกู้ที่คิดดอกเบี้ยจากยอดคงค้าง\n$R = PV \\left[ \\frac{i}{1 - (1+i)^{-n}} \\right]$\n\n**ความจริงของ Thoth:** ในการผ่อนบ้าน ช่วงแรกเงินที่จ่ายไปมักจะเป็นดอกเบี้ยเกือบทั้งหมด และเงินต้นจะลดลงอย่างรวดเร็วในช่วงท้ายของสัญญา",
     "youtubeId": "Z6X2mS0S-OQ",
-    "tags": ["math", "finance"]
+    "tags": [
+      "math",
+      "finance",
+      "tcas"
+    ]
   },
   {
-    "id": "math_041",
-    "title": "ภาษีเงินได้บุคคลธรรมดา (Personal Income Tax - TCAS Style)",
-    "content": "การคำนวณภาษีตามขั้นบันได (Progressive Tax)\n\n**สูตรพื้นฐาน:** ภาษีที่ต้องจ่าย = (เงินได้สุทธิ $\\times$ อัตราภาษี) - ภาษีสะสมขั้นก่อนหน้า\n\n**เงินได้สุทธิ** = เงินได้พึงประเมิน - ค่าใช้จ่าย - ค่าลดหย่อน\n\n**โครงสร้างภาษีไทย:**\n- 0 - 150,000: ยกเว้น\n- 150,001 - 300,000: 5%\n- 300,001 - 500,000: 10%\n(และสูงขึ้นไปจนถึง 35%)\n\n**Thoth's Tip:** ระวังคำว่า 'เงินได้พึงประเมิน' กับ 'เงินได้สุทธิ' โจทย์มักหลอกให้เราคำนวณจากยอดที่ยังไม่ได้หักค่าใช้จ่าย",
-    "youtubeId": "TAX-1234567",
-    "tags": ["math", "finance", "tcas"]
-  },
-  {
-    "id": "math_042",
-    "title": "ความผิดพลาดทางตรรกะเชิงรูปแบบ (Formal Fallacies)",
-    "content": "การอ้างเหตุผลที่ดูเหมือนจะถูกแต่ผิดในเชิงโครงสร้าง\n\n**1. การยืนยันส่วนหลัง (Affirming the Consequent):**\nรูปแบบ: $[(P \\implies Q) \\land Q] \\implies P$ **(ไม่เป็นสัจนิรันดร์)**\nตัวอย่าง: 'ถ้าฝนตกแล้วถนนเปียก ตอนนี้ถนนเปียก ดังนั้นฝนตก' (ผิด เพราะอาจมีคนฉีดน้ำ)\n\n**2. การปฏิเสธส่วนหน้า (Denying the Antecedent):**\nรูปแบบ: $[(P \\implies Q) \\land \\sim P] \\implies \\sim Q$ **(ไม่เป็นสัจนิรันดร์)**\nตัวอย่าง: 'ถ้าฝนตกแล้วถนนเปียก ตอนนี้ฝนไม่ตก ดังนั้นถนนไม่เปียก' (ผิด เพราะถนนอาจเปียกจากสาเหตุอื่น)",
-    "youtubeId": "q8xT8Yf-h4w",
-    "tags": ["math", "logic"]
-  },
-  {
-    "id": "math_043",
-    "title": "ความผิดพลาดทางตรรกะแบบอรูป (Informal Fallacies)",
-    "content": "ข้อบกพร่องในการให้เหตุผลที่เกิดจากเนื้อหาหรือบริบท\n\n**1. การทวนคำถาม (Circular Reasoning):** การนำสรุปมาเป็นเหตุผล เช่น '$P$ เป็นจริงเพราะ $P$ เป็นจริง'\n\n**2. การสร้างหุ่นฟาง (Straw Man):** การบิดเบือนข้อโต้แย้งของอีกฝ่ายให้ดูอ่อนแอหรือสุดโต่งเกินจริงเพื่อให้โจมตีได้ง่าย\n\n**3. การอ้างความไม่รู้ (Appeal to Ignorance):** การสรุปว่าสิ่งหนึ่งจริงเพราะยังไม่มีใครพิสูจน์ได้ว่าเป็นเท็จ\n\n**Thoth's Truth:** ในคณิตศาสตร์ การพิสูจน์ต้องใช้ Axioms และทฤษฎีบทที่ยอมรับแล้วเท่านั้น การอ้างเหตุผลเหล่านี้ถือเป็นโมฆะ",
-    "youtubeId": "L0fEAnE39Y8",
-    "tags": ["math", "logic"]
-  },
-  {
-    "id": "math_044",
-    "title": "การหาปริพันธ์แยกส่วน (Integration by Parts)",
-    "content": "เทคนิคการอินทิเกรตที่ตรงข้ามกับกฎผลคูณของอนุพันธ์\n\n**สูตร:** $\\int u \\, dv = uv - \\int v \\, du$\n\n**ที่มา:** จากกฎผลคูณ $d(uv) = u \\, dv + v \\, du$ ย้ายข้างจะได้ $u \\, dv = d(uv) - v \\, du$ แล้วทำการอินทิเกรตทั้งสองข้าง\n\n**เทคนิคการเลือก $u$ (LIATE Rule):**\n1. **L**ogarithmic\n2. **I**nverse Trig\n3. **A**lgebraic\n4. **T**rigonometric\n5. **E**xponential\nเลือกตัวที่อยู่สูงกว่าในลิสต์ให้เป็น $u$",
-    "youtubeId": "mI6G7H-D8-k",
-    "tags": ["math", "calculus"]
-  },
-  {
-    "id": "math_045",
-    "title": "ผลคูณเชิงสเกลาร์สามชั้น (Triple Scalar Product)",
-    "content": "การคำนวณปริมาตรโดยใช้เวกเตอร์\n\n**สูตร:** $\\text{Volume} = |\\vec{a} \\cdot (\\vec{b} \\times \\vec{c})|$\n\n**การคำนวณ:** สามารถหาได้จากการหา Determinant ของเมทริกซ์ที่นำเวกเตอร์ทั้งสามมาเรียงกัน:\n$\\det \\begin{vmatrix} a_1 & a_2 & a_3 \\\\ b_1 & b_2 & b_3 \\\\ c_1 & c_2 & c_3 \\end{vmatrix}$\n\n**ความหมาย:** คือปริมาตรของทรงสี่เหลี่ยมด้านขนาน (Parallelepiped) ที่มีเวกเตอร์ $\\vec{a}, \\vec{b}, \\vec{c}$ เป็นด้านประกอบ\n\n**Thoth's Note:** ถ้าค่านี้เป็น 0 แสดงว่าเวกเตอร์ทั้งสามอยู่ในระนาบเดียวกัน (Coplanar)",
-    "youtubeId": "S-S9B-K1J-k",
-    "tags": ["math", "vector", "geometry"]
-  },
-  {
-    "id": "math_046",
-    "title": "กองทุนจมและการตัดหนี้ (Sinking Funds and Amortization)",
-    "content": "การวางแผนการเงินระยะยาว\n\n**1. กองทุนจม (Sinking Fund):** การเก็บเงินรายงวดเพื่อสะสมให้ได้ยอดเป้าหมายในอนาคต\n$R = FV \\left[ \\frac{i}{(1+i)^n - 1} \\right]$\n\n**2. การตัดหนี้ (Amortization):** การผ่อนชำระเงินกู้ที่คิดดอกเบี้ยจากยอดคงค้าง\n$R = PV \\left[ \\frac{i}{1 - (1+i)^{-n}} \\right]$\n\n**ความจริงของ Thoth:** ในการผ่อนบ้าน ช่วงแรกเงินที่จ่ายไปมักจะเป็นดอกเบี้ยเกือบทั้งหมด และเงินต้นจะลดลงอย่างรวดเร็วในช่วงท้ายของสัญญา",
-    "youtubeId": "AMORT-999",
-    "tags": ["math", "finance"]
-  },
-  {
-    "id": "math_047",
-    "title": "เลขคณิตมอดุลาร์ (Modular Arithmetic)",
-    "content": "ระบบจำนวนที่มีลักษณะเป็นวงรอบ (Clock Arithmetic)\n\n**นิยาม:** $a \\equiv b \\pmod{n}$ หมายความว่า $n$ หาร $a-b$ ลงตัว หรือ $a$ และ $b$ เหลือเศษเท่ากันเมื่อหารด้วย $n$\n\n**สมบัติที่สำคัญ:**\n1. ถ้า $a \\equiv b$ และ $c \\equiv d$ แล้ว $a+c \\equiv b+d \\pmod{n}$\n2. $ac \\equiv bd \\pmod{n}$\n3. $a^k \\equiv b^k \\pmod{n}$\n\n**การประยุกต์:** ใช้ในการตรวจสอบเลขบัตรประชาชน (Check Digit), รหัส ISBN, และวิทยาการรหัสลับ (Cryptography)",
-    "youtubeId": "Eg68N-N7S-M",
-    "tags": ["math", "number-theory"]
-  },
-  {
-    "id": "math_048",
-    "title": "ขั้นตอนวิธีของยูคลิด (Euclidean Algorithm)",
-    "content": "วิธีการหา ห.ร.ม. (GCD) ที่มีประสิทธิภาพที่สุด\n\n**กระบวนการ:** เพื่อหา $GCD(a, b)$\n1. หาร $a$ ด้วย $b$ ให้ได้เศษ $r$ ($a = bq + r$)\n2. แทนที่ $a$ ด้วย $b$ และ $b$ ด้วย $r$\n3. ทำซ้ำจนกระทั่งเศษเป็น 0\n4. เศษตัวสุดท้ายที่ไม่ใช่ 0 คือ $GCD$\n\n**ทฤษฎีบทของเบซู (Bézout's Identity):** จะมีจำนวนเต็ม $x, y$ ที่ทำให้ $ax + by = GCD(a, b)$ เสมอ",
-    "youtubeId": "p5gn2hj51hs",
-    "tags": ["math", "number-theory", "algorithm"]
-  },
-  {
-    "id": "math_049",
-    "title": "หลักการรวมเข้าและแยกออก (Inclusion-Exclusion Principle)",
-    "content": "การขยายสูตรจำนวนสมาชิกของเซตไปยัง $n$ เซต\n\n**สำหรับ 3 เซต:** $n(A \\cup B \\cup C) = \\sum n(A_i) - \\sum n(A_i \\cap A_j) + n(A \\cap B \\cap C)$\n\n**หลักการทั่วไป:**\n$| \\bigcup_{i=1}^n A_i | = \\sum |A_i| - \\sum |A_i \\cap A_j| + \\sum |A_i \\cap A_j \\cap A_k| - ... + (-1)^{n-1} |A_1 \\cap ... \\cap A_n|$\n\n**Thoth's Trick:** ใช้หาจำนวน 'การสลับผิดที่' (Derangements) หรือจำนวนฟังก์ชันทั่วถึง (Onto Functions) จากเซตหนึ่งไปอีกเซตหนึ่งได้",
+    "id": "math_master_16",
+    "title": "Master Summary: programming",
+    "content": "### ระบบอสมการและกำหนดการเชิงเส้น (Linear Programming)\nการหาค่าสูงสุดหรือต่ำสุดของฟังก์ชันเป้าหมายภายใต้ข้อจำกัด\n\n**ขั้นตอน:**\n1. กำหนดตัวแปร $x, y$\n2. สร้างฟังก์ชันเป้าหมาย $P = ax + by$\n3. สร้างอสมการข้อจำกัด\n4. วาดกราฟพื้นที่ที่คำตอบเป็นไปได้ (Feasible Region)\n5. หาจุดมุม (Vertex) ของพื้นที่\n6. นำจุดมุมไปแทนในฟังก์ชันเป้าหมายเพื่อหาค่าที่ต้องการ\n\n**Thoth's Observation:** ค่าสูงสุดหรือต่ำสุดมักจะเกิดขึ้นที่ 'จุดมุม' ของอาณาเขตเสมอ",
     "youtubeId": "I8R9i_qA2M8",
-    "tags": ["math", "combinatorics", "sets"]
+    "tags": [
+      "math",
+      "programming",
+      "algebra"
+    ]
   },
   {
-    "id": "math_050",
-    "title": "ตรรกศาสตร์ภาคแสดงและตัวบ่งปริมาณซ้อน (Predicate Logic & Nested Quantifiers)",
-    "content": "การวิเคราะห์ประโยคที่มีตัวบ่งปริมาณมากกว่าหนึ่งตัว\n\n**ตัวอย่าง:** $\\forall x \\exists y [P(x, y)]$\n- 'สำหรับคนทุกคน ($x$) จะมีแม่หนึ่งคน ($y$)' (จริง)\n- 'จะมีแม่หนึ่งคน ($y$) ที่เป็นแม่ของทุกคน ($x$)' (เท็จ - เขียนเป็น $\\exists y \\forall x [P(x, y)]$)\n\n**กฎการสลับ:** $\\forall x \\forall y \\equiv \\forall y \\forall x$ และ $\\exists x \\exists y \\equiv \\exists y \\exists x$ แต่การสลับ $\\forall$ กับ $\\exists$ จะทำให้ความหมายเปลี่ยนอย่างสิ้นเชิง",
-    "youtubeId": "gI96_I-oP78",
-    "tags": ["math", "logic"]
+    "id": "math_master_17",
+    "title": "Master Summary: number-theory",
+    "content": "### เลขคณิตมอดุลาร์ (Modular Arithmetic)\nระบบจำนวนที่มีลักษณะเป็นวงรอบ (Clock Arithmetic)\n\n**นิยาม:** $a \\equiv b \\pmod{n}$ หมายความว่า $n$ หาร $a-b$ ลงตัว หรือ $a$ และ $b$ เหลือเศษเท่ากันเมื่อหารด้วย $n$\n\n**สมบัติที่สำคัญ:**\n1. ถ้า $a \\equiv b$ และ $c \\equiv d$ แล้ว $a+c \\equiv b+d \\pmod{n}$\n2. $ac \\equiv bd \\pmod{n}$\n3. $a^k \\equiv b^k \\pmod{n}$\n\n**การประยุกต์:** ใช้ในการตรวจสอบเลขบัตรประชาชน (Check Digit), รหัส ISBN, และวิทยาการรหัสลับ (Cryptography)\n\n---\n\n### ขั้นตอนวิธีของยูคลิด (Euclidean Algorithm)\nวิธีการหา ห.ร.ม. (GCD) ที่มีประสิทธิภาพที่สุด\n\n**กระบวนการ:** เพื่อหา $GCD(a, b)$\n1. หาร $a$ ด้วย $b$ ให้ได้เศษ $r$ ($a = bq + r$)\n2. แทนที่ $a$ ด้วย $b$ และ $b$ ด้วย $r$\n3. ทำซ้ำจนกระทั่งเศษเป็น 0\n4. เศษตัวสุดท้ายที่ไม่ใช่ 0 คือ $GCD$\n\n**ทฤษฎีบทของเบซู (Bézout's Identity):** จะมีจำนวนเต็ม $x, y$ ที่ทำให้ $ax + by = GCD(a, b)$ เสมอ",
+    "youtubeId": "Eg68N-N7S-M",
+    "tags": [
+      "math",
+      "number-theory",
+      "algorithm"
+    ]
   },
   {
-    "id": "math_051",
-    "title": "ทฤษฎีบทของเบย์ (Bayes' Theorem)",
-    "content": "การอัปเดตความน่าจะเป็นเมื่อมีข้อมูลใหม่เข้ามา\n\n**สูตร:** $P(A|B) = \\frac{P(B|A)P(A)}{P(B)}$\n\nโดยที่:\n- $P(A|B)$ คือความน่าจะเป็นภายหลัง (Posterior)\n- $P(B|A)$ คือ Likelihood\n- $P(A)$ คือความน่าจะเป็นก่อนหน้า (Prior)\n\n**การประยุกต์:** การวินิจฉัยโรค (Medical Testing) โอกาสที่เป็นโรคจริงๆ เมื่อผลตรวจเป็นบวก มักจะต่ำกว่าที่คนส่วนใหญ่คาดคิดหากโรคนั้นพบน้อยมากในประชากร",
-    "youtubeId": "HZGCoVF3YvM",
-    "tags": ["math", "probability", "statistics"]
-  },
-  {
-    "id": "math_052",
-    "title": "การทดสอบสมมติฐาน (Hypothesis Testing)",
-    "content": "การตัดสินใจทางสถิติเพื่อสรุปผลเกี่ยวกับประชากร\n\n**1. สมมติฐาน:** $H_0$ (Null) และ $H_1$ (Alternative)\n\n**2. ระดับนัยสำคัญ ($\\alpha$):** โอกาสที่เกิด Type I Error (ปฏิเสธ $H_0$ ทั้งที่เป็นจริง)\n\n**3. การเลือกสถิติทดสอบ:**\n- **Z-test:** ใช้เมื่อรู้ความแปรปรวนประชากร หรือกลุ่มตัวอย่างขนาดใหญ่ ($n \\ge 30$)\n- **T-test:** ใช้เมื่อไม่รู้ความแปรปรวนประชากร และกลุ่มตัวอย่างขนาดเล็ก\n\n**4. การตัดสินใจ:** ถ้า $p$-value $< \\alpha$ ให้ 'ปฏิเสธ $H_0$'",
-    "youtubeId": "v-J-K-L-M-N",
-    "tags": ["math", "statistics"]
+    "id": "math_master_18",
+    "title": "Master Summary: combinatorics",
+    "content": "### หลักการรวมเข้าและแยกออก (Inclusion-Exclusion Principle)\nการขยายสูตรจำนวนสมาชิกของเซตไปยัง $n$ เซต\n\n**สำหรับ 3 เซต:** $n(A \\cup B \\cup C) = \\sum n(A_i) - \\sum n(A_i \\cap A_j) + n(A \\cap B \\cap C)$\n\n**หลักการทั่วไป:**\n$| \\bigcup_{i=1}^n A_i | = \\sum |A_i| - \\sum |A_i \\cap A_j| + \\sum |A_i \\cap A_j \\cap A_k| - ... + (-1)^{n-1} |A_1 \\cap ... \\cap A_n|$\n\n**Thoth's Trick:** ใช้หาจำนวน 'การสลับผิดที่' (Derangements) หรือจำนวนฟังก์ชันทั่วถึง (Onto Functions) จากเซตหนึ่งไปอีกเซตหนึ่งได้",
+    "youtubeId": "I8R9i_qA2M8",
+    "tags": [
+      "math",
+      "combinatorics",
+      "sets"
+    ]
   }
 ]
