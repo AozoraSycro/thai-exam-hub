@@ -1,6 +1,6 @@
 /**
  * app.js - The Brain of Thai Exam Hub
- * VERIFIED: Self-Aware Pathing for GitHub Pages & Local Servers.
+ * FIXED: Robust Subfolder-Aware Pathing for GitHub Pages.
  */
 
 import { Storage } from './storage.js';
@@ -8,16 +8,18 @@ import { Storage } from './storage.js';
 const Config = {
     get basePath() {
         const path = window.location.pathname;
-        // If we are on GitHub Pages, we are in /thai-exam-hub/
-        if (path.includes('/thai-exam-hub/')) return '/thai-exam-hub/';
-        // Otherwise assume root
+        const repoName = 'thai-exam-hub';
+        // Handle both /repo-name/ and /repo-name (no trailing slash)
+        if (path.includes(`/${repoName}`)) {
+            return `/${repoName}/`;
+        }
         return '/';
     },
     get dataPath() {
         return `${this.basePath}data/`;
     },
     get version() {
-        return '1.2.' + new Date().getHours() + new Date().getMinutes(); // Daily-ish cache buster
+        return '1.3.' + new Date().getTime(); // Instant cache buster
     }
 };
 
@@ -26,11 +28,9 @@ async function fetchJSON(url) {
     try {
         const response = await fetch(`${url}?v=${Config.version}`);
         if (!response.ok) throw new Error(`HTTP ${response.status} at ${url}`);
-        const data = await response.json();
-        console.log(`[Odin] Success: ${url} (${Array.isArray(data) ? data.length : 'Object'} items)`);
-        return data;
+        return await response.json();
     } catch (error) {
-        console.error(`[Odin] Failed to load: ${url}`, error);
+        console.error(`[Odin] Failed: ${url}`, error);
         throw error;
     }
 }
@@ -41,19 +41,14 @@ class ThemeManager {
         const currentTheme = settings.theme || 'light';
         document.documentElement.setAttribute('data-theme', currentTheme);
         this.updateIcon(currentTheme);
-        
         document.addEventListener('click', (e) => {
             if (e.target.closest('#theme-toggle')) this.toggle();
         });
     }
-
     updateIcon(theme) {
         const icons = document.querySelectorAll('#theme-toggle i');
-        icons.forEach(icon => {
-            icon.className = theme === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
-        });
+        icons.forEach(icon => { icon.className = theme === 'dark' ? 'fas fa-sun' : 'fas fa-moon'; });
     }
-
     toggle() {
         const current = document.documentElement.getAttribute('data-theme');
         const next = current === 'dark' ? 'light' : 'dark';
@@ -81,18 +76,14 @@ class App {
     }
 
     async init() {
-        console.log('[Odin] App Initialized. Base:', Config.basePath);
         this.theme.init();
         this.renderStats();
         this.renderRecommendations();
-        
         const urlParams = new URLSearchParams(window.location.search);
         const subjectId = urlParams.get('s');
-
         if (document.getElementById('subject-grid')) await this.renderDashboard();
         if (subjectId && document.getElementById('subject-view')) await this.renderSubjectPage(subjectId);
         if (document.getElementById('history-list')) this.renderFullHistory();
-        
         this.initCharts();
     }
 
@@ -106,16 +97,14 @@ class App {
     async renderDashboard() {
         const grid = document.getElementById('subject-grid');
         if (!grid) return;
-        
         grid.innerHTML = '';
         Object.entries(this.subjectMeta).forEach(([id, meta]) => {
             const card = document.createElement('a');
             card.href = `${Config.basePath}subject.html?s=${id}`;
             card.className = 'subject-card';
-            card.innerHTML = `<span class="subject-icon">${meta.icon}</span><h3>${meta.title}</h3><p>${meta.description || ''}</p>`;
+            card.innerHTML = `<span class="subject-icon">${meta.icon}</span><h3>${meta.title}</h3>`;
             grid.appendChild(card);
         });
-
         try {
             const exams = await fetchJSON(`${Config.dataPath}subjects.json`);
             const featuredEl = document.getElementById('featured-exams');
@@ -131,21 +120,16 @@ class App {
                     featuredEl.appendChild(div);
                 });
             }
-        } catch (e) {
-            console.error('[Odin] Dashboard Render Failed', e);
-        }
+        } catch (e) { console.error(e); }
     }
 
     async renderSubjectPage(subjectId) {
         const meta = this.subjectMeta[subjectId];
         const titleEl = document.getElementById('subject-title');
         if (titleEl) titleEl.textContent = meta ? meta.title : 'คลังความรู้';
-
         const listEl = document.getElementById('exam-list');
         const gridEl = document.getElementById('knowledge-grid');
-
         try {
-            // 1. Load Exams
             const exams = await fetchJSON(`${Config.dataPath}subjects.json`);
             const filtered = exams.filter(e => e.subject === subjectId);
             if (listEl) {
@@ -160,16 +144,11 @@ class App {
                         div.querySelector('button').onclick = () => location.href = `${Config.basePath}quiz.html?id=${exam.id}`;
                         listEl.appendChild(div);
                     });
-                } else {
-                    listEl.innerHTML = '<p class="empty-state">ยังไม่มีข้อสอบในหมวดนี้</p>';
-                }
+                } else { listEl.innerHTML = '<p class="empty-state">ยังไม่มีข้อสอบในหมวดนี้</p>'; }
             }
-
-            // 2. Load Summaries
             if (meta && meta.file) {
                 const summaries = await fetchJSON(`${Config.dataPath}${meta.file}`);
                 this.renderSummaryGrid(summaries, subjectId);
-
                 const searchInput = document.getElementById('summary-search');
                 if (searchInput) {
                     searchInput.oninput = (e) => {
@@ -179,28 +158,13 @@ class App {
                     };
                 }
             }
-        } catch (e) {
-            console.error('[Odin] Subject Page Load Failed', e);
-            if (listEl) listEl.innerHTML = '<p class="error">โหลดข้อมูลไม่สำเร็จ กรุณาลองใหม่อีกครั้ง</p>';
-        }
+        } catch (e) { console.error(e); }
     }
 
     renderSummaryGrid(summaries, subjectId) {
         const gridEl = document.getElementById('knowledge-grid');
         if (!gridEl) return;
-        gridEl.innerHTML = '';
-        if (summaries && summaries.length) {
-            summaries.forEach(s => {
-                const div = document.createElement('div');
-                div.className = 'summary-card';
-                div.innerHTML = `<div class="summary-info"><span class="tag-meta"></span><h4></h4><p></p></div><a class="read-btn">อ่านสรุปความรู้</a>`;
-                div.querySelector('.tag-meta').textContent = (s.subject || subjectId || 'GENERAL').toUpperCase();
-                div.querySelector('h4').textContent = s.title;
-                div.querySelector('p').textContent = (s.content || '').substring(0, 100).replace(/[#*`$]/g, '') + '...';
-                div.querySelector('a').href = `${Config.basePath}study.html?subject=${subjectId}&id=${s.id}`;
-                gridEl.appendChild(div);
-            });
-        }
+        gridEl.innerHTML = summaries.length ? summaries.map(s => `<div class="summary-card"><div class="summary-info"><span class="tag-meta">${(s.subject || subjectId).toUpperCase()}</span><h4>${s.title}</h4><p>${(s.content || '').substring(0, 100).replace(/[#*`$]/g, '')}...</p></div><a href="${Config.basePath}study.html?subject=${subjectId}&id=${s.id}" class="read-btn">อ่านสรุปความรู้</a></div>`).join('') : '<p class="empty-state" style="grid-column: 1/-1;">ไม่พบเนื้อหา</p>';
     }
 
     renderRecommendations() {
@@ -208,23 +172,8 @@ class App {
         if (!container) return;
         const stats = Storage.getStats();
         const topWeak = Object.entries(stats.byTopic || {}).sort((a, b) => b[1].wrong - a[1].wrong).filter(t => t[1].wrong > 0).slice(0, 3);
-        if (topWeak.length === 0) {
-            container.innerHTML = '<div class="info-card" style="padding:20px; text-align:center; background:var(--card-bg); border-radius:12px; border:1px solid var(--border-color);"><p>เริ่มทำข้อสอบเพื่อให้ระบบวิเคราะห์จุดที่ควรเน้น!</p></div>';
-            return;
-        }
-        container.innerHTML = '';
-        const grid = document.createElement('div');
-        grid.className = 'recommendation-grid';
-        topWeak.forEach(t => {
-            const div = document.createElement('div');
-            div.className = 'recommend-card';
-            div.innerHTML = `<span class="tag-alert">ทบทวนด่วน</span><h4></h4><p></p><a class="read-btn">หาเนื้อหาติว →</a>`;
-            div.querySelector('h4').textContent = `หัวข้อ: ${t[0]}`;
-            div.querySelector('p').textContent = `คุณพลาดเรื่องนี้ไปแล้ว ${t[1].wrong} ครั้ง`;
-            div.querySelector('a').href = `${Config.basePath}subject.html?s=search&q=${t[0]}`;
-            grid.appendChild(div);
-        });
-        container.appendChild(grid);
+        if (topWeak.length === 0) { container.innerHTML = '<div class="info-card" style="padding:20px; text-align:center; background:var(--card-bg); border-radius:12px; border:1px solid var(--border-color);"><p>ทำข้อสอบเพิ่มเติมเพื่อให้ระบบวิเคราะห์จุดที่ควรเน้น!</p></div>'; return; }
+        container.innerHTML = `<div class="recommendation-grid">${topWeak.map(t => `<div class="recommend-card"><span class="tag-alert">ทบทวนด่วน</span><h4>เรื่อง: ${t[0]}</h4><p>พลาดไปแล้ว ${t[1].wrong} ครั้ง</p><a href="${Config.basePath}subject.html?s=search&q=${t[0]}" class="read-btn">หาเนื้อหาติว →</a></div>`).join('')}</div>`;
     }
 
     renderFullHistory() {
@@ -244,9 +193,7 @@ class App {
             if (subjects.length >= 3) {
                 const data = subjects.map(s => (stats.bySubject[s].correct / stats.bySubject[s].answered) * 100);
                 new Chart(radarCtx, { type: 'radar', data: { labels: subjects.map(s => s.toUpperCase()), datasets: [{ label: 'ความแม่นยำ (%)', data: data, backgroundColor: 'rgba(14, 165, 233, 0.2)', borderColor: '#0ea5e9', pointBackgroundColor: '#0ea5e9' }] }, options: { scales: { r: { beginAtZero: true, max: 100 } }, plugins: { legend: { display: false } } } });
-            } else {
-                radarCtx.parentElement.innerHTML = '<p class="empty-state">ทำข้อสอบให้ครบ 3 หมวดเพื่อแสดงกราฟ</p>';
-            }
+            } else { radarCtx.parentElement.innerHTML = '<p class="empty-state">ทำข้อสอบให้ครบ 3 หมวดเพื่อแสดงกราฟ</p>'; }
         }
     }
 }
