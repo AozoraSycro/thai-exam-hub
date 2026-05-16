@@ -25,9 +25,9 @@ jobs:
         with:
           index: 'thai-exam-hub/index.html'
 
-      - name: JSON Lint
+      - name: Validate JSON files
         run: |
-          find thai-exam-hub/data -name "*.json" -type f -exec jsonlint -q {} +
+          node -e "const fs = require('fs'); const files = require('child_process').execSync('find thai-exam-hub/data -name \"*.json\"').toString().split('\n').filter(f => f.trim()); files.forEach(file => { try { JSON.parse(fs.readFileSync(file.trim(), 'utf8')); console.log('Validated: ' + file); } catch (e) { console.error('Invalid JSON in ' + file + ': ' + e.message); process.exit(1); } });"
 
   deploy:
     environment:
