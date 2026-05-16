@@ -1,7 +1,6 @@
 /**
  * app.js - The Brain of Thai Exam Hub
- * FIXED: Universal Data Bridge for 500+ Summaries and 1,200+ Questions.
- * Optimized for GitHub Pages and High-Precision Data Mapping.
+ * FIXED: Bulletproof Universal Data Loading with Subject Mapping.
  */
 
 import { Storage } from './storage.js';
@@ -9,24 +8,19 @@ import { Storage } from './storage.js';
 class ThemeManager {
     init() {
         const settings = Storage.getSettings();
-        const body = document.body;
         const currentTheme = settings.theme || 'light';
         document.documentElement.setAttribute('data-theme', currentTheme);
         this.updateIcon(currentTheme);
         
         const btn = document.getElementById('theme-toggle');
-        if (btn) {
-            btn.onclick = () => this.toggle();
-        }
+        if (btn) btn.onclick = () => this.toggle();
     }
 
     updateIcon(theme) {
         const btn = document.getElementById('theme-toggle');
         if (!btn) return;
         const icon = btn.querySelector('i');
-        if (icon) {
-            icon.className = theme === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
-        }
+        if (icon) icon.className = theme === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
     }
 
     toggle() {
@@ -46,14 +40,18 @@ class App {
             'english': { title: 'ภาษาอังกฤษ', icon: '🌍', description: 'TGAT 1, A-Level, ONET', bridge: ['english', 'grammar', 'vocabulary', 'reading', 'tense'] },
             'science': { title: 'วิทยาศาสตร์', icon: '🧪', description: 'A-Level, TPAT 3, ONET', bridge: ['science', 'physics', 'chemistry', 'biology', 'earth', 'astronomy'] },
             'medical': { title: 'กสพท / แพทย์', icon: '🩺', description: 'TPAT 1 วิชาเฉพาะแพทย์', bridge: ['medical', 'medicine', 'ethics', 'biology', 'general'] },
-            'thai': { title: 'ภาษาไทย', icon: '📚', description: 'A-Level, ONET', bridge: ['thai', 'วรรณคดี', 'หลักภาษา'] },
-            'social': { title: 'สังคม / ครู', icon: '⚖️', description: 'A-Level, TPAT 5, ONET', bridge: ['social', 'history', 'geography', 'economics', 'civics', 'law', 'teacher'] },
-            'arts': { title: 'สถาปัตยกรรม', icon: '🎨', description: 'TPAT 4 ศิลปะ/สถาปัตย์', bridge: ['arts', 'architecture', 'design', 'drawing', 'general'] },
+            'thai': { title: 'ภาษาไทย', icon: '📚', description: 'A-Level, ONET', bridge: ['thai', 'วรรณคดี', 'หลักภาษา', 'ภาษาไทย'] },
+            'social': { title: 'สังคม / ครู', icon: '⚖️', description: 'A-Level, TPAT 5, ONET', bridge: ['social', 'history', 'geography', 'economics', 'civics', 'law', 'teacher', 'สังคมศึกษา'] },
+            'arts': { title: 'สถาปัตยกรรม', icon: '🎨', description: 'TPAT 4 ศิลปะ/สถาปัตย์', bridge: ['arts', 'architecture', 'design', 'drawing', 'general', 'สถาปัตยกรรม'] },
             'language': { title: 'ภาษาต่างประเทศ', icon: '⛩️', description: 'A-Level 7 ภาษาหลัก', bridge: ['language', 'foreign', 'japanese', 'chinese', 'french', 'korean', 'german', 'spanish', 'pali'] },
             'elite': { title: 'Elite Mocks', icon: '💎', description: 'ความยากระดับสูงสุด', bridge: ['elite', 'mock', 'difficult', 'advanced'] },
             'future': { title: 'ทักษะอนาคต', icon: '🚀', description: 'TGAT 3, AI, Finance', bridge: ['future', 'ai', 'finance', 'digital', 'general'] }
         };
-        this.basePath = window.location.pathname.includes('/subjects/') || window.location.pathname.includes('/faq/') ? '../' : './';
+        // Accurate path depth detection
+        const pathParts = window.location.pathname.split('/');
+        // If we are in a subfolder like /subjects/ or /faq/, we need to go up one level
+        const inSubFolder = pathParts.some(part => ['subjects', 'faq'].includes(part.toLowerCase()));
+        this.basePath = inSubFolder ? '../' : './';
     }
 
     async init() {
@@ -92,6 +90,7 @@ class App {
 
         try {
             const response = await fetch(`${this.basePath}data/subjects.json`);
+            if (!response.ok) throw new Error('Cannot load subjects.json');
             const allExams = await response.json();
             const featuredEl = document.getElementById('featured-exams');
             if (featuredEl) {
@@ -105,7 +104,11 @@ class App {
                     </div>
                 `).join('');
             }
-        } catch (e) { console.error('Dashboard data error:', e); }
+        } catch (e) { 
+            console.error('Dashboard error:', e);
+            const featuredEl = document.getElementById('featured-exams');
+            if (featuredEl) featuredEl.innerHTML = '<p class="error">ไม่สามารถโหลดข้อมูลข้อสอบได้</p>';
+        }
     }
 
     async renderSubjectPage(subjectId) {
@@ -115,12 +118,16 @@ class App {
         if (titleEl) titleEl.textContent = meta ? meta.title : 'คลังความรู้';
         if (breadcrumbEl) breadcrumbEl.textContent = meta ? meta.title : 'วิชา';
 
+        const listEl = document.getElementById('exam-list');
+        const gridEl = document.getElementById('knowledge-grid');
+
         try {
             // 1. Load Exams
             const examRes = await fetch(`${this.basePath}data/subjects.json`);
+            if (!examRes.ok) throw new Error('Failed to fetch subjects.json');
             const exams = await examRes.json();
             const filteredExams = exams.filter(e => e.subject === subjectId);
-            const listEl = document.getElementById('exam-list');
+            
             if (listEl) {
                 listEl.innerHTML = filteredExams.length ? filteredExams.map(exam => `
                     <div class="exam-card">
@@ -133,8 +140,9 @@ class App {
                 `).join('') : '<p class="empty-state">ยังไม่มีข้อสอบในหมวดนี้</p>';
             }
 
-            // 2. Load Summaries (Universal Bridge Matching)
+            // 2. Load Summaries (Fuzzy Matching)
             const sumRes = await fetch(`${this.basePath}data/summaries.json`);
+            if (!sumRes.ok) throw new Error('Failed to fetch summaries.json');
             const allSummariesRaw = await sumRes.json();
             
             const bridgeTags = meta ? meta.bridge : [subjectId];
@@ -143,11 +151,12 @@ class App {
                 const sTitle = (s.title || '').toLowerCase();
                 const sTags = (s.tags || []).map(t => t.toLowerCase());
                 
-                return bridgeTags.some(tag => 
-                    sSub.includes(tag) || 
-                    sTags.includes(tag) || 
-                    sTitle.includes(tag)
-                );
+                return bridgeTags.some(tag => {
+                    const tLow = tag.toLowerCase();
+                    return sSub.includes(tLow) || 
+                           sTitle.includes(tLow) || 
+                           sTags.some(st => st.includes(tLow));
+                });
             });
 
             this.renderSummaryGrid(summaries, subjectId);
@@ -164,7 +173,11 @@ class App {
                     this.renderSummaryGrid(filtered, subjectId);
                 };
             }
-        } catch (e) { console.error('Subject data error:', e); }
+        } catch (e) { 
+            console.error('Subject data error:', e);
+            if (listEl) listEl.innerHTML = `<p class="error">โหลดข้อมูลผิดพลาด: ${e.message}</p>`;
+            if (gridEl) gridEl.innerHTML = `<p class="error">โหลดเนื้อหาสรุปผิดพลาด</p>`;
+        }
     }
 
     renderSummaryGrid(summaries, subjectId) {
@@ -175,11 +188,11 @@ class App {
                 <div class="summary-info">
                     <span class="tag-meta">${(s.subject || 'General').toUpperCase()}</span>
                     <h4>${s.title}</h4>
-                    <p>${(s.content || '').substring(0, 120).replace(/[#*`$]/g, '')}...</p>
+                    <p>${(s.content || '').substring(0, 100).replace(/[#*`$]/g, '')}...</p>
                 </div>
                 <a href="${this.basePath}study.html?subject=${subjectId}&id=${s.id}" class="read-btn">อ่านสรุปบทเรียน</a>
             </div>
-        `).join('') : '<p class="empty-state" style="grid-column: 1/-1;">กำลังเตรียมเนื้อหาสรุปในหมวดนี้...</p>';
+        `).join('') : '<p class="empty-state" style="grid-column: 1/-1;">ยังไม่มีเนื้อหาสรุปในหมวดนี้</p>';
     }
 
     renderRecommendations() {
