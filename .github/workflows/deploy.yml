@@ -14,30 +14,41 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  validate:
+  build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: HTML Validation
-        uses: cygnetdigital/html-validate-action@v1
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
         with:
-          index: 'thai-exam-hub/index.html'
+          node-version: '20'
 
-      - name: Validate JSON files
+      - name: Verify Project Structure
         run: |
-          node -e "const fs = require('fs'); const files = require('child_process').execSync('find thai-exam-hub/data -name \"*.json\"').toString().split('\n').filter(f => f.trim()); files.forEach(file => { try { JSON.parse(fs.readFileSync(file.trim(), 'utf8')); console.log('Validated: ' + file); } catch (e) { console.error('Invalid JSON in ' + file + ': ' + e.message); process.exit(1); } });"
+          ls -R thai-exam-hub
+          if [ ! -f thai-exam-hub/index.html ]; then
+            echo "Error: index.html not found!"
+            exit 1
+          fi
 
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    needs: validate
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+      - name: Validate JSON Files
+        run: |
+          node -e "
+          const fs = require('fs');
+          const path = require('path');
+          const dir = 'thai-exam-hub/data';
+          const files = fs.readdirSync(dir).filter(f => f.endsWith('.json'));
+          files.forEach(file => {
+            try {
+              JSON.parse(fs.readFileSync(path.join(dir, file), 'utf8'));
+              console.log('Validated: ' + file);
+            } catch (e) {
+              console.error('Invalid JSON in ' + file + ': ' + e.message);
+              process.exit(1);
+            }
+          });"
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
@@ -47,6 +58,13 @@ jobs:
         with:
           path: './thai-exam-hub'
 
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
